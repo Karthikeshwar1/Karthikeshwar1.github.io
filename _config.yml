@@ -5,7 +5,7 @@ minima:
   skin: dark
 
 header_pages:
-  - about.md
+  - blog.md
 
 # email: karthikeshwar7087@gmail.com
 description: A site where Karthikeshwar shares his thoughts
