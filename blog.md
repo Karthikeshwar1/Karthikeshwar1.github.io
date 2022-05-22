@@ -1,7 +1,3 @@
----
-title: Articles by me
----
-
 # Articles
 
 Articles written by me:
