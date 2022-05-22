@@ -1,19 +1,4 @@
 title: Karthikeshwar
-author: Karthikeshwar
-theme: minima
-
-header_pages:
-  - blog.md
-
-email: karthikeshwar7087@gmail.com
-description: A site where Karthikeshwar shares his thoughts
-# social links
-# twitter_username: elonmusk
-github_username: Karthikeshwar1
-
-
-
-title: Karthikeshwar
 author:
   name: Karthikeshwar
   email: karthikeshwar7087@gmail.com
@@ -22,10 +7,8 @@ description: > # this means to ignore newlines until "show_excerpts:"
 show_excerpts: false # set to false to remove excerpts on the homepage
 
 
-# If you want to link only specific pages in your header, uncomment
-# this and add the path to the pages in order as they should show up
 header_pages:
-- blog.md
+  - blog.md
 
 # Build settings
 theme: minima
@@ -37,9 +20,9 @@ theme: minima
 #   date_format: "%b %-d, %Y"
 
   # generate social links in footer
-  social_links:
-#     twitter: jekyllrb
+social_links:
     github:  karthikeshwar1
+    # twitter: jekyllrb
     # devto: jekyll
     # dribbble: jekyll
     # facebook: jekyll
