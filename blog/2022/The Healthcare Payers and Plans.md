@@ -124,3 +124,29 @@
 * Improving member engagement
 
 <br>
+
+<hr>
+
+<br>
+
+<h4 align="left">
+  <a href="https://karthikeshwar1.github.io/blog/2022/The%20Healthcare%20Providers">
+About Healthcare Providers
+  </a>
+  <sup><a href="https://karthikeshwar1.github.io/blog/2022/The%20Healthcare%20Providers">
+  PREV ⬅️
+  </a>
+  </sup>
+  </h4>
+
+
+<h4 align="right"><sup><a href="https://karthikeshwar1.github.io/blog/2022/The%20Life%20Sciences%20Industry">
+  NEXT ➡️
+  </a>
+  </sup>
+  <a href="https://karthikeshwar1.github.io/blog/2022/The%20Life%20Sciences%20Industry">
+About Life Sciences Industry
+  </a>
+  </h4>
+  
+<br>
