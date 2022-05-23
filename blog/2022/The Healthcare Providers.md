@@ -233,7 +233,7 @@ Important executives:
 
 <h4 align="left">
   <a href="https://karthikeshwar1.github.io/blog/2022/The%20Healthcare%20and%20Life%20Sciences%20Industry%20Participants">
-An Overview
+Healthcare & Life Sciences Industry Participants
   </a>
   <sup><a href="https://karthikeshwar1.github.io/blog/2022/The%20Healthcare%20and%20Life%20Sciences%20Industry%20Participants">
   PREV ⬅️
@@ -247,7 +247,7 @@ An Overview
   </a>
   </sup>
   <a href="https://karthikeshwar1.github.io/blog/2022/The%20Healthcare%20Payers%20and%20Plans">
- About Healthcare Providers
+ About Healthcare Payers and Plans
   </a>
   </h4>
   
