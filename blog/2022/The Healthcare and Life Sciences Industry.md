@@ -79,6 +79,8 @@ Popular healthcare systems:
 
 <hr>
 
+<br>
+
 <h4 align="right"><sup><a href="https://karthikeshwar1.github.io/blog/2022/The%20Healthcare%20and%20Life%20Sciences%20Industry%20Participants">
   NEXT ➡️
   </a>
@@ -86,6 +88,6 @@ Popular healthcare systems:
   <a href="https://karthikeshwar1.github.io/blog/2022/The%20Healthcare%20and%20Life%20Sciences%20Industry%20Participants">
  Healthcare & Life Sciences Industry Participants 
   </a>
-  </h5>
+  </h4>
   
 <br>
