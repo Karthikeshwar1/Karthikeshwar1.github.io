@@ -160,3 +160,18 @@ Steps:
 
 <br>
 
+<hr>
+
+<br>
+
+<h4 align="left">
+  <a href="https://karthikeshwar1.github.io/blog/2022/The%20Life%20Sciences%20Industry">
+About Life Sciences Industry
+  </a>
+  <sup><a href="https://karthikeshwar1.github.io/blog/2022/The%20Life%20Sciences%20Industry">
+  PREV ⬅️
+  </a>
+  </sup>
+  </h4>
+
+<br>
