@@ -189,3 +189,29 @@ Individuals and institutions that directly provide medical care to patients
 
 
 <br>
+
+<hr>
+
+<br>
+
+<h4 align="left">
+  <a href="https://karthikeshwar1.github.io/blog/2022/The%20Healthcare%20and%20Life%20Sciences%20Industry">
+An Overview
+  </a>
+  <sup><a href="https://karthikeshwar1.github.io/blog/2022/The%20Healthcare%20and%20Life%20Sciences%20Industry">
+  PREV ⬅️
+  </a>
+  </sup>
+  </h4>
+
+
+<h4 align="right"><sup><a href="https://karthikeshwar1.github.io/blog/2022/The%20Healthcare%20Providers">
+  NEXT ➡️
+  </a>
+  </sup>
+  <a href="https://karthikeshwar1.github.io/blog/2022/The%20Healthcare%20Providers">
+ About Healthcare Providers
+  </a>
+  </h4>
+  
+<br>
