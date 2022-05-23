@@ -2,7 +2,6 @@
 title: Blog
 ---
 
-Articles written by me:
 
 ## On Healthcare
 
