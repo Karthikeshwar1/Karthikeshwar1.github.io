@@ -148,3 +148,28 @@ Life Sciences Industry Participants:
 
 <br>
 
+<hr>
+
+<br>
+
+<h4 align="left">
+  <a href="https://karthikeshwar1.github.io/blog/2022/The%20Healthcare%20Payers%20and%20Plans">
+About Healthcare Payers and Plans
+  </a>
+  <sup><a href="https://karthikeshwar1.github.io/blog/2022/The%20Healthcare%20Payers%20and%20Plans">
+  PREV ⬅️
+  </a>
+  </sup>
+  </h4>
+
+
+<h4 align="right"><sup><a href="https://karthikeshwar1.github.io/blog/2022/The%20Medical%20Technology%20Industry">
+  NEXT ➡️
+  </a>
+  </sup>
+  <a href="https://karthikeshwar1.github.io/blog/2022/The%20Medical%20Technology%20Industry">
+About Medical Technology Industry
+  </a>
+  </h4>
+  
+<br>
