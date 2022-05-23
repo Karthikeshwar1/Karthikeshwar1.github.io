@@ -2,8 +2,6 @@
 title: Blog
 ---
 
-# Articles
-
 Articles written by me:
 
 ## On Healthcare
@@ -21,6 +19,10 @@ Articles written by me:
 [Song Of The Year](https://karthikeshwar1.github.io/blog/2022/Song_Of_The_Year)
 
 ## Resources
+
+[Essential Software For Computers](https://Karthikeshwar1.github.io/blog/2021/Essential_Software_For_Computers)
+
+[Essential Software For Smartphones](https://Karthikeshwar1.github.io/blog/2021/Essential_Software_For_Smartphones)
 
 [Recommended Books On Computers And Tech](https://karthikeshwar1.github.io/blog/2022/Recommended_Books_On_Computers_And_Tech)
 
