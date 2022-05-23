@@ -2,8 +2,8 @@ title: Karthikeshwar
 author:
   name: Karthikeshwar
   email: karthikeshwar7087@gmail.com
-description: > # this means to ignore newlines until "show_excerpts:"
-  Karthikeshwar's thoughts
+# description: > # this means to ignore newlines until "show_excerpts:"
+description: Karthikeshwar's official website
 show_excerpts: false # set to false to remove excerpts on the homepage
 
 
