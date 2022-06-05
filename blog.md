@@ -9,6 +9,8 @@ title: Blog
 
 [Best Medical Resources](https://karthikeshwar1.github.io/blog/2022/Best_Medical_Resources)
 
+[Being Healthy in 21st Century](https://karthikeshwar1.github.io/blog/2022/Being%20Healthy%20in%2021st%20Century)
+
 <br>
 
 ## Thoughts
