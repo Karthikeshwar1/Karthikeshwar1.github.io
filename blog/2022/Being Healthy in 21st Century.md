@@ -62,4 +62,6 @@
 7. Dr. William Davis, Wheat Belly
 8. Anthony DiClementi, The BioHacker's guide
 
+Note: I didn't read the above books. This article is a collection of insights from different sources.
+
 <br>
