@@ -59,7 +59,7 @@ Individuals and institutions that directly provide medical care to patients
 
 ### 2. Health Care Facilities 🏥
 
-Healthcare facility types:
+*Healthcare facility types:*
 
 <h4> Hospitals: (Medical centers) </h4>
   
@@ -96,7 +96,9 @@ Healthcare facility types:
   * Chronic care centers include long-term rehabilitation facilities, behavioral facilities, residential care facilities, nursing homes. 
   * Provide many healthcare services focused on chronic care, including: medical supervision, 24-h nursing care, occupational and physical therapy, social services, assisted living services.
 
-<h6> Halthcare facility ownership structures: </h6>
+<br>
+
+*Halthcare facility ownership structures:*
 
 * **Public health care facilities:**
   funded directly by government agencies. Seek to provide the highest level of service possible without going over budget
