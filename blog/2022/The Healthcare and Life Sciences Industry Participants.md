@@ -61,8 +61,7 @@ Individuals and institutions that directly provide medical care to patients
 
 Healthcare facility types:
 
-<details>
-  <summary> <h4> Hospitals: (Medical centers) </h4> </summary>
+<h4> Hospitals: (Medical centers) </h4>
   
 * These are primary healthcare facility in every healthcare system. Healthcare services: acute care including inpatient surgery, emergency room services and intensive care, outpatient services, rehabilitation therapy, etc.
   
@@ -75,39 +74,30 @@ Healthcare facility types:
     * **Specialty hospitals:** Focus on providing healthcare services related to specific medical condition (such as cancer hospital) or type of patient (such as children's hospital)
     * **Teaching hospitals:** (University hospitals/academic medical centers/Research hospitals) In addition to treating patients, teaching hospitals also serve as training facilities for physicians and medical students. Some are also active in clinical research.
 
-</details>
 
-<details>
-  <summary> <h4> Health clinics: </h4> </summary>
+<h4> Health clinics: </h4>
   
 * smaller than a hospital, focus on smaller set of healthcare services
-</details>
 
-<details>
-  <summary> <h4> Outpatient centers: </h4> </summary> 
+<h4> Outpatient centers: </h4>
  
   * provide specific diagnosis and treatment services to patients on an outpatient basis
   * They include: surgery centers, diagnostic imaging centers, commercial laboratories, rehabilitation centers
   </details>
   
-<details>
-  <summary> <h4> Urgent care centers: </h4> </summary> 
+<h4> Urgent care centers: </h4>
   
 * Health clinics equipped to diagnose and treat a broad spectrum of medical conditions (beyond what clinics provide)
 
 * Also called immediate care, walk-in care, convenient care centers. These act as alternative to hospital emergency departments
   
-</details>
-  
-<details>
-  <summary> <h4> Chronic care centers: </h4> </summary>
+<h4> Chronic care centers: </h4>
   
   * Provide long-term healthcare services on an inpatient basis
   * Chronic care centers include long-term rehabilitation facilities, behavioral facilities, residential care facilities, nursing homes. 
   * Provide many healthcare services focused on chronic care, including: medical supervision, 24-h nursing care, occupational and physical therapy, social services, assisted living services.
-</details>
 
-<details> <summary> <h6> Halthcare facility ownership structures: </h6> </summary>
+<h6> Halthcare facility ownership structures: </h6>
 
 * **Public health care facilities:**
   funded directly by government agencies. Seek to provide the highest level of service possible without going over budget
@@ -116,7 +106,6 @@ Healthcare facility types:
 * **For-profit healthcare facilities:**
   seek to generate profitability for their owners (or shareholders). Most medical practices and many hospitals, clinics and outpatient centers are for-profit
   
-</details>
 
 <!-- <br> -->
 
