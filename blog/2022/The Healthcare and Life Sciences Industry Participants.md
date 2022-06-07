@@ -59,7 +59,7 @@ Individuals and institutions that directly provide medical care to patients
 
 ### 2. Health Care Facilities 🏥
 
-<h6> Healthcare facility types: </h6>
+Healthcare facility types:
 
 <details>
   <summary> <h4> Hospitals: (Medical centers) </h4> </summary>
@@ -93,9 +93,11 @@ Individuals and institutions that directly provide medical care to patients
 <details>
   <summary> <h4> Urgent care centers: </h4> </summary> 
   
-  * Health clinics equipped to diagnose and treat a broad spectrum of medical conditions (beyond what clinics provide)
-  * Also called immediate care, walk-in care, convenient care centers. These act as alternative to hospital emergency departments
-  </details>
+* Health clinics equipped to diagnose and treat a broad spectrum of medical conditions (beyond what clinics provide)
+
+* Also called immediate care, walk-in care, convenient care centers. These act as alternative to hospital emergency departments
+  
+</details>
   
 <details>
   <summary> <h4> Chronic care centers: </h4> </summary>
