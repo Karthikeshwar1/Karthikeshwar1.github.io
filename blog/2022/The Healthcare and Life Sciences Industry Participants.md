@@ -29,7 +29,7 @@ Individuals and institutions that directly provide medical care to patients
 
 ### 1. Medical Professionals 👨‍⚕️
 
-  <h4> (i) Medical Specialists: </h4> Physicians who focus on specific areas of medicine
+<h4> (i) Medical Specialists: </h4> Physicians who focus on specific areas of medicine
   
   
 * **Physicians/Internists:** Specialize in specific areas of medicine (like cardiology, pulmonology, endocrinology)
@@ -83,7 +83,6 @@ Healthcare facility types:
  
   * provide specific diagnosis and treatment services to patients on an outpatient basis
   * They include: surgery centers, diagnostic imaging centers, commercial laboratories, rehabilitation centers
-  </details>
   
 <h4> Urgent care centers: </h4>
   
