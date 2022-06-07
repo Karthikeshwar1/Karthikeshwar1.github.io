@@ -29,19 +29,15 @@ Individuals and institutions that directly provide medical care to patients
 
 ### 1. Medical Professionals 👨‍⚕️
 
-<details open>
-  <summary>
-    <h4> (i) Medical Specialists: </h4>
-     Physicians who focus on specific areas of medicine
-  </summary>
+  <h4> (i) Medical Specialists: </h4> Physicians who focus on specific areas of medicine
   
-  **Physicians/Internists:** Specialize in specific areas of medicine (like cardiology, pulmonology, endocrinology)
-
-  **Surgeons:** Go inside patient bodies i.e. perform surgeries to treat medical conditions
-
-  **Hospitalists:** Physicians delivering comprehensive medical care to hospitalized patients
   
-</details>
+* **Physicians/Internists:** Specialize in specific areas of medicine (like cardiology, pulmonology, endocrinology)
+
+* **Surgeons:** Go inside patient bodies i.e. perform surgeries to treat medical conditions
+
+* **Hospitalists:** Physicians delivering comprehensive medical care to hospitalized patients
+  
 
 <!-- <br> -->
 
