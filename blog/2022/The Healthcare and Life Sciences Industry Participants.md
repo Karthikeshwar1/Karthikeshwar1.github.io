@@ -108,7 +108,7 @@ Individuals and institutions that directly provide medical care to patients
   seek to generate profitability for their owners (or shareholders). Most medical practices and many hospitals, clinics and outpatient centers are for-profit
   
 
-<!-- <br> -->
+<br>
 
 ### 3. Home Health Providers 🏠
 
