@@ -63,6 +63,7 @@ Note: This list of organizations isn't comprehensive, it is a list of only the t
 - [about Medical classification](https://en.wikipedia.org/wiki/Medical_classification)
 - [ICD](https://icd.who.int/en): International Statistical Classification of Diseases and Related Health Problems (or just International Classification of Diseases)
   - [ICD WHO page](https://www.who.int/standards/classifications/classification-of-diseases)
+- [HCPCS](https://www.cms.gov/Medicare/Coding/MedHCPCSGenInfo): Healthcare Common Procedure Coding System, a collection of standardized codes that represent medical procedures, supplies, products and services. Produced by Center for Medicare and Medicaid Services, [CMS](https://www.cms.gov/)
 
 <br>
 
