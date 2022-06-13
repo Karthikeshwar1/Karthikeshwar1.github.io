@@ -6,13 +6,13 @@
 
 ### Articles in this series
 
-| 1. An Overview (current page)                                                                                                                                        |
-| -------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 2. [Healthcare & Life Sciences Industry Participants](https://karthikeshwar1.github.io/blog/2022/The%20Healthcare%20and%20Life%20Sciences%20Industry%20Participants) |
-| 3. [About Healthcare Providers](https://karthikeshwar1.github.io/blog/2022/The%20Healthcare%20Providers)                                                             |
-| 4. [About Healthcare Payers and Plans](https://Karthikeshwar1.github.io/blog/2022/The%20Healthcare%20Payers%20and%20Plans)                                           |
-| 5. [About Life Sciences Industry](https://Karthikeshwar1.github.io/blog/2022/The%20Life%20Sciences%20Industry)                                                       |
-| 6. [About Medical Technology Industry](https://Karthikeshwar1.github.io/blog/2022/The%20Medical%20Technology%20Industry)                                             |
+| 1. An Overview (current page) |
+| ----- |
+| 2. [Healthcare & Life Sciences Industry Participants](https://github.com/Karthikeshwar1/blog/blob/main/2022/The%20Healthcare%20and%20Life%20Sciences%20Industry%20Participants.md) |
+| 3. [About Healthcare Providers](https://github.com/Karthikeshwar1/blog/blob/main/2022/The%20Healthcare%20Providers.md) |
+| 4. [About Healthcare Payers and Plans](https://github.com/Karthikeshwar1/blog/blob/main/2022/The%20Healthcare%20Payers%20and%20Plans.md) |
+| 5. [About Life Sciences Industry](https://github.com/Karthikeshwar1/blog/blob/main/2022/The%20Life%20Sciences%20Industry.md) |
+| 6. [About Medical Technology Industry](https://github.com/Karthikeshwar1/blog/blob/main/2022/The%20Medical%20Technology%20Industry.md) |
 
 <br>
 
@@ -30,7 +30,7 @@
 
 # Industry Participants
 
-_Main article:
+_Main article: 
 [The Healthcare & Life Sciences Industry Participants](https://github.com/Karthikeshwar1/blog/blob/main/2022/The%20Healhcare%20and%20Life%20Sciences%20Industry%20Participants.md)_
 
 1. 👩‍⚕️ Healthcare Providers
@@ -51,43 +51,43 @@ _Main article:
 
 # Customers
 
-- Patients are the primary customers
-- Healthcare providers are the customers for medical technology manufacturers
+* Patients are the primary customers
+* Healthcare providers are the customers for medical technology manufacturers
+* Patients need healthcare for:
+ 	* **Injuries**
+		* Physical damage caused by accidents or violence.
+		* Include bone fractures, burns and poisoning
+	* **Disabilities**
+		* Physical/mental conditions which limit a patient's senses/movements/activities
+	* **Reproductive health**
+		* Related to pregnancy, childbirth and other sexual health needs
+	* **Diseases**
+		* broadly refers to any condition that impairs the normal functioning of the body
+		* Types: Infectious and Chronic
+	* **Mental disorders**
+		* behavioral or mental pattern that causes significant distress or impairment of personal functioning
+		* conditions that affect your thinking, feeling, mood, and behavior
+
 
 <br>
 
 # Healthcare Systems
 
 Popular healthcare systems:
-
-- Socialized healthcare systems
-- National healthcare systems
-- Employer-sponsored insurance systems
-- Individual responsibility healthcare systems
+* Socialized healthcare systems
+* National healthcare systems
+* Employer-sponsored insurance systems
+* Individual responsibility healthcare systems
 
 <br>
 
 # Industry Challenges
 
-- Digital Disruption
-- Advances in Science & Technology
-- Cybersecurity
-- Rising healthcare costs
-- Pandemics (like COVID-19)
+* Digital Disruption
+* Advances in Science & Technology
+* Cybersecurity
+* Rising healthcare costs
+* Pandemics (like COVID-19)
 
 <br>
 
-<hr>
-
-<br>
-
-<h4 align="right"><sup><a href="https://karthikeshwar1.github.io/blog/2022/The%20Healthcare%20and%20Life%20Sciences%20Industry%20Participants">
-  NEXT ➡️
-  </a>
-  </sup>
-  <a href="https://karthikeshwar1.github.io/blog/2022/The%20Healthcare%20and%20Life%20Sciences%20Industry%20Participants">
- Healthcare & Life Sciences Industry Participants 
-  </a>
-  </h4>
-  
-<br>
