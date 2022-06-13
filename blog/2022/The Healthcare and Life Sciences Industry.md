@@ -54,7 +54,8 @@ _Main article:
 * Patients are the primary customers
 * Healthcare providers are the customers for medical technology manufacturers
 * Patients need healthcare for:
- 	* **Injuries**
+
+	* **Injuries**
 		* Physical damage caused by accidents or violence.
 		* Include bone fractures, burns and poisoning
 	* **Disabilities**
