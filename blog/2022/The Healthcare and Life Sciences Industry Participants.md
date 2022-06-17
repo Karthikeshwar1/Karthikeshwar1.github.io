@@ -20,7 +20,8 @@
 
 [7. 🏙 Consumer Technology Companies](#-consumer-technology-companies)
 
-
+<br>
+<hr>
 <br>
 
 ## 👩‍⚕ Healthcare Providers
@@ -116,6 +117,8 @@ Individuals and institutions that directly provide medical care to patients
 * Include Home health agencies, home care agencies, hospice care providers, staffing agencies
 
 <br>
+<hr>
+<br>
 
 
 ## 💰 Healthcare Payers
@@ -127,6 +130,8 @@ Individuals and institutions that directly provide medical care to patients
   * Non-profit associations
 
 <br>
+<hr>
+<br>
 
 
 ## 🧬 Biopharma Companies
@@ -137,6 +142,8 @@ Individuals and institutions that directly provide medical care to patients
   * Biotech firms
 
 <br>
+<hr>
+<br>
 
 
 ## 🔬 Medical Technology Companies
@@ -146,6 +153,8 @@ Individuals and institutions that directly provide medical care to patients
   * Medical technology manufacturers
   * Healthcare IT companies
 
+<br>
+<hr>
 <br>
 
 
@@ -158,6 +167,8 @@ Individuals and institutions that directly provide medical care to patients
 * Governments strongly influence healthcare and its advancement
 
 <br>
+<hr>
+<br>
 
 
 ## 🏢 Not-For-Profit Organizations
@@ -167,6 +178,8 @@ Individuals and institutions that directly provide medical care to patients
   * WHO
   * NGOs like Wellcome Trust, Bill & Melinda Gates Foundation
 
+<br>
+<hr>
 <br>
 
 
