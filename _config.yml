@@ -9,11 +9,11 @@ header_pages:
   - blog.md
 
 # Build settings
-theme: minimal
+theme: jekyll-theme-minimal
 
 # Minima date format
 # refer to https://shopify.github.io/liquid/filters/date/ if you want to customize this
-minimal:
+jekyll-theme-minimal:
   skin: dark
   date_format: "%b %-d, %Y"
 
