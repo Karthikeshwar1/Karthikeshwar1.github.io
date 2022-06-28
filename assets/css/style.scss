@@ -1,3 +1,7 @@
 @import "minima/skins/{{ site.minima.skin | default: 'classic' }}";
 @import "minima/initialize";
 
+@font-face {
+  font-family: "calendas_plusregular";
+  src: url("../assets/fonts/calendas_plus-webfont.tff");
+}
