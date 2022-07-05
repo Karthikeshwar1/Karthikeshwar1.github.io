@@ -44,6 +44,7 @@ Note: This list of organizations isn't comprehensive, it is a list of only the t
 - [FOGSI](https://www.fogsi.org/): Federation of Obstetric and Gynaecological Societies of India
   - [ICOG](https://icogonline.org/): Academic wing of FOGSI
 - [MCC](https://www.mcc.nic.in/): Medical Counselling Comittee
+- [MOHFW](https://www.mohfw.gov.in/): Ministry Of Health and Family Welfare ([another site](https://main.mohfw.gov.in/))
 
 ## International
 
@@ -54,10 +55,15 @@ Note: This list of organizations isn't comprehensive, it is a list of only the t
 - [MDM](https://www.medecinsdumonde.org/en): Médecins du Monde or Doctors of the World
 - [FIGO](https://www.figo.org/): International Federation of Gynaecology and Obstetrics
 - [IIRH](https://www.iirrh.org/): International Institute for Training and Research in Reproductive Health
-- [CDC](https://www.cdc.gov/): Centers for Disease Control and Prevention
 - [IMC](https://internationalmedicalcorps.org/): International Medical Corps (nonprofit)
 - [IMR](https://internationalmedicalrelief.org/): International Medical Relief (nonprofit)
 - [AMA](https://www.ama-assn.org/): American Medical Association
+
+- [HHS](https://www.hhs.gov/): U.S. Department of Health & Human Services
+  - [FDA](https://www.fda.gov/): Food and Drug Administration (popular agency)
+  - [CDC](https://www.cdc.gov/): Centers for Disease Control and Prevention 
+  - [AHRQ](https://www.ahrq.gov/): Agency for Healthcare Research and Quality
+  - [NIH](https://www.nih.gov/): National Institutes of Health
 
 ## Medical classification
 
