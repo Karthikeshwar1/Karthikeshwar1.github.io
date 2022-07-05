@@ -59,6 +59,8 @@ Note: This list of organizations isn't comprehensive, it is a list of only the t
 - [IMR](https://internationalmedicalrelief.org/): International Medical Relief (nonprofit)
 - [AMA](https://www.ama-assn.org/): American Medical Association
 
+
+Federal:
 - [HHS](https://www.hhs.gov/): U.S. Department of Health & Human Services
   - [FDA](https://www.fda.gov/): Food and Drug Administration (popular agency)
   - [CDC](https://www.cdc.gov/): Centers for Disease Control and Prevention 
@@ -93,3 +95,5 @@ Here are links to research-oriented lists of resources
 <br>
 
 Want to add a resource to the list? Mail to karthikeshwar7087@gmail.com
+
+<br>
