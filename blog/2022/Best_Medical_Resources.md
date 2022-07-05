@@ -57,6 +57,7 @@ Note: This list of organizations isn't comprehensive, it is a list of only the t
 - [CDC](https://www.cdc.gov/): Centers for Disease Control and Prevention
 - [IMC](https://internationalmedicalcorps.org/): International Medical Corps (nonprofit)
 - [IMR](https://internationalmedicalrelief.org/): International Medical Relief (nonprofit)
+- [AMA](https://www.ama-assn.org/): American Medical Association
 
 ## Medical classification
 
