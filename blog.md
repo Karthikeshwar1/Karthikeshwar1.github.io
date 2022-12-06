@@ -15,7 +15,7 @@ title: Blog
 
 ## Humans and Their Creations
 
-[AI in 2022](https://github.com/Karthikeshwar1/Karthikeshwar1.github.io/blob/main/blog/2022/AI_in_2022.md)
+[AI in 2022](https://karthikeshwar1.github.io/blog/2022/blog/2022/AI_in_2022)
 
 <br>
 
@@ -25,6 +25,8 @@ title: Blog
 
 [Song Of The Year](https://karthikeshwar1.github.io/blog/2022/Song_Of_The_Year)
 
+<br>
+
 ## Resources
 
 [Essential Software For Computers](https://Karthikeshwar1.github.io/blog/2021/Essential_Software_For_Computers)
@@ -32,6 +34,8 @@ title: Blog
 [Essential Software For Smartphones](https://Karthikeshwar1.github.io/blog/2021/Essential_Software_For_Smartphones)
 
 [Recommended Books On Computers And Tech](https://karthikeshwar1.github.io/blog/2022/Recommended_Books_On_Computers_And_Tech)
+
+<br>
 
 ## Fun
 
