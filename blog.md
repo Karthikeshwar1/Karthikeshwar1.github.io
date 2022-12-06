@@ -13,6 +13,12 @@ title: Blog
 
 <br>
 
+## Humans and Their Creations
+
+[AI in 2022](https://github.com/Karthikeshwar1/Karthikeshwar1.github.io/blob/main/blog/2022/AI_in_2022.md)
+
+<br>
+
 ## Thoughts
 
 [Peoples of Times](https://karthikeshwar1.github.io/blog/2022/Peoples_Of_Times)
