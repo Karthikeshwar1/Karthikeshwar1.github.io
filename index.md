@@ -5,11 +5,10 @@ title: Namaskara! ✨
 
 I'm Karthikeshwar. I love mathematics and airplanes.
 
-I'm from Raichur, Karnataka, India. I'm currently pursuing BTech in Computer Science & Engineering at REVA Univeristy, Bengaluru, India. 
-I occasionally write blogs. 
+I'm from Raichur, Karnataka, India. I love nothing. Click on blogs to see all my writings.
 
 <br>
 
-[GitHub](https://github.com/Karthikeshwar1) &nbsp; &nbsp; [LinkedIn](https://www.linkedin.com/in/karthikeshwar/)
+[Blogs](https://github.com/Karthikeshwar1/Karthikeshwar1.github.io/blob/main/blog.md)  &nbsp; &nbsp; [GitHub](https://github.com/Karthikeshwar1) &nbsp; &nbsp; [LinkedIn](https://www.linkedin.com/in/karthikeshwar/)
 
 <br>
