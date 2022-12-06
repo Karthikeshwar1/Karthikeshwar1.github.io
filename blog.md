@@ -15,7 +15,7 @@ title: Blog
 
 ## Humans and Their Creations
 
-[AI in 2022](https://karthikeshwar1.github.io/blog/2022/blog/2022/AI_in_2022)
+[AI in 2022](https://karthikeshwar1.github.io/blog/2022/AI_in_2022)
 
 <br>
 
