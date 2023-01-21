@@ -19,7 +19,9 @@ title: Blog
 
 <br>
 
-## Thoughts
+## Abstract/Thoughts
+
+[What's the book GEB all about](What%27s%20the%20book%20GEB%20all%20about)
 
 [Peoples of Times](https://karthikeshwar1.github.io/blog/2022/Peoples_Of_Times)
 
