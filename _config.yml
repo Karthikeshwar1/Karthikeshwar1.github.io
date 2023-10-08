@@ -7,6 +7,8 @@ show_excerpts: false # set to false to remove excerpts on the homepage
 
 header_pages:
   - blog.md
+  - projects.md
+  - visuals.md
 
 # Build settings
 theme: minima
