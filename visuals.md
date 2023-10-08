@@ -2,7 +2,7 @@
 title: Visuals
 ---
 
-[Alegalhu (Waves)](https://karthikeshwar1.github.io/visuals/Alegalhu.md)
+[Alegalhu (Waves)](https://karthikeshwar1.github.io/visuals/Alegalhu)
 
 ## On Healthcare
 
