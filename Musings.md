@@ -1,8 +1,8 @@
 ---
-title: Visuals
+title: Musings
 ---
 
-## Fine arts
+## Painting
 
 [Alegalhu (Waves)](https://karthikeshwar1.github.io/visuals/Alegalhu)
 
