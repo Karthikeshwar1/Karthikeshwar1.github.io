@@ -2,15 +2,11 @@
 title: You've now entered Karthikeshwar's digital den! ✨
 ---
 
-<br>
-
 <h6 align="center">
 
 <img src="/assets/images/Karthikeshwar_shades_sky.jpg" alt="Karthikeshwar's photo"/>
 
 </h6>
-
-<br>
 
 I’m Karthikeshwar, a computer enthusiast and an artificial intelligence aficionado. 
  
