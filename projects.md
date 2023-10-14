@@ -19,7 +19,6 @@ title: Projects
 | [Puzzle!](https://github.com/Karthikeshwar1/Puzzle) | An elaborate puzzle game based purely on logic and some GitHub knowledge! |
 | [screenRec](https://github.com/Karthikeshwar1/screenRec)                                     | A screen recorder to take screenshots and record video       |
 | [controller-vibration-tester](https://github.com/Karthikeshwar1/controller-vibration-tester) | A python script to test vibration motors of game controllers |
-| [Misc](https://github.com/Karthikeshwar1/Misc)                                               | miscellaneous                                                |
 | [Wiki-Wordcloud-Maker](https://github.com/Karthikeshwar1/Wiki-Wordcloud-Maker)               | Creates a wordcloud image based on a given Wikipedia article |
 | [Etcch-A-Sketch](https://github.com/Karthikeshwar1/Etcch-A-Sketch)                           | Drawing app inspired from the popular toy Etch A Sketch      |
 | [algorithms_visualization](https://github.com/Karthikeshwar1/algorithms_visualization)       | Visualizing algorithms using Processing 3                    |
