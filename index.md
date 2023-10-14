@@ -2,17 +2,19 @@
 title: You've now entered Karthikeshwar's digital den! ✨
 ---
 
+<br>
+
 <h6 align="center">
 
 <img src="/assets/images/Karthikeshwar_shades_sky.jpg" alt="Karthikeshwar's photo"/>
 
 </h6>
 
-<hr>
+<br>
 
-I'm Karthikeshwar. I love mathematics and airplanes.
-
-I'm from Raichur, Karnataka, India. Click on blogs to see all my writings.
+I’m Karthikeshwar, a computer enthusiast and an artificial intelligence aficionado. 
+ 
+I'm from Raichur, Karnataka, India. Click on blogs to see all my writings. 
 
 <br>
 
