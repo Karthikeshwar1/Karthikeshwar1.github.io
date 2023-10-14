@@ -2,10 +2,13 @@
 title: You've now entered Karthikeshwar's digital den! ✨
 ---
 
+<h6 align="center">
 
-<img src="/assets/images/Karthikeshwar_photo.jpg" alt="Karthikeshwar's photo" style="height: 500px; width:500px;"/>
+<img src="/assets/images/Karthikeshwar_shades_sky.jpg" alt="Karthikeshwar's photo"/>
 
-![](assets/images/Karthikeshwar_photo.jpg)
+</h6>
+
+<hr>
 
 I'm Karthikeshwar. I love mathematics and airplanes.
 
