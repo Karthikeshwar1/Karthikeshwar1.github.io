@@ -4,7 +4,7 @@ title: Musings
 
 ## Painting
 
-[Alegalhu (Waves)](https://karthikeshwar1.github.io/visuals/Alegalhu)
+[Alegalhu (Waves)](https://karthikeshwar1.github.io/musings/Alegalhu)
 
 <br>
 
