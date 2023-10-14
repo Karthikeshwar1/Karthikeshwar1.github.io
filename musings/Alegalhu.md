@@ -1,4 +1,4 @@
-<h1 align="center"> Alegalhu (Waves) </h1>
+<h1 align="center"> Alegalu (Waves) </h1>
 
 <br>
 
