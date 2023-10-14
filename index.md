@@ -1,5 +1,5 @@
 ---
-title: 👋!
+title:
 ---
 
 <h6 align="center">
