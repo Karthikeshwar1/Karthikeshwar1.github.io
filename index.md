@@ -1,5 +1,5 @@
 ---
-title: You've now entered Karthikeshwar's digital den! ✨
+title: 👋!
 ---
 
 <h6 align="center">
@@ -8,9 +8,9 @@ title: You've now entered Karthikeshwar's digital den! ✨
 
 </h6>
 
-I’m Karthikeshwar, a computer enthusiast and an artificial intelligence aficionado. 
- 
-I'm from Raichur, Karnataka, India. Click on blogs to see all my writings. 
+<br>
+
+I’m Karthikeshwar, a computer science enthusiast and an artificial intelligence aficionado
 
 <br>
 
