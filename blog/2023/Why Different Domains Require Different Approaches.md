@@ -1,4 +1,4 @@
-<h1 align="center" >Why Different Domains Require Different Approaches:</h1>
+<h1 align="center">Why Different Domains Require Different Approaches:</h1>
 
 <h3 align="center">Lessons from Microsoft, Apple, Wework, Netflix, and Uber/Ola</h3>
 
