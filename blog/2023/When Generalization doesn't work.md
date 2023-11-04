@@ -2,7 +2,7 @@
 
 <br>
 
-A belief or technique that works in one arena doesn't work in another. Things are intricate and unique, all fields require their own attention.
+Different domains require different approaches. What works in one field may not work in another. Each area has its own complexities and nuances that demand careful attention.
 
 ### Microsft's failure in the smartphone industry
 
@@ -10,8 +10,8 @@ A belief or technique that works in one arena doesn't work in another. Things ar
   <img src="https://i0.wp.com/stratechery.com/wp-content/uploads/2023/11/attentuatinginnovation-2.png?w=240&ssl=1" />
 </h6>
 
-Microsoft thought that the smarphone should look like a computer OS. Apple took an entirely different approach to the smartphone, and it was specialized for its form factor. 
-This is one of the reasons Microsoft failed at the smartphone industry.
+Microsoft assumed that the smartphone should resemble a computer OS. 
+Apple, on the other hand, adopted a completely different strategy for the smartphone, and tailored it to its form factor. This is one of the main reasons why Microsoft failed to capture the smartphone market.
 
 <br>
 
@@ -21,9 +21,9 @@ As [Steve Jobs himself put it(in 2010)](https://www.youtube.com/watch?v=i5f8bqYY
 
 <br>
 
-### Wework is filing for bankruptcy
+### WeWork is filing for bankruptcy
 
-Wework couldn't succeed and one of the reasons is because the office industry is fragmented. Their idea of one office-space works-for-all didn't exactly work.
+WeWork failed to succeed and one of the factors was the fragmentation of the office industry. Their concept of a one-size-fits-all office space did not work well.
 
 <br>
 
@@ -35,7 +35,7 @@ Netflix tried to apply its subscription model to the video game industry with it
 
 ### Sometimes you can enter a totally different market, like Uber/Ola did, and be successful
 
-The taxi industry was and is still run by the locals. Uber/Ola had to enter an already established market and compete with them. The reason why they were successful is that, ultimately the customer wants convenience and cheap rides. The quick access through the app, the various options available and a bit of safety assurance made Uber successful.
+The taxi industry was and still is (in some places) dominated by the locals. Uber/Ola had to enter an already established market and compete with them. The reason why they were successful is that they understood what the customer wanted: convenience and affordability. The easy access through the app, the variety of options available, and a bit of safety assurance made Uber/Ola popular.
 
 <br>
 
