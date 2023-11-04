@@ -10,7 +10,7 @@
 
 Different domains require different approaches. What works in one field may not work in another. Each area has its own complexities and nuances that demand careful attention.
 
-### Microsft's failure in the smartphone industry
+### Microsoft's failure in the smartphone industry
 
 <h6 align="center">
   <img src="https://i0.wp.com/stratechery.com/wp-content/uploads/2023/11/attentuatinginnovation-2.png?w=240&ssl=1" />
@@ -23,7 +23,7 @@ Apple, on the other hand, adopted a completely different strategy for the smartp
 
 ### Apple couldn't to the TV what it did to the smartphone industry
 
-As [Steve Jobs himself put it(in 2010)](https://www.youtube.com/watch?v=i5f8bqYYwps&t=3675s), 1. Even if they design the best set-top-box, it was hard to get into the market. The existing market used the Go-To-Market strategy and the set-top boxes were subsidized. 2. The cable operators fragmented, every country has it's own standards and regulations.
+As [Steve Jobs himself put it (in 2010)](https://www.youtube.com/watch?v=i5f8bqYYwps&t=3675s), 1. Even if they design the best set-top-box, it was hard to get into the market. The existing market used the Go-To-Market strategy and the set-top boxes were subsidized. 2. The cable operators fragmented, every country has it's own standards and regulations.
 
 <br>
 
