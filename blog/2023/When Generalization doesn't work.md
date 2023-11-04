@@ -1,7 +1,3 @@
-# When Generalization Doesn't Work...
-
-<br>
-
 ###### Created 2023/11/4
 
 <br>
