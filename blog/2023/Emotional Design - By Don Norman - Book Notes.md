@@ -3,7 +3,7 @@
 <br>
 
 <h6 align="center">
-<img src='./images/Emotional_Design_Don_Norman_book_cover.jpg' />
+<img src='https://www.hachettebookgroup.com/wp-content/uploads/2018/10/9780465004171.jpg' />
 </h6>
 
 ## Part 0: Prologue: 3 Teapots
