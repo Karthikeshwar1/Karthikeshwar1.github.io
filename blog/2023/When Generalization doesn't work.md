@@ -1,4 +1,5 @@
-# When Generalization doesn't work
+<h1 align="center" >Why Different Domains Require Different Approaches:</h1>
+<h2 align="center">  Lessons from Microsoft, Apple, Wework, Netflix, and Uber/Ola </h2>
 
 ###### Created 2023/11/4
 
@@ -49,9 +50,5 @@ They also didn't understand that people are inventing use-cases constantly. Stev
 
 The art lies in balancing the well-known fixed notions with some uncertainity.
 
-<br>
-
-
-### 
 
 <br>
