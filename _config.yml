@@ -9,6 +9,7 @@ header_pages:
   - blog.md
   - projects.md
   - musings.md
+  - tags.md
 
 # Build settings
 theme: minima
