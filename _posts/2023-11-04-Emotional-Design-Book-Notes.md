@@ -1,3 +1,14 @@
+---
+layout: post
+title: "This post demonstrates post content styles"
+categories: junk
+author:
+- Bart Simpson
+- Nelson Mandela Muntz
+meta: "Springfield"
+tags: tag1, tag2
+---
+
 # Emotional Design - By Don Norman - Book Notes
 
 <br>
