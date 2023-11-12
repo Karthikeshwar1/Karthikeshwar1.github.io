@@ -2,6 +2,7 @@
 layout: post
 title: "Emotional Design - By Don Norman - Book Notes"
 categories: books
+date: 2023-04-11
 ---
 
 
