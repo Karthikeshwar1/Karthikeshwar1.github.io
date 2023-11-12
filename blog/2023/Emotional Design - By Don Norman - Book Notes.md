@@ -1,4 +1,11 @@
-# Emotional Design - By Don Norman - Book Notes
+---
+layout: post
+title: "Emotional Design - By Don Norman - Book Notes"
+categories: books
+---
+
+
+<!--- # Emotional Design - By Don Norman - Book Notes --->
 
 <br>
 
