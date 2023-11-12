@@ -15,7 +15,9 @@ title: Blog
 
 ## Humans and Their Creations
 
-[Why Different Domains Require Different Approaches](https://karthikeshwar1.github.io/blog/2023/Why%20Different%20Domains%20Require%20Different%20Approaches) 
+[Security Systems: The Flaw and The Ultimate Solution](https://karthikeshwar1.github.io/blog/2023/security-systems-the-flaw-and-the-ultimate-solution)
+
+[Why Different Domains Require Different Approaches](https://karthikeshwar1.github.io/blog/2023/Why%20Different%20Domains%20Require%20Different%20Approaches)
 
 [Emotional Design - By Don Norman - Book Notes](https://karthikeshwar1.github.io/blog/2023/Emotional%20Design%20-%20By%20Don%20Norman%20-%20Book%20Notes)
 
