@@ -34,7 +34,7 @@ Karthikeshwar's criteria for a software to be 'great':
 
 |               |           |
 | ------------- | --------- |
-| Little Snitch | Glasswire, Portmaster (by Safing) |
+| Little Snitch | Glasswire/Portmaster (by Safing) |
 | MalwareBytes  |           |
 
 ## Entertainment
