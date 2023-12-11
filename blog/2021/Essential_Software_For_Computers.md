@@ -21,7 +21,7 @@ Karthikeshwar's criteria for a software to be 'great':
 |                              |                       |
 | ---------------------------- | --------------------- |
 | Adobe Photoshop              | GIMP                  |
-| Adobe Premiere/Final Cut Pro | OpenShot Video Editor |
+| ClipChamp/Adobe Premiere/Final Cut Pro | OpenShot Video Editor |
 | Garageband                   | Studio One 5          |
 | Blender                      | Unity                 |
 | Inkscape                     |                       |
@@ -34,7 +34,7 @@ Karthikeshwar's criteria for a software to be 'great':
 
 |               |           |
 | ------------- | --------- |
-| Little Snitch | Glasswire |
+| Little Snitch | Glasswire, Portmaster (by Safing) |
 | MalwareBytes  |           |
 
 ## Entertainment
