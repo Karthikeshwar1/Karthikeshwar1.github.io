@@ -25,5 +25,5 @@ minima:
 
 github_username: karthikeshwar1
 
-plugins:
-  - jekyll-feed
+# plugins:
+#   - jekyll-feed
