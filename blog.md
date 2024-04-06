@@ -46,8 +46,4 @@ title: Blog
 
 <br>
 
-## Fun
-
-[Software Engineer's Dish](https://karthikeshwar1.github.io/blog/2022/Software_Engineer's_Dish)
-
 <br>
