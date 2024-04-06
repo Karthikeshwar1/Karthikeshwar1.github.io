@@ -2,6 +2,19 @@
 title: Blog
 ---
 
+## Abstract & Software
+
+[Security Systems: The Flaw and The Ultimate Solution](https://karthikeshwar1.github.io/blog/2023/security-systems-the-flaw-and-the-ultimate-solution)
+
+[Software Architecture Foundations](https://karthikeshwar1.github.io/blog/2024/Software_Architecture_Foundations_1)
+
+[Why Different Domains Require Different Approaches](https://karthikeshwar1.github.io/blog/2023/Why%20Different%20Domains%20Require%20Different%20Approaches)
+
+[Emotional Design - By Don Norman - Book Notes](https://karthikeshwar1.github.io/blog/2023/Emotional%20Design%20-%20By%20Don%20Norman%20-%20Book%20Notes)
+
+[AI in 2022](https://karthikeshwar1.github.io/blog/2022/AI_in_2022)
+
+<br>
 
 ## On Healthcare
 
@@ -13,19 +26,7 @@ title: Blog
 
 <br>
 
-## Humans and Their Creations
-
-[Security Systems: The Flaw and The Ultimate Solution](https://karthikeshwar1.github.io/blog/2023/security-systems-the-flaw-and-the-ultimate-solution)
-
-[Why Different Domains Require Different Approaches](https://karthikeshwar1.github.io/blog/2023/Why%20Different%20Domains%20Require%20Different%20Approaches)
-
-[Emotional Design - By Don Norman - Book Notes](https://karthikeshwar1.github.io/blog/2023/Emotional%20Design%20-%20By%20Don%20Norman%20-%20Book%20Notes)
-
-[AI in 2022](https://karthikeshwar1.github.io/blog/2022/AI_in_2022)
-
-<br>
-
-## Abstract/Thoughts
+## Thoughts
 
 [What's the book GEB all about](https://karthikeshwar1.github.io/blog/2023/What%27s%20the%20book%20GEB%20all%20about)
 
