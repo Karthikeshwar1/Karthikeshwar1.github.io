@@ -32,8 +32,6 @@ title: Blog
 
 [Peoples of Times](https://karthikeshwar1.github.io/blog/2022/Peoples_Of_Times)
 
-[Song Of The Year](https://karthikeshwar1.github.io/blog/2022/Song_Of_The_Year)
-
 <br>
 
 ## Resources
