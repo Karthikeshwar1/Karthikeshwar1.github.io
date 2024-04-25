@@ -4,7 +4,11 @@
 
 ### Just look at the comparison below
 
+<br>
+
 ## iPhone OS 3
+
+<br>
 
 <h1 align="center">
 <image width="500px" src="https://cdn.britannica.com/94/102994-050-184833AC/telephone-addition-iPhone-Web-browser-Internet-content-2007.jpg">
@@ -14,6 +18,8 @@
 <br>
 
 ## iOS 17
+
+<br>
 
 <image width="800px" src="https://www.apple.com/v/ios/ios-17/a/images/meta/ios-17__ni2koxyri7m2_og.png">
 
