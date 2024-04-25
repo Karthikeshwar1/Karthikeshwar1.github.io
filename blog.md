@@ -4,6 +4,8 @@ title: Blog
 
 ## Abstract & Software
 
+[Fuzzy Settings](https://karthikeshwar1.github.io/blog/2024/Fuzzy_Settings)
+
 [Security Systems: The Flaw and The Ultimate Solution](https://karthikeshwar1.github.io/blog/2023/security-systems-the-flaw-and-the-ultimate-solution)
 
 [Software Architecture Foundations](https://karthikeshwar1.github.io/blog/2024/Software_Architecture_Foundations_1)
