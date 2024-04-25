@@ -4,8 +4,6 @@ title: Blog
 
 ## Abstract & Software
 
-[Fuzzy Settings](https://karthikeshwar1.github.io/blog/2024/Fuzzy_Settings)
-
 [Security Systems: The Flaw and The Ultimate Solution](https://karthikeshwar1.github.io/blog/2023/security-systems-the-flaw-and-the-ultimate-solution)
 
 [Software Architecture Foundations](https://karthikeshwar1.github.io/blog/2024/Software_Architecture_Foundations_1)
@@ -29,6 +27,8 @@ title: Blog
 <br>
 
 ## Thoughts
+
+[Fuzzy Settings](https://github.com/Karthikeshwar1/Karthikeshwar1.github.io/blob/main/blog/2024/Fuzzy_Settings.md)
 
 [What's the book GEB all about](https://karthikeshwar1.github.io/blog/2023/What%27s%20the%20book%20GEB%20all%20about)
 
