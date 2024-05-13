@@ -1,6 +1,7 @@
 # Song Of The Year
 
-These are not my favorite songs or anything. These songs best capture the vibe of a particular year.
+_Note!_
+This page was created as a part of the [puzzle game](https://github.com/Karthikeshwar1/Puzzle).
 
 # The List
 
