@@ -17,6 +17,7 @@ title: Projects
 | Mini-projects                                                                                | Description                                                  |
 | -------------------------------------------------------------------------------------------- | ------------------------------------------------------------ |
 | [Puzzle!](https://github.com/Karthikeshwar1/Puzzle) | An elaborate puzzle game based purely on logic and some GitHub knowledge! |
+| [Medical Texts 3D Projection](https://github.com/Karthikeshwar1/Medical_texts_3D_projection) | A 3D mapping/embedded projection of medical texts. |
 | [screenRec](https://github.com/Karthikeshwar1/screenRec)                                     | A screen recorder to take screenshots and record video       |
 | [controller-vibration-tester](https://github.com/Karthikeshwar1/controller-vibration-tester) | A python script to test vibration motors of game controllers |
 | [Wiki-Wordcloud-Maker](https://github.com/Karthikeshwar1/Wiki-Wordcloud-Maker)               | Creates a wordcloud image based on a given Wikipedia article |
