@@ -1,4 +1,0 @@
-# Life ways 
-
-<br>
-## Hi
