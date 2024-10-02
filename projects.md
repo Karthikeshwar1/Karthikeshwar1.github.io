@@ -16,7 +16,9 @@ title: Projects
 
 | Mini-projects                                                                                | Description                                                  |
 | -------------------------------------------------------------------------------------------- | ------------------------------------------------------------ |
+| [SwaGa-AutonomousLandingSystem](https://github.com/Karthikeshwar1/SwaGa-AutonomousLandingSystem) | Autonomous Landing Module Simulator |
 | [Puzzle!](https://github.com/Karthikeshwar1/Puzzle) | An elaborate puzzle game based purely on logic and some GitHub knowledge! |
+| [Kannada Writing App](https://github.com/Karthikeshwar1/How-To-Write-Kannada) | An app that shows how to write in Kannada |
 | [Medical Texts 3D Projection](https://github.com/Karthikeshwar1/Medical_texts_3D_projection) | A 3D mapping/embedded projection of medical texts. |
 | [screenRec](https://github.com/Karthikeshwar1/screenRec)                                     | A screen recorder to take screenshots and record video       |
 | [controller-vibration-tester](https://github.com/Karthikeshwar1/controller-vibration-tester) | A python script to test vibration motors of game controllers |
