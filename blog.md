@@ -12,7 +12,7 @@ title: Blog
 
 [Emotional Design - By Don Norman - Book Notes](https://karthikeshwar1.github.io/blog/2023/Emotional%20Design%20-%20By%20Don%20Norman%20-%20Book%20Notes)
 
-[Words Weigh](https://github.com/Karthikeshwar1/Karthikeshwar1.github.io/blob/main/blog/2024/Words_weigh)
+[Words Weigh](https://Karthikeshwar1.github.io/blog/2024/Words_weigh)
 
 [AI in 2022](https://karthikeshwar1.github.io/blog/2022/AI_in_2022)
 
