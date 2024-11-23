@@ -10,6 +10,8 @@ title: Blog
 
 [Why Different Domains Require Different Approaches](https://karthikeshwar1.github.io/blog/2023/Why%20Different%20Domains%20Require%20Different%20Approaches)
 
+[Is God Dying?](https://Karthikeshwar1.github.io/blog/2024/Is_God_Dying)
+
 [Emotional Design - By Don Norman - Book Notes](https://karthikeshwar1.github.io/blog/2023/Emotional%20Design%20-%20By%20Don%20Norman%20-%20Book%20Notes)
 
 [Words Weigh](https://Karthikeshwar1.github.io/blog/2024/Words_weigh)
