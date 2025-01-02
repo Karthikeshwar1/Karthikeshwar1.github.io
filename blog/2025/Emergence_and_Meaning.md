@@ -2,7 +2,7 @@
 
 <h1 align="center">
 
-![image](https://github.com/user-attachments/assets/9abd253e-bccf-4f23-8042-8e88c7c8d3c9)
+<img src="https://github.com/user-attachments/assets/9abd253e-bccf-4f23-8042-8e88c7c8d3c9">
 
 </h1>
 
