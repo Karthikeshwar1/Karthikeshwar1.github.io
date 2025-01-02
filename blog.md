@@ -18,7 +18,6 @@ title: Blog
 
 <a href="https://github.com/Karthikeshwar1/Karthikeshwar1.github.io/blob/main/blog/2024/Fuzzy_Settings.md">Fuzzy Settings</a>
 <br>
-
 <a href="https://Karthikeshwar1.github.io/blog/2024/Is_God_Dying">Is God Dying?</a>
 <br>
 <a href="https://karthikeshwar1.github.io/blog/2023/Emotional%20Design%20-%20By%20Don%20Norman%20-%20Book%20Notes">Emotional Design - By Don Norman - Book Notes</a>
