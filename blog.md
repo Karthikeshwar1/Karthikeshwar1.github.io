@@ -16,16 +16,15 @@ title: Blog
 <details>
   <summary>More</summary>
 
-[Fuzzy Settings](https://github.com/Karthikeshwar1/Karthikeshwar1.github.io/blob/main/blog/2024/Fuzzy_Settings.md)
+<a href="https://github.com/Karthikeshwar1/Karthikeshwar1.github.io/blob/main/blog/2024/Fuzzy_Settings.md">Fuzzy Settings</a>
 
-[Is God Dying?](https://Karthikeshwar1.github.io/blog/2024/Is_God_Dying)
+<a href="https://Karthikeshwar1.github.io/blog/2024/Is_God_Dying">Is God Dying?</a>
 
-[Emotional Design - By Don Norman - Book Notes](https://karthikeshwar1.github.io/blog/2023/Emotional%20Design%20-%20By%20Don%20Norman%20-%20Book%20Notes)
+<a href="https://karthikeshwar1.github.io/blog/2023/Emotional%20Design%20-%20By%20Don%20Norman%20-%20Book%20Notes">Emotional Design - By Don Norman - Book Notes</a>
 
-[Words Weigh](https://Karthikeshwar1.github.io/blog/2024/Words_weigh)
+<a href="https://Karthikeshwar1.github.io/blog/2024/Words_weigh">Words Weigh</a>
 
-[AI in 2022](https://karthikeshwar1.github.io/blog/2022/AI_in_2022)
-
+<a href="https://karthikeshwar1.github.io/blog/2022/AI_in_2022">AI in 2022</a>
 
 
 </details>
