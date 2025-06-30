@@ -1,4 +1,4 @@
-<h1 align="center">AI: 2025ನಲ್ಲಿ</h1>
+<h1 align="center">AI: 2025ರಲ್ಲಿ</h1>
 <h1 align="center">💻🤖🧠</h1>
 
 <br>
