@@ -6,7 +6,7 @@ title: Blog
 
 [AI in 2025](https://karthikeshwar1.github.io/blog/2025/AI_in_2025)
 
-[How We The Humans Build](https://karthikeshwar1.github.io/blog/2025/AI_in_2025)
+[How We The Humans Build](https://karthikeshwar1.github.io/blog/2025/How_We_The_Humans_Build)
 
 [Emergence and Meaning](https://karthikeshwar1.github.io/blog/2025/Emergence_and_Meaning)
 
