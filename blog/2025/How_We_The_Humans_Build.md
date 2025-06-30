@@ -3,21 +3,32 @@
 
 <br>
 
-* Computers find it easy to solve complex math than identify a fruit in a basket.
-* Calculators were developed first than computer vision capable computers.
-* Humans can do computer vision tasks much better than complex maths.
+* 🧮 Computers find it easier to solve complex math than identify a fruit in a basket.  
+* 🧠 Calculators were developed earlier than computer vision–capable machines.  
+* 👁️‍🗨️ Humans can do computer vision tasks much better than complex math.
 
-* Species evolve our of nature, geography and needs to repicate.
-* Humans build things out of their necessity.
-* Evolution of things we build is much faster (centuries/decades/months) than evolution (thousands of years)
+<br>
 
-* A submarine doesn't look like a fish, an airplane doesn't flap wings.
-* Both are much better at the core things we want, travel in the ocean/air.
-* Maybe not as efficient, but definitely much faster and powerful.
-* Nature achieved efficiency out of thousands of years of its necessity. Things we build outpeferorm at other benchmarks, created for our needs.
+* 🌍 Species evolve out of nature, geography, and the need to replicate.  
+* 🛠️ Humans build things out of necessity.  
+* ⏩ The evolution of what we build is much faster (centuries/decades/months) than biological evolution (thousands of years).
 
-* A wheel is one of the best examples that wasn't built by nature.
+<br>
 
-* The AI we want to build, or whatever humans will evolve into, need not be the same as previous humans.
+* 🐟 A submarine doesn’t look like a fish, and an airplane doesn’t flap its wings.  
+* ✈️ Both are much better at the core thing we want: travel in the ocean or air.  
+* ⚙️ Maybe not as efficient as nature, but definitely faster and more powerful.  
+* 🧬 Nature achieved efficiency over thousands of years through necessity.  
+* 🔧 What we build outperforms nature on other benchmarks—because it's built for *our* needs.
+
+<br>
+
+* 🛞 The wheel is one of the best examples of something not built by nature.
+
+<br>
+
+* 🤖 The AI we want to build—or whatever humans may evolve into—doesn’t need to resemble the humans that came before.
+
+<br>
 
 <br>
