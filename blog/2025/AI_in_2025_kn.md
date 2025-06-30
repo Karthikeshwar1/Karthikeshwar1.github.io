@@ -3,7 +3,7 @@
 
 <br>
 
-AI ಬಳಸದೆ [ಇಂಗ್ಲೀಶ್ ನಲ್ಲಿ ಬರೆದಿದ್ದನ್ನು](https://karthikeshwar1.github.io/blog/2025/AI_in_2025) AI ಬಳಸಿ ಕನ್ನಡಕ್ಕೆ ಅನುವಾದಿಸಿದ್ದೇನೆ. 
+AI ಬಳಸದೆ [ಇಂಗ್ಲೀಶ್ ನಲ್ಲಿ ಬರೆದಿದ್ದನ್ನು](https://karthikeshwar1.github.io/blog/2025/AI_in_2025) AI ಬಳಸಿ ಕನ್ನಡಕ್ಕೆ ಅನುವಾದಿಸಿದ್ದೇನೆ!
 
 <br>
 
