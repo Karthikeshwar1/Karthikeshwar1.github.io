@@ -97,7 +97,7 @@
     <div style="font-size: 1.2em; font-weight: bold; margin: 1rem 0 0.5rem 0; color: #333;">The Monk Who Sold his Ferrari</div>
     <div style="font-size: 1em; color: #666;">Robin Sharma</div>
   </div>
-</div>  
+</div>
 
 <br>
 
