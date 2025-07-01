@@ -42,6 +42,8 @@ title: Blog
 
 ## Books
 
+[Books read](https://karthikeshwar1.github.io/blog/timeless/books_read)
+
 [What's the book GEB all about](https://karthikeshwar1.github.io/blog/2023/What%27s%20the%20book%20GEB%20all%20about)
 
 <br>
