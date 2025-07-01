@@ -16,7 +16,7 @@
   </div>
   
   <div style="display: inline-block; vertical-align: top; text-align: center; width: 280px; margin: 15px; padding: 1rem; border-radius: 8px; background-color: #f9f9f9; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
-    <img src="https://images.celeb-picks.com/books/harry-potter-and-the-sorcerers-stone.jpg" alt="Harry Potter and the Sorcerer's Stone" style="width: 100%; max-height: 450px; object-fit: cover; border-radius: 4px;">
+    <img src="https://images.celeb-picks.com/books/harry-potter-and-the-philosophers-stone.jpg" alt="Harry Potter and the Pholosopher's Stone" style="width: 100%; max-height: 450px; object-fit: cover; border-radius: 4px;">
     <div style="font-size: 1.2em; font-weight: bold; margin: 1rem 0 0.5rem 0; color: #333;">Harry Potter and the Sorcerer's Stone</div>
     <div style="font-size: 1em; color: #666;">J K Rowling</div>
   </div>
