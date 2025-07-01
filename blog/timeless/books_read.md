@@ -1,38 +1,6 @@
 # My Book Collection
 
-## Fiction
-
-<div style="text-align: center;">
-  <div style="display: inline-block; vertical-align: top; text-align: center; width: 280px; margin: 15px; padding: 1rem; border-radius: 8px; background-color: #f9f9f9; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
-    <img src="https://images.celeb-picks.com/books/the-mill-on-the-floss.jpg" alt="The Mill On The Floss" style="max-height: 200px; object-fit: cover; border-radius: 4px;">
-    <div style="font-size: 1.2em; font-weight: bold; margin: 1rem 0 0.5rem 0; color: #333;">The Mill On The Floss</div>
-    <div style="font-size: 1em; color: #666;">George Eliot</div>
-  </div>
-  
-  <div style="display: inline-block; vertical-align: top; text-align: center; width: 280px; margin: 15px; padding: 1rem; border-radius: 8px; background-color: #f9f9f9; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
-    <img src="https://images.celeb-picks.com/books/1984.jpg" alt="1984" style="max-height: 200px; object-fit: cover; border-radius: 4px;">
-    <div style="font-size: 1.2em; font-weight: bold; margin: 1rem 0 0.5rem 0; color: #333;">1984</div>
-    <div style="font-size: 1em; color: #666;">George Orwell</div>
-  </div>
-  
-  <div style="display: inline-block; vertical-align: top; text-align: center; width: 280px; margin: 15px; padding: 1rem; border-radius: 8px; background-color: #f9f9f9; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
-    <img src="https://images.celeb-picks.com/books/harry-potter-and-the-philosophers-stone.jpg" alt="Harry Potter and the Pholosopher's Stone" style="max-height: 200px; object-fit: cover; border-radius: 4px;">
-    <div style="font-size: 1.2em; font-weight: bold; margin: 1rem 0 0.5rem 0; color: #333;">Harry Potter and the Sorcerer's Stone</div>
-    <div style="font-size: 1em; color: #666;">J K Rowling</div>
-  </div>
-  
-  <div style="display: inline-block; vertical-align: top; text-align: center; width: 280px; margin: 15px; padding: 1rem; border-radius: 8px; background-color: #f9f9f9; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
-    <img src="https://images.celeb-picks.com/books/siddhartha.jpg" alt="Siddhartha" style="max-height: 200px; object-fit: cover; border-radius: 4px;">
-    <div style="font-size: 1.2em; font-weight: bold; margin: 1rem 0 0.5rem 0; color: #333;">Siddhartha</div>
-    <div style="font-size: 1em; color: #666;">Hermann Hesse</div>
-  </div>
-  
-  <div style="display: inline-block; vertical-align: top; text-align: center; width: 280px; margin: 15px; padding: 1rem; border-radius: 8px; background-color: #f9f9f9; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
-    <img src="https://images.celeb-picks.com/books/the-ultimate-hitchhikers-guide-to-the-galaxy.jpg" alt="The Hitchhikers Guide to the Galaxy" style="max-height: 200px; object-fit: cover; border-radius: 4px;">
-    <div style="font-size: 1.2em; font-weight: bold; margin: 1rem 0 0.5rem 0; color: #333;">The Hitchhikers Guide to the Galaxy</div>
-    <div style="font-size: 1em; color: #666;">Douglas Adams</div>
-  </div>
-</div>
+<br>
 
 ---
 
@@ -129,6 +97,48 @@
     <div style="font-size: 1em; color: #666;">Keith Johnstone</div>
   </div>
 </div>
+
+<br>
+
+---
+
+
+## Fiction
+
+<div style="text-align: center;">
+  <div style="display: inline-block; vertical-align: top; text-align: center; width: 280px; margin: 15px; padding: 1rem; border-radius: 8px; background-color: #f9f9f9; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+    <img src="https://images.celeb-picks.com/books/the-mill-on-the-floss.jpg" alt="The Mill On The Floss" style="max-height: 200px; object-fit: cover; border-radius: 4px;">
+    <div style="font-size: 1.2em; font-weight: bold; margin: 1rem 0 0.5rem 0; color: #333;">The Mill On The Floss</div>
+    <div style="font-size: 1em; color: #666;">George Eliot</div>
+  </div>
+  
+  <div style="display: inline-block; vertical-align: top; text-align: center; width: 280px; margin: 15px; padding: 1rem; border-radius: 8px; background-color: #f9f9f9; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+    <img src="https://images.celeb-picks.com/books/1984.jpg" alt="1984" style="max-height: 200px; object-fit: cover; border-radius: 4px;">
+    <div style="font-size: 1.2em; font-weight: bold; margin: 1rem 0 0.5rem 0; color: #333;">1984</div>
+    <div style="font-size: 1em; color: #666;">George Orwell</div>
+  </div>
+  
+  <div style="display: inline-block; vertical-align: top; text-align: center; width: 280px; margin: 15px; padding: 1rem; border-radius: 8px; background-color: #f9f9f9; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+    <img src="https://images.celeb-picks.com/books/harry-potter-and-the-philosophers-stone.jpg" alt="Harry Potter and the Pholosopher's Stone" style="max-height: 200px; object-fit: cover; border-radius: 4px;">
+    <div style="font-size: 1.2em; font-weight: bold; margin: 1rem 0 0.5rem 0; color: #333;">Harry Potter and the Sorcerer's Stone</div>
+    <div style="font-size: 1em; color: #666;">J K Rowling</div>
+  </div>
+  
+  <div style="display: inline-block; vertical-align: top; text-align: center; width: 280px; margin: 15px; padding: 1rem; border-radius: 8px; background-color: #f9f9f9; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+    <img src="https://images.celeb-picks.com/books/siddhartha.jpg" alt="Siddhartha" style="max-height: 200px; object-fit: cover; border-radius: 4px;">
+    <div style="font-size: 1.2em; font-weight: bold; margin: 1rem 0 0.5rem 0; color: #333;">Siddhartha</div>
+    <div style="font-size: 1em; color: #666;">Hermann Hesse</div>
+  </div>
+  
+  <div style="display: inline-block; vertical-align: top; text-align: center; width: 280px; margin: 15px; padding: 1rem; border-radius: 8px; background-color: #f9f9f9; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+    <img src="https://images.celeb-picks.com/books/the-ultimate-hitchhikers-guide-to-the-galaxy.jpg" alt="The Hitchhikers Guide to the Galaxy" style="max-height: 200px; object-fit: cover; border-radius: 4px;">
+    <div style="font-size: 1.2em; font-weight: bold; margin: 1rem 0 0.5rem 0; color: #333;">The Hitchhikers Guide to the Galaxy</div>
+    <div style="font-size: 1em; color: #666;">Douglas Adams</div>
+  </div>
+</div>
+
+
+<br>
 
 ---
 
