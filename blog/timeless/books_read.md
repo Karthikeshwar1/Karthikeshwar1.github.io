@@ -6,7 +6,7 @@
 
 ### Non-fiction
 
-
+<div style="text-align: center;">
   <div style="display: inline-block; vertical-align: top; text-align: center; width: 280px; margin: 13px; padding: 10px; border-radius: 8px; background-color: #f9f9f9; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
     <img src="https://images.celeb-picks.com/books/be-here-now.jpg" alt="Be Here Now" style="max-height: 200px; object-fit: cover; border-radius: 4px;">
     <div style="font-size: 1.2em; font-weight: bold; margin: 1rem 0 0.5rem 0; color: #333;">Be Here Now</div>
@@ -90,15 +90,14 @@
     <div style="font-size: 1.2em; font-weight: bold; margin: 1rem 0 0.5rem 0; color: #333;">Impro: Improvisation and the Theatre</div>
     <div style="font-size: 1em; color: #666;">Keith Johnstone</div>
   </div>
-</div>
 
-<div style="text-align: center;">
+
   <div style="display: inline-block; vertical-align: top; text-align: center; width: 280px; margin: 13px; padding: 10px; border-radius: 8px; background-color: #f9f9f9; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
     <img src="https://images.celeb-picks.com/books/the-monk-who-sold-his-ferrari.jpg" alt="The Monk Who Sold his Ferrari" style="max-height: 200px; object-fit: cover; border-radius: 4px;">
     <div style="font-size: 1.2em; font-weight: bold; margin: 1rem 0 0.5rem 0; color: #333;">The Monk Who Sold his Ferrari</div>
     <div style="font-size: 1em; color: #666;">Robin Sharma</div>
   </div>
-  
+</div>  
 
 <br>
 
