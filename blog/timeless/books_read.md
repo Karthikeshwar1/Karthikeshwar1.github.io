@@ -14,13 +14,18 @@ Books I've read and recommend.
   <div style="display: inline-block; vertical-align: top; text-align: center; width: 280px; margin: 13px; padding: 10px; border-radius: 8px; background-color: #f9f9f9; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
     <img src="https://images.celeb-picks.com/books/be-here-now.jpg" alt="Be Here Now" style="max-height: 200px; object-fit: cover; border-radius: 4px;">
     <div style="font-size: 1.2em; font-weight: bold; margin: 1rem 0 0.5rem 0; color: #333;">Be Here Now</div>
-    <div style="font-size: 1em; color: #666;">Ram Dass</div>
+        <div style="font-size: 0.85em; color: #888; font-style: italic; margin: 0.3rem 0 0 0; line-height: 1.3;">
+          A transformative journey blending ancient wisdom with modern life lessons
+        </div><div style="font-size: 1em; color: #666;">Ram Dass</div>
   </div>
   
   <div style="display: inline-block; vertical-align: top; text-align: center; width: 280px; margin: 13px; padding: 10px; border-radius: 8px; background-color: #f9f9f9; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
     <img src="https://images.celeb-picks.com/books/life_3_0.jpg" alt="Life 3.0" style="max-height: 200px; object-fit: cover; border-radius: 4px;">
     <div style="font-size: 1.2em; font-weight: bold; margin: 1rem 0 0.5rem 0; color: #333;">Life 3.0</div>
     <div style="font-size: 1em; color: #666;">Max Tegmark</div>
+    <div style="font-size: 0.85em; color: #888; font-style: italic; margin: 0.3rem 0 0 0; line-height: 1.3;">
+          A transformative journey blending ancient wisdom with modern life lessons
+        </div><div style="font-size: 1em; color: #666;">Ram Dass</div>
   </div>
   
   <div style="display: inline-block; vertical-align: top; text-align: center; width: 280px; margin: 13px; padding: 10px; border-radius: 8px; background-color: #f9f9f9; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
