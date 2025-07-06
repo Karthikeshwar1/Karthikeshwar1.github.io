@@ -54,9 +54,7 @@ Books I've read and recommend.
     <img src="https://images.celeb-picks.com/books/a-brief-history-of-time.jpg" alt="A Brief History of Time" style="max-height: 200px; object-fit: cover; border-radius: 4px;">
     <div style="font-size: 1.2em; font-weight: bold; margin: 1rem 0 0.5rem 0; color: #333;">A Brief History of Time</div>
     <div style="font-size: 1em; color: #666;">Stephen Hawking</div>
-  <div style="font-size: 0.85em; color: #888; font-style: italic; margin: 0.3rem 0 0 0; line-height: 1.3;">
-        Classic.
-    </div></div>
+  </div>
   
   <div style="display: inline-block; vertical-align: top; text-align: center; width: 280px; margin: 13px; padding: 10px; border-radius: 8px; background-color: #f9f9f9; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
     <img src="https://images.celeb-picks.com/books/the-psychology-of-money.jpg" alt="The Psychology of Money" style="max-height: 200px; object-fit: cover; border-radius: 4px;">
@@ -80,19 +78,25 @@ Books I've read and recommend.
     <img src="https://images.celeb-picks.com/books/the-lessons-of-history.jpg" alt="The Lessons of History" style="max-height: 200px; object-fit: cover; border-radius: 4px;">
     <div style="font-size: 1.2em; font-weight: bold; margin: 1rem 0 0.5rem 0; color: #333;">The Lessons of History</div>
     <div style="font-size: 1em; color: #666;">Will and Ariel Durant</div>
-  </div>
+  <div style="font-size: 0.85em; color: #888; font-style: italic; margin: 0.3rem 0 0 0; line-height: 1.3;">
+        A brief history of civilisations.
+    </div></div>
   
   <div style="display: inline-block; vertical-align: top; text-align: center; width: 280px; margin: 13px; padding: 10px; border-radius: 8px; background-color: #f9f9f9; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
     <img src="https://images.celeb-picks.com/books/the-book-of-clarity.jpg" alt="The Book of Clarity" style="max-height: 200px; object-fit: cover; border-radius: 4px;">
     <div style="font-size: 1.2em; font-weight: bold; margin: 1rem 0 0.5rem 0; color: #333;">The Book of Clarity</div>
     <div style="font-size: 1em; color: #666;">Paras Chopra</div>
-  </div>
+  <div style="font-size: 0.85em; color: #888; font-style: italic; margin: 0.3rem 0 0 0; line-height: 1.3;">
+        I have a signed copy!
+    </div></div>
   
   <div style="display: inline-block; vertical-align: top; text-align: center; width: 280px; margin: 13px; padding: 10px; border-radius: 8px; background-color: #f9f9f9; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
     <img src="https://images.celeb-picks.com/books/the-prince.jpg" alt="The Prince" style="max-height: 200px; object-fit: cover; border-radius: 4px;">
     <div style="font-size: 1.2em; font-weight: bold; margin: 1rem 0 0.5rem 0; color: #333;">The Prince</div>
     <div style="font-size: 1em; color: #666;">Niccolo Machiavelli</div>
-  </div>
+  <div style="font-size: 0.85em; color: #888; font-style: italic; margin: 0.3rem 0 0 0; line-height: 1.3;">
+        Gold.
+    </div></div>
   
   <div style="display: inline-block; vertical-align: top; text-align: center; width: 280px; margin: 13px; padding: 10px; border-radius: 8px; background-color: #f9f9f9; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
     <img src="https://images.celeb-picks.com/books/the-technological-republic.jpg" alt="The Technological Republic" style="max-height: 200px; object-fit: cover; border-radius: 4px;">
@@ -104,8 +108,17 @@ Books I've read and recommend.
     <img src="https://images.celeb-picks.com/books/impro.jpg" alt="Impro: Improvisation and the Theatre" style="max-height: 200px; object-fit: cover; border-radius: 4px;">
     <div style="font-size: 1.2em; font-weight: bold; margin: 1rem 0 0.5rem 0; color: #333;">Impro: Improvisation and the Theatre</div>
     <div style="font-size: 1em; color: #666;">Keith Johnstone</div>
-  </div>
+  <div style="font-size: 0.85em; color: #888; font-style: italic; margin: 0.3rem 0 0 0; line-height: 1.3;">
+        Learnt about story-telling and improvisation.
+    </div></div>
 
+    <div style="display: inline-block; vertical-align: top; text-align: center; width: 280px; margin: 13px; padding: 10px; border-radius: 8px; background-color: #f9f9f9; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+    <img src="https://images.celeb-picks.com/books/algorithms-to-live-by.jpg" alt="Algorithms to Live By" style="max-height: 200px; object-fit: cover; border-radius: 4px;">
+    <div style="font-size: 1.2em; font-weight: bold; margin: 1rem 0 0.5rem 0; color: #333;">Algorithms to Live By</div>
+    <div style="font-size: 1em; color: #666;">Brian Christian, Thomas L. Griffiths, and Tom Griffiths</div>
+  <div style="font-size: 0.85em; color: #888; font-style: italic; margin: 0.3rem 0 0 0; line-height: 1.3;">
+        Explains several algorithms non-technical way, connecting it to everyday life.
+    </div></div>
 
   <div style="display: inline-block; vertical-align: top; text-align: center; width: 280px; margin: 13px; padding: 10px; border-radius: 8px; background-color: #f9f9f9; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
     <img src="https://images.celeb-picks.com/books/the-monk-who-sold-his-ferrari.jpg" alt="The Monk Who Sold his Ferrari" style="max-height: 200px; object-fit: cover; border-radius: 4px;">
@@ -126,7 +139,9 @@ Books I've read and recommend.
     <img src="https://images.celeb-picks.com/books/the-mill-on-the-floss.jpg" alt="The Mill On The Floss" style="max-height: 200px; object-fit: cover; border-radius: 4px;">
     <div style="font-size: 1.2em; font-weight: bold; margin: 1rem 0 0.5rem 0; color: #333;">The Mill On The Floss</div>
     <div style="font-size: 1em; color: #666;">George Eliot</div>
-  </div>
+  <div style="font-size: 0.85em; color: #888; font-style: italic; margin: 0.3rem 0 0 0; line-height: 1.3;">
+        Read it in childhood, really loved it.
+    </div></div>
   
   <div style="display: inline-block; vertical-align: top; text-align: center; width: 280px; margin: 13px; padding: 10px; border-radius: 8px; background-color: #f9f9f9; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
     <img src="https://images.celeb-picks.com/books/1984.jpg" alt="1984" style="max-height: 200px; object-fit: cover; border-radius: 4px;">
@@ -150,7 +165,11 @@ Books I've read and recommend.
     <img src="https://images.celeb-picks.com/books/the-ultimate-hitchhikers-guide-to-the-galaxy.jpg" alt="The Hitchhikers Guide to the Galaxy" style="max-height: 200px; object-fit: cover; border-radius: 4px;">
     <div style="font-size: 1.2em; font-weight: bold; margin: 1rem 0 0.5rem 0; color: #333;">The Hitchhikers Guide to the Galaxy</div>
     <div style="font-size: 1em; color: #666;">Douglas Adams</div>
-  </div>
+  <div style="font-size: 0.85em; color: #888; font-style: italic; margin: 0.3rem 0 0 0; line-height: 1.3;">
+        Everyone must read it, or atleast the philosophy of it.
+    </div></div>
+
+    
 </div>
 
 
@@ -171,5 +190,7 @@ Books I've read and recommend.
     <img src="https://images.celeb-picks.com/books/superintelligence.jpg" alt="Superintelligence" style="max-height: 200px; object-fit: cover; border-radius: 4px;">
     <div style="font-size: 1.2em; font-weight: bold; margin: 1rem 0 0.5rem 0; color: #333;">Superintelligence</div>
     <div style="font-size: 1em; color: #666;">Nick Bostrom</div>
-  </div>
+  <div style="font-size: 0.85em; color: #888; font-style: italic; margin: 0.3rem 0 0 0; line-height: 1.3;">
+        Mostly speculatory, but concrete.
+    </div></div>
 </div> 
