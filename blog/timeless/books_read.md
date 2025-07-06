@@ -11,6 +11,23 @@ Books I've read and recommend.
 ### Non-fiction
 
 <div style="text-align: center;">
+    
+  <div style="display: inline-block; vertical-align: top; text-align: center; width: 280px; margin: 13px; padding: 10px; border-radius: 8px; background-color: #f9f9f9; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+    <img src="https://images.celeb-picks.com/books/sapiens.jpg" alt="Sapiens" style="max-height: 200px; object-fit: cover; border-radius: 4px;">
+    <div style="font-size: 1.2em; font-weight: bold; margin: 1rem 0 0.5rem 0; color: #333;">Sapiens</div>
+    <div style="font-size: 1em; color: #666;">Yuval Noah Harari</div>
+  <div style="font-size: 0.85em; color: #888; font-style: italic; margin: 0.3rem 0 0 0; line-height: 1.3;">
+        Good summary of humans.
+    </div></div>
+  
+  <div style="display: inline-block; vertical-align: top; text-align: center; width: 280px; margin: 13px; padding: 10px; border-radius: 8px; background-color: #f9f9f9; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+    <img src="https://images.celeb-picks.com/books/zero-to-one.jpg" alt="Zero to One" style="max-height: 200px; object-fit: cover; border-radius: 4px;">
+    <div style="font-size: 1.2em; font-weight: bold; margin: 1rem 0 0.5rem 0; color: #333;">Zero to One</div>
+    <div style="font-size: 1em; color: #666;">Peter Thiel</div>
+  <div style="font-size: 0.85em; color: #888; font-style: italic; margin: 0.3rem 0 0 0; line-height: 1.3;">
+        Startup Bible, can also be read as a motivational or a book on philosophy, showing how good it really is.
+    </div></div>
+  
   <div style="display: inline-block; vertical-align: top; text-align: center; width: 280px; margin: 13px; padding: 10px; border-radius: 8px; background-color: #f9f9f9; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
     <img src="https://images.celeb-picks.com/books/be-here-now.jpg" alt="Be Here Now" style="max-height: 200px; object-fit: cover; border-radius: 4px;">
     <div style="font-size: 1.2em; font-weight: bold; margin: 1rem 0 0.5rem 0; color: #333;">Be Here Now</div>
@@ -33,22 +50,7 @@ Books I've read and recommend.
     <div style="font-size: 0.85em; color: #888; font-style: italic; margin: 0.3rem 0 0 0; line-height: 1.3;">
         Lessons on designing, I read it also as a guide to Human-Computer Interaction (HCP).
     </div></div>
-  
-  <div style="display: inline-block; vertical-align: top; text-align: center; width: 280px; margin: 13px; padding: 10px; border-radius: 8px; background-color: #f9f9f9; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
-    <img src="https://images.celeb-picks.com/books/sapiens.jpg" alt="Sapiens" style="max-height: 200px; object-fit: cover; border-radius: 4px;">
-    <div style="font-size: 1.2em; font-weight: bold; margin: 1rem 0 0.5rem 0; color: #333;">Sapiens</div>
-    <div style="font-size: 1em; color: #666;">Yuval Noah Harari</div>
-  <div style="font-size: 0.85em; color: #888; font-style: italic; margin: 0.3rem 0 0 0; line-height: 1.3;">
-        Good summary of humans.
-    </div></div>
-  
-  <div style="display: inline-block; vertical-align: top; text-align: center; width: 280px; margin: 13px; padding: 10px; border-radius: 8px; background-color: #f9f9f9; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
-    <img src="https://images.celeb-picks.com/books/zero-to-one.jpg" alt="Zero to One" style="max-height: 200px; object-fit: cover; border-radius: 4px;">
-    <div style="font-size: 1.2em; font-weight: bold; margin: 1rem 0 0.5rem 0; color: #333;">Zero to One</div>
-    <div style="font-size: 1em; color: #666;">Peter Thiel</div>
-  <div style="font-size: 0.85em; color: #888; font-style: italic; margin: 0.3rem 0 0 0; line-height: 1.3;">
-        Startup Bible, can also be read as a motivational or a book on philosophy, showing how good it really is.
-    </div></div>
+
   
   <div style="display: inline-block; vertical-align: top; text-align: center; width: 280px; margin: 13px; padding: 10px; border-radius: 8px; background-color: #f9f9f9; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
     <img src="https://images.celeb-picks.com/books/a-brief-history-of-time.jpg" alt="A Brief History of Time" style="max-height: 200px; object-fit: cover; border-radius: 4px;">
