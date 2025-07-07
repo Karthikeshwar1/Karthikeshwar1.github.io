@@ -1,6 +1,29 @@
-<h1>Blog</h1>
+---
+layout: page
+title: Blog
+permalink: /blog/
+---
 
 <br>
+
+<style>
+#search-input {
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  font-size: 1em;
+}
+
+@media (max-width: 600px) {
+  #search-input {
+    font-size: 1em;
+    padding: 0.7em;
+  }
+  #search-results {
+    font-size: 1em;
+  }
+}
+</style>
 
 <input id="search-input" placeholder="Search blogs..." style="width:100%;padding:6px;">
 <ul id="search-results"></ul>
