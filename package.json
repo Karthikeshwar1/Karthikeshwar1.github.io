@@ -4,6 +4,6 @@
     "glob": "^10.3.10"
   },
   "scripts": {
-    "generate-index": "node scripts/indexer.js"
+    "generate-index": "node indexer.js"
   }
 }
