@@ -52,7 +52,7 @@ title: Blog
 
 [Software architecture plans](https://github.com/Karthikeshwar1/Software-architectures)
 
-[Research papers](https://github.com/Karthikeshwar1/Karthikeshwar1/tree/main/papers)
+[Research papers written by me](https://github.com/Karthikeshwar1/Karthikeshwar1/tree/main/papers)
 
 <br>
 
