@@ -2,6 +2,28 @@
 title: Blog
 ---
 
+<input id="search-input" placeholder="Search blogs..." style="width:100%;padding:6px;">
+<ul id="search-results"></ul>
+<script>
+let docs = [];
+fetch('search_index.json')
+  .then(r => r.json())
+  .then(data => docs = data);
+
+document.getElementById('search-input').addEventListener('input', function() {
+  const q = this.value.trim().toLowerCase();
+  const results = docs.filter(doc =>
+    doc.title.toLowerCase().includes(q) ||
+    (doc.tags && doc.tags.join(' ').toLowerCase().includes(q)) ||
+    doc.content.toLowerCase().includes(q)
+  );
+  document.getElementById('search-results').innerHTML = results.slice(0,10).map(doc =>
+    `<li><a href="${doc.url}">${doc.title}</a> <small>[${(doc.tags || []).join(', ')}]</small></li>`
+  ).join('');
+});
+</script>
+
+
 ## Abstract & Software
 
 [AI in 2025](https://karthikeshwar1.github.io/blog/2025/AI_in_2025)
