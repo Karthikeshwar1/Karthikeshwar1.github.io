@@ -29,7 +29,7 @@ permalink: /blog/
 <ul id="search-results"></ul>
 <script>
 let docs = [];
-fetch('search_index.json')
+fetch('/search_index.json')
   .then(r => r.json())
   .then(data => docs = data);
 
