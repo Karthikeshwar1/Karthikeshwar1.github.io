@@ -40,8 +40,9 @@ document.getElementById('search-input').addEventListener('input', function() {
     (doc.tags && doc.tags.join(' ').toLowerCase().includes(q)) ||
     doc.content.toLowerCase().includes(q)
   );
-  document.getElementById('search-results').innerHTML = results.slice(0,10).map(doc =>
-    `<li><a href="${doc.url}">${doc.title}</a> <small>[${(doc.tags || []).join(', ')}]</small></li>`
+  document.getElementById('search-results').innerHTML = 
+  results.slice(0,10).map(doc =>
+    `<li><a href="${doc.url}">${doc.title.trim()}</a> <small>[${(doc.tags || []).join(', ')}]</small></li>`
   ).join('');
 });
 </script>
