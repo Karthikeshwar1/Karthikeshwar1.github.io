@@ -28,6 +28,12 @@ permalink: /blog/
 <input id="search-input" placeholder="Search blogs..." style="width:100%;padding:6px;">
 <ul id="search-results"></ul>
 <script>
+
+function clean(str) {
+  // Remove Unicode replacement character, carriage returns, and newlines, then trim
+  return str.replace(/\uFFFD/g, '').replace(/[\r\n]+/g, '').trim();
+}
+  
 let docs = [];
 fetch('/search_index.json')
   .then(r => r.json())
@@ -41,10 +47,11 @@ document.getElementById('search-input').addEventListener('input', function() {
     doc.content.toLowerCase().includes(q)
   );
   document.getElementById('search-results').innerHTML = 
-  results.slice(0,10).map(doc =>
-    `<li><a href="${doc.url}">${doc.title.trim()}</a> <small>[${(doc.tags || []).join(', ')}]</small></li>`
+  results.slice(0,15).map(doc =>
+    `<li><a href="${doc.url}">${clean(doc.title)}</a> <small>[${(doc.tags || []).join(', ')}]</small></li>`
   ).join('');
 });
+
 </script>
 
 
