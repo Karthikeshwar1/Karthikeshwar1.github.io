@@ -1,6 +1,6 @@
----
-title: Blog
----
+<h1>Blog</h1>
+
+<br>
 
 <input id="search-input" placeholder="Search blogs..." style="width:100%;padding:6px;">
 <ul id="search-results"></ul>
@@ -23,6 +23,8 @@ document.getElementById('search-input').addEventListener('input', function() {
 });
 </script>
 
+
+<br>
 
 ## Abstract & Software
 
