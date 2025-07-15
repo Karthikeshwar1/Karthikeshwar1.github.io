@@ -61,6 +61,8 @@ document.getElementById('search-input').addEventListener('input', function() {
 
 [AI in 2025](https://karthikeshwar1.github.io/blog/2025/AI_in_2025)
 
+[If Einstein was born today...](https://karthikeshwar1.github.io/blog/2025/If_Einstein_was_born_today)
+
 [How We The Humans Build](https://karthikeshwar1.github.io/blog/2025/How_We_The_Humans_Build)
 
 [Emergence and Meaning](https://karthikeshwar1.github.io/blog/2025/Emergence_and_Meaning)
