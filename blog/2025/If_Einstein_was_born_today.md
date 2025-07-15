@@ -2,8 +2,15 @@
 
 <br>
 
-He would've been a baby. He certainly woudn't have discovered anything.
+He would've been crying.
 
-Moral of the story:
+In a hospital.
+
+<br>
+
+Coz he would've been a baby. 
+
+He certainly woudn't have discovered anything.
+
 
 <br>
