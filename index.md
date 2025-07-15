@@ -14,6 +14,6 @@ I’m Karthikeshwar, a computer science enthusiast and an artificial intelligenc
 
 <br>
 
-[Blog](https://karthikeshwar1.github.io/blog.html)  &nbsp; &nbsp; [GitHub](https://github.com/Karthikeshwar1) &nbsp; &nbsp; [LinkedIn](https://www.linkedin.com/in/karthikeshwar/)
+[Blog](https://karthikeshwar1.github.io/blog/)  &nbsp; &nbsp; [GitHub](https://github.com/Karthikeshwar1) &nbsp; &nbsp; [LinkedIn](https://www.linkedin.com/in/karthikeshwar/)
 
 <br>
