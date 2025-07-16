@@ -2,15 +2,15 @@
 
 <br>
 
+He woudn't have discovered anything.
+
 He would've been crying.
 
 In a hospital.
 
 <br>
 
-Coz he would've been a baby. 
-
-He certainly woudn't have discovered anything.
+What more do you expect from a baby born today?
 
 
 <br>
