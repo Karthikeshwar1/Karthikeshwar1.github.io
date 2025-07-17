@@ -76,7 +76,7 @@ Books I've read and recommend.
     <div style="font-size: 1.2em; font-weight: bold; margin: 1rem 0 0.5rem 0; color: #333;">Take Charge of your life</div>
     <div style="font-size: 1em; color: #666;">Dr. William Glasser, MD</div>
   <div style="font-size: 0.85em; color: #888; font-style: italic; margin: 0.3rem 0 0 0; line-height: 1.3;">
-       Concepts in this book must be incorporated into all school syllabus
+       Concepts in this book must be incorporated into all school syllabuses.
     </div></div>
   
   <div style="display: inline-block; vertical-align: top; text-align: center; width: 280px; margin: 13px; padding: 10px; border-radius: 8px; background-color: #f9f9f9; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
