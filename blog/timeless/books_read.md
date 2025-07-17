@@ -11,6 +11,21 @@ Books I've read and recommend.
 ### Non-fiction
 
 <div style="text-align: center;">
+    <div style="display: inline-block; vertical-align: top; text-align: center; width: 280px; margin: 13px; padding: 10px; border-radius: 8px; background-color: #f9f9f9; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+    <img src="https://images.celeb-picks.com/books/mastery.jpg" alt="Sapiens" style="max-height: 200px; object-fit: cover; border-radius: 4px;">
+    <div style="font-size: 1.2em; font-weight: bold; margin: 1rem 0 0.5rem 0; color: #333;">Mastery</div>
+    <div style="font-size: 1em; color: #666;">Robert Greene</div>
+  <div style="font-size: 0.85em; color: #888; font-style: italic; margin: 0.3rem 0 0 0; line-height: 1.3;">
+    </div></div>
+
+    <div style="display: inline-block; vertical-align: top; text-align: center; width: 280px; margin: 13px; padding: 10px; border-radius: 8px; background-color: #f9f9f9; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+    <img src="https://images.celeb-picks.com/books/sapiens.jpg" alt="Sapiens" style="max-height: 200px; object-fit: cover; border-radius: 4px;">
+    <div style="font-size: 1.2em; font-weight: bold; margin: 1rem 0 0.5rem 0; color: #333;">Science of Strength Training</div>
+    <div style="font-size: 1em; color: #666;">Yuval Noah Harari</div>
+  <div style="font-size: 0.85em; color: #888; font-style: italic; margin: 0.3rem 0 0 0; line-height: 1.3;">
+        Good summary of humans.
+    </div></div>
+
     
   <div style="display: inline-block; vertical-align: top; text-align: center; width: 280px; margin: 13px; padding: 10px; border-radius: 8px; background-color: #f9f9f9; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
     <img src="https://images.celeb-picks.com/books/sapiens.jpg" alt="Sapiens" style="max-height: 200px; object-fit: cover; border-radius: 4px;">
@@ -68,7 +83,9 @@ Books I've read and recommend.
     <img src="https://images.celeb-picks.com/books/take-charge-of-your-life.jpg" alt="Take Charge of your life" style="max-height: 200px; object-fit: cover; border-radius: 4px;">
     <div style="font-size: 1.2em; font-weight: bold; margin: 1rem 0 0.5rem 0; color: #333;">Take Charge of your life</div>
     <div style="font-size: 1em; color: #666;">Dr. William Glasser, MD</div>
-  </div>
+  <div style="font-size: 0.85em; color: #888; font-style: italic; margin: 0.3rem 0 0 0; line-height: 1.3;">
+       Concepts in this book must be incorporated into all school syllabus
+    </div></div>
   
   <div style="display: inline-block; vertical-align: top; text-align: center; width: 280px; margin: 13px; padding: 10px; border-radius: 8px; background-color: #f9f9f9; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
     <img src="https://images.celeb-picks.com/books/hit-refresh.jpg" alt="Hit Refresh" style="max-height: 200px; object-fit: cover; border-radius: 4px;">
