@@ -99,7 +99,7 @@ document.getElementById('search-input').addEventListener('input', function() {
 
 [Books read](https://karthikeshwar1.github.io/blog/timeless/books_read)
 
-[The Vital Question by Nick Lane](ttps://karthikeshwar1.github.io/blog/2025/The_Vital_Question_by_Nick_Lane)
+[The Vital Question by Nick Lane](https://karthikeshwar1.github.io/blog/2025/The_Vital_Question_by_Nick_Lane)
 
 [What's the book GEB all about](https://karthikeshwar1.github.io/blog/2023/What%27s%20the%20book%20GEB%20all%20about)
 
