@@ -1,9 +1,9 @@
 <h1 align="center"> Security Systems </h1>
 <h2 align="center"> The Flaw and The Ultimate Solution </h2>
 
-<h5> Created 12 Nov, 2023 </h5>
-
-<h6> CREATED 12 Nov, 2023 </h6>
+<small style="display:block; text-align:center; color:gray;">
+  Created 12 Nov, 2023
+</small>
 
 <br>
 
