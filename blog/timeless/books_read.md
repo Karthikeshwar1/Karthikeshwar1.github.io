@@ -180,6 +180,13 @@ Books I've read and recommend.
         Everyone must read it, or atleast the philosophy of it.
     </div></div>
 
+    <div style="display: inline-block; vertical-align: top; text-align: center; width: 280px; margin: 13px; padding: 10px; border-radius: 8px; background-color: #f9f9f9; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+    <img src="https://images.celeb-picks.com/books/the-richest-man-in-babylon.jpg" alt="The Richest Man in Babylon" style="max-height: 200px; object-fit: cover; border-radius: 4px;">
+    <div style="font-size: 1.2em; font-weight: bold; margin: 1rem 0 0.5rem 0; color: #333;">The Richest Man in Babylon</div>
+    <div style="font-size: 1em; color: #666;">George S.Clason</div>
+  <div style="font-size: 0.85em; color: #888; font-style: italic; margin: 0.3rem 0 0 0; line-height: 1.3;">
+    </div></div>
+
     
 </div>
 
