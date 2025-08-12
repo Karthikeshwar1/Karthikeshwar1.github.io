@@ -6,7 +6,7 @@ title: Projects
 
 | Projects                                               | Description                                                                                            | Team size & date |
 | ------------------------------------------------------ | ------------------------------------------------------------------------------------------------------ | ---------------- |
-| [KathaaVerse](https://kathaaverse.com/)                | Turn any famous book into interactive fiction!                                             | 1, June 2025     |
+| [KathaaVerse](https://kathaaverse.com/)                | Turn any famous book into interactive fiction! (Reached [#1 on Hacker News!](https://github.com/Karthikeshwar1/Karthikeshwar1/blob/main/Hall%20of%20Fame/kathaaverse.md) Attracting ~20k visitors and 500k API calls in the first week, despite no formal marketing!)                                           | 1, June 2025     |
 | [Araam](https://github.com/Karthikeshwar1/Araam)       | Control your PC with just a controller!                                                                | 1, Aug 2021      |
 | [airPiano](https://github.com/Karthikeshwar1/airPiano) | A software with which you can play piano in the air, or play a bigger piano with the computer keyboard | 1, Mar-Apr 2021  |
 | [TABFYE](https://github.com/Karthikeshwar1/TABFYE)     | Take-A-Break-For-Your-Eyes!                                                                            | 4, Jun 2020      |
@@ -30,4 +30,5 @@ title: Projects
 | [ptzbak!](https://github.com/Karthikeshwar1/ptzbak)              | ZskholHūkpl ksfpiwth ik faoOIFJO.  |
 
 <br>
+
 
