@@ -38,3 +38,7 @@ Ma Te Sango 'Stvakarmaṇi
 
 ## 3. It's How You Look at It
 
+"At what point in a flower's life, from seed to full bloom, does it reach perfection?"
+
+* Do not keep expecting a future ideal self. Live in the present, every moment is ideal. Being here now is what most religions teach too.
+
