@@ -2,6 +2,9 @@
 
 ## Book by Thomas M. Sterner
 
+<small style="display:block; text-align:center; color:gray;">
+  Created 24 Aug, 2025
+</small>
 <br>
 
 "Master any skill or challenge by learning to love the process"
@@ -11,6 +14,8 @@
 ## 1. The Learning Begins
 
 We do things like driving a car without much thinking. That comes from practice. Do everything from practice.
+
+<br>
 
 ## 2. Process, Not Product
 
@@ -36,9 +41,17 @@ Ma Te Sango 'Stvakarmaṇi
 
 * Be deliberate, have an intention about what you want to accomplish, and remain aware of that intention.
 
+<br>
+
 ## 3. It's How You Look at It
 
 "At what point in a flower's life, from seed to full bloom, does it reach perfection?"
 
 * Do not keep expecting a future ideal self. Live in the present, every moment is ideal. Being here now is what most religions teach too.
 
+
+<br>
+
+
+
+<br>
