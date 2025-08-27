@@ -4,11 +4,11 @@
 
 ## Contents:
 
-[1. Legendary papers and blogs](#1.-legendary-papers-and-blogs)
+[1. Legendary papers and blogs](#1-legendary-papers-and-blogs)
 
-[2. Videos](#2.-videos)
+[2. Videos](#2--videos)
 
-[3. Technical Books](#3.-techical-books)
+[3. Technical Books](#3--techical-books)
 
 
 
