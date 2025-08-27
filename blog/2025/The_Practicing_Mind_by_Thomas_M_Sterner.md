@@ -1,4 +1,4 @@
-# The Practicing Mind - Book Notes
+<h1>The Practicing Mind - Book Notes</h1> 
 
 ## Book by Thomas M. Sterner
 
