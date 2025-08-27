@@ -8,7 +8,9 @@
 
 [2. Videos](#2-videos)
 
-[3. Technical Books](#3-techical-books)
+[3. Technical Books](#3-technical-books)
+
+[4. Courses](#4-courses)
 
 
 
@@ -43,6 +45,8 @@ General methods leveraging computation and learning, rather than human-designed 
 
 <br>
 
-## Courses
+## [4. Courses](#contents)
+
+* MIT 9.13 [The Human Brain](https://www.youtube.com/playlist?list=PLUl4u3cNGP60IKRN_pFptIBxeiMc0MCJP) by Nancy Kanwisher
 
 <br>
