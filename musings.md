@@ -10,7 +10,7 @@ title: Musings
 
 ## Piano
 
-#### [YouTube](https://youtu.be/mKXbv7VfpgI?si=pBoSJVqew_GdKIdq)
+#### [YouTube](https://www.youtube.com/playlist?list=PL7pX5D24QuQHfJUVwyLf3FpcOP5QdJJtF)
 
 
 <br>
