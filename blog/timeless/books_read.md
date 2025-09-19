@@ -11,8 +11,25 @@ Books I've read and recommend.
 ### Non-fiction
 
 <div style="text-align: center;">
-    <div style="display: inline-block; vertical-align: top; text-align: center; width: 280px; margin: 13px; padding: 10px; border-radius: 8px; background-color: #f9f9f9; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
-    <img src="https://images.celeb-picks.com/books/mastery.jpg" alt="Sapiens" style="max-height: 200px; object-fit: cover; border-radius: 4px;">
+
+
+
+<div style="display: inline-block; vertical-align: top; text-align: center; width: 280px; margin: 13px; padding: 10px; border-radius: 8px; background-color: #f9f9f9; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+    <img src="https://images.celeb-picks.com/books/deep-medicine.jpg" alt="Deep Medicine" style="max-height: 200px; object-fit: cover; border-radius: 4px;">
+    <div style="font-size: 1.2em; font-weight: bold; margin: 1rem 0 0.5rem 0; color: #333;">Deep Medicine</div>
+    <div style="font-size: 1em; color: #666;">Eric Topol</div>
+  <div style="font-size: 0.85em; color: #888; font-style: italic; margin: 0.3rem 0 0 0; line-height: 1.3;">
+    </div></div>
+
+<div style="display: inline-block; vertical-align: top; text-align: center; width: 280px; margin: 13px; padding: 10px; border-radius: 8px; background-color: #f9f9f9; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+    <img src="https://images.celeb-picks.com/books/the-vital-question.jpg" alt="The Vital Question" style="max-height: 200px; object-fit: cover; border-radius: 4px;">
+    <div style="font-size: 1.2em; font-weight: bold; margin: 1rem 0 0.5rem 0; color: #333;">The Vital Question</div>
+    <div style="font-size: 1em; color: #666;">Nick Lane</div>
+  <div style="font-size: 0.85em; color: #888; font-style: italic; margin: 0.3rem 0 0 0; line-height: 1.3;">
+    </div></div>
+
+<div style="display: inline-block; vertical-align: top; text-align: center; width: 280px; margin: 13px; padding: 10px; border-radius: 8px; background-color: #f9f9f9; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+    <img src="https://images.celeb-picks.com/books/mastery.jpg" alt="Mastery" style="max-height: 200px; object-fit: cover; border-radius: 4px;">
     <div style="font-size: 1.2em; font-weight: bold; margin: 1rem 0 0.5rem 0; color: #333;">Mastery</div>
     <div style="font-size: 1em; color: #666;">Robert Greene</div>
   <div style="font-size: 0.85em; color: #888; font-style: italic; margin: 0.3rem 0 0 0; line-height: 1.3;">
