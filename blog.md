@@ -99,6 +99,8 @@ document.getElementById('search-input').addEventListener('input', function() {
 
 [Books read](https://karthikeshwar1.github.io/blog/timeless/books_read)
 
+[Deep Medicine by Eric Topol](https://karthikeshwar1.github.io/blog/2025/Deep_Medicine)
+
 [The Practicing Mind by Thomas M. Sterner](https://karthikeshwar1.github.io/blog/2025/The_Practicing_Mind_by_Thomas_M_Sterner)
 
 [The Vital Question by Nick Lane](https://karthikeshwar1.github.io/blog/2025/The_Vital_Question_by_Nick_Lane)
