@@ -8,6 +8,8 @@
   
 </h1>
 
+> This page is a curated collection of highlights and key insights from “Deep Medicine” by Eric Topol, organized by chapter. The selections aim to capture the essence of each section, with occasional personal notes to enrich the context.
+
 ## Contents
 
 - [Contents](#contents)
