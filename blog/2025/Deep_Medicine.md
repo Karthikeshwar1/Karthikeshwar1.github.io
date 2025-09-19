@@ -1,37 +1,53 @@
-# Deep Medicine — Eric Topol (2019)
+<h1 align="center"> Deep Medicine — Eric Topol (2019) </h1>
+
+<br>
+
+<h1 align="center">
+
+  <img src="https://images.celeb-picks.com/books/deep-medicine.jpg" alt="Deep Medicine" style="max-height: 200px; object-fit: cover; border-radius: 4px;">
+  
+</h1>
 
 ## Contents
 
 - [Contents](#contents)
-  - [Introduction to Deep Medicine](#introduction-to-deep-medicine)
-  - [Shallow Medicine](#shallow-medicine)
-  - [Medical Diagnosis](#medical-diagnosis)
-  - [The Skinny on Deep Learning](#the-skinny-on-deep-learning)
-  - [Deep Liabilities](#deep-liabilities)
-  - [Doctors and Patterns](#doctors-and-patterns)
-  - [Clinicians Without Patterns](#clinicians-without-patterns)
-  - [Mental Health](#mental-health)
-  - [AI and Health Systems](#ai-and-health-systems)
-  - [Deep Discovery](#deep-discovery)
-  - [Deep Diet](#deep-diet)
-  - [The Virtual Medical Assistant](#the-virtual-medical-assistant)
-  - [Deep Empathy](#deep-empathy)
+  - [Introduction to Deep Medicine](#1-introduction-to-deep-medicine)
+  - [Shallow Medicine](#2-shallow-medicine)
+  - [Medical Diagnosis](#3-medical-diagnosis)
+  - [The Skinny on Deep Learning](#4-the-skinny-on-deep-learning)
+  - [Deep Liabilities](#5-deep-liabilities)
+  - [Doctors and Patterns](#6-doctors-and-patterns)
+  - [Clinicians Without Patterns](#7-clinicians-without-patterns)
+  - [Mental Health](#8-mental-health)
+  - [AI and Health Systems](#9-ai-and-health-systems)
+  - [Deep Discovery](#10-deep-discovery)
+  - [Deep Diet](#11-deep-diet)
+  - [The Virtual Medical Assistant](#12-the-virtual-medical-assistant)
+  - [Deep Empathy](#13-deep-empathy)
 
 ---
 
-## Introduction to Deep Medicine
+
+
+<br>
+
+## 1. Introduction to Deep Medicine
 [↑ Contents](#contents)
 
 I hope to convince you that deep medicine is both possible and highly desirable. Combining the power of humans and machines— intelligence both human and artificial— would take medicine to an unprecedented level. There are plenty of obstacles, as we’ll see. The path won’t be easy, and the end is a long way off. But with the right guard rails, medicine can get there. The increased efficiency and workflow could either be used to squeeze clinicians more, or the gift of time could be turned back to patients— to use the future to bring back the past. The latter objective will require human activism, especially among clinicians, to stand up for the best interest of patients. Like the teenage students of Parkland rallying against gun violence, medical professionals need to be prepared to fight against some powerful vested interests, to not blow this opportunity to stand up for the primacy of patient care, as has been the case all too often in the past. The rise of machines has to be accompanied by heightened humaneness— with more time together, compassion, and tenderness— to make the “care” in healthcare real. To restore and promote care. Period.
 
-## Shallow Medicine
+<br>
+
+## 2. Shallow Medicine
 [↑ Contents](#contents)
 
 I hope that I’ve been able to convince you that the shallow medicine we practice today is resulting in extraordinary waste, suboptimal outcomes, and unnecessary harm. Shallow medicine is unintelligent medicine. This recognition is especially apropos in the information era, a time when we have the ability to generate and process seemingly unlimited data about and for any individual. To go deep. To go long and thick with our health data. That body of data— Big Data per individual— has the potential to promote the accuracy of diagnosis and treatment.
 
 We’re not yet using it because it’s far more than any human, any doctor can deal with. That’s why we need to change the way we make medical diagnoses, the fundamental decision process of clinicians.
 
-## Medical Diagnosis
+<br>
+
+## 3. Medical Diagnosis
 [↑ Contents](#contents)
 
 But Bayes’s theorem relies on priors, and, because we, as inexperienced medical students, had visited so many books but so few patients, we didn’t have much to go on. The method would leave aged physicians, who had seen thousands of patients, in far better stead.
@@ -52,7 +68,9 @@ He also uploaded a picture of her inflamed hands. Within hours, multiple rheumat
 
 In this chapter, for example, I’ve talked a lot about human biases. But those same biases, as part of human culture, can become embedded into AI tools. Since progress in AI for medicine is way behind other fields, like self-driving cars, facial recognition, and games, we can learn from experience in those arenas to avoid similar mistakes. In the next two chapters, I’ll build up and then take down the field. You’ll be able to gain insights into how challenging it will be for AI to transform medicine, along with its eventual inevitability. But both doctors and patients will be better off to know what’s behind the curtain than to blindly accept a new era of algorithmic medicine. You’ll be fully armed when you visit with Dr. Algorithm.
 
-## The Skinny on Deep Learning
+<br>
+
+## 4. The Skinny on Deep Learning
 [↑ Contents](#contents)
 
 Machine learning tends to work best if you give it enough data and the rawest data you can. Because if you have enough of it, then it should be able to filter out the noise by itself.
@@ -61,7 +79,9 @@ Filtering the patient sample to only outpatients— because it seemed at first t
 
 I want to flag this parallel— self-driving cars and the practice of medicine with AI— as one of the most important comparisons in the book. While Level 4 for cars may be achievable under ideal environmental and traffic conditions, it is unlikely that medicine will ever get beyond Level 3 machine autonomy. Certain tasks might be achieved by AI, like accurately diagnosing a skin lesion or ear infection via an algorithm. But, for medicine as a whole, we will never tolerate lack of oversight by human doctors and clinicians across all conditions, all the time. Level 2— partial automation, like cruise control and lane keeping for drivers— will be of great assistance for both doctors and patients in the future. Having humans serve as backup for algorithmic diagnosis and recommendations for treatment represents conditional automation, and over time this Level 3 autonomy for some people with certain conditions will be achievable.
 
-## Deep Liabilities
+<br>
+
+## 5. Deep Liabilities
 [↑ Contents](#contents)
 
 When I asked Fei-Fei Li in 2018 whether anything had changed or improved, she said, “Not at all.”
@@ -90,7 +110,9 @@ JOBS
 
 EXISTENTIAL THREAT
 
-## Doctors and Patterns
+<br>
+
+## 6. Doctors and Patterns
 [↑ Contents](#contents)
 
 This meeting between a patient and a radiologist was an anomaly, but it may be an important indicator of the future.
@@ -103,7 +125,9 @@ Establishing direct patient contact to review the results could be transformativ
 
 The remarkable AI parallels for radiology and pathology led Saurabh Jha and me to write an essay in JAMA about the “information specialists.” 59 Recognizing that many tasks for both specialties will be handled by AI and the fundamental likeness of these specialists, we proposed a unified discipline. This could be considered a natural fusion that could be achieved by a joint training program and accreditation that emphasizes AI, deep learning, data science, and Bayesian logic rather than pattern recognition. The board-certified information specialist would become an invaluable player on the healthcare team.
 
-## Clinicians Without Patterns
+<br>
+
+## 7. Clinicians Without Patterns
 [↑ Contents](#contents)
 
 This modern e-ritual has contributed to the peak incidence of burnout and depression seen among physicians.
@@ -128,14 +152,18 @@ SURGEONS
 
 AI could ultimately reduce the need for nurses, both in hospitals and in outpatient clinics and medical offices. Using AI algorithms to process data from the remote monitoring of patients at home will mean that there is a dramatically reduced role for hospitals to simply observe patients, either to collect data or to see whether symptoms get worse or reappear. That, in itself, has the potential for a major reduction in the hospital workforce. Increasing reliance on telemedicine rather than physical visits will have a similar effect.
 
-## Mental Health
+<br>
+
+## 8. Mental Health
 [↑ Contents](#contents)
 
 the majority of attendees polled said they’d be happy to, or even prefer to, share their secrets with a machine rather than a doctor.
 
 In the face of a global mental health crisis with increasing suicides and an enormous burden of depression and untreated psychiatric illness, AI could help provide a remedy.
 
-## AI and Health Systems
+<br>
+
+## 9. AI and Health Systems
 [↑ Contents](#contents)
 
 The critical assessment of deployment of AI in health systems deserves mention; it will require user research, well-designed systems, and thoughtful delivery of decisions based on models that include risk and benefit.
@@ -144,7 +172,9 @@ Mercy Hospital’s Virtual Care Center in St. Louis gives a glimpse of the futur
 
 Going global is the best way to achieve medical AI’s greatest potential— a planetary health knowledge resource, representing the ultimate learning health system.
 
-## Deep Discovery
+<br>
+
+## 10. Deep Discovery
 [↑ Contents](#contents)
 
 In this case, it wasn’t an image or document retrieval but an odor. It turns out that the fly’s olfactory system uses three nontraditional computational strategies, whereby learning from the tagging of one odor facilitates recognition of a similar odor. Who would have guessed that nearest-neighbor computing searches would have common threads with the fly’s smell algorithm?
@@ -157,7 +187,9 @@ Another important difference between computers and humans is that machines don�
 
 I don’t believe we will ever progress to “ghost” scientists, replaced by AI agents, but off-loading many of the tasks to machines, facilitating scientists doing science, will, in itself, catalyze the field. It’s the same theme as with doctors, acknowledging we can develop the software that writes software— which in turn empowers both humans and machines to a higher order of productivity, a powerful synergy for advancing biomedicine.
 
-## Deep Diet
+<br>
+
+## 11. Deep Diet
 [↑ Contents](#contents)
 
 This indeed is the biggest problem facing nutrition guidelines— the idea that there is simply one diet that all human beings should follow. The idea is both biologically and physiologically implausible, contradicting our uniqueness, the remarkable heterogeneity and individuality of our metabolism, microbiome, environment, to name a few dimensions.
@@ -172,7 +204,9 @@ Importantly, the study didn’t just highlight that there were highly variable i
 
 The extensive body of work done by Segal and Elinav is summarized in their book The Personalized Diet. Cumulatively, they’ve studied more than 2,000 people and summed up their revelations about nutrition science as “we realized we had stumbled across a shocking realization: Everything was personal.” 30 To quote a key conclusion in their book: “Because our data set was so large and our analysis so comprehensive, these results have an enormous impact— they show more conclusively than has ever been shown before that a generic, universal approach to nutrition simply cannot work.” That’s the kind of bold statement you wouldn’t find in a peer-reviewed journal article, but the kind of strong assertion you might find in a book.
 
-## The Virtual Medical Assistant
+<br>
+
+## 12. The Virtual Medical Assistant
 [↑ Contents](#contents)
 
 We cannot actualize the full potential of deep medicine unless we have something like a virtual medical assistant helping us out.
@@ -187,7 +221,9 @@ We’ve learned so much about behavioral science in recent years, but we still k
 
 Perhaps some combination of AI nudges, individualized data, and incentives will ultimately surmount this formidable challenge.
 
-## Deep Empathy
+<br>
+
+## 13. Deep Empathy
 [↑ Contents](#contents)
 
 In 1895, William Osler wrote, “A case cannot be satisfactorily examined in less than half an hour. A sick man likes to have plenty of time spent over him, and he gets no satisfaction in a hurried ten or twelve minute examination.” 7 That’s true 120 years later. And it will always be true.
@@ -215,3 +251,7 @@ Machine medicine need not be our future. We can choose a technological solution 
 The triad of deep phenotyping— knowing more about the person’s layers of medical data than was ever previously attainable or even conceived— deep learning and deep empathy can be a major remedy to the economic crisis in healthcare by promoting bespoke prevention and therapies, superseding many decades of promiscuous and wasteful use of medical resources. But to me, those are the secondary gains of deep medicine. It’s our chance, perhaps the ultimate one, to bring back real medicine: Presence. Empathy. Trust. Caring. Being Human.
 
 If you’ve ever experienced deep pain, you know how lonely and isolating it is, how no one can really know what you are feeling, the anguish, the sense of utter despair. You can be comforted by a loved one, a friend or relative, and that certainly helps. But it’s hard to beat the boost from a doctor or clinician you trust and who can bolster your confidence that it will pass, that he or she will be with you no matter what. That you’ll be okay. That’s the human caring we desperately seek when we’re sick. That’s what AI can help restore. We may never have another shot like this one. Let’s take it.
+
+<br>
+
+<br>
