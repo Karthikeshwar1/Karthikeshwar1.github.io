@@ -11,19 +11,19 @@
 ## Contents
 
 - [Contents](#contents)
-  - [Introduction to Deep Medicine](#1-introduction-to-deep-medicine)
-  - [Shallow Medicine](#2-shallow-medicine)
-  - [Medical Diagnosis](#3-medical-diagnosis)
-  - [The Skinny on Deep Learning](#4-the-skinny-on-deep-learning)
-  - [Deep Liabilities](#5-deep-liabilities)
-  - [Doctors and Patterns](#6-doctors-and-patterns)
-  - [Clinicians Without Patterns](#7-clinicians-without-patterns)
-  - [Mental Health](#8-mental-health)
-  - [AI and Health Systems](#9-ai-and-health-systems)
-  - [Deep Discovery](#10-deep-discovery)
-  - [Deep Diet](#11-deep-diet)
-  - [The Virtual Medical Assistant](#12-the-virtual-medical-assistant)
-  - [Deep Empathy](#13-deep-empathy)
+  - [1. Introduction to Deep Medicine](#1-introduction-to-deep-medicine)
+  - [2. Shallow Medicine](#2-shallow-medicine)
+  - [3. Medical Diagnosis](#3-medical-diagnosis)
+  - [4. The Skinny on Deep Learning](#4-the-skinny-on-deep-learning)
+  - [5. Deep Liabilities](#5-deep-liabilities)
+  - [6. Doctors and Patterns](#6-doctors-and-patterns)
+  - [7. Clinicians Without Patterns](#7-clinicians-without-patterns)
+  - [8. Mental Health](#8-mental-health)
+  - [9. AI and Health Systems](#9-ai-and-health-systems)
+  - [10. Deep Discovery](#10-deep-discovery)
+  - [11. Deep Diet](#11-deep-diet)
+  - [12. The Virtual Medical Assistant](#12-the-virtual-medical-assistant)
+  - [13. Deep Empathy](#13-deep-empathy)
 
 ---
 
