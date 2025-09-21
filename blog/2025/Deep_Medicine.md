@@ -8,7 +8,7 @@
 
 <h1 align="center">
 
-  <img src="https://images.celeb-picks.com/books/deep-medicine.jpg" alt="Deep Medicine" style="max-height: 200px; object-fit: cover; border-radius: 4px;">
+  <img src="https://images.celeb-picks.com/books/deep-medicine.jpg" alt="Deep Medicine" style="max-height: 450px; object-fit: cover; border-radius: 4px;">
   
 </h1>
 
