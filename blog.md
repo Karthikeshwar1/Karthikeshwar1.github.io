@@ -128,7 +128,7 @@ document.getElementById('search-input').addEventListener('input', function() {
 
 ## Resources
 
-[Essential Resources in Learning AI](https://Karthikeshwar1.github.io/blog/2025/Essential_Resources_in_learning_AI)
+[Resources in Learning AI](https://Karthikeshwar1.github.io/blog/2025/Essential_Resources_in_learning_AI)
 
 [Essential Software For Computers](https://Karthikeshwar1.github.io/blog/2021/Essential_Software_For_Computers)
 
