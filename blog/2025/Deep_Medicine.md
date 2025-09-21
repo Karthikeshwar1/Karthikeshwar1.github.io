@@ -2,6 +2,10 @@
 
 <br>
 
+<small style="display:block; text-align:center; color:gray;">
+  Created 20 Sep, 2025
+</small>
+
 <h1 align="center">
 
   <img src="https://images.celeb-picks.com/books/deep-medicine.jpg" alt="Deep Medicine" style="max-height: 200px; object-fit: cover; border-radius: 4px;">
