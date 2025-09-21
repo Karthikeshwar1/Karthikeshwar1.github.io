@@ -1,4 +1,4 @@
-<h1 align="center">Essential Resources in learning AI</h1>
+<h1 align="center">Resources in learning AI</h1>
 
 <br>
 
