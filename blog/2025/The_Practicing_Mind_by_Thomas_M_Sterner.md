@@ -1,4 +1,8 @@
-<h1 align="center">The Practicing Mind - Book Notes</h1> 
+<h1 align="center">The Practicing Mind - Book Notes</h1>
+
+<small style="display:block; text-align:center; color:gray;">
+  Created 24 Aug, 2025
+</small>
 
 <h1 align="center">
   <img align="center" src="https://images.celeb-picks.com/books/the-practicing-mind.jpg" alt="The Practicing Mind" style="max-height: 450px; object-fit: cover; border-radius: 4px;">
@@ -8,9 +12,7 @@
 
 ## Book by Thomas M. Sterner
 
-<small style="display:block; text-align:center; color:gray;">
-  Created 24 Aug, 2025
-</small>
+
 <br>
 
 "Master any skill or challenge by learning to love the process"
