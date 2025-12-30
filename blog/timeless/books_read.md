@@ -10,9 +10,11 @@ Books I've read and recommend.
 
 <br>
 
----
+
 
 ### Non-fiction
+
+---
 
 <div class="books-grid">
 {% for b in site.data.books.books %}
@@ -22,9 +24,11 @@ Books I've read and recommend.
 {% endfor %}
 </div>
 
----
+<br>
 
 ### Fiction
+
+---
 
 <div class="books-grid">
 {% for b in site.data.books.books %}
@@ -34,9 +38,11 @@ Books I've read and recommend.
 {% endfor %}
 </div>
 
----
+<br>
 
 ### Crux or Some Parts Only
+
+---
 
 <div class="books-grid">
 {% for b in site.data.books.books %}
