@@ -1,5 +1,7 @@
 <h1 align="center"> Books read </h1>
 
+<link rel="stylesheet" href="{{ '/assets/css/books.css' | relative_url }}">
+
 <br>
 
 Books I've read and recommend.
@@ -10,232 +12,37 @@ Books I've read and recommend.
 
 ### Non-fiction
 
-<div style="text-align: center;">
-
-
-<div style="display: inline-block; vertical-align: top; text-align: center; width: 280px; margin: 13px; padding: 10px; border-radius: 8px; background-color: #f9f9f9; box-shadow: 0 2px 8px rgba(0,0,0,0.05);">
-    <img src="/assets/images/books/the-practicing-mind.jpg" alt="The Practicing Mind" style="max-height: 200px; object-fit: cover; border-radius: 4px;">
-    <div style="font-size: 1.2em; font-weight: bold; margin: 1rem 0 0.5rem 0; color: #333;">The Practicing Mind</div>
-    <div style="font-size: 1em; color: #666;">Thomas M. Sterner</div>
-  <div style="font-size: 0.85em; color: #888; font-style: italic; margin: 0.3rem 0 0 0; line-height: 1.3;">
-    </div></div>
-
-<div style="display: inline-block; vertical-align: top; text-align: center; width: 280px; margin: 13px; padding: 10px; border-radius: 8px; background-color: #f9f9f9; box-shadow: 0 2px 8px rgba(0,0,0,0.05);">
-    <img src="/assets/images/books/deep-medicine.jpg" alt="Deep Medicine" style="max-height: 200px; object-fit: cover; border-radius: 4px;">
-    <div style="font-size: 1.2em; font-weight: bold; margin: 1rem 0 0.5rem 0; color: #333;">Deep Medicine</div>
-    <div style="font-size: 1em; color: #666;">Eric Topol</div>
-  <div style="font-size: 0.85em; color: #888; font-style: italic; margin: 0.3rem 0 0 0; line-height: 1.3;">
-    </div></div>
-
-<div style="display: inline-block; vertical-align: top; text-align: center; width: 280px; margin: 13px; padding: 10px; border-radius: 8px; background-color: #f9f9f9; box-shadow: 0 2px 8px rgba(0,0,0,0.05);">
-    <img src="/assets/images/books/the-vital-question.jpg" alt="The Vital Question" style="max-height: 200px; object-fit: cover; border-radius: 4px;">
-    <div style="font-size: 1.2em; font-weight: bold; margin: 1rem 0 0.5rem 0; color: #333;">The Vital Question</div>
-    <div style="font-size: 1em; color: #666;">Nick Lane</div>
-  <div style="font-size: 0.85em; color: #888; font-style: italic; margin: 0.3rem 0 0 0; line-height: 1.3;">
-    </div></div>
-
-<div style="display: inline-block; vertical-align: top; text-align: center; width: 280px; margin: 13px; padding: 10px; border-radius: 8px; background-color: #f9f9f9; box-shadow: 0 2px 8px rgba(0,0,0,0.05);">
-    <img src="/assets/images/books/mastery.jpg" alt="Mastery" style="max-height: 200px; object-fit: cover; border-radius: 4px;">
-    <div style="font-size: 1.2em; font-weight: bold; margin: 1rem 0 0.5rem 0; color: #333;">Mastery</div>
-    <div style="font-size: 1em; color: #666;">Robert Greene</div>
-  <div style="font-size: 0.85em; color: #888; font-style: italic; margin: 0.3rem 0 0 0; line-height: 1.3;">
-    </div></div>
-
-    
-  <div style="display: inline-block; vertical-align: top; text-align: center; width: 280px; margin: 13px; padding: 10px; border-radius: 8px; background-color: #f9f9f9; box-shadow: 0 2px 8px rgba(0,0,0,0.05);">
-    <img src="/assets/images/books/sapiens.jpg" alt="Sapiens" style="max-height: 200px; object-fit: cover; border-radius: 4px;">
-    <div style="font-size: 1.2em; font-weight: bold; margin: 1rem 0 0.5rem 0; color: #333;">Sapiens</div>
-    <div style="font-size: 1em; color: #666;">Yuval Noah Harari</div>
-  <div style="font-size: 0.85em; color: #888; font-style: italic; margin: 0.3rem 0 0 0; line-height: 1.3;">
-        Good summary of humans.
-    </div></div>
-  
-  <div style="display: inline-block; vertical-align: top; text-align: center; width: 280px; margin: 13px; padding: 10px; border-radius: 8px; background-color: #f9f9f9; box-shadow: 0 2px 8px rgba(0,0,0,0.05);">
-    <img src="/assets/images/books/zero-to-one.jpg" alt="Zero to One" style="max-height: 200px; object-fit: cover; border-radius: 4px;">
-    <div style="font-size: 1.2em; font-weight: bold; margin: 1rem 0 0.5rem 0; color: #333;">Zero to One</div>
-    <div style="font-size: 1em; color: #666;">Peter Thiel</div>
-  <div style="font-size: 0.85em; color: #888; font-style: italic; margin: 0.3rem 0 0 0; line-height: 1.3;">
-        Startup Bible, can also be read as a motivational or a book on philosophy, showing how good it really is.
-    </div></div>
-  
-  <div style="display: inline-block; vertical-align: top; text-align: center; width: 280px; margin: 13px; padding: 10px; border-radius: 8px; background-color: #f9f9f9; box-shadow: 0 2px 8px rgba(0,0,0,0.05);">
-    <img src="/assets/images/books/be-here-now.jpg" alt="Be Here Now" style="max-height: 200px; object-fit: cover; border-radius: 4px;">
-    <div style="font-size: 1.2em; font-weight: bold; margin: 1rem 0 0.5rem 0; color: #333;">Be Here Now</div>
-    <div style="font-size: 1em; color: #666;">Ram Dass</div>
-    <div style="font-size: 0.85em; color: #888; font-style: italic; margin: 0.3rem 0 0 0; line-height: 1.3;">
-          Book from the hippie culture of 60s California.
-    </div></div>
-  
-  <div style="display: inline-block; vertical-align: top; text-align: center; width: 280px; margin: 13px; padding: 10px; border-radius: 8px; background-color: #f9f9f9; box-shadow: 0 2px 8px rgba(0,0,0,0.05);">
-    <img src="/assets/images/books/life_3_0.jpg" alt="Life 3.0" style="max-height: 200px; object-fit: cover; border-radius: 4px;">
-    <div style="font-size: 1.2em; font-weight: bold; margin: 1rem 0 0.5rem 0; color: #333;">Life 3.0</div>
-    <div style="font-size: 1em; color: #666;">Max Tegmark</div>
-  </div>
-  
-  <div style="display: inline-block; vertical-align: top; text-align: center; width: 280px; margin: 13px; padding: 10px; border-radius: 8px; background-color: #f9f9f9; box-shadow: 0 2px 8px rgba(0,0,0,0.05);">
-    <img src="/assets/images/books/emotional-design.jpg" alt="Emotional Design" style="max-height: 200px; object-fit: cover; border-radius: 4px;">
-    <div style="font-size: 1.2em; font-weight: bold; margin: 1rem 0 0.5rem 0; color: #333;">Emotional Design</div>
-    <div style="font-size: 1em; color: #666;">Don Norman</div>
-    <div style="font-size: 1em; color: #666;">Ram Dass</div>
-    <div style="font-size: 0.85em; color: #888; font-style: italic; margin: 0.3rem 0 0 0; line-height: 1.3;">
-        Lessons on designing, I read it also as a guide to Human-Computer Interaction (HCP).
-    </div></div>
-
-  
-  <div style="display: inline-block; vertical-align: top; text-align: center; width: 280px; margin: 13px; padding: 10px; border-radius: 8px; background-color: #f9f9f9; box-shadow: 0 2px 8px rgba(0,0,0,0.05);">
-    <img src="/assets/images/books/a-brief-history-of-time.jpg" alt="A Brief History of Time" style="max-height: 200px; object-fit: cover; border-radius: 4px;">
-    <div style="font-size: 1.2em; font-weight: bold; margin: 1rem 0 0.5rem 0; color: #333;">A Brief History of Time</div>
-    <div style="font-size: 1em; color: #666;">Stephen Hawking</div>
-  </div>
-  
-  <div style="display: inline-block; vertical-align: top; text-align: center; width: 280px; margin: 13px; padding: 10px; border-radius: 8px; background-color: #f9f9f9; box-shadow: 0 2px 8px rgba(0,0,0,0.05);">
-    <img src="/assets/images/books/the-psychology-of-money.jpg" alt="The Psychology of Money" style="max-height: 200px; object-fit: cover; border-radius: 4px;">
-    <div style="font-size: 1.2em; font-weight: bold; margin: 1rem 0 0.5rem 0; color: #333;">The Psychology of Money</div>
-    <div style="font-size: 1em; color: #666;">Morgan Housel</div>
-  </div>
-  
-  <div style="display: inline-block; vertical-align: top; text-align: center; width: 280px; margin: 13px; padding: 10px; border-radius: 8px; background-color: #f9f9f9; box-shadow: 0 2px 8px rgba(0,0,0,0.05);">
-    <img src="/assets/images/books/take-charge-of-your-life.jpg" alt="Take Charge of your life" style="max-height: 200px; object-fit: cover; border-radius: 4px;">
-    <div style="font-size: 1.2em; font-weight: bold; margin: 1rem 0 0.5rem 0; color: #333;">Take Charge of your life</div>
-    <div style="font-size: 1em; color: #666;">Dr. William Glasser, MD</div>
-  <div style="font-size: 0.85em; color: #888; font-style: italic; margin: 0.3rem 0 0 0; line-height: 1.3;">
-       Concepts in this book must be incorporated into all school syllabuses.
-    </div></div>
-  
-  <div style="display: inline-block; vertical-align: top; text-align: center; width: 280px; margin: 13px; padding: 10px; border-radius: 8px; background-color: #f9f9f9; box-shadow: 0 2px 8px rgba(0,0,0,0.05);">
-    <img src="/assets/images/books/hit-refresh.jpg" alt="Hit Refresh" style="max-height: 200px; object-fit: cover; border-radius: 4px;">
-    <div style="font-size: 1.2em; font-weight: bold; margin: 1rem 0 0.5rem 0; color: #333;">Hit Refresh</div>
-    <div style="font-size: 1em; color: #666;">Satya Nadella</div>
-  </div>
-  
-  <div style="display: inline-block; vertical-align: top; text-align: center; width: 280px; margin: 13px; padding: 10px; border-radius: 8px; background-color: #f9f9f9; box-shadow: 0 2px 8px rgba(0,0,0,0.05);">
-    <img src="/assets/images/books/the-lessons-of-history.jpg" alt="The Lessons of History" style="max-height: 200px; object-fit: cover; border-radius: 4px;">
-    <div style="font-size: 1.2em; font-weight: bold; margin: 1rem 0 0.5rem 0; color: #333;">The Lessons of History</div>
-    <div style="font-size: 1em; color: #666;">Will and Ariel Durant</div>
-  <div style="font-size: 0.85em; color: #888; font-style: italic; margin: 0.3rem 0 0 0; line-height: 1.3;">
-        A brief history of civilisations.
-    </div></div>
-  
-  <div style="display: inline-block; vertical-align: top; text-align: center; width: 280px; margin: 13px; padding: 10px; border-radius: 8px; background-color: #f9f9f9; box-shadow: 0 2px 8px rgba(0,0,0,0.05);">
-    <img src="/assets/images/books/the-book-of-clarity.jpg" alt="The Book of Clarity" style="max-height: 200px; object-fit: cover; border-radius: 4px;">
-    <div style="font-size: 1.2em; font-weight: bold; margin: 1rem 0 0.5rem 0; color: #333;">The Book of Clarity</div>
-    <div style="font-size: 1em; color: #666;">Paras Chopra</div>
-  <div style="font-size: 0.85em; color: #888; font-style: italic; margin: 0.3rem 0 0 0; line-height: 1.3;">
-        I have a signed copy!
-    </div></div>
-  
-  <div style="display: inline-block; vertical-align: top; text-align: center; width: 280px; margin: 13px; padding: 10px; border-radius: 8px; background-color: #f9f9f9; box-shadow: 0 2px 8px rgba(0,0,0,0.05);">
-    <img src="/assets/images/books/the-prince.jpg" alt="The Prince" style="max-height: 200px; object-fit: cover; border-radius: 4px;">
-    <div style="font-size: 1.2em; font-weight: bold; margin: 1rem 0 0.5rem 0; color: #333;">The Prince</div>
-    <div style="font-size: 1em; color: #666;">Niccolo Machiavelli</div>
-  <div style="font-size: 0.85em; color: #888; font-style: italic; margin: 0.3rem 0 0 0; line-height: 1.3;">
-        Gold.
-    </div></div>
-  
-  <div style="display: inline-block; vertical-align: top; text-align: center; width: 280px; margin: 13px; padding: 10px; border-radius: 8px; background-color: #f9f9f9; box-shadow: 0 2px 8px rgba(0,0,0,0.05);">
-    <img src="/assets/images/books/the-technological-republic.jpg" alt="The Technological Republic" style="max-height: 200px; object-fit: cover; border-radius: 4px;">
-    <div style="font-size: 1.2em; font-weight: bold; margin: 1rem 0 0.5rem 0; color: #333;">The Technological Republic</div>
-    <div style="font-size: 1em; color: #666;">Alexander C. Karp and Nicholas W. Zamiska</div>
-  </div>
-  
-  <div style="display: inline-block; vertical-align: top; text-align: center; width: 280px; margin: 13px; padding: 10px; border-radius: 8px; background-color: #f9f9f9; box-shadow: 0 2px 8px rgba(0,0,0,0.05);">
-    <img src="/assets/images/books/impro.jpg" alt="Impro: Improvisation and the Theatre" style="max-height: 200px; object-fit: cover; border-radius: 4px;">
-    <div style="font-size: 1.2em; font-weight: bold; margin: 1rem 0 0.5rem 0; color: #333;">Impro: Improvisation and the Theatre</div>
-    <div style="font-size: 1em; color: #666;">Keith Johnstone</div>
-  <div style="font-size: 0.85em; color: #888; font-style: italic; margin: 0.3rem 0 0 0; line-height: 1.3;">
-        Learnt about story-telling and improvisation.
-    </div></div>
-
-    <div style="display: inline-block; vertical-align: top; text-align: center; width: 280px; margin: 13px; padding: 10px; border-radius: 8px; background-color: #f9f9f9; box-shadow: 0 2px 8px rgb(0,0,0,0.05);">
-    <img src="/assets/images/books/algorithms-to-live-by.jpg" alt="Algorithms to Live By" style="max-height: 200px; object-fit: cover; border-radius: 4px;">
-    <div style="font-size: 1.2em; font-weight: bold; margin: 1rem 0 0.5rem 0; color: #333;">Algorithms to Live By</div>
-    <div style="font-size: 1em; color: #666;">Brian Christian, Thomas L. Griffiths, and Tom Griffiths</div>
-  <div style="font-size: 0.85em; color: #888; font-style: italic; margin: 0.3rem 0 0 0; line-height: 1.3;">
-        Explains several algorithms non-technical way, connecting it to everyday life.
-    </div></div>
-
-  <div style="display: inline-block; vertical-align: top; text-align: center; width: 280px; margin: 13px; padding: 10px; border-radius: 8px; background-color: #f9f9f9; box-shadow: 0 2px 8px rgba(0,0,0,0.05);">
-    <img src="/assets/images/books/the-monk-who-sold-his-ferrari.jpg" alt="The Monk Who Sold his Ferrari" style="max-height: 200px; object-fit: cover; border-radius: 4px;">
-    <div style="font-size: 1.2em; font-weight: bold; margin: 1rem 0 0.5rem 0; color: #333;">The Monk Who Sold his Ferrari</div>
-    <div style="font-size: 1em; color: #666;">Robin Sharma</div>
-  </div>
+<div class="books-grid">
+{% raw %}{% for b in site.data.books.books %}{% endraw %}
+  {% raw %}{% if b.category == "Non-fiction" %}{% endraw %}
+    {% raw %}{% include book-card.html book=b %}{% endraw %}
+  {% raw %}{% endif %}{% endraw %}
+{% raw %}{% endfor %}{% endraw %}
 </div>
 
-<br>
-
 ---
-
 
 ### Fiction
 
-<div style="text-align: center;">
-  <div style="display: inline-block; vertical-align: top; text-align: center; width: 280px; margin: 13px; padding: 10px; border-radius: 8px; background-color: #f9f9f9; box-shadow: 0 2px 8px rgba(0,0,0,0.05);">
-    <img src="/assets/images/books/the-mill-on-the-floss.jpg" alt="The Mill On The Floss" style="max-height: 200px; object-fit: cover; border-radius: 4px;">
-    <div style="font-size: 1.2em; font-weight: bold; margin: 1rem 0 0.5rem 0; color: #333;">The Mill On The Floss</div>
-    <div style="font-size: 1em; color: #666;">George Eliot</div>
-  <div style="font-size: 0.85em; color: #888; font-style: italic; margin: 0.3rem 0 0 0; line-height: 1.3;">
-        Read it in childhood, really loved it.
-    </div></div>
-  
-  <div style="display: inline-block; vertical-align: top; text-align: center; width: 280px; margin: 13px; padding: 10px; border-radius: 8px; background-color: #f9f9f9; box-shadow: 0 2px 8px rgba(0,0,0,0.05);">
-    <img src="/assets/images/books/1984.jpg" alt="1984" style="max-height: 200px; object-fit: cover; border-radius: 4px;">
-    <div style="font-size: 1.2em; font-weight: bold; margin: 1rem 0 0.5rem 0; color: #333;">1984</div>
-    <div style="font-size: 1em; color: #666;">George Orwell</div>
-  </div>
-  
-  <div style="display: inline-block; vertical-align: top; text-align: center; width: 280px; margin: 13px; padding: 10px; border-radius: 8px; background-color: #f9f9f9; box-shadow: 0 2px 8px rgba(0,0,0,0.05);">
-    <img src="/assets/images/books/harry-potter-and-the-philosophers-stone.jpg" alt="Harry Potter and the Pholosopher's Stone" style="max-height: 200px; object-fit: cover; border-radius: 4px;">
-    <div style="font-size: 1.2em; font-weight: bold; margin: 1rem 0 0.5rem 0; color: #333;">Harry Potter and the Sorcerer's Stone</div>
-    <div style="font-size: 1em; color: #666;">J K Rowling</div>
-  </div>
-  
-  <div style="display: inline-block; vertical-align: top; text-align: center; width: 280px; margin: 13px; padding: 10px; border-radius: 8px; background-color: #f9f9f9; box-shadow: 0 2px 8px rgba(0,0,0,0.05);">
-    <img src="/assets/images/books/siddhartha.jpg" alt="Siddhartha" style="max-height: 200px; object-fit: cover; border-radius: 4px;">
-    <div style="font-size: 1.2em; font-weight: bold; margin: 1rem 0 0.5rem 0; color: #333;">Siddhartha</div>
-    <div style="font-size: 1em; color: #666;">Hermann Hesse</div>
-  </div>
-  
-  <div style="display: inline-block; vertical-align: top; text-align: center; width: 280px; margin: 13px; padding: 10px; border-radius: 8px; background-color: #f9f9f9; box-shadow: 0 2px 8px rgba(0,0,0,0.05);">
-    <img src="/assets/images/books/the-ultimate-hitchhikers-guide-to-the-galaxy.jpg" alt="The Hitchhikers Guide to the Galaxy" style="max-height: 200px; object-fit: cover; border-radius: 4px;">
-    <div style="font-size: 1.2em; font-weight: bold; margin: 1rem 0 0.5rem 0; color: #333;">The Hitchhikers Guide to the Galaxy</div>
-    <div style="font-size: 1em; color: #666;">Douglas Adams</div>
-  <div style="font-size: 0.85em; color: #888; font-style: italic; margin: 0.3rem 0 0 0; line-height: 1.3;">
-        Everyone must read it, or atleast the philosophy of it.
-    </div></div>
-
-<div style="display: inline-block; vertical-align: top; text-align: center; width: 280px; margin: 13px; padding: 10px; border-radius: 8px; background-color: #f9f9f9; box-shadow: 0 2px 8px rgba(0,0,0,0.05);">
-    <img src="/assets/images/books/the-richest-man-in-babylon.jpg" alt="The Richest Man in Babylon" style="max-height: 200px; object-fit: cover; border-radius: 4px;">
-    <div style="font-size: 1.2em; font-weight: bold; margin: 1rem 0 0.5rem 0; color: #333;">The Richest Man in Babylon</div>
-    <div style="font-size: 1em; color: #666;">George S.Clason</div>
-  <div style="font-size: 0.85em; color: #888; font-style: italic; margin: 0.3rem 0 0 0; line-height: 1.3;">
-    </div></div>
-
-    
+<div class="books-grid">
+{% raw %}{% for b in site.data.books.books %}{% endraw %}
+  {% raw %}{% if b.category == "Fiction" %}{% endraw %}
+    {% raw %}{% include book-card.html book=b %}{% endraw %}
+  {% raw %}{% endif %}{% endraw %}
+{% raw %}{% endfor %}{% endraw %}
 </div>
-
-
-<br>
 
 ---
 
-
 ### Crux or Some Parts Only
 
-<div style="text-align: center;">
-  <div style="display: inline-block; vertical-align: top; text-align: center; width: 280px; margin: 13px; padding: 10px; border-radius: 8px; background-color: #f9f9f9; box-shadow: 0 2px 8px rgba(0,0,0,0.05);">
-    <img src="/assets/images/books/the-structure-of-scientific-revolutions.jpg" alt="The structure of scientific revolutions" style="max-height: 200px; object-fit: cover; border-radius: 4px;">
-    <div style="font-size: 1.2em; font-weight: bold; margin: 1rem 0 0.5rem 0; color: #333;">The structure of scientific revolutions</div>
-    <div style="font-size: 1em; color: #666;">Thomas Kuhn</div>
-  </div>
-  
-  <div style="display: inline-block; vertical-align: top; text-align: center; width: 280px; margin: 13px; padding: 10px; border-radius: 8px; background-color: #f9f9f9; box-shadow: 0 2px 8px rgba(0,0,0,0.05);">
-    <img src="/assets/images/books/superintelligence.jpg" alt="Superintelligence" style="max-height: 200px; object-fit: cover; border-radius: 4px;">
-    <div style="font-size: 1.2em; font-weight: bold; margin: 1rem 0 0.5rem 0; color: #333;">Superintelligence</div>
-    <div style="font-size: 1em; color: #666;">Nick Bostrom</div>
-  <div style="font-size: 0.85em; color: #888; font-style: italic; margin: 0.3rem 0 0 0; line-height: 1.3;">
-        Mostly speculatory, but concrete.
-    </div></div>
-</div> 
+<div class="books-grid">
+{% raw %}{% for b in site.data.books.books %}{% endraw %}
+  {% raw %}{% if b.category == "Crux" %}{% endraw %}
+    {% raw %}{% include book-card.html book=b %}{% endraw %}
+  {% raw %}{% endif %}{% endraw %}
+{% raw %}{% endfor %}{% endraw %}
+</div>
 
 <br>
 

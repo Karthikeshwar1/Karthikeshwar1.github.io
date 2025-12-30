@@ -1,0 +1,18 @@
+<article class="book-card" role="article" aria-label="{{ include.book.title }}">
+  <figure>
+    <img
+      src="{{ '/assets/images/books/' | append: include.book.filename | relative_url }}"
+      alt="{{ include.book.title }} — {{ include.book.author }}"
+      loading="lazy"
+      width="140"
+      height="200"
+      class="book-image" />
+    <figcaption class="book-meta">
+      <div class="book-title">{{ include.book.title }}</div>
+      <div class="book-author">{{ include.book.author }}</div>
+      {% raw %}{% if include.book.note %}{% endraw %}
+        <div class="book-note">{% raw %}{{ include.book.note }}{% endraw %}</div>
+      {% raw %}{% endif %}{% endraw %}
+    </figcaption>
+  </figure>
+</article>
