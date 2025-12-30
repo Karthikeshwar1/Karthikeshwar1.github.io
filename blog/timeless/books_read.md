@@ -1,3 +1,5 @@
+---
+---
 <h1 align="center"> Books read </h1>
 
 <link rel="stylesheet" href="{{ '/assets/css/books.css' | relative_url }}">
@@ -13,11 +15,11 @@ Books I've read and recommend.
 ### Non-fiction
 
 <div class="books-grid">
-{% raw %}{% for b in site.data.books.books %}{% endraw %}
-  {% raw %}{% if b.category == "Non-fiction" %}{% endraw %}
-    {% raw %}{% include book-card.html book=b %}{% endraw %}
-  {% raw %}{% endif %}{% endraw %}
-{% raw %}{% endfor %}{% endraw %}
+{% for b in site.data.books.books %}
+  {% if b.category == "Non-fiction" %}
+    {% include book-card.html book=b %}
+  {% endif %}
+{% endfor %}
 </div>
 
 ---
@@ -25,11 +27,11 @@ Books I've read and recommend.
 ### Fiction
 
 <div class="books-grid">
-{% raw %}{% for b in site.data.books.books %}{% endraw %}
-  {% raw %}{% if b.category == "Fiction" %}{% endraw %}
-    {% raw %}{% include book-card.html book=b %}{% endraw %}
-  {% raw %}{% endif %}{% endraw %}
-{% raw %}{% endfor %}{% endraw %}
+{% for b in site.data.books.books %}
+  {% if b.category == "Fiction" %}
+    {% include book-card.html book=b %}
+  {% endif %}
+{% endfor %}
 </div>
 
 ---
@@ -37,11 +39,11 @@ Books I've read and recommend.
 ### Crux or Some Parts Only
 
 <div class="books-grid">
-{% raw %}{% for b in site.data.books.books %}{% endraw %}
-  {% raw %}{% if b.category == "Crux" %}{% endraw %}
-    {% raw %}{% include book-card.html book=b %}{% endraw %}
-  {% raw %}{% endif %}{% endraw %}
-{% raw %}{% endfor %}{% endraw %}
+{% for b in site.data.books.books %}
+  {% if b.category == "Crux" %}
+    {% include book-card.html book=b %}
+  {% endif %}
+{% endfor %}
 </div>
 
 <br>
