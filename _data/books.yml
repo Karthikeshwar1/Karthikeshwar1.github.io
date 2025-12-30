@@ -1,4 +1,48 @@
 books:
+  - id: the-art-of-war
+    title: "The Art of War"
+    author: "Sun Tzu"
+    filename: "the-art-of-war.jpg"
+    category: "Non-fiction"
+    note: ""
+  - id: beyond-order
+    title: "Beyond Order"
+    author: "Jordan B Peterson"
+    filename: "beyond-order.jpg"
+    category: "Non-fiction"
+    note: ""
+  - id: deep-learning
+    title: "Deep Learning"
+    author: "Ian Goodfellow, Yoshua Bengio, Aaron Courville"
+    filename: "deep-learning.jpg"
+    category: "Non-fiction"
+    note: ""
+  - id: storm-of-steel
+    title: "Storm of Steel"
+    author: "Ernst Jünger"
+    filename: "storm-of-steel.jpg"
+    category: "Non-fiction"
+    note: ""
+  - id: how-to-create-a-mind
+    title: "How to Create A Mind"
+    author: "Ray Kurzweil"
+    filename: "how-to-create-a-mind.jpg"
+    category: "Non-fiction"
+    note: ""
+  - id: logic-a-graphic-guide
+    title: "Logic: A Graphic Guide"
+    author: "Dan Cryan, Sharon Shatil, Bill Mayblin"
+    filename: "logic-a-graphic-guide.jpg"
+    category: "Non-fiction"
+    note: ""
+    
+  - id: are-we-smart-enough-to-know-how-smart-animals-are
+    title: "Are We Smart Enough to Know How Smart Animals Are?"
+    author: "Frans de Waal"
+    filename: "are-we-smart-enough-to-know-how-smart-animals-are.jpg"
+    category: "Non-fiction"
+    note: ""
+    
   - id: the-practicing-mind
     title: "The Practicing Mind"
     author: "Thomas M. Sterner"
