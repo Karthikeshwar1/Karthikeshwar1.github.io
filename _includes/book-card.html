@@ -10,9 +10,9 @@
     <figcaption class="book-meta">
       <div class="book-title">{{ include.book.title }}</div>
       <div class="book-author">{{ include.book.author }}</div>
-      {% raw %}{% if include.book.note %}{% endraw %}
-        <div class="book-note">{% raw %}{{ include.book.note }}{% endraw %}</div>
-      {% raw %}{% endif %}{% endraw %}
+      {% if include.book.note and include.book.note != "" %}
+        <div class="book-note">{{ include.book.note }}</div>
+      {% endif %}
     </figcaption>
   </figure>
 </article>
