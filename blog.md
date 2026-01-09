@@ -77,6 +77,8 @@ document.getElementById('search-input').addEventListener('input', function() {
 
   <summary>More</summary>
 
+  <br>
+
 
 - [Fuzzy Settings](https://github.com/Karthikeshwar1/Karthikeshwar1.github.io/blob/main/blog/2024/Fuzzy_Settings.md)
 
@@ -88,6 +90,7 @@ document.getElementById('search-input').addEventListener('input', function() {
 
 - [AI in 2022](https://karthikeshwar1.github.io/blog/2022/AI_in_2022)
 
+<br>
 
 </details>
 
