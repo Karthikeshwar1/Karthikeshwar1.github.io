@@ -65,6 +65,8 @@ document.getElementById('search-input').addEventListener('input', function() {
 
 - [Emergence and Meaning](https://karthikeshwar1.github.io/blog/2025/Emergence_and_Meaning)
 
+- [Words Weigh ⭐](https://karthikeshwar1.github.io/blog/2024/Words_weigh)
+
 - [Security Systems: The Flaw and The Ultimate Solution](https://karthikeshwar1.github.io/blog/2023/security-systems-the-flaw-and-the-ultimate-solution)
 
 - [Software Architecture Foundations](https://karthikeshwar1.github.io/blog/2024/Software_Architecture_Foundations_1)
@@ -86,8 +88,6 @@ document.getElementById('search-input').addEventListener('input', function() {
 - [Is God Dying?](https://Karthikeshwar1.github.io/blog/2024/Is_God_Dying)
 
 - [Emotional Design - By Don Norman - Book Notes](https://karthikeshwar1.github.io/blog/2023/Emotional%20Design%20-%20By%20Don%20Norman%20-%20Book%20Notes)
-
-- [Words Weigh](https://karthikeshwar1.github.io/blog/2024/Words_weigh)
 
 - [AI in 2022](https://karthikeshwar1.github.io/blog/2022/AI_in_2022)
 
