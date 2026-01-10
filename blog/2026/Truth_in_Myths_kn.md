@@ -1,4 +1,4 @@
-<h1 align="center"> ಗಣಿತ ಮತ್ತು ಪುರಾಣಗಳೊಳಗಿನ ಸತ್ಯ (Truth in Maths and Myths) </h1>
+<h1 align="center"> ಗಣಿತ ಮತ್ತು ಪುರಾಣಗಳೊಳಗಿನ ಸತ್ಯ (The Truth in Maths and Myths) </h1>
 
 <br>
 
