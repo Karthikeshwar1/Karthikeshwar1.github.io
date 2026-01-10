@@ -7,9 +7,10 @@
 "It is an abstraction of what occurs in the real world."
 
 "But I don't see the rectangle, or these equations exactly the same way in the real world...!"
-"that's right. A condensed abstraction is much easier to understand, calculate, study and build upon. They're not supposed to be real, but in a way,
 
-They're more real than reality itself"
+"That's right! A condensed abstraction is much easier to understand, calculate, study and build upon. They're not supposed to be real, but in a way,
+
+_They're more real than reality itself_"
 
 <br>
 
