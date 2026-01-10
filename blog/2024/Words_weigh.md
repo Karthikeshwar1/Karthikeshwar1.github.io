@@ -22,7 +22,7 @@ Hence, words only have meaning when the species is social.
 
 ## 2 
 
-Jordan Peterson, in his *Biblical Series* lectures, emphasizes this psychological and symbolic interpretation: that naming and narrative are the human methods of imposing order on a pre-existing chaos — the world already exists, but it becomes intelligible, usable, and meaningful once it is named and structured in language ([Jordan Peterson – Biblical Series](https://www.jordanbpeterson.com/bible-series/)). (Also see my *Myth Truth* blog for a deeper discussion of this idea.)
+Jordan Peterson, in his *Biblical Series* lectures, emphasizes this psychological and symbolic interpretation: that naming and narrative are the human methods of imposing order on a pre-existing chaos — the world already exists, but it becomes intelligible, usable, and meaningful once it is named and structured in language ([Jordan Peterson – Biblical Series](https://www.jordanbpeterson.com/bible-series/)). (Also see my *[Truth in Myths](https://karthikeshwar1.github.io/blog/2026/Truth_in_Myths)* blog for a deeper discussion of this idea.)
 
 Words also have importance in another way: nothing in this world had a *name* until humans named it. Meaning did not arise from atoms alone, but from symbols layered onto reality. The world may have existed before language, but it did not exist *as a world* — a structured domain of significance — until it was articulated.
 
