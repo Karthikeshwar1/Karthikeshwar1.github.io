@@ -30,6 +30,10 @@ Let's call the myth world and the world where mathematics recide as _'meta world
 2. We certainly didn't fully create mathematics or the myths.
 3. Did it _emerge_ as we evolved?
 
+<br>
+
+## 4
+
 * Meaning occurs as a result of [recursion](https://karthikeshwar1.github.io/blog/2023/What%27s%20the%20book%20GEB%20all%20about) and [emergence](https://karthikeshwar1.github.io/blog/2025/Emergence_and_Meaning).
 * Real world entities and abstract entities in _meta world_ only have meaning when we [Humans give meaning](https://karthikeshwar1.github.io/blog/2024/Words_weigh) to them. 
 Maybe because we cannot have a view other than a selfish view.
