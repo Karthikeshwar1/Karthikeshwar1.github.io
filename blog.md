@@ -73,7 +73,7 @@ document.getElementById('search-input').addEventListener('input', function() {
 
 - [Why Different Domains Require Different Approaches](https://karthikeshwar1.github.io/blog/2023/Why%20Different%20Domains%20Require%20Different%20Approaches)
 
-- [Truth in Myths](https://karthikeshwar1.github.io/blog/2026/Truth_in_Myths)
+- [The Truth in Maths and Myths](https://karthikeshwar1.github.io/blog/2026/Truth_in_Myths)
 
 <details>
 
