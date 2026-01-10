@@ -1,4 +1,4 @@
-<h1 align="center"> Truth in Maths and Myths </h1>
+<h1 align="center"> The Truth in Maths and Myths </h1>
 
 <br>
 
