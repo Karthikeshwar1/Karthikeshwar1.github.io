@@ -2,6 +2,10 @@
 
 <br>
 
+Myth here refers to entities/events described in religions and other ancient books, and also from recent times like Superman.
+
+<br>
+
 ## 1
 
 👧: "what is a rectangle, mam? And what do these equations represent?"
@@ -34,12 +38,19 @@ Let's call the myth world and the world where mathematics recide as _'meta world
 
 ## 4
 
-* Meaning occurs as a result of [recursion](https://karthikeshwar1.github.io/blog/2023/What%27s%20the%20book%20GEB%20all%20about) and [emergence](https://karthikeshwar1.github.io/blog/2025/Emergence_and_Meaning).
+* Meaning occurs as a result of (i) Recursion, as (roughly) explained in the book [Gödel, Escher, Bach by Douglas Hofstadter](https://karthikeshwar1.github.io/blog/2023/What%27s%20the%20book%20GEB%20all%20about) and [(ii) Emergence](https://karthikeshwar1.github.io/blog/2025/Emergence_and_Meaning).
 * Real world entities and abstract entities in _meta world_ only have meaning when we [Humans give meaning](https://karthikeshwar1.github.io/blog/2024/Words_weigh) to them. 
 Maybe because we cannot have a view other than a selfish view.
-* Even mathematics doesn't have any meaning [without Human connection (as verified by a noteworthy mathematician)](https://x.com/getjonwithit/status/2009602836997505255).
+* Even mathematics doesn't have any meaning without Human connection [(as verified by a noteworthy mathematician)](https://x.com/getjonwithit/status/2009602836997505255).
 
+<br>
 
+## 5
+
+* Nothing in the physical world can approach or exact to, the symbols in the meta world.
+1. Nobody in the physical world is as good as Superman or Jesus. Nobody is also as purely evil as some demons described in ancient books. Also applies to events (Note: Some entities/events described in the myths may be a little more realistic,
+like Zack Snyder's Batman does kill poeple, he's not as perfect as canonical Batman.)
+2. Nothing is the physical world exacts to the symbols in math. There are no exact boundaries to things (Heap or Sorites paradox).
 
 <br>
 <br>
