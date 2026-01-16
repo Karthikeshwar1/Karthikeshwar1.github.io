@@ -1,8 +1,8 @@
 # Words Weigh
 
-Non-living objects communicate through physics (the 4 fundamental forces, chemical bonds, etc)
+## 1 🧍
 
-## 1
+Non-living objects communicate through physics (the 4 fundamental forces, chemical bonds, etc)
 
 Non-human living objects (microscopic/animals/birds/etc.) communicate with a little more sophisticated ways, 
 but they're not self-aware (not to level of humans). 
@@ -20,20 +20,30 @@ Hence, words only have meaning when the species is social.
 
 <br>
 
-## 2 
+## 2 💬
 
-Jordan Peterson, in his *Biblical Series* lectures, emphasizes this psychological and symbolic interpretation: that naming and narrative are the human methods of imposing order on a pre-existing chaos — the world already exists, but it becomes intelligible, usable, and meaningful once it is named and structured in language ([Jordan Peterson – Biblical Series](https://www.jordanbpeterson.com/bible-series/)). (Also see my *[Truth in Myths](https://karthikeshwar1.github.io/blog/2026/Truth_in_Myths)* blog for a deeper discussion of this idea.)
+Jordan Peterson, in his *Biblical Series* lectures, emphasizes this psychological and symbolic interpretation: that naming and narrative are the human methods of imposing order on a pre-existing chaos - the world already exists, but it becomes intelligible, usable, and meaningful once it is named and structured in language ([Jordan Peterson – Biblical Series](https://www.jordanbpeterson.com/bible-series/)). (Also see my *[Truth in Myths](https://karthikeshwar1.github.io/blog/2026/Truth_in_Myths)* blog for a deeper discussion of this idea.)
 
-Words also have importance in another way: nothing in this world had a *name* until humans named it. Meaning did not arise from atoms alone, but from symbols layered onto reality. The world may have existed before language, but it did not exist *as a world* — a structured domain of significance — until it was articulated.
+Words also have importance in another way: nothing in this world had a *name* until humans named it. Meaning did not arise from atoms alone, but from symbols layered onto reality. The world may have existed before language, but it did not exist *as a world* until it was articulated.
 
 <br>
 
-## 3 
+## 3 🤖
 
 
-This idea echoes powerfully in modern technology. Today’s large language models — the artificial “intelligence” we interact with — are built entirely from words. LLMs are statistical systems trained on massive corpora of text, learning relationships between symbols and generating new ones ([OpenAI – How ChatGPT Works](https://openai.com/research/chatgpt), [IBM – What Are Large Language Models?](https://www.ibm.com/think/topics/large-language-models)). They demonstrate that words alone can generate planning, reasoning-like behavior, and creativity — while also reminding us that syntax and prediction are not the same as lived meaning.
+This idea echoes powerfully in modern technology. Large Language Models (LLMs) a form of AI that became prominent in 2022 are statistical systems trained on massive corpora of text, learning relationships between symbols and generating new ones. They demonstrate that words alone can generate planning, reasoning-like behavior, and creativity while also reminding us that syntax and prediction are not the same as lived meaning.
 
 Some holy scriptures (Hindu and Christian - I haven't read them) seemed to have said that the capacity that words have to shape reality is akin to the process that generates reality itself.
+
+<br>
+
+## 4 ⛵
+
+If Knowledge is an ocean, words are your boat that let you travel in it. 
+
+Bigger the vocabulary, bigger the boat, bigger the adventure and discovery. 
+
+Imagination is then the binocularrs that let you scout before articulating that area with your boat.
 
 <br>
 <br>
