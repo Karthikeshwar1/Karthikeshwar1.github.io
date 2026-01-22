@@ -1,4 +1,6 @@
-# Words Weigh
+<h1 align="center"> Words Weigh </h1>
+
+<br>
 
 ## 1 🧍
 
