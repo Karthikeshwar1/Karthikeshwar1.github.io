@@ -126,7 +126,7 @@ document.getElementById('search-input').addEventListener('input', function() {
 
 <br>
 
-[↑ Back to top](##top-clicks)
+[↑ Back to top](#top-clicks)
 
 <br>
 
