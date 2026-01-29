@@ -28,6 +28,7 @@
 <br>
 
 * 🤖 The AI we want to build—or whatever humans may evolve into—doesn’t need to resemble the humans that came before.
+* **Moravec's Paradox**: Moravec's paradox is the observation in the fields of artificial intelligence and robotics that high-level reasoning tasks, such as performing calculations, playing chess, or passing intelligence tests, are comparatively easy for computers to achieve at adult human levels, whereas low-level sensorimotor skills—like perceiving the environment, grasping objects, or maintaining balance while walking—that infants acquire with minimal effort require immense computational resources and remain exceptionally difficult for machines. As articulated by roboticist Hans Moravec in his 1988 book Mind Children: The Future of Robot and Human Intelligence, "It is comparatively easy to make computers exhibit adult level performance on intelligence tests or playing checkers and chess, but difficult or impossible to give them the skills of a one-year-old when it comes to perception and mobility."
 
 <br>
 
