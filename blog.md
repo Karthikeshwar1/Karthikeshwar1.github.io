@@ -59,6 +59,12 @@ document.getElementById('search-input').addEventListener('input', function() {
 
 ## Top clicks
 
+- [The "Optimist's" AI Manifesto](https://karthikeshwar1.github.io/blog/2026/ai-manifesto)
+
+- [Fancy version of some of my writings](https://karthikeshwar1.github.io/Magazine/)
+
+- [Software Engineering in 2026: Observations](https://karthikeshwar1.github.io/blog/2026/software-engineering-in-2026-observations)
+
 - [AI in 2025 ⭐](https://karthikeshwar1.github.io/blog/2025/AI_in_2025)
 
 - [How We The Humans Build](https://karthikeshwar1.github.io/blog/2025/How_We_The_Humans_Build)
