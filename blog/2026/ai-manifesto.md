@@ -26,6 +26,8 @@ Done that too? Now work on increasing our lifespans and increasing our physical 
 
 Happy enough? Now lets settle on new planets or star systems. And then galaxies and then universes....
 
+<br>
+
 ```
 We'll think about the next things to do, once we solve (or prove unsolvable) the above
 ```
