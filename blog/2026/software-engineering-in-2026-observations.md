@@ -1,4 +1,4 @@
-# Software Engineering in 2026
+<h1 align="center">Software Engineering in 2026</h1>
 
 <br>
 
