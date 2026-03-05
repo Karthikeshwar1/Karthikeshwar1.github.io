@@ -1,4 +1,4 @@
-<h1 align="center"> The "Optimist's" AI Manifesto </h1>
+<h1 align="center"> The Optimist's AI Manifesto </h1>
 
 <br>
 
