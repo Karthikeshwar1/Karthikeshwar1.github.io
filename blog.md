@@ -59,7 +59,7 @@ document.getElementById('search-input').addEventListener('input', function() {
 
 ## Top clicks
 
-- [The "Optimist's" AI Manifesto](https://karthikeshwar1.github.io/blog/2026/ai-manifesto)
+- [The Optimist's AI Manifesto](https://karthikeshwar1.github.io/blog/2026/ai-manifesto)
 
 - [Fancy version of some of my writings](https://karthikeshwar1.github.io/Magazine/)
 
