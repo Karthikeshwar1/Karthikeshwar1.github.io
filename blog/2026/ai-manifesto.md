@@ -29,7 +29,7 @@ Happy enough? Now lets settle on new planets or star systems. And then galaxies 
 <br>
 
 ```
-We'll think about the next things to do, once we solve (or prove unsolvable) the above
+We'll think about the next things to do, once we solve (or prove unsolvable) the above.
 ```
 
 <br>
