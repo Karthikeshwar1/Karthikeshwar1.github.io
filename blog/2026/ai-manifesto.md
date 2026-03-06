@@ -2,7 +2,7 @@
 
 <br>
 
-Note: No AI is used in writing my blogs. So there is soul behind every (imperfect) word. And _[meaning](https://karthikeshwar1.github.io/blog/2025/Emergence_and_Meaning)_ behind every (suboptimal) sentence. 
+Note: No AI is used in writing my blogs. So there is soul behind every (imperfect) word, and _[meaning](https://karthikeshwar1.github.io/blog/2025/Emergence_and_Meaning)_ behind every (suboptimal) sentence. 
 
 <br>
 
@@ -36,7 +36,7 @@ We'll think about the next things to do, once we solve (or prove unsolvable) the
 
 ## 3
 
-There is obviously more nuance to things than the above. But **optimism is a better guiding principle**. Nobody likes the buzzkill pessimist who says, "See guys? I was right! We were all going to hell!"
+There is obviously more nuance to things than the above. But **optimism on a high level is a better guiding principle**. Nobody likes the buzzkill pessimist who says, "See guys? I was right! We were all going to hell!"
 
 Human brains work better, when there is some hope for good tomorrow, even if today is bad.
 
