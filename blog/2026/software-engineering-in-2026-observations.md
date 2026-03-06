@@ -9,7 +9,7 @@ Note: No AI is used in writing my blogs. So there is soul behind every (imperfec
 ## Complexity of software vs. Efforts required graph
 
 <h1 align="center">
-<img width="1152" height="648" alt="software-engineering-in-2026" src="https://github.com/user-attachments/assets/1cb966f3-0276-4036-a8dc-012122b6f6b7" />
+<img width="auto" height="648" alt="software-engineering-in-2026" src="https://github.com/user-attachments/assets/1cb966f3-0276-4036-a8dc-012122b6f6b7" />
 </h1>
 
 <br>
