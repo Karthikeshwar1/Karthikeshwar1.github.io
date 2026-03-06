@@ -2,7 +2,7 @@
 
 <br>
 
-Note: No AI is used in writing my blogs. So there is soul behind every (imperfect) word. And meaning behind every (suboptimal) sentence.
+Note: No AI is used in writing my blogs. So there is soul behind every (imperfect) word. And _[meaning](https://karthikeshwar1.github.io/blog/2025/Emergence_and_Meaning)_ behind every (suboptimal) sentence. 
 
 <br>
 
