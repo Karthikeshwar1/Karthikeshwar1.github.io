@@ -59,21 +59,19 @@ document.getElementById('search-input').addEventListener('input', function() {
 
 ## Top clicks
 
-- [The Optimist's AI Manifesto](https://karthikeshwar1.github.io/blog/2026/ai-manifesto)
+- [The Optimist's AI Manifesto ⭐](https://karthikeshwar1.github.io/blog/2026/ai-manifesto)
 
-- [Fancy version of some of my writings](https://karthikeshwar1.github.io/Magazine/)
+- [Fancy version of some of my writings ⭐](https://karthikeshwar1.github.io/Magazine/)
+
+- [Words Weigh ⭐](https://karthikeshwar1.github.io/blog/2024/Words_weigh)
 
 - [Software Engineering in 2026: Observations](https://karthikeshwar1.github.io/blog/2026/software-engineering-in-2026-observations)
 
-- [AI in 2025 ⭐](https://karthikeshwar1.github.io/blog/2025/AI_in_2025)
+- [AI in 2025](https://karthikeshwar1.github.io/blog/2025/AI_in_2025)
 
 - [How We The Humans Build](https://karthikeshwar1.github.io/blog/2025/How_We_The_Humans_Build)
 
 - [Emergence and Meaning](https://karthikeshwar1.github.io/blog/2025/Emergence_and_Meaning)
-
-- [Words Weigh ⭐](https://karthikeshwar1.github.io/blog/2024/Words_weigh)
-
-- [Security Systems: The Flaw and The Ultimate Solution](https://karthikeshwar1.github.io/blog/2023/security-systems-the-flaw-and-the-ultimate-solution)
 
 - [The Truth in Maths and Myths](https://karthikeshwar1.github.io/blog/2026/Truth_in_Myths)
 
@@ -117,6 +115,7 @@ document.getElementById('search-input').addEventListener('input', function() {
 
 ## More
 
+- [Security Systems: The Flaw and The Ultimate Solution](https://karthikeshwar1.github.io/blog/2023/security-systems-the-flaw-and-the-ultimate-solution)
 
 - [Fuzzy Settings](https://github.com/Karthikeshwar1/Karthikeshwar1.github.io/blob/main/blog/2024/Fuzzy_Settings.md)
 
