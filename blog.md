@@ -115,6 +115,8 @@ document.getElementById('search-input').addEventListener('input', function() {
 
 ## More
 
+- [Drug Discovery - Notes](https://karthikeshwar1.github.io/blog/2026/drug-discovery-notes.md)
+
 - [Security Systems: The Flaw and The Ultimate Solution](https://karthikeshwar1.github.io/blog/2023/security-systems-the-flaw-and-the-ultimate-solution)
 
 - [Fuzzy Settings](https://github.com/Karthikeshwar1/Karthikeshwar1.github.io/blob/main/blog/2024/Fuzzy_Settings.md)
