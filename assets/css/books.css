@@ -1,3 +1,45 @@
+/* ── Page-level width override ── */
+/* Escape minima's narrow wrapper for this page */
+.page-content .wrapper,
+.post-content,
+.page-content {
+  max-width: 95% !important;
+  width: 95% !important;
+  margin: 0 auto !important;
+  padding-left: 1rem !important;
+  padding-right: 1rem !important;
+}
+
+@media (min-width: 1200px) {
+  .page-content .wrapper,
+  .post-content,
+  .page-content {
+    max-width: 80% !important;
+    width: 80% !important;
+  }
+}
+
+@media (min-width: 1600px) {
+  .page-content .wrapper,
+  .post-content,
+  .page-content {
+    max-width: 70% !important;
+    width: 70% !important;
+  }
+}
+
+/* ── Book grid (now just fills the wrapper, no vw breakout needed) ── */
+.books-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 20px;
+  width: 100%;           /* fill the wrapper, not the viewport */
+  padding: 0;
+  box-sizing: border-box;
+  /* remove the vw breakout entirely */
+}
+
+/* ── Book card & image styles (unchanged) ── */
 .book-card {
   display: block;
   text-align: center;
@@ -7,7 +49,6 @@
   background-color: #f9f9f9;
   box-shadow: 0 2px 8px rgba(0,0,0,0.05);
 }
-
 .book-image {
   max-height: 200px;
   width: 140px;
@@ -17,37 +58,20 @@
   display: block;
   margin: 0 auto;
 }
-
 .book-title {
   font-size: 1.2em;
   font-weight: 700;
   margin-top: 0.75rem;
   color: #333;
 }
-
 .book-author {
   color: #666;
   font-size: 1em;
 }
-
 .book-note {
   color: #888;
   font-style: italic;
   font-size: 0.85em;
   margin-top: 0.3rem;
   line-height: 1.3;
-}
-
-.books-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-  gap: 20px;
-  width: 100vw;
-  position: relative;
-  left: 50%;
-  right: 50%;
-  margin-left: -50vw;
-  margin-right: -50vw;
-  padding: 0 2rem;
-  box-sizing: border-box;
 }
