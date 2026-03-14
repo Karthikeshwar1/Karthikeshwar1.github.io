@@ -26,7 +26,7 @@
 /* ── Book grid ── */
 .books-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
   gap: 16px;
   width: 100%;
   box-sizing: border-box;
@@ -56,8 +56,8 @@
 
 /* ── Book image ── */
 .book-image {
-  width: 250px;
-  /* height: 160px; */
+  width: 200px;
+  height: 300px;
   object-fit: cover;
   border-radius: 3px;
   display: block;
