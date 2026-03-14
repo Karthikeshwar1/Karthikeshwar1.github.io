@@ -69,11 +69,11 @@
     
     I choose the book, if one or more of these are true:
     
-    1) It's a high quality book that helps me with my goal.
+    1) It's a high quality book that is aligned to my goal.
     
     2) It is recommended by people I follow (friends/famous people).
 
-    2) or it just caught my attention or something.
+    3) or it just caught my attention or something.
 
   </p>
 </details>
