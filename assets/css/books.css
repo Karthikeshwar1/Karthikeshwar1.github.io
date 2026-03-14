@@ -1,9 +1,5 @@
-/* ── Wrapper width override ── */
-body .wrapper,
-.site-header .wrapper,
-.page-content .wrapper,
-.post-content .wrapper,
-.wrapper {
+/* ── Page content width override (header/nav untouched) ── */
+.page-content .wrapper {
   max-width: 96% !important;
   width: 96% !important;
   padding-left: 0 !important;
@@ -14,20 +10,14 @@ body .wrapper,
 }
 
 @media (min-width: 1280px) {
-  body .wrapper,
-  .page-content .wrapper,
-  .post-content .wrapper,
-  .wrapper {
+  .page-content .wrapper {
     max-width: 82% !important;
     width: 82% !important;
   }
 }
 
 @media (min-width: 1600px) {
-  body .wrapper,
-  .page-content .wrapper,
-  .post-content .wrapper,
-  .wrapper {
+  .page-content .wrapper {
     max-width: 72% !important;
     width: 72% !important;
   }
@@ -36,7 +26,7 @@ body .wrapper,
 /* ── Book grid ── */
 .books-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 16px;
   width: 100%;
   box-sizing: border-box;
@@ -66,8 +56,8 @@ body .wrapper,
 
 /* ── Book image ── */
 .book-image {
-  width: 110px;
-  height: 160px;
+  width: 250px;
+  /* height: 160px; */
   object-fit: cover;
   border-radius: 3px;
   display: block;
