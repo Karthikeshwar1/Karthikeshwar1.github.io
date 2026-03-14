@@ -1,4 +1,28 @@
 books:
+  - id: zero-to-one
+    title: "Zero to One"
+    author: "Peter Thiel"
+    filename: "zero-to-one.jpg"
+    category: "Non-fiction"
+    note: "Startup Bible, can also be read as a motivational or a book on philosophy."
+  - id: steve-jobs
+    title: "Steve Jobs"
+    author: Walter Isaacson
+    filename: "steve-jobs.jpg"
+    category: "Non-fiction"
+    note: ""
+  - id: elon-musk
+    title: "Elon Musk"
+    author: Walter Isaacson
+    filename: "elon-musk.jpg"
+    category: "Non-fiction"
+    note: ""
+  - id: the-technological-republic
+    title: "The Technological Republic"
+    author: "Alexander C. Karp and Nicholas W. Zamiska"
+    filename: "the-technological-republic.jpg"
+    category: "Non-fiction"
+    note: ""
   - id: the-art-of-war
     title: "The Art of War"
     author: "Sun Tzu"
@@ -36,12 +60,7 @@ books:
     category: "Non-fiction"
     note: ""
     
-  - id: are-we-smart-enough-to-know-how-smart-animals-are
-    title: "Are We Smart Enough to Know How Smart Animals Are?"
-    author: "Frans de Waal"
-    filename: "are-we-smart-enough-to-know-how-smart-animals-are.jpg"
-    category: "Non-fiction"
-    note: ""
+
     
   - id: the-practicing-mind
     title: "The Practicing Mind"
@@ -73,12 +92,6 @@ books:
     filename: "sapiens.jpg"
     category: "Non-fiction"
     note: "Good summary of humans."
-  - id: zero-to-one
-    title: "Zero to One"
-    author: "Peter Thiel"
-    filename: "zero-to-one.jpg"
-    category: "Non-fiction"
-    note: "Startup Bible, can also be read as a motivational or a book on philosophy."
   - id: be-here-now
     title: "Be Here Now"
     author: "Ram Dass"
@@ -139,10 +152,10 @@ books:
     filename: "the-prince.jpg"
     category: "Non-fiction"
     note: "Gold."
-  - id: the-technological-republic
-    title: "The Technological Republic"
-    author: "Alexander C. Karp and Nicholas W. Zamiska"
-    filename: "the-technological-republic.jpg"
+  - id: the-structure-of-scientific-revolutions
+    title: "The structure of scientific revolutions"
+    author: "Thomas Kuhn"
+    filename: "the-structure-of-scientific-revolutions.jpg"
     category: "Non-fiction"
     note: ""
   - id: impro
@@ -163,6 +176,8 @@ books:
     filename: "the-monk-who-sold-his-ferrari.jpg"
     category: "Non-fiction"
     note: ""
+
+    
   - id: the-mill-on-the-floss
     title: "The Mill On The Floss"
     author: "George Eliot"
@@ -199,15 +214,28 @@ books:
     filename: "the-richest-man-in-babylon.jpg"
     category: "Fiction"
     note: ""
-  - id: the-structure-of-scientific-revolutions
-    title: "The structure of scientific revolutions"
-    author: "Thomas Kuhn"
-    filename: "the-structure-of-scientific-revolutions.jpg"
-    category: "Crux"
+  - id: stories-of-your-life-and-others
+    title: "Stories of Your Life and Others"
+    author: Ted Chiang
+    filename: "stories-of-your-life-and-others.jpg"
+    category: "Fiction"
     note: ""
+  
   - id: superintelligence
     title: "Superintelligence"
     author: "Nick Bostrom"
     filename: "superintelligence.jpg"
     category: "Crux"
     note: "Mostly speculatory, but concrete." 
+  - id: are-we-smart-enough-to-know-how-smart-animals-are
+    title: "Are We Smart Enough to Know How Smart Animals Are?"
+    author: "Frans de Waal"
+    filename: "are-we-smart-enough-to-know-how-smart-animals-are.jpg"
+    category: "Crux"
+    note: ""
+  - id: natural-general-intelligence
+    title: "Natural General Intelligence"
+    author: "Christopher Summerfield"
+    filename: "natural-general-intelligence.jpg"
+    category: "Crux"
+    note: ""
