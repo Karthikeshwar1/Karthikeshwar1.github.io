@@ -57,7 +57,7 @@
 /* ── Book image ── */
 .book-image {
   width: 200px;
-  height: 300px;
+  max-height: 325px;
   object-fit: cover;
   border-radius: 3px;
   display: block;
