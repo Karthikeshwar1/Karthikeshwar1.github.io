@@ -26,11 +26,12 @@
 /* ── Book grid ── */
 .books-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
   gap: 16px;
   width: 100%;
   box-sizing: border-box;
   margin-top: 1.5rem;
+  align-items: start;
 }
 
 /* ── Book card ── */
@@ -57,8 +58,6 @@
 /* ── Book image ── */
 .book-image {
   width: 200px;
-  max-height: 330px;
-  object-fit: contain;
   border-radius: 3px;
   display: block;
   margin: 0 auto;
