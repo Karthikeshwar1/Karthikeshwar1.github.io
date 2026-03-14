@@ -61,4 +61,20 @@
   </p>
 </details>
 
+<details role="note" aria-label="Reading note" style="margin:1rem 0; border-left:3px solid #ddd; padding:0.6rem 1rem; border-radius:6px;">
+  <summary style="cursor:pointer; font-weight:600; margin-bottom:0.4rem;">Algorithm for selecting what to read.</summary>
+  <p style="margin:0.25rem 0 0; line-height:1.5; color:#333;">
+    
+    I choose the book, if one or more of these are true:
+    
+    1) It's a high quality book that helps me with my goal.
+    
+    2) It is recommended by people I follow (friends/famous people).
+
+    2) or it just caught my attention or something.
+
+  </p>
+</details>
+
+
 <br>
