@@ -35,6 +35,18 @@ books:
     filename: "beyond-order.jpg"
     category: "Non-fiction"
     note: ""
+  - id: king-warrior-magician-lover
+    title: "King, Warrior, Magician, Lover"
+    author: "Douglas Gillette and Robert L. Moore"
+    filename: "king-warrior-magician-lover.jpg"
+    category: "Non-fiction"
+    note: ""
+  - id: classical-mechanics-the-theoretical-minimum
+    title: "Classical Mechanics: The Theoretical Minimum"
+    author: "Leonard Susskind & George Hrabovsky"
+    filename: "classical-mechanics-the-theoretical-minimum.jpg"
+    category: "Non-fiction"
+    note: ""
   - id: deep-learning
     title: "Deep Learning"
     author: "Ian Goodfellow, Yoshua Bengio, Aaron Courville"
