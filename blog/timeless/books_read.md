@@ -6,7 +6,7 @@
 
 <br>
 
-Books I've read and recommend.
+<p align="center">Books I've read and recommend.</p>
 
 <br>
 
