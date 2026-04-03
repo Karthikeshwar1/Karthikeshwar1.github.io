@@ -17,6 +17,18 @@ books:
     filename: "elon-musk.jpg"
     category: "Non-fiction"
     note: ""
+  - id: the-code-breaker
+    title: "The Code Breaker: Jennifer Doudna, Gene Editing And The Future Of The Human Race"
+    author: Walter Isaacson
+    filename: "the-code-breaker.jpg"
+    category: "Non-fiction"
+    note: ""
+  - id: bhagavad-gita
+    title: "Bhagavad Gita"
+    author: Krishna
+    filename: "bhagavad-gita.jpg"
+    category: "Non-fiction"
+    note: ""
   - id: the-technological-republic
     title: "The Technological Republic"
     author: "Alexander C. Karp and Nicholas W. Zamiska"
@@ -71,8 +83,12 @@ books:
     filename: "logic-a-graphic-guide.jpg"
     category: "Non-fiction"
     note: ""
-    
-
+  - id: thus-spoke-zarathustra
+    title: "Thus Spoke Zarathustra"
+    author: "Friedrich Nietzsche"
+    filename: "thus-spoke-zarathustra.jpg"
+    category: "Non-fiction"
+    note: ""
     
   - id: the-practicing-mind
     title: "The Practicing Mind"
