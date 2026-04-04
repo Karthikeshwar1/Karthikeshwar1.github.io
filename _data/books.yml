@@ -32,12 +32,12 @@ books:
     author: Ted Chiang
     category: "Cosmos"
     note: ""
-  - id: harry-potter-and-the-philosophers-stone
-    title: "Harry Potter and the Sorcerer's Stone"
-    author: "J K Rowling"
-    category: "Society"
+  - id: bhagavad-gita
+    title: "Bhagavad Gita"
+    author: Krishna
+    category: "Cosmos"
     note: ""
-
+  
   # ── Society-level ─────────────────────────────────────────────
   - id: zero-to-one
     title: "Zero to One"
@@ -54,10 +54,10 @@ books:
     author: Walter Isaacson
     category: "Society"
     note: ""
-  - id: bhagavad-gita
-    title: "Bhagavad Gita"
-    author: Krishna
-    category: "Cosmos"
+  - id: the-code-breaker
+    title: "The Code Breaker: Jennifer Doudna, Gene Editing And The Future Of The Human Race"
+    author: Walter Isaacson
+    category: "Society"
     note: ""
   - id: the-technological-republic
     title: "The Technological Republic"
@@ -125,6 +125,12 @@ books:
     author: "Keith Johnstone"
     category: "Society"
     note: "Learnt about story-telling and improvisation."
+  - id: harry-potter-and-the-philosophers-stone
+    title: "Harry Potter and the Sorcerer's Stone"
+    author: "J K Rowling"
+    category: "Society"
+    note: ""
+
 
   # ── Human-level ───────────────────────────────────────────────
   - id: beyond-order
@@ -219,11 +225,7 @@ books:
     note: ""
 
   # ── Micro-level ───────────────────────────────────────────────
-  - id: the-code-breaker
-    title: "The Code Breaker: Jennifer Doudna, Gene Editing And The Future Of The Human Race"
-    author: Walter Isaacson
-    category: "Micro"
-    note: ""
+
   - id: the-vital-question
     title: "The Vital Question"
     author: "Nick Lane"
