@@ -35,7 +35,7 @@ books:
   - id: harry-potter-and-the-philosophers-stone
     title: "Harry Potter and the Sorcerer's Stone"
     author: "J K Rowling"
-    category: "Cosmos"
+    category: "Society"
     note: ""
 
   # ── Society-level ─────────────────────────────────────────────
@@ -57,7 +57,7 @@ books:
   - id: bhagavad-gita
     title: "Bhagavad Gita"
     author: Krishna
-    category: "Society"
+    category: "Cosmos"
     note: ""
   - id: the-technological-republic
     title: "The Technological Republic"
