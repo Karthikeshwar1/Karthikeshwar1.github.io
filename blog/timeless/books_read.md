@@ -4,9 +4,6 @@
 
 <link rel="stylesheet" href="{{ '/assets/css/books.css' | relative_url }}">
 
-<br>
-
-<p align="center">Books I've read and recommend.</p>
 
 <br>
 
