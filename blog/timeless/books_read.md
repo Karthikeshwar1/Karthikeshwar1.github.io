@@ -10,15 +10,13 @@
 
 <br>
 
-
-
-### Non-fiction
+### Cosmos-level
 
 ---
 
 <div class="books-grid">
 {% for b in site.data.books.books %}
-  {% if b.category == "Non-fiction" %}
+  {% if b.category == "Cosmos" %}
     {% include book-card.html book=b %}
   {% endif %}
 {% endfor %}
@@ -26,13 +24,13 @@
 
 <br>
 
-### Fiction
+### Society-level
 
 ---
 
 <div class="books-grid">
 {% for b in site.data.books.books %}
-  {% if b.category == "Fiction" %}
+  {% if b.category == "Society" %}
     {% include book-card.html book=b %}
   {% endif %}
 {% endfor %}
@@ -40,13 +38,27 @@
 
 <br>
 
-### Crux or Some Parts Only
+### Human-level
 
 ---
 
 <div class="books-grid">
 {% for b in site.data.books.books %}
-  {% if b.category == "Crux" %}
+  {% if b.category == "Human" %}
+    {% include book-card.html book=b %}
+  {% endif %}
+{% endfor %}
+</div>
+
+<br>
+
+### Micro-level
+
+---
+
+<div class="books-grid">
+{% for b in site.data.books.books %}
+  {% if b.category == "Micro" %}
     {% include book-card.html book=b %}
   {% endif %}
 {% endfor %}
