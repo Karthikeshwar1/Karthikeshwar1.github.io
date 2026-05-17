@@ -2,16 +2,17 @@
 
 <br>
 
-## ℹ️ Drop the _Artificial_, Just **_Intelligence_**
 
 <h6 align="center">
 <img width="620" height="413" alt="the social network justin timberlake meme" src="https://github.com/user-attachments/assets/77e8e09c-1de4-4b1d-a2d4-2bf71c11a073" />
 </h6>
 
 
-Elon Musk said something interesting on [JRE #1169](https://www.youtube.com/live/ycPr5-27vSI?si=WVKGezfTdjxqNzeM):
+Elon Musk on [Joe Rogan's podcast #1169](https://www.youtube.com/live/ycPr5-27vSI?si=WVKGezfTdjxqNzeM):
  
-> "The percentage of intelligence that is not human is increasing. And, eventually, we will represent a very small percentage of intelligence."
+> "The percentage of Intelligence that is not human is increasing. And, eventually, we will represent a very small percentage of Intelligence."
+
+If 'artificial' will be the dominating Intelligence, let's just call it Intelligence then.
 
 <br>
  
