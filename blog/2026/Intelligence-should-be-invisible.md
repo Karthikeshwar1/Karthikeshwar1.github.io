@@ -31,11 +31,11 @@ The intelligence is wildly, dangerously unevenly distributed. We put it where it
  
 From base to the top:
  
-5. **Memory:** The calculator. Store and retrieve.
-4. **Mathematical:** The computer. Compute deterministically.
-3. **Probabilistic:** ML. Learn without being explicitly programmed.
-2. **Natural language:** LLMs. Pass the Turing test.
-1. **Agentic:** Act on the world. AI agents are the earliest form. Can be robotic as well (this layer itself can be divided further - we'll get into that in another article).
+v. **Memory:** The calculator. Store and retrieve.  
+vi. **Mathematical:** The computer. Compute deterministically.  
+iii. **Probabilistic:** ML. Learn without being explicitly programmed.  
+ii. **Natural language:** LLMs. Pass the Turing test.  
+i. **Agentic:** Act on the world. AI agents are the earliest form. Can be robotic as well (this layer itself can be divided further - we'll get into that in another article).  
  
 It's like Von-Neumann architecture for Intelligence (or perhaps Karthikeshwar's stupid Onion peel layers of Intelligence? 😂). 
 
