@@ -6,19 +6,20 @@ title: Projects
 
 | Projects                                               | Description                                                                                            | Team size & date |
 | ------------------------------------------------------ | ------------------------------------------------------------------------------------------------------ | ---------------- |
-| [KathaaVerse](https://kathaaverse.com/)                | Turn any famous book into interactive fiction! (Reached [#1 on Hacker News!](https://github.com/Karthikeshwar1/Karthikeshwar1/blob/main/Hall%20of%20Fame/kathaaverse.md) Attracting more than 20k visitors and 500k API calls in the first week, despite no formal marketing!)                                           | 1, June 2025     |
+| [KathaaVerse (live!)](https://kathaaverse.com/)                | Turn any famous book into interactive fiction! (Reached [#1 on Hacker News!](https://github.com/Karthikeshwar1/Karthikeshwar1/blob/main/Hall%20of%20Fame/kathaaverse.md) Attracting more than 20k visitors and 500k API calls in the first week, despite no formal marketing!)     | 1, June 2025     |
+| [RxID (live!)](https://www.rxid.in/)             | A prescription verification and dispensing-audit platform, the only solution to address 10+ pharma-related problems |
 | [Araam](https://github.com/Karthikeshwar1/Araam)       | Control your PC with just a controller!                                                                | 1, Aug 2021      |
 | [airPiano](https://github.com/Karthikeshwar1/airPiano) | A software with which you can play piano in the air, or play a bigger piano with the computer keyboard | 1, Mar-Apr 2021  |
 | [TABFYE](https://github.com/Karthikeshwar1/TABFYE)     | Take-A-Break-For-Your-Eyes!                                                                            | 4, Jun 2020      |
-| [JumpG](https://github.com/Karthikeshwar1/JumpG)       | A Windows console game inspired from Google's T-rex game!                                              | 2, Apr-Jun 2019  |
-| [GRA](https://github.com/Karthikeshwar1/GRA)           | Gesture Recognition Application (for RevaHack 2020)                                                    | 4, Nov 2020      |
 
 <br>
 
 | Mini-projects                                                                                | Description                                                  |
 | -------------------------------------------------------------------------------------------- | ------------------------------------------------------------ |
 | [SwaGa-AutonomousLandingSystem](https://github.com/Karthikeshwar1/SwaGa-AutonomousLandingSystem) | Autonomous Landing Module Simulator |
+| [GRA](https://github.com/Karthikeshwar1/GRA)           | Gesture Recognition Application (for RevaHack 2020)                                                    |
 | [Puzzle!](https://github.com/Karthikeshwar1/Puzzle) | An elaborate puzzle game based purely on logic and some GitHub knowledge! |
+| [JumpG](https://github.com/Karthikeshwar1/JumpG)       | A Windows console game inspired from Google's T-rex game!                                              | 2, Apr-Jun 2019  |
 | [Kannada Writing App](https://github.com/Karthikeshwar1/How-To-Write-Kannada) | An app that shows how to write in Kannada |
 | [Medical Texts 3D Projection](https://github.com/Karthikeshwar1/Medical_texts_3D_projection) | A 3D mapping/embedded projection of medical texts. |
 | [screenRec](https://github.com/Karthikeshwar1/screenRec)                                     | A screen recorder to take screenshots and record video       |
