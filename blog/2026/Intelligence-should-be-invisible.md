@@ -16,14 +16,14 @@ If 'artificial' will be the dominating Intelligence, let's just call it Intellig
 
 <br>
  
-## 📉 The Distribution Problem
+## 📉 Unevenly Distributed
 
  
 Your iPhone has more compute power than NASA had when it landed on the moon. 
  
 Your bike has much less. Your car, even a modern one has some collision sensors and lane assist, if you're lucky. But most of the 1.19 million road deaths per year happen in vehicles that have essentially zero embedded intelligence.
  
-The intelligence is wildly, dangerously unevenly distributed. We put it where it's been convenient, interesting, or money-making. Not according to priority of importance (like saving lives!).
+The Intelligence is wildly, dangerously unevenly distributed. We put it where it's been convenient, interesting, or money-making. Not according to priority of importance (like saving lives!). So we need more appropriately distributed Intelligence.
  
 <br>
  
