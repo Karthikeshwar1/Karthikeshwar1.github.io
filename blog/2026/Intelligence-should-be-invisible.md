@@ -1,13 +1,15 @@
-<h1 align="center"> Intelligence Should Be Invisible </h1>
+<h1 align="center"> The Best Intelligence is Invisible </h1>
+<p align="center"> - Karthikeshwar </p>
 
 <br>
 
+Title based on the famous quote:
 > "The best sales is hidden" - Peter Theil (from the startup Bible 'Zero to One')
 
-> "The best Intelligence is invisible" - Karthikeshwar
 
 <br>
 
+## ℹ️ ~A~I
 
 <h6 align="center">
 <img width="620" height="413" alt="the social network justin timberlake meme" src="https://github.com/user-attachments/assets/77e8e09c-1de4-4b1d-a2d4-2bf71c11a073" />
