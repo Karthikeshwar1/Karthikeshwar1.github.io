@@ -43,7 +43,7 @@ iii. **Probabilistic:** ML. Learn without being explicitly programmed.
 ii. **Natural language:** LLMs. Pass the Turing test.  
 i. **Agentic:** Act on the world. AI agents are the earliest form. Can be robotic as well (this layer itself can be divided further - we'll get into that in another article).  
  
-It's like Von-Neumann architecture for Intelligence (or perhaps Karthikeshwar's stupid Onion peel layers of Intelligence? 😂). 
+It's roughly like the Von-Neumann architecture for Intelligence. 
 
 <br>
  
