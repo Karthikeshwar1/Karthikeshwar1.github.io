@@ -40,7 +40,7 @@ books:
   - id: the-player-of-games
     title: "The Player Of Games"
     author: "Iain M Banks"
-    category: "Society"
+    category: "Cosmos"
     note: "Part of 'The Culture Series'"
   
   # ── Society-level ─────────────────────────────────────────────
