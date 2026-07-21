@@ -37,6 +37,11 @@ books:
     author: Krishna
     category: "Cosmos"
     note: ""
+  - id: the-player-of-games
+    title: "The Player Of Games"
+    author: "Iain M Banks"
+    category: "Society"
+    note: "Part of 'The Culture Series'"
   
   # ── Society-level ─────────────────────────────────────────────
   - id: zero-to-one
@@ -145,11 +150,7 @@ books:
     author: "Antoine de Saint-Exupéry"
     category: "Society"
     note: ""
-  - id: the-player-of-games
-    title: "The Player Of Games"
-    author: "Iain M Banks"
-    category: "Society"
-    note: "Part of 'The Culture Series'"
+
 
 
   # ── Human-level ───────────────────────────────────────────────
