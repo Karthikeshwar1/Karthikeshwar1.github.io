@@ -51,7 +51,12 @@ books:
     note: ""
   - id: elon-musk
     title: "Elon Musk"
-    author: Walter Isaacson
+    author: "Walter Isaacson"
+    category: "Society"
+    note: ""
+  - id: benjamin-franklin
+    title: "Benjamin Franklin"
+    author: "Walter Isaacson"
     category: "Society"
     note: ""
   - id: the-code-breaker
@@ -120,6 +125,11 @@ books:
     author: "Paras Chopra"
     category: "Society"
     note: "I have a signed copy!"
+  - id: brave-new-world
+    title: "Brave New World"
+    author: "Aldous Huxley"
+    category: "Society"
+    note: "Illustrated by Fred Fordham"
   - id: impro
     title: "Impro: Improvisation and the Theatre"
     author: "Keith Johnstone"
@@ -130,9 +140,24 @@ books:
     author: "J K Rowling"
     category: "Society"
     note: ""
+  - id: the-little-prince
+    title: "The Little Prince"
+    author: "Antoine de Saint-Exupéry"
+    category: "Society"
+    note: ""
+  - id: the-player-of-games
+    title: "The Player Of Games"
+    author: "Iain M Banks"
+    category: "Society"
+    note: "Part of 'The Culture Series'"
 
 
   # ── Human-level ───────────────────────────────────────────────
+  - id: meditations
+    title: "Meditations"
+    author: "Marcus Aurelius"
+    category: "Human"
+    note: ""
   - id: beyond-order
     title: "Beyond Order"
     author: "Jordan B Peterson"
@@ -211,6 +236,11 @@ books:
   - id: siddhartha
     title: "Siddhartha"
     author: "Hermann Hesse"
+    category: "Human"
+    note: ""
+  - id: daytripper
+    title: "Daytripper"
+    author: "Fábio Moon and Gabriel Bá"
     category: "Human"
     note: ""
   - id: are-we-smart-enough-to-know-how-smart-animals-are
