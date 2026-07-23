@@ -1,47 +1,47 @@
 books:
   # ── Cosmos-level ──────────────────────────────────────────────
-  - id: a-brief-history-of-time
-    title: "A Brief History of Time"
-    author: "Stephen Hawking"
-    category: "Cosmos"
-    note: ""
-  - id: classical-mechanics-the-theoretical-minimum
-    title: "Classical Mechanics: The Theoretical Minimum"
-    author: "Leonard Susskind & George Hrabovsky"
-    category: "Cosmos"
-    note: ""
-  - id: life-3-0
-    title: "Life 3.0"
-    author: "Max Tegmark"
-    filename: "life_3_0.jpg"
-    category: "Cosmos"
-    note: ""
-  - id: superintelligence
-    title: "Superintelligence"
-    author: "Nick Bostrom"
-    category: "Cosmos"
-    note: "Mostly speculatory, but concrete."
-  - id: hitchhikers-guide
-    title: "The Hitchhikers Guide to the Galaxy"
-    author: "Douglas Adams"
-    filename: "the-ultimate-hitchhikers-guide-to-the-galaxy.jpg"
-    category: "Cosmos"
-    note: "Everyone must read it, or at least the philosophy of it."
-  - id: stories-of-your-life-and-others
-    title: "Stories of Your Life and Others"
-    author: Ted Chiang
-    category: "Cosmos"
-    note: ""
-  - id: bhagavad-gita
-    title: "Bhagavad Gita"
-    author: Krishna
-    category: "Cosmos"
-    note: ""
-  - id: the-player-of-games
-    title: "The Player Of Games"
-    author: "Iain M Banks"
-    category: "Cosmos"
-    note: "Part of 'The Culture Series'"
+  # - id: a-brief-history-of-time
+  #   title: "A Brief History of Time"
+  #   author: "Stephen Hawking"
+  #   category: "Cosmos"
+  #   note: ""
+  # - id: classical-mechanics-the-theoretical-minimum
+  #   title: "Classical Mechanics: The Theoretical Minimum"
+  #   author: "Leonard Susskind & George Hrabovsky"
+  #   category: "Cosmos"
+  #   note: ""
+  # - id: life-3-0
+  #   title: "Life 3.0"
+  #   author: "Max Tegmark"
+  #   filename: "life_3_0.jpg"
+  #   category: "Cosmos"
+  #   note: ""
+  # - id: superintelligence
+  #   title: "Superintelligence"
+  #   author: "Nick Bostrom"
+  #   category: "Cosmos"
+  #   note: "Mostly speculatory, but concrete."
+  # - id: hitchhikers-guide
+  #   title: "The Hitchhikers Guide to the Galaxy"
+  #   author: "Douglas Adams"
+  #   filename: "the-ultimate-hitchhikers-guide-to-the-galaxy.jpg"
+  #   category: "Cosmos"
+  #   note: "Everyone must read it, or at least the philosophy of it."
+  # - id: stories-of-your-life-and-others
+  #   title: "Stories of Your Life and Others"
+  #   author: Ted Chiang
+  #   category: "Cosmos"
+  #   note: ""
+  # - id: bhagavad-gita
+  #   title: "Bhagavad Gita"
+  #   author: Krishna
+  #   category: "Cosmos"
+  #   note: ""
+  # - id: the-player-of-games
+  #   title: "The Player Of Games"
+  #   author: "Iain M Banks"
+  #   category: "Cosmos"
+  #   note: "Part of 'The Culture Series'"
   
   # ── Society-level ─────────────────────────────────────────────
   - id: zero-to-one
