@@ -263,19 +263,18 @@
       "status": "open",
       "openedAt": "2026-09-11T07:00:55.407Z",
       "closedAt": null,
-      "attempts": 24,
+      "attempts": 34,
       "notes": [],
       "gate": {
         "ok": false,
         "reasons": [
-          "the desktop capture (1440x1024; the top 1024x1024 rows scaled to the comp's width are compared, a full-page capture is fine) scores 58% against the comp, under 65%: the first viewport does not survive a common desktop width. The hero passed at 1024x1024; the layout must hold from ~1280 up, not only at the comp's exact width (grid columns in fr / minmax, not fixed px that overflow and wrap).",
-          "at desktop width, region hero-plate is missing",
+          "at desktop width, region masthead is missing",
           "at desktop width, region artwork-caption is missing"
         ],
-        "summary": "desktop 58% (contradicted)",
-        "score": 0.5759,
+        "summary": "desktop 73% (drift)",
+        "score": 0.7337,
         "sideBySide": "S:/PROJECTS/dir1/GitHub/Karthikeshwar1.github.io/.impeccable/review/diff/desktop/side-by-side.png",
-        "at": "2026-09-11T07:36:11.926Z"
+        "at": "2026-09-11T07:51:41.414Z"
       },
       "forced": null
     },

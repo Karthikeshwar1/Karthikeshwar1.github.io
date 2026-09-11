@@ -1,7 +1,7 @@
 {
   "tool": "comp-diff",
   "version": 1,
-  "createdAt": "2026-09-11T07:36:11.925Z",
+  "createdAt": "2026-09-11T07:51:41.413Z",
   "label": "desktop",
   "comp": ".impeccable/mocks/comp_2.png",
   "build": ".impeccable/review/desktop.png",
@@ -9,18 +9,18 @@
   "compSize": "1024x1024",
   "buildSize": "1440x1024",
   "align": "top",
-  "overall": 0.5759,
-  "verdict": "contradicted",
+  "overall": 0.7337,
+  "verdict": "drift",
   "scores": {
-    "overall": 0.5759,
-    "structure": 0.6092,
-    "color": 0.945,
-    "colorIntersection": 0.8607,
-    "paletteMatch": 0.9905,
-    "detail": 0.3944,
-    "detailRaw": 0.4153,
-    "detailAdded": 0.0417,
-    "bands": 0.1857
+    "overall": 0.7337,
+    "structure": 0.8314,
+    "color": 0.9687,
+    "colorIntersection": 0.9376,
+    "paletteMatch": 0.9855,
+    "detail": 0.4077,
+    "detailRaw": 0.439,
+    "detailAdded": 0.0625,
+    "bands": 0.6571
   },
   "palette": {
     "comp": [
@@ -52,23 +52,27 @@
     "build": [
       {
         "hex": "#f8f8f8",
-        "coverage": 0.8824
+        "coverage": 0.7976
       },
       {
-        "hex": "#0f0f0f",
-        "coverage": 0.0624
+        "hex": "#0e0e0e",
+        "coverage": 0.1035
       },
       {
-        "hex": "#c5c5c5",
-        "coverage": 0.0366
+        "hex": "#c4c4c4",
+        "coverage": 0.065
       },
       {
-        "hex": "#858585",
-        "coverage": 0.0109
+        "hex": "#848484",
+        "coverage": 0.018
       },
       {
-        "hex": "#444444",
-        "coverage": 0.0077
+        "hex": "#373737",
+        "coverage": 0.0144
+      },
+      {
+        "hex": "#585858",
+        "coverage": 0.0016
       }
     ]
   },
@@ -81,17 +85,17 @@
       "h": 0.0537,
       "kind": "text",
       "score": {
-        "overall": 0.6317,
-        "structure": 0.5599,
-        "color": 0.8867,
-        "colorIntersection": 0.7934,
-        "paletteMatch": 0.9369,
-        "detail": 0.3695,
-        "detailRaw": 0.4685,
-        "detailAdded": 0.1979,
-        "bands": 0.7467
+        "overall": 0.5851,
+        "structure": 0.5654,
+        "color": 0.9159,
+        "colorIntersection": 0.8397,
+        "paletteMatch": 0.9569,
+        "detail": 0.017,
+        "detailRaw": 0.1993,
+        "detailAdded": 0.3646,
+        "bands": 0.7086
       },
-      "verdict": "drift",
+      "verdict": "missing",
       "inkBox": {
         "comp": {
           "x": 8,
@@ -100,10 +104,10 @@
           "h": 49
         },
         "build": {
-          "x": 95,
-          "y": 3,
-          "w": 398,
-          "h": 52
+          "x": 11,
+          "y": 9,
+          "w": 547,
+          "h": 46
         }
       }
     },
@@ -115,17 +119,17 @@
       "h": 0.8,
       "kind": "plate",
       "score": {
-        "overall": 0.4372,
-        "structure": 0.448,
-        "color": 0.8938,
-        "colorIntersection": 0.7577,
-        "paletteMatch": 0.9671,
-        "detail": 0.2431,
-        "detailRaw": 0.3213,
-        "detailAdded": 0.1563,
-        "bands": 0.4971
+        "overall": 0.7185,
+        "structure": 0.7505,
+        "color": 0.9409,
+        "colorIntersection": 0.8936,
+        "paletteMatch": 0.9665,
+        "detail": 0.6296,
+        "detailRaw": 0.6296,
+        "detailAdded": 0,
+        "bands": 0.5571
       },
-      "verdict": "missing",
+      "verdict": "drift",
       "inkBox": {
         "comp": {
           "x": 134,
@@ -134,10 +138,10 @@
           "h": 766
         },
         "build": {
-          "x": 221,
-          "y": 51,
-          "w": 398,
-          "h": 587
+          "x": 137,
+          "y": 57,
+          "w": 558,
+          "h": 569
         }
       }
     },
