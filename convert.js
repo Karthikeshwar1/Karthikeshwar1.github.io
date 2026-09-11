@@ -1,1 +1,0 @@
-const { Jimp } = require("jimp"); async function run() { try { const image = await Jimp.read("assets/plates/hero-plate.png"); image.resize({ w: 1076 }); await image.write("assets/plates/hero-plate_true.png"); console.log("Done"); } catch (e) { console.error(e); } } run();
