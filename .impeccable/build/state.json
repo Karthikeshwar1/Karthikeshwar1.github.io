@@ -6,7 +6,7 @@
   "direction": null,
   "breakpoint": "1024x1024",
   "artifact": null,
-  "phase": "responsive",
+  "phase": "review",
   "phases": {
     "comps": {
       "status": "skipped",
@@ -260,35 +260,36 @@
       "forced": null
     },
     "responsive": {
-      "status": "open",
+      "status": "closed",
       "openedAt": "2026-09-11T07:00:55.407Z",
-      "closedAt": null,
-      "attempts": 34,
+      "closedAt": "2026-09-11T07:55:06.360Z",
+      "attempts": 36,
       "notes": [],
       "gate": {
-        "ok": false,
-        "reasons": [
-          "at desktop width, region masthead is missing",
-          "at desktop width, region artwork-caption is missing"
-        ],
-        "summary": "desktop 73% (drift)",
-        "score": 0.7337,
+        "ok": true,
+        "reasons": [],
+        "summary": "desktop 80% (drift)",
+        "score": 0.7951,
         "sideBySide": "S:/PROJECTS/dir1/GitHub/Karthikeshwar1.github.io/.impeccable/review/diff/desktop/side-by-side.png",
-        "at": "2026-09-11T07:51:41.414Z"
+        "at": "2026-09-11T07:55:06.360Z"
       },
       "forced": null
     },
     "review": {
-      "status": "pending",
-      "openedAt": null,
-      "closedAt": null,
+      "status": "closed",
+      "openedAt": "2026-09-11T07:55:06.360Z",
+      "closedAt": "2026-09-11T07:57:14.806Z",
       "attempts": 0,
       "notes": [],
       "gate": null,
       "forced": null
     }
   },
-  "finish": null,
+  "finish": {
+    "disposition": "ship",
+    "at": "2026-09-11T07:57:14.806Z",
+    "phaseAtFinish": "review"
+  },
   "plates": {
     "hero-plate": {
       "status": "ok",
