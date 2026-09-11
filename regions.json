@@ -1,0 +1,1 @@
+{ "regions": [ { "id": "masthead", "kind": "text", "grid": "B0:H1", "note": "navigation text links" }, { "id": "hero-plate", "kind": "plate", "grid": "B1:H8", "note": "framed art thumbnail" }, { "id": "artwork-caption", "kind": "text", "grid": "C8:G9", "note": "text caption with title and details" } ] }

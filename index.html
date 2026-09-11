@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Karthikeshwar - Works</title>
+  <style>
+    @font-face {
+      font-family: "calendas_plusregular";
+      src: url("assets/fonts/calendas_plus-webfont.woff2") format("woff2"),
+           url("assets/fonts/calendas_plus-webfont.woff") format("woff");
+      font-weight: normal;
+      font-style: normal;
+    }
+    :root {
+      /* Palette */
+      --ground: #f8f8f8;
+      --ink: #0d0e0d;
+      --ink-secondary: #cacaca;
+      --border-subtle: #939393;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: var(--ground);
+      color: var(--ink);
+      font-family: "calendas_plusregular", Georgia, serif;
+      min-height: 100vh;
+      overflow-x: hidden;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .viewport-frame {
+      position: relative;
+      width: 100vw;
+      height: 100vw;
+      max-width: 1024px;
+      max-height: 1024px;
+      background-color: var(--ground);
+      margin: 0 auto;
+    }
+
+    /* Motion settings */
+    @media (prefers-reduced-motion: no-preference) {
+        .plate {
+            opacity: 0;
+            transform: scale(0.98);
+            animation: revealPlate 1.2s cubic-bezier(0.2, 0, 0, 1) forwards;
+        }
+        
+        .nav {
+            opacity: 0;
+            transform: translateY(-10px);
+            animation: revealText 0.8s cubic-bezier(0.2, 0, 0, 1) 0.4s forwards;
+        }
+        
+        .caption {
+            opacity: 0;
+            transform: translateY(10px);
+            animation: revealText 0.8s cubic-bezier(0.2, 0, 0, 1) 0.6s forwards;
+        }
+        
+        .scroll-down {
+            opacity: 0;
+            animation: revealText 0.8s cubic-bezier(0.2, 0, 0, 1) 1s forwards;
+        }
+        
+        @keyframes revealPlate {
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+        
+        @keyframes revealText {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    }
+
+    .plate {
+      position: absolute;
+      top: 10%;
+      left: 10%;
+      width: 70%;
+      height: 80%;
+      object-fit: cover;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.05); /* Subtle shadow added in motion phase to separate from background */
+      transition: transform 0.6s cubic-bezier(0.2, 0, 0, 1), box-shadow 0.6s cubic-bezier(0.2, 0, 0, 1);
+    }
+    
+    .plate:hover {
+        transform: scale(1.02);
+        box-shadow: 0 30px 60px rgba(0,0,0,0.1);
+    }
+
+    .nav {
+      position: absolute;
+      top: 15%;
+      left: 22%;
+      width: 54%;
+      height: 5%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      text-transform: uppercase;
+      font-size: 13px;
+      letter-spacing: 0.15em;
+      color: #090909;
+      line-height: 1;
+      z-index: 10;
+    }
+    
+    .nav a {
+      color: inherit;
+      text-decoration: none;
+      position: relative;
+    }
+    
+    .nav a::after {
+        content: "";
+        position: absolute;
+        bottom: -4px;
+        left: 0;
+        width: 100%;
+        height: 1px;
+        background-color: currentColor;
+        transform: scaleX(0);
+        transform-origin: right;
+        transition: transform 0.4s cubic-bezier(0.2, 0, 0, 1);
+    }
+    
+    .nav a:hover::after {
+        transform: scaleX(1);
+        transform-origin: left;
+    }
+    
+    .nav span {
+      opacity: 0.3;
+    }
+
+    .caption {
+      position: absolute;
+      top: 80%;
+      left: 22%;
+      width: 48%;
+      height: 4%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-end;
+      text-align: center;
+      font-size: 13px;
+      letter-spacing: 0.05em;
+      color: #080808;
+      line-height: 1.5;
+      z-index: 10;
+    }
+    
+    .caption span {
+        display: block;
+    }
+
+    .scroll-down {
+      position: absolute;
+      top: 90%;
+      left: 30%;
+      width: 20%;
+      height: 10%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .scroll-down::after {
+        content: "?";
+        display: block;
+        font-size: 32px;
+        color: #080808;
+        transition: transform 0.4s ease;
+    }
+    
+    .scroll-down:hover::after {
+        transform: translateY(10px);
+    }
+    
+    /* Ensure scaling down on smaller devices */
+    @media (max-width: 1024px) {
+        .nav { font-size: clamp(8px, 1.3vw, 13px); }
+        .caption { font-size: clamp(8px, 1.3vw, 13px); }
+        .scroll-down::after { font-size: clamp(16px, 3.1vw, 32px); }
+    }
+    
+    /* On wide screens, enforce 1024x1024 absolute box logic to fix scaling */
+    @media (min-width: 1025px) {
+        .viewport-frame {
+            height: 1024px;
+        }
+        .plate {
+            width: 717px;
+            height: 819px;
+            top: 102px;
+            left: 153px; /* Center mathematically: (1024 - 717) / 2 */
+        }
+        .nav {
+            width: 558px;
+            height: 51px;
+            top: 153px;
+            left: 233px; /* (1024 - 558) / 2 */
+        }
+        .caption {
+            width: 488px;
+            height: 40px;
+            top: 819px;
+            left: 268px; /* (1024 - 488) / 2 */
+        }
+        .scroll-down {
+            width: 205px;
+            height: 102px;
+            top: 921px;
+            left: 409px; /* (1024 - 205) / 2 */
+        }
+    }
+  </style>
+</head>
+<body>
+  <div class="viewport-frame">
+    <!-- Plate first (drawn behind text) -->
+    <img src="assets/plates/hero-plate.png" alt="UNTITLED NO. 14, 2024" class="plate">
+
+    <!-- Exact words from the comp -->
+    <nav class="nav">
+      <a href="/">HOME</a> <span>|</span>
+      <a href="/works/">WORKS</a> <span>|</span>
+      <a href="/about/">BIOGRAPHY</a> <span>|</span>
+      <a href="/shop/">SHOP</a> <span>|</span>
+      <a href="/contact/">CONTACT</a>
+    </nav>
+
+    <div class="caption">
+      <span>UNTITLED NO. 14, 2024.</span>
+      <span style="color: #7a7a7a">GELATIN SILVER PRINT.</span>
+    </div>
+
+    <div class="scroll-down">
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-09-11T04:30:00Z",
+  "title": "Design System: Karthikeshwar (Current System)",
+  "extensions": {
+    "colorMeta": {
+      "text-main": { "role": "neutral", "displayName": "Text Main", "canonical": "#1a1a1a", "tonalRamp": ["#000000", "#1a1a1a", "#333333", "#4d4d4d", "#666666", "#808080", "#999999", "#b3b3b3"] },
+      "brand-link": { "role": "primary", "displayName": "Minima Blue", "canonical": "#2a7ae2", "tonalRamp": ["#0e3e7a", "#15519e", "#1b64c2", "#2a7ae2", "#4a8de6", "#6aa0e9", "#8ab3ed", "#aac6f0"] }
+    },
+    "typographyMeta": {
+      "body": { "displayName": "Body", "purpose": "The primary reading text." }
+    },
+    "shadows": [
+      { "name": "card-base", "value": "0 1px 4px rgba(0,0,0,0.06)", "purpose": "Baseline shadow for cards." },
+      { "name": "card-hover", "value": "0 4px 14px rgba(0,0,0,0.11)", "purpose": "Lifted shadow for interactive cards." },
+      { "name": "image-depth", "value": "2px 3px 8px rgba(0,0,0,0.15)", "purpose": "Physical presence for book covers." }
+    ]
+  },
+  "components": [
+    {
+      "name": "Book Card",
+      "kind": "card",
+      "refersTo": "book-card",
+      "description": "A minimal, lifting card used to display book covers and metadata.",
+      "html": "<a href=\"#\" class=\"ds-book-card\"><img src=\"https://via.placeholder.com/120x180\" class=\"ds-book-image\"/><div class=\"ds-book-title\">The Vital Question</div><div class=\"ds-book-author\">Nick Lane</div><div class=\"ds-book-note\">Micro</div></a>",
+      "css": ".ds-book-card { display: flex; flex-direction: column; align-items: center; text-align: center; padding: 12px 10px 14px; border-radius: 6px; background-color: #fff; border: 1px solid #e8e8e8; box-shadow: 0 1px 4px rgba(0,0,0,0.06); transition: box-shadow 0.2s ease, transform 0.2s ease; text-decoration: none; color: inherit; font-family: serif; } .ds-book-card:hover { box-shadow: 0 4px 14px rgba(0,0,0,0.11); transform: translateY(-2px); } .ds-book-image { max-width: 120px; width: 100%; height: auto; border-radius: 3px; margin: 0 auto; box-shadow: 2px 3px 8px rgba(0,0,0,0.15); } .ds-book-title { font-size: 1em; font-weight: 700; margin-top: 10px; margin-bottom: 2px; color: #1a1a1a; line-height: 1.3; } .ds-book-author { color: #777; font-size: 1em; margin-top: 2px; } .ds-book-note { color: #999; font-style: italic; font-size: 0.9em; margin-top: 6px; line-height: 1.3; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Quiet Gallery",
+    "overview": "The current design is a highly minimal, restrained environment that acts as a silent backdrop for the content. Anchored by the classic Calendas Plus serif font, it prioritizes reading experience and content structure over decoration. It serves as a utilitarian but elegant starting point that gets out of the way entirely.",
+    "keyCharacteristics": [
+      "Content-first and highly minimal.",
+      "Classic, printed-book typography feel.",
+      "Generous use of whitespace and simple borders."
+    ],
+    "rules": [],
+    "dos": [
+      "Do use the Calendas Plus font for all primary reading material to maintain the classic manuscript feel.",
+      "Do rely on generous whitespace and simple borders rather than heavy background colors to separate content."
+    ],
+    "donts": [
+      "Don't use heavy shadows on text or structural layout elements; reserve depth for interactive components like cards."
+    ]
+  }
+}

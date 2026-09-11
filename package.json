@@ -1,9 +1,27 @@
 {
   "dependencies": {
+    "glob": "^10.3.10",
     "gray-matter": "^4.0.3",
-    "glob": "^10.3.10"
+    "jimp": "^1.6.1",
+    "puppeteer": "^25.10.0"
   },
   "scripts": {
     "generate-index": "node indexer.js"
-  }
+  },
+  "name": "karthikeshwar1.github.io",
+  "version": "1.0.0",
+  "description": "<br>",
+  "main": "convert.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Karthikeshwar1/Karthikeshwar1.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Karthikeshwar1/Karthikeshwar1.github.io/issues"
+  },
+  "homepage": "https://github.com/Karthikeshwar1/Karthikeshwar1.github.io#readme"
 }
