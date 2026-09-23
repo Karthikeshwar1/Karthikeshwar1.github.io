@@ -1,0 +1,84 @@
+---
+import '../styles/global.css';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+
+interface Props {
+  title?: string;
+  currentPage?: string;
+}
+
+const {
+  title = 'Karthikeshwar — Living Archive',
+  currentPage,
+} = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{title}</title>
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+</head>
+<body>
+  <Header currentPage={currentPage} />
+  <slot />
+  <Footer />
+</body>
+</html>
+
+<style is:global>
+  /* Body shell — shared flex layout for all pages */
+  body {
+    min-height: 100vh;
+    min-height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2.25rem 2rem 2rem;
+  }
+
+  /* ── Entrance animations ──────────────────────────────── */
+  @media (prefers-reduced-motion: no-preference) {
+    .site-header {
+      animation: fadeIn 0.8s ease-out forwards;
+    }
+    .site-footer {
+      animation: fadeIn 0.8s ease-out 0.4s both;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(6px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes plinthIn {
+      from {
+        opacity: 0;
+        transform: scale(0.97) translateY(12px);
+      }
+      to {
+        opacity: 1;
+        transform: scale(1) translateY(0);
+      }
+    }
+  }
+
+  /* Mobile shell */
+  @media (max-width: 768px) {
+    body {
+      padding: 1.5rem 1.25rem 1.5rem;
+      justify-content: flex-start;
+      gap: 1.5rem;
+    }
+  }
+</style>

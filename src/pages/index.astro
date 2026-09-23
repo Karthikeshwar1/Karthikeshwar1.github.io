@@ -1,0 +1,134 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout>
+  <!-- Central Focused Plinth — approved homepage -->
+  <main class="stage">
+    <div class="plinth-frame">
+      <img
+        src="/assets/images/hero-plate.jpg"
+        alt="Alegalu (Waves) — Acrylic on Canvas by Karthikeshwar"
+        class="artwork"
+      >
+    </div>
+
+    <div class="plinth-caption">
+      <div class="artwork-meta">Alegalu (Waves) &mdash; Acrylic on Canvas</div>
+      <div class="kannada-verse">ಅಲೆಗಳು; ನಾನಿಲ್ಲಿ ನಡಿಯುವಾಗ, ಸುಮ್ಮನೆ.</div>
+      <p class="artwork-poem">&ldquo;Waves roll; While I stroll, aimlessly.&rdquo;</p>
+      <p class="artist-bio">Living archive of essays, algorithmic experiments, and creative work.</p>
+    </div>
+  </main>
+</BaseLayout>
+
+<style>
+  /* ── Central Stage ─────────────────────────────────────── */
+  .stage {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 980px;
+    padding: 2rem 0;
+  }
+
+  .plinth-frame {
+    background: var(--paper);
+    padding: 18px;
+    border: 1px solid var(--border-mat);
+    box-shadow: var(--shadow-plinth);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 680px;
+    width: 100%;
+    transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1),
+                box-shadow 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  .plinth-frame:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 28px 56px -16px rgba(24, 23, 22, 0.16),
+                0 8px 16px -4px rgba(24, 23, 22, 0.05);
+  }
+
+  .artwork {
+    width: 100%;
+    height: auto;
+    max-height: 52vh;
+    object-fit: contain;
+    display: block;
+  }
+
+  /* ── Caption & Poetry ──────────────────────────────────── */
+  .plinth-caption {
+    margin-top: 1.75rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    max-width: 620px;
+  }
+
+  .artwork-meta {
+    font-size: 0.8rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--ink);
+  }
+
+  .artwork-poem {
+    font-size: 1.05rem;
+    line-height: 1.6;
+    color: var(--ink-secondary);
+    font-style: italic;
+  }
+
+  .kannada-verse {
+    font-size: 0.95rem;
+    color: var(--ink-tertiary);
+    font-style: normal;
+    margin-top: -0.15rem;
+    letter-spacing: 0.02em;
+  }
+
+  .artist-bio {
+    margin-top: 0.4rem;
+    font-size: 0.88rem;
+    color: var(--ink-tertiary);
+    letter-spacing: 0.04em;
+  }
+
+  /* ── Homepage animations ───────────────────────────────── */
+  @media (prefers-reduced-motion: no-preference) {
+    .plinth-frame {
+      animation: plinthIn 1s cubic-bezier(0.16, 1, 0.3, 1) 0.1s both;
+    }
+    .plinth-caption {
+      animation: fadeIn 1s ease-out 0.3s both;
+    }
+  }
+
+  /* ── Mobile ────────────────────────────────────────────── */
+  @media (max-width: 768px) {
+    .stage {
+      padding: 1rem 0;
+    }
+
+    .plinth-frame {
+      padding: 12px;
+    }
+
+    .artwork {
+      max-height: 42vh;
+    }
+
+    .artwork-poem {
+      font-size: 0.95rem;
+    }
+  }
+</style>

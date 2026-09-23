@@ -1,0 +1,133 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="Blog — Karthikeshwar" currentPage="blog">
+  <main class="page-content">
+    <h1 class="page-title">Blog</h1>
+
+    <section class="blog-section">
+      <h2>Top clicks</h2>
+      <ul class="blog-list">
+        <li><a href="/blog/2026/Intelligence-should-be-invisible">Intelligence Should Be Invisible ⭐</a></li>
+        <li><a href="/blog/2026/ai-manifesto">The Optimist's AI Manifesto ⭐</a></li>
+        <li><a href="/blog/2024/Words_weigh">Words Weigh ⭐</a></li>
+        <li><a href="/blog/2026/software-engineering-in-2026-observations">Software Engineering in 2026: Observations</a></li>
+        <li><a href="/blog/2025/AI_in_2025">AI in 2025</a></li>
+        <li><a href="/blog/2025/How_We_The_Humans_Build">How We The Humans Build</a></li>
+        <li><a href="/blog/2025/Emergence_and_Meaning">Emergence and Meaning</a></li>
+        <li><a href="/blog/2026/Truth_in_Myths">The Truth in Maths and Myths</a></li>
+      </ul>
+    </section>
+
+    <section class="blog-section">
+      <h2>Books</h2>
+      <ul class="blog-list">
+        <li><a href="/blog/timeless/books_read">Books read ⭐</a></li>
+        <li><a href="/blog/2025/Deep_Medicine">Deep Medicine by Eric Topol</a></li>
+        <li><a href="/blog/2025/The_Practicing_Mind_by_Thomas_M_Sterner">The Practicing Mind by Thomas M. Sterner</a></li>
+        <li><a href="/blog/2025/The_Vital_Question_by_Nick_Lane">The Vital Question by Nick Lane</a></li>
+        <li><a href="/blog/2023/What's the book GEB all about">What's the book GEB all about</a></li>
+        <li><a href="/blog/2022/The Healthcare and Life Sciences Industry">The Healthcare and Life Sciences Industry</a></li>
+      </ul>
+    </section>
+
+    <section class="blog-section">
+      <h2>Non-blog stuff</h2>
+      <ul class="blog-list">
+        <li><a href="https://github.com/Karthikeshwar1/Karthikeshwar1/tree/main/papers" target="_blank" rel="noopener">Research papers written by me</a></li>
+      </ul>
+    </section>
+
+    <section class="blog-section">
+      <h2>Resources</h2>
+      <ul class="blog-list">
+        <li><a href="/blog/2025/Essential_Resources_in_learning_AI">Resources in Learning AI</a></li>
+        <li><a href="/blog/2021/Essential_Software_For_Computers">Essential Software For Computers</a></li>
+        <li><a href="/blog/2021/Essential_Software_For_Smartphones">Essential Software For Smartphones</a></li>
+      </ul>
+    </section>
+
+    <section class="blog-section">
+      <h2>More</h2>
+      <ul class="blog-list">
+        <li><a href="/blog/2026/drug-discovery-notes">Drug Discovery - Notes</a></li>
+        <li><a href="/blog/2023/security-systems-the-flaw-and-the-ultimate-solution">Security Systems: The Flaw and The Ultimate Solution</a></li>
+        <li><a href="/blog/2024/Is_God_Dying">Is God Dying?</a></li>
+        <li><a href="/blog/2023/Emotional Design - By Don Norman - Book Notes">Emotional Design - By Don Norman - Book Notes</a></li>
+        <li><a href="/blog/2022/AI_in_2022">AI in 2022</a></li>
+        <li><a href="/blog/2024/Software_Architecture_Foundations_1">Software Architecture Foundations</a></li>
+        <li><a href="/blog/2023/Why Different Domains Require Different Approaches">Why Different Domains Require Different Approaches</a></li>
+      </ul>
+    </section>
+  </main>
+</BaseLayout>
+
+<style>
+  .page-content {
+    flex: 1;
+    width: 100%;
+    max-width: 780px;
+    margin: 0 auto;
+    padding: 3rem 2rem;
+  }
+
+  .page-title {
+    font-size: 1.6rem;
+    font-weight: 400;
+    letter-spacing: 0.06em;
+    margin-bottom: 2.5rem;
+    color: var(--ink);
+  }
+
+  .blog-section {
+    margin-bottom: 2.5rem;
+  }
+
+  .blog-section h2 {
+    font-size: 1rem;
+    font-weight: 400;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--ink-secondary);
+    border-bottom: 1px solid var(--border-subtle);
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .blog-list {
+    list-style: none;
+    padding: 0;
+  }
+
+  .blog-list li {
+    margin-bottom: 0.65rem;
+  }
+
+  .blog-list a {
+    font-size: 1rem;
+    color: var(--ink-secondary);
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+
+  .blog-list a:hover {
+    color: var(--ink);
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    .page-content {
+      animation: fadeIn 0.8s ease-out 0.1s both;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .page-content {
+      padding: 2rem 1.25rem;
+    }
+
+    .page-title {
+      font-size: 1.35rem;
+    }
+  }
+</style>

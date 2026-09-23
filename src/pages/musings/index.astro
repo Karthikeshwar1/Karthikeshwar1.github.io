@@ -1,0 +1,199 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="Musings — Karthikeshwar" currentPage="musings">
+  <main class="page-content">
+    <h1 class="page-title">Musings</h1>
+
+    <section class="musings-section">
+      <h2>Painting</h2>
+      <div class="painting-showcase">
+        <div class="plinth-frame">
+          <img
+            src="/musings/images/Alegalhu.jpg"
+            alt="Alegalu (Waves) — Acrylic on Canvas by Karthikeshwar"
+            class="artwork"
+          >
+        </div>
+        <div class="painting-caption">
+          <h3>Alegalu (Waves)</h3>
+          <p class="kannada-verse">ಹರಿಯುವ ಅಲೆಗಳು; ಅರಿಯದೆ ಅಲೆಯುವ ನಾನು.</p>
+          <p class="english-verse">Waves roll; While I stroll, aimlessly.</p>
+          <p class="artist-sign">KK.</p>
+        </div>
+        <div class="plinth-frame">
+          <img
+            src="/musings/images/Alegalhu%20BW.jpg"
+            alt="Alegalu (Waves) — Black and White"
+            class="artwork"
+          >
+        </div>
+      </div>
+    </section>
+
+    <section class="musings-section">
+      <h2>Piano</h2>
+      <ul class="music-list">
+        <li>
+          <a href="https://www.youtube.com/playlist?list=PL7pX5D24QuQHfJUVwyLf3FpcOP5QdJJtF" target="_blank" rel="noopener">
+            Piano Recordings on YouTube
+          </a>
+        </li>
+      </ul>
+    </section>
+  </main>
+</BaseLayout>
+
+<style>
+  .page-content {
+    flex: 1;
+    width: 100%;
+    max-width: 780px;
+    margin: 0 auto;
+    padding: 3rem 2rem;
+  }
+
+  .page-title {
+    font-size: 1.6rem;
+    font-weight: 400;
+    letter-spacing: 0.06em;
+    margin-bottom: 2.5rem;
+    color: var(--ink);
+  }
+
+  .musings-section {
+    margin-bottom: 3rem;
+  }
+
+  .musings-section h2 {
+    font-size: 1rem;
+    font-weight: 400;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--ink-secondary);
+    border-bottom: 1px solid var(--border-subtle);
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  /* ── Painting Showcase ─────────────────────────────────── */
+  .painting-showcase {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    max-width: 680px;
+    margin: 0 auto;
+  }
+
+  .plinth-frame {
+    background: var(--paper);
+    padding: 18px;
+    border: 1px solid var(--border-mat);
+    box-shadow: var(--shadow-plinth);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1),
+                box-shadow 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  .plinth-frame:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 28px 56px -16px rgba(24, 23, 22, 0.16),
+                0 8px 16px -4px rgba(24, 23, 22, 0.05);
+  }
+
+  .artwork {
+    width: 100%;
+    height: auto;
+    max-height: 52vh;
+    object-fit: contain;
+    display: block;
+  }
+
+  .painting-caption {
+    text-align: center;
+  }
+
+  .painting-caption h3 {
+    font-size: 1.15rem;
+    font-weight: 400;
+    margin-bottom: 0.75rem;
+    color: var(--ink);
+  }
+
+  .kannada-verse {
+    font-size: 0.95rem;
+    color: var(--ink-tertiary);
+    margin-bottom: 0.25rem;
+    letter-spacing: 0.02em;
+  }
+
+  .english-verse {
+    font-size: 1.05rem;
+    font-style: italic;
+    color: var(--ink-secondary);
+    line-height: 1.6;
+  }
+
+  .artist-sign {
+    font-size: 0.85rem;
+    color: var(--ink-tertiary);
+    margin-top: 0.5rem;
+    letter-spacing: 0.08em;
+  }
+
+  /* ── Music List ────────────────────────────────────────── */
+  .music-list {
+    list-style: none;
+    padding: 0;
+  }
+
+  .music-list li {
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--border-subtle);
+  }
+
+  .music-list li:last-child {
+    border-bottom: none;
+  }
+
+  .music-list a {
+    font-size: 1.1rem;
+    color: var(--ink);
+    font-weight: 400;
+    transition: color 0.3s ease;
+  }
+
+  .music-list a:hover {
+    color: var(--ink-secondary);
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    .page-content {
+      animation: fadeIn 0.8s ease-out 0.1s both;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .page-content {
+      padding: 2rem 1.25rem;
+    }
+
+    .page-title {
+      font-size: 1.35rem;
+    }
+
+    .plinth-frame {
+      padding: 12px;
+    }
+
+    .artwork {
+      max-height: 42vh;
+    }
+  }
+</style>

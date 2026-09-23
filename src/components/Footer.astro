@@ -1,0 +1,51 @@
+---
+---
+
+<footer class="site-footer">
+  <span>&copy; 2026 Karthikeshwar</span>
+  <div class="footer-links">
+    <a href="https://github.com/Karthikeshwar1" target="_blank" rel="noopener">GitHub</a>
+    <a href="https://www.linkedin.com/in/karthikeshwar/" target="_blank" rel="noopener">LinkedIn</a>
+    <a href="https://kathaaverse.com/" target="_blank" rel="noopener">KathaaVerse</a>
+  </div>
+</footer>
+
+<style>
+  .site-footer {
+    width: 100%;
+    max-width: 1120px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1.25rem;
+    border-top: 1px solid rgba(230, 227, 220, 0.6);
+    font-size: 0.78rem;
+    color: var(--ink-tertiary);
+    letter-spacing: 0.08em;
+  }
+
+  .footer-links {
+    display: flex;
+    gap: 1.25rem;
+  }
+
+  .footer-links a {
+    color: var(--ink-secondary);
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+
+  .footer-links a:hover {
+    color: var(--ink);
+  }
+
+  /* Mobile */
+  @media (max-width: 768px) {
+    .site-footer {
+      flex-direction: column;
+      gap: 0.75rem;
+      text-align: center;
+    }
+  }
+</style>
