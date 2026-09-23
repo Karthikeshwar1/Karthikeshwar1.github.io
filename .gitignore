@@ -1,0 +1,32 @@
+# Node / npm
+node_modules/
+npm-debug.log*
+
+# Astro build output
+dist/
+.astro/
+
+# Impeccable (prototyping scratch)
+.impeccable/
+
+# Temp artifacts
+regions.json
+
+# OS junk
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Editor
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
+
+# Env
+.env
+.env.*
+
+# Logs
+*.log
