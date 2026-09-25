@@ -1,5 +1,4 @@
 <h1 align="center"> The Best Intelligence is Invisible </h1>
-<p align="center"> - Karthikeshwar </p>
 
 <br>
 
