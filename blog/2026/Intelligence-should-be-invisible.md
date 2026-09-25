@@ -8,7 +8,7 @@ Title based on the famous quote:
 
 <br>
 
-## ℹ️ ~A~I
+## ℹ️ ~A~ I
 
 <h6 align="center">
 <img width="620" height="413" alt="the social network justin timberlake meme" src="https://github.com/user-attachments/assets/77e8e09c-1de4-4b1d-a2d4-2bf71c11a073" />
