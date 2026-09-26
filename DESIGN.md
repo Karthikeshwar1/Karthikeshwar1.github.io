@@ -98,7 +98,7 @@ Every effect must have a printed or physical equivalent (ink, paper, a hung fram
 - **Reading view:** 1.1875rem / 1.72 (1.125rem on phones) at a 40rem measure. Section breaks are set `*  *  *`. A heading of only emoji is an ornament line at its heading's size, out of the outline and CONTENTS.
 - **Scale:** Nav and footer stay 1.05rem. Small capitals never go under the 0.75rem label. Meta (authors, notes, code) is 0.875rem. Inside a post, h4 is 1.3125rem, h3 and the deck are 1.4375rem, h2 is 1.625rem, an in-text h1 is 1.875rem. Each step stays above the one beneath it.
 
-**Motion.** None, except the homepage English verse. It opens on AIMFULLY. Until the painting is clicked, only FULLY/LESSLY sways, and only left–right; the first click wakes the whole line (a later click opens the painting). Crests then travel through every word, including AIM. The suffix alternates FULLY and LESSLY. `prefers-reduced-motion` keeps that exchange as opacity only, and the painting link works immediately. Everywhere else, hover is an instant colour or underline change. Focus is a 1px ink outline, offset 4px.
+**Motion.** None, except the homepage English verse. It opens on AIMFULLY. Until the caption is clicked five times within three seconds, only FULLY/LESSLY sways, and only left–right; that burst wakes the whole line. The painting link always opens. Crests then travel through every word, including AIM. The suffix alternates FULLY and LESSLY. `prefers-reduced-motion` keeps that exchange as opacity only. Everywhere else, hover is an instant colour or underline change. Focus is a 1px ink outline, offset 4px.
 
 **Mark.** The favicon is a capital K from EB Garamond 500, ink `#181716` on a paper square `#faf9f6`. Square corners, no border. It is the name reduced to a stamp; the same file serves the tab, the shortcut, and the home-screen icon.
 
@@ -192,6 +192,7 @@ One line per decision: date, decision, why. Newest last.
 - **2026-09 · GitHub and LinkedIn on the homepage about block, pipe line below the bio.** User asked for profile links on the home page without changing the site footer.
 - **2026-09 · Audit pass: B&W Alegalu uncropped; footer set in capitals; emoji-only headings become ornament lines; Kannada 1.14em reaches section heads, ledger meta and year jumps; year jumps, ಕನ್ನಡ links and the CONTENTS slip get 44px hit areas.** Each restores a written rule or fixes access without changing the look.
 - **2026-09 · The painting's first click still wakes the verse.** The audit flagged that the link swallows its first activation; user kept it as designed.
+- **2026-09 · Five clicks on the caption within three seconds wake the wave; the painting opens on the first click.** He asked to leave the image as a link and put the trigger on the text.
 
 ## Don'ts
 

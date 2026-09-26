@@ -244,9 +244,10 @@ function marks(text: string): Mark[] {
 </style>
 
 <script>
-  // The line opens on AIMFULLY. Until the painting is clicked, only the
-  // suffix sways, and only left–right. The click wakes the whole wave.
-  // FULLY is read first, then the tide ebbs to LESSLY and keeps alternating.
+  // The line opens on AIMFULLY. Until the caption is clicked five times
+  // within three seconds, only the suffix sways, and only left–right.
+  // That burst wakes the whole wave. FULLY is read first, then the tide
+  // ebbs to LESSLY and keeps alternating. The painting link always opens.
   const verse = document.querySelector('.verse-en');
   if (verse) shore(verse);
 
@@ -511,13 +512,21 @@ function marks(text: string): Mark[] {
       cleared = false;
     });
 
-    const frameLink = document.querySelector('a.frame');
-    if (frameLink) {
-      frameLink.addEventListener('click', (event) => {
-        if (awake || reduce.matches) return;
-        if (event.metaKey || event.ctrlKey || event.shiftKey || event.altKey || event.button !== 0) return;
-        event.preventDefault();
+    const TAPS = 5;
+    const TAP_WINDOW = 3000;
+    const taps = [];
+    const caption = root.closest('.verse');
+    if (caption) {
+      caption.addEventListener('click', (event) => {
+        if (awake || event.button !== 0) return;
+        const now = performance.now();
+        taps.push(now);
+        while (taps.length && now - taps[0] > TAP_WINDOW) taps.shift();
+        if (taps.length < TAPS) return;
+        taps.length = 0;
         awake = true;
+        const selection = window.getSelection();
+        if (selection && caption.contains(selection.anchorNode)) selection.removeAllRanges();
       });
     }
 
