@@ -186,6 +186,18 @@
   vertical-align: middle;
 }
 
+/* Emoji-only "headings" (rehypeReadingView): same size and place, no outline entry. */
+.prose .ornament {
+  font-size: var(--type-h2);
+  line-height: 1.25;
+  margin-block: 2.2em 0.4em;
+}
+
+.prose .ornament-h1 {
+  font-size: var(--type-h1);
+  margin-top: 2.1em;
+}
+
 /* Images the posts centre inside <h1 align="center"> wrappers. */
 .prose :is(h1, h2, h3, h4, h5, h6):has(> img:only-child) {
   margin-block: 2em;

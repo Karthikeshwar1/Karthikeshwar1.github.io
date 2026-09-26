@@ -10,7 +10,7 @@ categories: books
 <br>
 
 <h6 align="center">
-<img src='https://www.hachettebookgroup.com/wp-content/uploads/2018/10/9780465004171.jpg' />
+<img src='https://www.hachettebookgroup.com/wp-content/uploads/2018/10/9780465004171.jpg' alt="Cover of Emotional Design by Don Norman: a chrome citrus juicer holding a lemon half" />
 </h6>
 
 ## Part 0: Prologue: 3 Teapots
@@ -110,7 +110,7 @@ categories: books
   * System image (product with its written material)
 
 <h6 align="center">
-<img src="./images/Emotional_Design_Conceptual_models.png" />
+<img src="./images/Emotional_Design_Conceptual_models.png" alt="Conceptual models: the designer’s model points down to the system image, and the user’s mental model is drawn from it" />
 The designer’s model, the system image and the user’s model (Source: the book)
 </h6>
 

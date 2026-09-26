@@ -5,7 +5,7 @@
 </small>
 
 <h1 align="center">
-  <img align="center" src="https://images.celeb-picks.com/books/the-practicing-mind.jpg" alt="The Practicing Mind" style="max-height: 450px; object-fit: cover; border-radius: 4px;">
+  <img align="center" src="https://images.celeb-picks.com/books/the-practicing-mind.jpg" alt="Cover of The Practicing Mind" style="max-height: 450px; object-fit: cover; border-radius: 4px;">
 </h1>
 
 <br>

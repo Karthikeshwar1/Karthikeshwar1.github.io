@@ -71,22 +71,43 @@ export function rehypeLocalLinks() {
  * images (some are multi-megabyte) load only as they approach the viewport.
  */
 export function rehypeReadingView() {
-  const walk = (node) => {
-    node.children?.forEach((child, i) => {
-      if (isEl(child, 'img')) {
-        child.properties.loading ??= 'lazy';
-        child.properties.decoding ??= 'async';
-      }
-      walk(child);
-      if (isEl(child, 'table')) {
-        node.children[i] = {
-          type: 'element',
-          tagName: 'div',
-          properties: { className: ['table-scroll'], tabIndex: 0 },
-          children: [child],
-        };
-      }
-    });
+  return (tree, file) => {
+    const source = String(file.path ?? '');
+    const tableLabel = source.includes('_kn') ? 'ಕೋಷ್ಟಕ' : 'Table';
+    const walk = (node) => {
+      node.children?.forEach((child, i) => {
+        // A heading of only emoji or signs ("🌅🌆") is an ornament, not a
+        // section: set it as a line at the same size, out of the outline.
+        if (
+          /^h[1-6]$/.test(child.tagName ?? '') &&
+          textOf(child).trim() &&
+          !/[\p{L}\p{N}]/u.test(textOf(child)) &&
+          !child.children?.some((c) => c.type === 'element')
+        ) {
+          child.properties.className = ['ornament', `ornament-${child.tagName}`];
+          delete child.properties.id;
+          child.tagName = 'p';
+        }
+        if (isEl(child, 'img')) {
+          child.properties.loading ??= 'lazy';
+          child.properties.decoding ??= 'async';
+        }
+        walk(child);
+        if (isEl(child, 'table')) {
+          node.children[i] = {
+            type: 'element',
+            tagName: 'div',
+            properties: {
+              className: ['table-scroll'],
+              tabIndex: 0,
+              role: 'region',
+              ariaLabel: tableLabel,
+            },
+            children: [child],
+          };
+        }
+      });
+    };
+    walk(tree);
   };
-  return (tree) => walk(tree);
 }

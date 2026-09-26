@@ -92,7 +92,7 @@ const span = `${years.at(-1)}–${years[0]}`;
   description="Essays, book notes and resources by Karthikeshwar, 2021 to now, in English and Kannada."
   currentPage="blog"
 >
-  <main id="main" class="archive">
+  <main id="main" class="archive" tabindex="-1">
     <aside class="archive-aside">
       <h1 class="archive-title"><T t={ui.nav.blog} /></h1>
       <p class="archive-lede">
@@ -111,6 +111,7 @@ const span = `${years.at(-1)}–${years[0]}`;
         >
         <kbd class="search-key" aria-hidden="true">/</kbd>
       </form>
+      <p id="results-live" class="visually-hidden" aria-live="polite"></p>
 
       <nav {...attr('aria-label', ui.blog.byYear)}>
         <ul class="jump-list">
@@ -122,7 +123,7 @@ const span = `${years.at(-1)}–${years[0]}`;
 
     <div class="archive-body">
       <section class="archive-section results" id="results" hidden aria-labelledby="results-status">
-        <h2 class="section-heading" id="results-status" aria-live="polite"></h2>
+        <h2 class="section-heading" id="results-status"></h2>
         <ul class="ledger" data-results></ul>
       </section>
 
@@ -374,6 +375,7 @@ const span = `${years.at(-1)}–${years[0]}`;
   }
 
   .translation {
+    padding-block: 0.6rem;
     margin-right: 0.9rem;
     font-size: 0.85rem;
     letter-spacing: normal;
@@ -453,6 +455,7 @@ const span = `${years.at(-1)}–${years[0]}`;
   const browse = document.querySelector<HTMLElement>('[data-browse]')!;
   const results = document.getElementById('results')!;
   const status = document.getElementById('results-status')!;
+  const live = document.getElementById('results-live')!;
   const list = results.querySelector('[data-results]')!;
 
   form.hidden = false;
@@ -493,6 +496,7 @@ const span = `${years.at(-1)}–${years[0]}`;
     if (!terms.length) {
       results.hidden = true;
       browse.hidden = false;
+      if (live.textContent) live.textContent = '';
       return;
     }
 
@@ -522,6 +526,7 @@ const span = `${years.at(-1)}–${years[0]}`;
 
     const quoted = `“${escapeHtml(query)}”`;
     status.innerHTML = searchStatus[knMode ? 'kn' : 'en'](hits.length, quoted, hits.length === 30);
+    live.textContent = status.textContent;
 
     list.innerHTML = hits
       .map(

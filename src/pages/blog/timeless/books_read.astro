@@ -26,7 +26,7 @@ const notesHref = (path: string) => postUrl(path.replace(/^\/blog\//, ''));
   description={`${books.length} books Karthikeshwar has read, shelved from the cosmic to the microscopic.`}
   currentPage="blog"
 >
-  <main id="main" class="archive">
+  <main id="main" class="archive" tabindex="-1">
     <aside class="archive-aside">
       <h1 class="archive-title"><T t={ui.common.booksRead} /></h1>
       <p class="archive-lede"><T t={ui.books.lede(books.length)} /></p>

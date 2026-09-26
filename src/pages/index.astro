@@ -3,7 +3,7 @@ import { Image } from 'astro:assets';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import alegalu from '../assets/art/alegalu.jpg';
 import T from '../components/T.astro';
-import { attr, LINKS, ui } from '../lib/i18n';
+import { attr, LINKS, NAME, ui } from '../lib/i18n';
 
 const lineA = 'WAVES ROLL;';
 const lineB = 'WHILE I STROLL,';
@@ -23,7 +23,8 @@ function marks(text: string): Mark[] {
 ---
 
 <BaseLayout home>
-  <main id="main" class="stage" slot="screen">
+  <main id="main" class="stage" slot="screen" tabindex="-1">
+    <h1 class="visually-hidden"><T t={NAME} /></h1>
     <figure class="plate">
       <div class="leaf">
         <a class="frame" href="/musings/Alegalhu">

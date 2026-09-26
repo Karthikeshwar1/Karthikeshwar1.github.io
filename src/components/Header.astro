@@ -1,6 +1,6 @@
 ---
 import T from './T.astro';
-import { NAME, ui } from '../lib/i18n';
+import { attr, NAME, ui } from '../lib/i18n';
 
 interface Props {
   currentPage?: string;
@@ -15,7 +15,7 @@ const navItems = [
 ---
 
 <header class="site-header">
-  <nav aria-label="Site">
+  <nav {...attr('aria-label', ui.nav.site)}>
     <ul class="pipes nav">
       {navItems.map((item) => (
         <li>
@@ -47,6 +47,9 @@ const navItems = [
 
   .nav a {
     color: var(--ink);
+    /* The type stays the nav size. The padding is only the hit area. */
+    padding-block: 0.4rem;
+    margin-block: -0.4rem;
   }
 
   /* Kannada has no uppercase; 1.14em optically balances Garamond's all-caps cap height. */

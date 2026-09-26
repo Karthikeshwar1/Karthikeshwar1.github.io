@@ -2,7 +2,7 @@
 
 <h1 align="center">
 
-<img src="https://github.com/user-attachments/assets/9abd253e-bccf-4f23-8042-8e88c7c8d3c9">
+<img src="https://github.com/user-attachments/assets/9abd253e-bccf-4f23-8042-8e88c7c8d3c9" alt="Elon Musk on X: “Everything is just a quarks and leptons remix,” quoting “Once you’ve read the dictionary, every other book you read is just a remix,” above a helmeted figure reading a newspaper.">
 
 </h1>
 

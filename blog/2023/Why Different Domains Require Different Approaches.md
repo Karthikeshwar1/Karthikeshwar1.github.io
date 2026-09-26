@@ -13,7 +13,7 @@ Different domains require different approaches. What works in one field may not 
 ### Microsoft's failure in the smartphone industry
 
 <h6 align="center">
-  <img src="https://i0.wp.com/stratechery.com/wp-content/uploads/2023/11/attentuatinginnovation-2.png?w=240&ssl=1" />
+  <img src="https://i0.wp.com/stratechery.com/wp-content/uploads/2023/11/attentuatinginnovation-2.png?w=240&ssl=1" alt="A 2006 Windows Mobile home screen, with a Start menu laid out like a desktop" />
 </h6>
 
 Microsoft assumed that the smartphone should resemble a computer OS. 

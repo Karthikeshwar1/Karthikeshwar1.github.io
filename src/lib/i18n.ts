@@ -27,6 +27,7 @@ export const attr = (name: string, t: Text) => ({
 
 export const ui = {
   nav: {
+    site: { en: 'Site', kn: 'ತಾಣ' },
     blog: { en: 'Blog', kn: 'ಬ್ಲಾಗ್' },
     projects: { en: 'Projects', kn: 'ಯೋಜನೆಗಳು' },
     musings: { en: 'Musings', kn: 'ಚಿಂತನೆಗಳು' },
@@ -63,8 +64,8 @@ export const ui = {
         kn: '<a href="/projects">ಯೋಚಿಸಬಲ್ಲ ಯಂತ್ರಗಳನ್ನು ಕಟ್ಟುತ್ತೇನೆ</a>. ಒಂದಾಗಿ ದುಡಿಯುವ ವ್ಯವಸ್ಥೆಗಳನ್ನು. (ಒಮ್ಮೆ, <a href="https://kathaaverse.com/">ಪುಸ್ತಕವನ್ನು ಆಟವಾಗಿಸುವ ಒಂದು ಪ್ರಯೋಗ</a> Hacker News‌ನಲ್ಲಿ #1 ಆಗಿತ್ತು.)',
       },
       {
-        en: 'I <a href="/blog/timeless/books_read">read</a> to write, <a href="/blog">write</a> to think. I <a href="/musings/Alegalhu">paint</a> &amp; <a href="/musings/#piano">play piano</a> to stop thinking. And I <a href="/musings/#teaching">discuss</a> what I read.',
-        kn: 'ಬರೆಯಲು <a href="/blog/timeless/books_read">ಓದುತ್ತೇನೆ</a>, ಯೋಚಿಸಲು <a href="/blog">ಬರೆಯುತ್ತೇನೆ</a>. ಯೋಚನೆ ನಿಲ್ಲಿಸಲು <a href="/musings/Alegalhu">ಚಿತ್ರ ಬಿಡಿಸುತ್ತೇನೆ</a>, <a href="/musings/#piano">ಪಿಯಾನೋ ನುಡಿಸುತ್ತೇನೆ</a>. ಓದಿದ್ದನ್ನು <a href="/musings/#teaching">ಚರ್ಚಿಸುತ್ತೇನೆ</a>.',
+        en: 'I <a href="/blog/timeless/books_read">read</a> to write, <a href="/blog/">write</a> to think. I <a href="/musings/Alegalhu">paint</a> &amp; <a href="/musings/#piano">play piano</a> to stop thinking. And I <a href="/musings/#teaching">discuss</a> what I read.',
+        kn: 'ಬರೆಯಲು <a href="/blog/timeless/books_read">ಓದುತ್ತೇನೆ</a>, ಯೋಚಿಸಲು <a href="/blog/">ಬರೆಯುತ್ತೇನೆ</a>. ಯೋಚನೆ ನಿಲ್ಲಿಸಲು <a href="/musings/Alegalhu">ಚಿತ್ರ ಬಿಡಿಸುತ್ತೇನೆ</a>, <a href="/musings/#piano">ಪಿಯಾನೋ ನುಡಿಸುತ್ತೇನೆ</a>. ಓದಿದ್ದನ್ನು <a href="/musings/#teaching">ಚರ್ಚಿಸುತ್ತೇನೆ</a>.',
       },
       {
         en: 'I want to solve <a href="/blog/2026/Intelligence-should-be-invisible">Intelligence</a>. Intelligence solves all else.',

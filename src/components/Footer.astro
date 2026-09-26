@@ -7,7 +7,7 @@ import { attr, ui } from '../lib/i18n';
   <ul class="pipes">
     <li><T t={ui.footer.copyright} /></li>
     <li>
-      <button type="button" class="lang-toggle" aria-pressed="false" {...attr('aria-label', ui.footer.switchLanguage)}>
+      <button type="button" class="lang-toggle" {...attr('aria-label', ui.footer.switchLanguage)}>
         <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
           <circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.5"></circle>
           <path d="M3 12h18M12 3c2.4 2.7 3.6 5.7 3.6 9s-1.2 6.3-3.6 9c-2.4-2.7-3.6-5.7-3.6-9s1.2-6.3 3.6-9z" fill="none" stroke="currentColor" stroke-width="1.5"></path>
@@ -15,7 +15,7 @@ import { attr, ui } from '../lib/i18n';
       </button>
     </li>
     <li>
-      <button type="button" class="theme-toggle" aria-pressed="false">
+      <button type="button" class="theme-toggle">
         <span class="to-night"><T t={ui.footer.dark} /></span>
         <span class="to-day"><T t={ui.footer.light} /></span>
       </button>
@@ -32,13 +32,11 @@ import { attr, ui } from '../lib/i18n';
   function apply(night: boolean) {
     if (night) root.setAttribute('data-theme', 'night');
     else root.removeAttribute('data-theme');
-    toggle?.setAttribute('aria-pressed', night ? 'true' : 'false');
     themeColor?.setAttribute('content', night ? '#0c0b0a' : '#faf9f6');
   }
 
   function applyLang(kn: boolean) {
     root.lang = kn ? 'kn' : 'en';
-    langToggle?.setAttribute('aria-pressed', kn ? 'true' : 'false');
     // An attribute or the tab title can't hold two spans, so each carries both values.
     document.querySelectorAll<HTMLElement>('[data-l10n]').forEach((el) => {
       const value = (kn ? el.dataset.l10nKn : el.dataset.l10nEn) ?? '';
@@ -71,6 +69,8 @@ import { attr, ui } from '../lib/i18n';
     font-size: 1.05rem;
     line-height: 1.2;
     letter-spacing: 0.05em;
+    text-transform: uppercase;
+    font-variant-numeric: lining-nums;
     color: var(--ink-tertiary);
   }
 
@@ -88,6 +88,7 @@ import { attr, ui } from '../lib/i18n';
     background: none;
     font-weight: 500;
     font-variant-numeric: lining-nums;
+    text-transform: inherit;
     color: var(--ink-tertiary);
     cursor: pointer;
   }

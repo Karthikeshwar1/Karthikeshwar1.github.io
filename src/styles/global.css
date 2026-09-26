@@ -157,7 +157,10 @@ html[lang="kn"] [data-locale="en"] {
 }
 
 /* Beside small capitals, Kannada scales up as the nav's does, to their cap height. */
-.label [lang="kn"] {
+.label [lang="kn"],
+.section-heading [lang="kn"],
+.ledger-meta [lang="kn"],
+.jump-list [lang="kn"] {
   font-size: 1.14em;
 }
 
@@ -251,6 +254,8 @@ html[lang="kn"] [data-locale="en"] {
 }
 
 .jump-list a {
+  /* The padding is only the hit area; the line keeps its spacing. */
+  padding-block: 0.6rem;
   font-size: 0.8rem;
   letter-spacing: 0.08em;
   text-transform: uppercase;

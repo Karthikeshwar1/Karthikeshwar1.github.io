@@ -18,7 +18,7 @@ const imageProps = {
   description="Alegalu (Waves), an acrylic painting by Karthikeshwar, with a two-line verse in Kannada and English."
   currentPage="musings"
 >
-  <main id="main" class="work-page">
+  <main id="main" class="work-page" tabindex="-1">
     <figure class="work">
       <div class="frame">
         <Image src={alegalu} alt="Alegalu (Waves), an acrylic painting of a breaking wave by Karthikeshwar" loading="eager" fetchpriority="high" {...imageProps} />
@@ -40,10 +40,8 @@ const imageProps = {
         <Image
           src={alegaluBw}
           {...attr('alt', ui.musings.blackAndWhiteAlt)}
-          style="aspect-ratio: 0.675; object-fit: cover; width: auto; height: 24rem; display: block; margin-left: auto; margin-right: auto;"
           {...imageProps}
         />
-  
       </div>
       <figcaption class="work-label">
         <p class="label"><T t={ui.musings.blackAndWhite} /></p>

@@ -9,7 +9,7 @@ Note: No AI is used in writing my blogs. So there is soul behind every (imperfec
 ## Complexity of software vs. Efforts required graph
 
 <h1 align="center">
-<img height="648" alt="software-engineering-in-2026" src="https://github.com/user-attachments/assets/1cb966f3-0276-4036-a8dc-012122b6f6b7" />
+<img height="648" alt="Graph of effort required against complexity of software. A simple TODO app and an Amazon clone sit low; the curve rises through a Jira-like app and steepens toward cancer-solving software or a breakthrough physics simulator." src="https://github.com/user-attachments/assets/1cb966f3-0276-4036-a8dc-012122b6f6b7" />
 </h1>
 
 <br>
@@ -27,7 +27,7 @@ Now invent the time machine. Now expand to all galaxies and other universes. We'
 ## The Jenga-tower framework
 
 <h1 align="center">
-<img width="250" height="373" alt="image" src="https://github.com/user-attachments/assets/bfff75ad-9c16-42ec-8fdd-dc9c65e9b1bd" />
+<img width="250" height="373" alt="A tall wooden Jenga tower, slightly leaned, on a wooden floor" src="https://github.com/user-attachments/assets/bfff75ad-9c16-42ec-8fdd-dc9c65e9b1bd" />
 </h1>
 
 

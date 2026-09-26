@@ -31,14 +31,14 @@ The traditional (waterfall model) architect thinks he's the sole designer of the
 * UMLs are a joke.
 
 <p align="center">
-<img align="center" src="https://bellekens.com/wp-content/uploads/2012/02/crossinglinesdiagram.png"  width="300px">
+<img align="center" src="https://bellekens.com/wp-content/uploads/2012/02/crossinglinesdiagram.png" width="300px" alt="A UML class diagram of crossing lines, stamped WRONG in red">
 </p>
 
 * The too-detailed diagram becomes redundant when it's as complicated as the code and also makes it hard to adapt to new changes.
 * In Agile, you:
  
 <p align="center">
-<img src="./images/sa1.png" width="300px">
+<img src="./images/sa1.png" width="300px" alt="A cycle: talk to users, build and refine, deploy, review">
 </p>
 
 * This would be ideally a 2-day max cycle.

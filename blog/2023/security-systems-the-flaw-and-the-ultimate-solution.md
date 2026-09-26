@@ -8,7 +8,7 @@
 <br>
 
 <h5 align="center">
-  <img src="https://upload.wikimedia.org/wikipedia/en/thumb/f/f5/Padlock-red-silver.svg/240px-Padlock-red-silver.svg.png">
+  <img src="https://upload.wikimedia.org/wikipedia/en/thumb/f/f5/Padlock-red-silver.svg/240px-Padlock-red-silver.svg.png" alt="A closed padlock with a red body and a silver shackle">
 </h5>
 
 From the lock and key to the computer and smartphone PINs and passwords, the systems that secure your valuables have been not very intelligent.

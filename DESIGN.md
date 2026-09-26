@@ -93,9 +93,9 @@ Every effect must have a printed or physical equivalent (ink, paper, a hung fram
 **Colour.** Warm paper, near-black ink. No hue except the painting and book covers. Secondary and tertiary inks meet 4.5:1 on paper. Night is the same wall with the lamps down: lamp-black `#0c0b0a`, ink `#efece4`, mat `#161513`, moulding stained oak `#3e3933`, with the top and right faces `#524c45` where the light lands and the bottom and left `#2c2824`. Bone at 17:1 outlined the painting; the wood stays dark. Pictures are not inverted. One footer word names the mode you enter: `DARK MODE` by day, `LIGHT MODE` at night. It underlines on hover and on the click, like a nav link. The first visit follows the system.
 
 **Type.**
-- **Faces:** EB Garamond (400, 400 italic, 500, 700) for Latin; Noto Serif Kannada for Kannada, matched to the Garamond beside it: `size-adjust: 90%` puts its headline at Garamond's cap height, and its 600 cut serves Garamond's 500 (and bold), because Noto's 600 is as dark as Garamond's 500. Kannada is never letterspaced or transformed. Beside small capitals (`.label`) it scales 1.14em, as in the nav, to meet their cap height. `font-synthesis: none`, so no faked styles.
+- **Faces:** EB Garamond (400, 400 italic, 500, 700) for Latin; Noto Serif Kannada for Kannada, matched to the Garamond beside it: `size-adjust: 90%` puts its headline at Garamond's cap height, and its 600 cut serves Garamond's 500 (and bold), because Noto's 600 is as dark as Garamond's 500. Kannada is never letterspaced or transformed. Beside small capitals (labels, section heads, ledger meta, year jumps) it scales 1.14em, as in the nav, to meet their cap height. `font-synthesis: none`, so no faked styles.
 - **Capitals:** lines set in capitals use weight 500, lining figures and 0.05–0.1em tracking (Bringhurst's 5–10%). Running text uses old-style figures.
-- **Reading view:** 1.1875rem / 1.72 (1.125rem on phones) at a 40rem measure. Section breaks are set `*  *  *`.
+- **Reading view:** 1.1875rem / 1.72 (1.125rem on phones) at a 40rem measure. Section breaks are set `*  *  *`. A heading of only emoji is an ornament line at its heading's size, out of the outline and CONTENTS.
 - **Scale:** Nav and footer stay 1.05rem. Small capitals never go under the 0.75rem label. Meta (authors, notes, code) is 0.875rem. Inside a post, h4 is 1.3125rem, h3 and the deck are 1.4375rem, h2 is 1.625rem, an in-text h1 is 1.875rem. Each step stays above the one beneath it.
 
 **Motion.** None, except the homepage English verse. It opens on AIMFULLY. Until the painting is clicked, only FULLY/LESSLY sways, and only left–right; the first click wakes the whole line (a later click opens the painting). Crests then travel through every word, including AIM. The suffix alternates FULLY and LESSLY. `prefers-reduced-motion` keeps that exchange as opacity only, and the painting link works immediately. Everywhere else, hover is an instant colour or underline change. Focus is a 1px ink outline, offset 4px.
@@ -187,6 +187,8 @@ One line per decision: date, decision, why. Newest last.
 - **2026-09 · Numeral-only headings borrow their section's opening words in the contents; the phone footer keeps the pipe between globe and mode.** A list reading 1, 2, 3, 4 named nothing; the globe sat flush against DARK MODE.
 - **2026-09 · Homepage caption matches the nav: 1.05rem, weight 500, both lines.** It had been 16px and the Kannada line was the lighter 400 cut.
 - **2026-09 · GitHub and LinkedIn on the homepage about block, pipe line below the bio.** User asked for profile links on the home page without changing the site footer.
+- **2026-09 · Audit pass: B&W Alegalu uncropped; footer set in capitals; emoji-only headings become ornament lines; Kannada 1.14em reaches section heads, ledger meta and year jumps; year jumps, ಕನ್ನಡ links and the CONTENTS slip get 44px hit areas.** Each restores a written rule or fixes access without changing the look.
+- **2026-09 · The painting's first click still wakes the verse.** The audit flagged that the link swallows its first activation; user kept it as designed.
 
 ## Don'ts
 
