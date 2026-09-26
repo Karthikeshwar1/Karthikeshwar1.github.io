@@ -55,7 +55,7 @@ It's roughly like the Von-Neumann architecture for Intelligence.
 
 ✅ Relevant in some cases, where the product is AI-first. It's where AI is the main participant/communicator/source of information of the interface. 
 
-❌ But not relevant in most other cases, where there is a glowing AI button "on your face". Obviously driven by need to push/market/or just show off. 
+❌ But not relevant in most other cases, where a glowing AI button sits in the interface. 
 
 ### PAI (Passive AI): 
 

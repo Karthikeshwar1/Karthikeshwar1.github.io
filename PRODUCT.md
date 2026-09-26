@@ -20,7 +20,7 @@ Personal website and intellectual home for Karthikeshwar — a computer science 
 
 ## Positioning
 
-An individual's living archive — not a portfolio performing for recruiters, not a blog chasing traffic. The writing has soul behind it (explicitly: "No AI is used in writing my blogs. So there is soul behind every imperfect word, and meaning behind every suboptimal sentence."). The projects speak for themselves (KathaaVerse reached #1 on Hacker News). The range — from AI manifestos to Kannada poetry to acrylic paintings — is the differentiator. No persona, just the person.
+An individual's living archive — not a portfolio performing for recruiters, not a blog chasing traffic. Posts are written without AI. The projects speak for themselves (KathaaVerse reached #1 on Hacker News). The range — from AI manifestos to Kannada poetry to acrylic paintings — is the differentiator. No persona, just the person.
 
 ## Operating Context
 

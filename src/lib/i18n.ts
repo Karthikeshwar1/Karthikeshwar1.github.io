@@ -79,8 +79,8 @@ export const ui = {
   },
   blog: {
     lede: {
-      en: 'No AI is used in writing my blogs. So there is soul behind every (imperfect) word, and meaning behind every (suboptimal) sentence.',
-      kn: 'ನನ್ನ ಬ್ಲಾಗ್ ಬರಹಗಳಲ್ಲಿ AI ಬಳಸಿಲ್ಲ. ಹಾಗಾಗಿ ಪ್ರತಿ (ಅಪರಿಪೂರ್ಣ) ಪದದ ಹಿಂದೆ ಆತ್ಮವಿದೆ, ಪ್ರತಿ (ಅಷ್ಟೇನೂ ಉತ್ತಮವಲ್ಲದ) ವಾಕ್ಯದ ಹಿಂದೆ ಅರ್ಥವಿದೆ.',
+      en: 'No AI is used in writing these posts.',
+      kn: 'ಈ ಬರಹಗಳಲ್ಲಿ AI ಬಳಸಿಲ್ಲ.',
     },
     byYear: { en: 'Archive by year', kn: 'ವರ್ಷವಾರು ಬರಹಗಳು' },
     topClicks: { en: 'Top clicks', kn: 'ಹೆಚ್ಚು ಓದಿದವು' },
