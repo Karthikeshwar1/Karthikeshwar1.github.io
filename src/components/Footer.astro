@@ -1,51 +1,128 @@
 ---
+import T from './T.astro';
+import { attr, ui } from '../lib/i18n';
 ---
 
 <footer class="site-footer">
-  <span>&copy; 2026 Karthikeshwar</span>
-  <div class="footer-links">
-    <a href="https://github.com/Karthikeshwar1" target="_blank" rel="noopener">GitHub</a>
-    <a href="https://www.linkedin.com/in/karthikeshwar/" target="_blank" rel="noopener">LinkedIn</a>
-    <a href="https://kathaaverse.com/" target="_blank" rel="noopener">KathaaVerse</a>
-  </div>
+  <ul class="pipes">
+    <li><T t={ui.footer.copyright} /></li>
+    <li>
+      <button type="button" class="lang-toggle" aria-pressed="false" {...attr('aria-label', ui.footer.switchLanguage)}>
+        <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
+          <circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.5"></circle>
+          <path d="M3 12h18M12 3c2.4 2.7 3.6 5.7 3.6 9s-1.2 6.3-3.6 9c-2.4-2.7-3.6-5.7-3.6-9s1.2-6.3 3.6-9z" fill="none" stroke="currentColor" stroke-width="1.5"></path>
+        </svg>
+      </button>
+    </li>
+    <li>
+      <button type="button" class="theme-toggle" aria-pressed="false">
+        <span class="to-night"><T t={ui.footer.dark} /></span>
+        <span class="to-day"><T t={ui.footer.light} /></span>
+      </button>
+    </li>
+  </ul>
 </footer>
+
+<script>
+  const root = document.documentElement;
+  const langToggle = document.querySelector('.lang-toggle');
+  const toggle = document.querySelector('.theme-toggle');
+  const themeColor = document.querySelector('meta[name="theme-color"]');
+
+  function apply(night: boolean) {
+    if (night) root.setAttribute('data-theme', 'night');
+    else root.removeAttribute('data-theme');
+    toggle?.setAttribute('aria-pressed', night ? 'true' : 'false');
+    themeColor?.setAttribute('content', night ? '#0c0b0a' : '#faf9f6');
+  }
+
+  function applyLang(kn: boolean) {
+    root.lang = kn ? 'kn' : 'en';
+    langToggle?.setAttribute('aria-pressed', kn ? 'true' : 'false');
+    // An attribute or the tab title can't hold two spans, so each carries both values.
+    document.querySelectorAll<HTMLElement>('[data-l10n]').forEach((el) => {
+      const value = (kn ? el.dataset.l10nKn : el.dataset.l10nEn) ?? '';
+      if (el.dataset.l10n === 'text') el.textContent = value;
+      else el.setAttribute(el.dataset.l10n!, value);
+    });
+    document.dispatchEvent(new Event('langchange'));
+  }
+
+  apply(root.getAttribute('data-theme') === 'night');
+  applyLang(root.lang === 'kn');
+
+  langToggle?.addEventListener('click', () => {
+    const kn = root.lang !== 'kn';
+    localStorage.setItem('lang', kn ? 'kn' : 'en');
+    applyLang(kn);
+  });
+
+  toggle?.addEventListener('click', () => {
+    const night = root.getAttribute('data-theme') !== 'night';
+    localStorage.setItem('theme', night ? 'night' : 'day');
+    apply(night);
+  });
+</script>
 
 <style>
   .site-footer {
     width: 100%;
-    max-width: 1120px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-top: 1.25rem;
-    border-top: 1px solid rgba(230, 227, 220, 0.6);
-    font-size: 0.78rem;
+    padding-top: 2.5rem;
+    font-size: 1.05rem;
+    line-height: 1.2;
+    letter-spacing: 0.05em;
     color: var(--ink-tertiary);
-    letter-spacing: 0.08em;
   }
 
-  .footer-links {
-    display: flex;
-    gap: 1.25rem;
+  .pipes {
+    --pipe-gap: 1.1em;
+    row-gap: 0.85rem;
   }
 
-  .footer-links a {
-    color: var(--ink-secondary);
-    text-decoration: none;
-    transition: color 0.3s ease;
+  .theme-toggle,
+  .lang-toggle {
+    /* Glyph stays the nav size. The padding is only the hit area. */
+    padding: 0.7rem 0.4rem;
+    margin: -0.7rem -0.4rem;
+    border: 0;
+    background: none;
+    font-weight: 500;
+    font-variant-numeric: lining-nums;
+    color: var(--ink-tertiary);
+    cursor: pointer;
   }
 
-  .footer-links a:hover {
+  .lang-toggle {
+    display: inline-flex;
+    align-items: center;
+    line-height: 0;
+  }
+
+  .theme-toggle:hover,
+  .theme-toggle:active,
+  .lang-toggle:hover,
+  .lang-toggle:active {
+    text-decoration: underline;
+  }
+
+  html[lang="kn"] .lang-toggle {
     color: var(--ink);
   }
 
-  /* Mobile */
-  @media (max-width: 768px) {
-    .site-footer {
-      flex-direction: column;
-      gap: 0.75rem;
-      text-align: center;
+  html:not([data-theme="night"]) .to-day,
+  html[data-theme="night"] .to-night {
+    display: none;
+  }
+
+  /* The © line on its own; the globe and the mode word beneath, piped. */
+  @media (max-width: 600px) {
+    .pipes > li:first-child {
+      flex-basis: 100%;
+      justify-content: center;
+    }
+
+    .pipes > li:nth-child(2)::before {
+      display: none;
     }
   }
 </style>

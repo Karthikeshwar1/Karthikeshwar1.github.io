@@ -1,0 +1,114 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import T from '../components/T.astro';
+import { attr, pageTitle, ui } from '../lib/i18n';
+---
+
+<BaseLayout title={pageTitle(ui.missing.title)} description="This page isn't in the archive.">
+  <main id="main" class="missing">
+    <h1 class="missing-title"><T t={ui.missing.heading} /></h1>
+    <p class="missing-text">
+      <T t={ui.missing.text} />
+    </p>
+    <form class="missing-search" action="/blog/" method="get" role="search">
+      <label class="visually-hidden" for="missing-q"><T t={ui.common.searchArchive} /></label>
+      <input id="missing-q" name="q" type="search" {...attr('placeholder', ui.common.searchArchive)} autocomplete="off">
+      <button type="submit" class="label"><T t={ui.common.search} /></button>
+    </form>
+    <p class="missing-links label">
+      <a href="/blog/"><T t={ui.nav.blog} /></a>
+      <span aria-hidden="true">·</span>
+      <a href="/"><T t={ui.missing.home} /></a>
+      <span aria-hidden="true">·</span>
+      <span><T t={ui.missing.error} /></span>
+    </p>
+  </main>
+</BaseLayout>
+
+<style>
+  .missing {
+    flex: 1;
+    width: 100%;
+    max-width: 34rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.25rem;
+    padding: 4rem 0;
+    text-align: center;
+  }
+
+  .missing-title {
+    font-size: clamp(1.9rem, 4vw, 2.5rem);
+    font-weight: 400;
+    line-height: 1.15;
+    text-wrap: balance;
+  }
+
+  .missing-text {
+    font-size: 1.05rem;
+    line-height: 1.6;
+    color: var(--ink-secondary);
+    text-wrap: pretty;
+  }
+
+  .missing-search {
+    display: flex;
+    width: 100%;
+    max-width: 24rem;
+    margin-top: 1rem;
+    border-bottom: 1px solid var(--rule-strong);
+  }
+
+  .missing-search:focus-within {
+    border-bottom-color: var(--ink);
+  }
+
+  .missing-search input {
+    flex: 1;
+    min-width: 0;
+    appearance: none;
+    background: transparent;
+    border: 0;
+    padding: 0.55rem 0;
+    font-size: 1.05rem;
+    caret-color: var(--ink);
+  }
+
+  .missing-search input::placeholder {
+    color: var(--ink-tertiary);
+    font-style: italic;
+  }
+
+  .missing-search input:focus {
+    outline: none;
+  }
+
+  .missing-search button {
+    appearance: none;
+    background: none;
+    border: 0;
+    padding: 0 0 0 1rem;
+    cursor: pointer;
+    color: var(--ink-secondary);
+  }
+
+  .missing-search button:hover {
+    color: var(--ink);
+  }
+
+  .missing-links {
+    display: flex;
+    gap: 0.6rem;
+    margin-top: 1.5rem;
+  }
+
+  .missing-links a {
+    color: var(--ink-secondary);
+  }
+
+  .missing-links a:hover {
+    color: var(--ink);
+  }
+</style>

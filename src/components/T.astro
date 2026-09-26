@@ -1,0 +1,17 @@
+---
+// One piece of chrome in both languages; `html lang` shows one. `html` allows inline links.
+import type { Text } from '../lib/i18n';
+
+interface Props {
+  t: Text;
+  html?: boolean;
+}
+
+const { t, html = false } = Astro.props;
+---
+
+{html ? (
+  <><span data-locale="en" set:html={t.en} /><span data-locale="kn" lang="kn" set:html={t.kn} /></>
+) : (
+  <><span data-locale="en">{t.en}</span><span data-locale="kn" lang="kn">{t.kn}</span></>
+)}

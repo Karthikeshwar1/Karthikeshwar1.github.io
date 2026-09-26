@@ -1,32 +1,28 @@
 ---
+import T from './T.astro';
+import { NAME, ui } from '../lib/i18n';
+
 interface Props {
   currentPage?: string;
 }
 const { currentPage } = Astro.props;
 const navItems = [
-  { label: 'Blog', href: '/blog/' },
-  { label: 'Projects', href: '/projects/' },
-  { label: 'Teaching', href: '/teaching/' },
-  { label: 'Musings', href: '/musings/' },
+  { label: NAME, href: '/', page: 'home' },
+  { label: ui.nav.blog, href: '/blog/', page: 'blog' },
+  { label: ui.nav.projects, href: '/projects/', page: 'projects' },
+  { label: ui.nav.musings, href: '/musings/', page: 'musings' },
 ];
 ---
 
 <header class="site-header">
-  <a href="/" class="brand">Karthikeshwar</a>
-  <nav>
-    <ul class="nav-menu">
-      {navItems.map((item, i) => (
-        <>
-          <li class="nav-item">
-            <a
-              href={item.href}
-              class={currentPage === item.label.toLowerCase() ? 'active' : ''}
-            >
-              {item.label}
-            </a>
-          </li>
-          {i < navItems.length - 1 && <li class="nav-sep">/</li>}
-        </>
+  <nav aria-label="Site">
+    <ul class="pipes nav">
+      {navItems.map((item) => (
+        <li>
+          <a href={item.href} aria-current={currentPage === item.page ? 'page' : undefined}>
+            <T t={item.label} />
+          </a>
+        </li>
       ))}
     </ul>
   </nav>
@@ -35,93 +31,49 @@ const navItems = [
 <style>
   .site-header {
     width: 100%;
-    max-width: 1120px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-bottom: 1.25rem;
-    border-bottom: 1px solid rgba(230, 227, 220, 0.6);
+    padding-top: clamp(1.75rem, 6svh, 3.25rem);
   }
 
-  .brand {
+  .nav {
+    --pipe-gap: 1.1em;
     font-size: 1.05rem;
-    font-weight: 400;
-    letter-spacing: 0.08em;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.05em;
     text-transform: uppercase;
-    text-decoration: none;
-    color: var(--ink);
-    transition: opacity 0.3s ease;
-  }
-
-  .brand:hover {
-    opacity: 0.7;
-  }
-
-  .nav-menu {
-    display: flex;
-    align-items: center;
-    gap: 1.5rem;
-    list-style: none;
-  }
-
-  .nav-item a {
-    font-size: 0.8rem;
-    letter-spacing: 0.16em;
-    text-transform: uppercase;
-    text-decoration: none;
-    color: var(--ink-secondary);
-    position: relative;
-    padding: 0.25rem 0;
-    transition: color 0.3s ease;
-  }
-
-  .nav-item a:hover,
-  .nav-item a.active {
+    font-variant-numeric: lining-nums;
     color: var(--ink);
   }
 
-  .nav-item a::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 1px;
-    background-color: var(--ink);
-    transform: scaleX(0);
-    transform-origin: right;
-    transition: transform 0.3s cubic-bezier(0.2, 0, 0, 1);
+  .nav a {
+    color: var(--ink);
   }
 
-  .nav-item a:hover::after,
-  .nav-item a.active::after {
-    transform: scaleX(1);
-    transform-origin: left;
+  /* Kannada has no uppercase; 1.14em optically balances Garamond's all-caps cap height. */
+  .nav :global([lang="kn"]) {
+    font-size: 1.14em;
   }
 
-  .nav-sep {
-    color: var(--border-subtle);
-    font-size: 0.75rem;
-    user-select: none;
+  .nav a:hover,
+  .nav a[aria-current="page"]:not([href="/"]) {
+    text-decoration: underline;
   }
 
-  /* Mobile */
-  @media (max-width: 768px) {
-    .site-header {
-      flex-direction: column;
-      gap: 1rem;
-      align-items: center;
-      text-align: center;
+  /* The name takes its own line; the three rooms sit beneath it. */
+  @media (max-width: 720px) {
+    .nav {
+      --pipe-gap: 0.75em;
+      font-size: 0.82rem;
+      row-gap: 0.85rem;
     }
 
-    .nav-menu {
-      flex-wrap: wrap;
+    .nav > li:first-child {
+      flex-basis: 100%;
       justify-content: center;
-      gap: 0.75rem 1rem;
+      font-size: 1.12em;
     }
 
-    .nav-sep {
+    .nav > li:nth-child(2)::before {
       display: none;
     }
   }

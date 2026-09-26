@@ -1,0 +1,266 @@
+---
+import { render } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import T from '../../components/T.astro';
+import Contents from '../../components/Contents.astro';
+import { getPosts, plainText, type Post } from '../../lib/posts';
+import { attr, ui } from '../../lib/i18n';
+import '../../styles/prose.css';
+
+export async function getStaticPaths() {
+  const posts = await getPosts();
+  // The running foot walks the "All writing" list. A _kn post stands in
+  // its English twin's place, so both languages share neighbours.
+  const shelf = posts.filter((p) => p.lang === 'en');
+  // A series shares one title (the 2022 healthcare posts) and carries its own
+  // PREV / NEXT in reading order, so it gets no walk; elsewhere it is named by subtitle.
+  const shared = (title: string) => shelf.filter((p) => p.title === title).length > 1;
+  const neighbour = (p?: Post): Neighbour | undefined =>
+    p && { url: p.url, title: shared(p.title) && p.subtitle ? p.subtitle : p.title };
+  return posts.map((post) => {
+    const i = shelf.findIndex((p) => p.id === post.id.replace(/_kn$/, ''));
+    const walk = !shared(post.title);
+    return {
+      params: { slug: post.id },
+      props: {
+        post,
+        previous: walk ? neighbour(shelf[i - 1]) : undefined,
+        next: walk ? neighbour(shelf[i + 1]) : undefined,
+      },
+    };
+  });
+}
+
+interface Neighbour {
+  url: string;
+  title: string;
+}
+
+interface Props {
+  post: Post;
+  previous?: Neighbour;
+  next?: Neighbour;
+}
+
+const { post, previous, next } = Astro.props;
+const { Content, headings } = await render(post.entry);
+// Every heading down to h3, less the hand-written "Contents" some posts carry.
+const sections = headings.filter((h) => h.depth <= 3 && h.text.trim() && h.slug !== 'contents');
+const top = Math.min(...sections.map((h) => h.depth));
+// A bare number ("1", "II.") names nothing, so its line borrows the opening
+// words of its own section, as a running head quotes the page it tops.
+const html = post.entry.rendered?.html ?? '';
+const opening = (slug: string) => {
+  const after = html.split(`id="${slug}"`)[1] ?? '';
+  const section = after.replace(/^[\s\S]*?<\/h\d>/, '').split(/<h\d/)[0];
+  const words = plainText(section).replace(/^[^\p{L}\p{N}]+/u, '').split(' ');
+  return words.slice(0, 5).join(' ').replace(/[,;:.!?]+$/, '') + (words.length > 5 ? '…' : '');
+};
+const numeral = /^(\d+|[IVXLC]+)\.?$/;
+const contents = sections.map((h) => {
+  const text = h.text.trim();
+  const lead = numeral.test(text) ? opening(h.slug) : '';
+  return {
+    href: '#' + h.slug,
+    text: lead ? `${text.replace(/\.$/, '')}. ${lead}` : text,
+    depth: h.depth - top + 1,
+  };
+});
+const inKannada = post.lang === 'kn';
+const yearHref = `/blog/#y${post.year}`;
+---
+
+<BaseLayout
+  title={`${post.title} — Karthikeshwar`}
+  description={post.text.slice(0, 160)}
+  currentPage="blog"
+>
+  <main id="main" class="post">
+    <header class="post-header">
+      <h1 class="post-title" lang={post.lang}>{post.title}</h1>
+      {post.subtitle && <p class="post-subtitle" lang={post.lang}>{post.subtitle}</p>}
+      <p class="post-meta label">
+        <a href={yearHref}>{post.year}</a>
+        <span aria-hidden="true">·</span>
+        <span><T t={ui.post.minRead(post.minutes)} /></span>
+        {post.translation && (
+          <>
+            <span aria-hidden="true">·</span>
+            {inKannada
+              ? <a href={post.translation} hreflang="en">Read in English</a>
+              : <a href={post.translation} hreflang="kn" lang="kn">ಕನ್ನಡದಲ್ಲಿ ಓದಿ</a>}
+          </>
+        )}
+      </p>
+    </header>
+
+    <Contents items={contents} placement="margin" lang={post.lang} />
+
+    <article class="prose" lang={post.lang}>
+      <Content />
+    </article>
+
+    <footer class="post-end">
+      {(previous || next) && (
+        <nav class="post-walk" {...attr('aria-label', ui.post.neighbours)}>
+          {previous && (
+            <a class="walk-prev" href={previous.url} rel="prev">
+              <span class="label"><T t={ui.post.previous} /></span>
+              <span class="walk-title">{previous.title}</span>
+            </a>
+          )}
+          {next && (
+            <a class="walk-next" href={next.url} rel="next">
+              <span class="label"><T t={ui.post.next} /></span>
+              <span class="walk-title">{next.title}</span>
+            </a>
+          )}
+        </nav>
+      )}
+      <ul class="post-shelf label pipes">
+        <li><a href="/blog/"><T t={ui.common.allWriting} /></a></li>
+        <li><a href={yearHref}><T t={ui.post.moreFrom(post.year)} /></a></li>
+      </ul>
+    </footer>
+  </main>
+</BaseLayout>
+
+<style>
+  .post {
+    flex: 1;
+    width: 100%;
+    max-width: var(--measure);
+    padding: clamp(3.25rem, 9vh, 6rem) 0 4.5rem;
+  }
+
+  .post-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.9rem;
+    text-align: center;
+    margin-bottom: 3.25rem;
+  }
+
+  /* A short centred rule, like the break under a chapter opening. */
+  .post-header::after {
+    content: "";
+    width: 2.5rem;
+    height: 1px;
+    margin-top: 1.4rem;
+    background: var(--ink-tertiary);
+  }
+
+  .post-title {
+    font-size: clamp(2.05rem, 4.4vw, 2.85rem);
+    font-weight: 400;
+    line-height: 1.12;
+    letter-spacing: 0.003em;
+    text-wrap: balance;
+  }
+
+  .post-subtitle {
+    font-size: var(--type-h3);
+    font-style: italic;
+    line-height: 1.45;
+    color: var(--ink-secondary);
+    text-wrap: balance;
+  }
+
+  .post-meta {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.35rem 0.6rem;
+    margin-top: 0.3rem;
+  }
+
+  .post-meta a {
+    color: var(--ink-tertiary);
+    text-decoration: underline;
+    text-decoration-color: transparent;
+    text-underline-offset: 0.3em;
+  }
+
+  .post-meta a:hover {
+    color: var(--ink);
+    text-decoration-color: currentColor;
+  }
+
+  /* The running foot: the neighbours in "All writing", then the way back. */
+  .post-end {
+    margin-top: 5rem;
+    border-top: 1px solid var(--border-subtle);
+  }
+
+  .post-walk {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2.5rem;
+    padding: 1.6rem 0;
+    border-bottom: 1px solid var(--border-subtle);
+  }
+
+  .post-walk a {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    color: var(--ink);
+  }
+
+  .walk-next {
+    grid-column: 2;
+    align-items: flex-end;
+    text-align: right;
+  }
+
+  .walk-title {
+    font-size: var(--type-h4);
+    line-height: 1.3;
+    text-wrap: balance;
+    text-decoration: underline 1px transparent;
+    text-underline-offset: 0.22em;
+  }
+
+  .post-walk a:hover .walk-title {
+    text-decoration-color: currentColor;
+  }
+
+  .post-shelf {
+    --pipe-gap: 0.9em;
+    padding-top: 1.4rem;
+  }
+
+  .post-shelf a {
+    color: var(--ink-secondary);
+  }
+
+  .post-shelf a:hover {
+    color: var(--ink);
+    text-decoration: underline;
+  }
+
+  /* One axis on phones: the neighbours stack. */
+  @media (max-width: 600px) {
+    .post-walk {
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+    }
+
+    .walk-next {
+      grid-column: 1;
+      align-items: flex-start;
+      text-align: left;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .post {
+      padding-top: 1.75rem;
+    }
+
+    .post-header {
+      margin-bottom: 2.5rem;
+    }
+  }
+</style>

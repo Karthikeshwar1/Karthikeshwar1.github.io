@@ -1,206 +1,262 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import T from '../../components/T.astro';
+import { pageTitle, ui, type Text } from '../../lib/i18n';
+
+const main: { name: string; href: string; where: string; meta: Text; description: Text }[] = [
+  {
+    name: 'KathaaVerse',
+    href: 'https://kathaaverse.com/',
+    where: 'kathaaverse.com',
+    meta: { en: 'Solo · June 2025', kn: 'ಏಕಾಂಗಿ · ಜೂನ್ 2025' },
+    description: {
+      en: 'Turn any famous book into interactive fiction! Reached <a href="https://github.com/Karthikeshwar1/Karthikeshwar1/blob/main/Hall%20of%20Fame/kathaaverse.md">#1 on Hacker News</a>, attracting more than 20k visitors and 500k API calls in the first week, despite no formal marketing.',
+      kn: 'ಯಾವುದೇ ಪ್ರಸಿದ್ಧ ಪುಸ್ತಕವನ್ನು ಸಂವಾದಾತ್ಮಕ ಕಥೆಯಾಗಿಸಿ! ಯಾವುದೇ ಔಪಚಾರಿಕ ಪ್ರಚಾರವಿಲ್ಲದೆಯೂ <a href="https://github.com/Karthikeshwar1/Karthikeshwar1/blob/main/Hall%20of%20Fame/kathaaverse.md">Hacker News‌ನಲ್ಲಿ #1</a> ಸ್ಥಾನ ತಲುಪಿತು; ಮೊದಲ ವಾರದಲ್ಲೇ 20 ಸಾವಿರಕ್ಕೂ ಹೆಚ್ಚು ಸಂದರ್ಶಕರು ಮತ್ತು 5 ಲಕ್ಷ API ಕರೆಗಳು.',
+    },
+  },
+  {
+    name: 'RxID',
+    href: 'https://www.rxid.in/',
+    where: 'rxid.in',
+    meta: { en: 'Solo · May 2026', kn: 'ಏಕಾಂಗಿ · ಮೇ 2026' },
+    description: {
+      en: 'A prescription verification and dispensing-audit platform, the only solution to address 10+ pharma-related problems.',
+      kn: 'ಪ್ರಿಸ್ಕ್ರಿಪ್ಷನ್ ಪರಿಶೀಲನೆ ಮತ್ತು ಔಷಧ ವಿತರಣೆಯ ಲೆಕ್ಕಪರಿಶೋಧನೆಯ ವೇದಿಕೆ; ಔಷಧ ಕ್ಷೇತ್ರದ 10ಕ್ಕೂ ಹೆಚ್ಚು ಸಮಸ್ಯೆಗಳನ್ನು ಬಗೆಹರಿಸುವ ಏಕೈಕ ಪರಿಹಾರ.',
+    },
+  },
+  {
+    name: 'Araam',
+    href: 'https://github.com/Karthikeshwar1/Araam',
+    where: 'GitHub',
+    meta: { en: 'Solo · Aug 2021', kn: 'ಏಕಾಂಗಿ · ಆಗಸ್ಟ್ 2021' },
+    description: { en: 'Control your PC with just a controller!', kn: 'ಕೇವಲ ಒಂದು ಕಂಟ್ರೋಲರ್‌ನಿಂದ ನಿಮ್ಮ PC ನಿಯಂತ್ರಿಸಿ!' },
+  },
+  {
+    name: 'airPiano',
+    href: 'https://github.com/Karthikeshwar1/airPiano',
+    where: 'GitHub',
+    meta: { en: 'Solo · Mar–Apr 2021', kn: 'ಏಕಾಂಗಿ · ಮಾರ್ಚ್–ಏಪ್ರಿಲ್ 2021' },
+    description: {
+      en: 'A software with which you can play piano in the air, or play a bigger piano with the computer keyboard.',
+      kn: 'ಗಾಳಿಯಲ್ಲೇ ಪಿಯಾನೋ ನುಡಿಸಲು, ಅಥವಾ ಕಂಪ್ಯೂಟರ್ ಕೀಬೋರ್ಡ್‌ನಲ್ಲಿ ದೊಡ್ಡ ಪಿಯಾನೋ ನುಡಿಸಲು ಒಂದು ತಂತ್ರಾಂಶ.',
+    },
+  },
+  {
+    name: 'TABFYE',
+    href: 'https://github.com/Karthikeshwar1/TABFYE',
+    where: 'GitHub',
+    meta: { en: 'Team of 4 · Jun 2020', kn: '4 ಜನರ ತಂಡ · ಜೂನ್ 2020' },
+    description: { en: 'Take-A-Break-For-Your-Eyes!', kn: 'ಕಣ್ಣುಗಳಿಗೊಂದು ವಿರಾಮ ಕೊಡಿ!' },
+  },
+];
+
+const mini: { repo: string; name?: string; description: Text; meta?: Text }[] = [
+  { repo: 'SwaGa-AutonomousLandingSystem', description: { en: 'Autonomous Landing Module Simulator', kn: 'ಸ್ವಯಂಚಾಲಿತ ಇಳಿಯುವ ಘಟಕದ ಸಿಮ್ಯುಲೇಟರ್' } },
+  { repo: 'GRA', description: { en: 'Gesture Recognition Application (for RevaHack 2020)', kn: 'ಸನ್ನೆ ಗುರುತಿಸುವ ಅಪ್ಲಿಕೇಶನ್ (RevaHack 2020ಗಾಗಿ)' } },
+  { repo: 'Puzzle', name: 'Puzzle!', description: { en: 'An elaborate puzzle game based purely on logic and some GitHub knowledge!', kn: 'ಕೇವಲ ತರ್ಕ ಮತ್ತು ಸ್ವಲ್ಪ GitHub ಜ್ಞಾನ ಬೇಡುವ ವಿಸ್ತೃತ ಒಗಟಿನ ಆಟ!' } },
+  {
+    repo: 'JumpG',
+    description: { en: 'A Windows console game inspired from Google’s T-rex game!', kn: 'Googleನ T-rex ಆಟದಿಂದ ಪ್ರೇರಿತ Windows ಕನ್ಸೋಲ್ ಆಟ!' },
+    meta: { en: 'Team of 2 · Apr–Jun 2019', kn: '2 ಜನರ ತಂಡ · ಏಪ್ರಿಲ್–ಜೂನ್ 2019' },
+  },
+  { repo: 'How-To-Write-Kannada', name: 'Kannada Writing App', description: { en: 'An app that shows how to write in Kannada', kn: 'ಕನ್ನಡದಲ್ಲಿ ಹೇಗೆ ಬರೆಯುವುದೆಂದು ತೋರಿಸುವ ಆ್ಯಪ್' } },
+  { repo: 'Medical_texts_3D_projection', name: 'Medical Texts 3D Projection', description: { en: 'A 3D mapping/embedded projection of medical texts', kn: 'ವೈದ್ಯಕೀಯ ಪಠ್ಯಗಳ 3D ನಕ್ಷೆ / ಎಂಬೆಡಿಂಗ್ ಪ್ರಕ್ಷೇಪಣ' } },
+  { repo: 'screenRec', description: { en: 'A screen recorder to take screenshots and record video', kn: 'ಸ್ಕ್ರೀನ್‌ಶಾಟ್ ತೆಗೆಯಲು ಮತ್ತು ವಿಡಿಯೋ ರೆಕಾರ್ಡ್ ಮಾಡಲು ಸ್ಕ್ರೀನ್ ರೆಕಾರ್ಡರ್' } },
+  { repo: 'controller-vibration-tester', description: { en: 'A python script to test vibration motors of game controllers', kn: 'ಗೇಮ್ ಕಂಟ್ರೋಲರ್‌ಗಳ ಕಂಪನ ಮೋಟಾರ್‌ಗಳನ್ನು ಪರೀಕ್ಷಿಸುವ Python ಸ್ಕ್ರಿಪ್ಟ್' } },
+  { repo: 'Wiki-Wordcloud-Maker', description: { en: 'Creates a wordcloud image based on a given Wikipedia article', kn: 'ಕೊಟ್ಟ ವಿಕಿಪೀಡಿಯ ಲೇಖನದಿಂದ ವರ್ಡ್‌ಕ್ಲೌಡ್ ಚಿತ್ರ ರಚಿಸುತ್ತದೆ' } },
+  { repo: 'Etcch-A-Sketch', description: { en: 'Drawing app inspired from the popular toy Etch A Sketch', kn: 'ಜನಪ್ರಿಯ ಆಟಿಕೆ Etch A Sketchನಿಂದ ಪ್ರೇರಿತ ಚಿತ್ರ ಬಿಡಿಸುವ ಆ್ಯಪ್' } },
+  { repo: 'algorithms_visualization', description: { en: 'Visualizing algorithms using Processing 3', kn: 'Processing 3 ಬಳಸಿ ಅಲ್ಗಾರಿದಮ್‌ಗಳ ದೃಶ್ಯೀಕರಣ' } },
+  { repo: 'TheWitcher3HaircutPreview', name: 'The Witcher 3 Haircut Preview', description: { en: 'Preview haircuts in the game The Witcher 3', kn: 'The Witcher 3 ಆಟದಲ್ಲಿ ಕೇಶವಿನ್ಯಾಸಗಳ ಮುನ್ನೋಟ' } },
+  // A cipher: the same in both languages.
+  { repo: 'ptzbak', name: 'ptzbak!', description: { en: 'ZskholHūkpl ksfpiwth ik faoOIFJO.', kn: 'ZskholHūkpl ksfpiwth ik faoOIFJO.' } },
+].map(({ repo, name, description, meta }) => ({
+  name: name ?? repo,
+  href: `https://github.com/Karthikeshwar1/${repo}`,
+  description,
+  meta,
+}));
 ---
 
-<BaseLayout title="Projects — Karthikeshwar" currentPage="projects">
-  <main class="page-content">
-    <h1 class="page-title">Projects</h1>
-
-    <section class="projects-section">
-      <h2>Main Projects</h2>
-      <div class="projects-grid">
-        <article class="project-card">
-          <h3><a href="https://kathaaverse.com/" target="_blank" rel="noopener">KathaaVerse</a></h3>
-          <p class="project-desc">Turn any famous book into interactive fiction! Reached <strong>#1 on Hacker News</strong> — 20k visitors and 500k API calls in week one.</p>
-          <span class="project-meta">Solo · June 2025</span>
-        </article>
-        <article class="project-card">
-          <h3><a href="https://www.rxid.in/" target="_blank" rel="noopener">RxID</a></h3>
-          <p class="project-desc">A prescription verification and dispensing-audit platform addressing 10+ pharma-related problems.</p>
-          <span class="project-meta">Solo · May 2026</span>
-        </article>
-        <article class="project-card">
-          <h3><a href="https://github.com/Karthikeshwar1/Araam" target="_blank" rel="noopener">Araam</a></h3>
-          <p class="project-desc">Control your PC with just a controller!</p>
-          <span class="project-meta">Solo · Aug 2021</span>
-        </article>
-        <article class="project-card">
-          <h3><a href="https://github.com/Karthikeshwar1/airPiano" target="_blank" rel="noopener">airPiano</a></h3>
-          <p class="project-desc">Play piano in the air, or play a bigger piano with the computer keyboard.</p>
-          <span class="project-meta">Solo · Mar–Apr 2021</span>
-        </article>
-        <article class="project-card">
-          <h3><a href="https://github.com/Karthikeshwar1/TABFYE" target="_blank" rel="noopener">TABFYE</a></h3>
-          <p class="project-desc">Take-A-Break-For-Your-Eyes!</p>
-          <span class="project-meta">Team of 4 · Jun 2020</span>
-        </article>
+<BaseLayout
+  title={pageTitle(ui.nav.projects)}
+  description="Things Karthikeshwar has built, from KathaaVerse (#1 on Hacker News) and RxID to small experiments."
+  currentPage="projects"
+>
+  <main id="main" class="archive">
+    <aside class="archive-aside">
+      <h1 class="archive-title"><T t={ui.nav.projects} /></h1>
+      <div class="archive-count">
+        <p class="label"><T t={ui.projects.count(main.length, mini.length)} /></p>
       </div>
-    </section>
+    </aside>
 
-    <section class="projects-section">
-      <h2>Mini-projects</h2>
-      <div class="projects-grid mini">
-        <article class="project-card mini">
-          <h3><a href="https://github.com/Karthikeshwar1/SwaGa-AutonomousLandingSystem" target="_blank" rel="noopener">SwaGa</a></h3>
-          <p class="project-desc">Autonomous Landing Module Simulator</p>
-        </article>
-        <article class="project-card mini">
-          <h3><a href="https://github.com/Karthikeshwar1/GRA" target="_blank" rel="noopener">GRA</a></h3>
-          <p class="project-desc">Gesture Recognition Application</p>
-        </article>
-        <article class="project-card mini">
-          <h3><a href="https://github.com/Karthikeshwar1/Puzzle" target="_blank" rel="noopener">Puzzle!</a></h3>
-          <p class="project-desc">An elaborate puzzle game based on logic and GitHub knowledge!</p>
-        </article>
-        <article class="project-card mini">
-          <h3><a href="https://github.com/Karthikeshwar1/JumpG" target="_blank" rel="noopener">JumpG</a></h3>
-          <p class="project-desc">A Windows console game inspired from Google's T-rex game!</p>
-        </article>
-        <article class="project-card mini">
-          <h3><a href="https://github.com/Karthikeshwar1/How-To-Write-Kannada" target="_blank" rel="noopener">Kannada Writing App</a></h3>
-          <p class="project-desc">An app that shows how to write in Kannada</p>
-        </article>
-        <article class="project-card mini">
-          <h3><a href="https://github.com/Karthikeshwar1/Medical_texts_3D_projection" target="_blank" rel="noopener">Medical Texts 3D</a></h3>
-          <p class="project-desc">A 3D mapping/embedded projection of medical texts</p>
-        </article>
-        <article class="project-card mini">
-          <h3><a href="https://github.com/Karthikeshwar1/screenRec" target="_blank" rel="noopener">screenRec</a></h3>
-          <p class="project-desc">A screen recorder to take screenshots and record video</p>
-        </article>
-        <article class="project-card mini">
-          <h3><a href="https://github.com/Karthikeshwar1/controller-vibration-tester" target="_blank" rel="noopener">Controller Vibration Tester</a></h3>
-          <p class="project-desc">A python script to test vibration motors of game controllers</p>
-        </article>
-        <article class="project-card mini">
-          <h3><a href="https://github.com/Karthikeshwar1/Wiki-Wordcloud-Maker" target="_blank" rel="noopener">Wiki-Wordcloud-Maker</a></h3>
-          <p class="project-desc">Creates a wordcloud image from a Wikipedia article</p>
-        </article>
-        <article class="project-card mini">
-          <h3><a href="https://github.com/Karthikeshwar1/Etcch-A-Sketch" target="_blank" rel="noopener">Etch-A-Sketch</a></h3>
-          <p class="project-desc">Drawing app inspired from the popular toy</p>
-        </article>
-        <article class="project-card mini">
-          <h3><a href="https://github.com/Karthikeshwar1/algorithms_visualization" target="_blank" rel="noopener">Algorithms Visualization</a></h3>
-          <p class="project-desc">Visualizing algorithms using Processing 3</p>
-        </article>
-        <article class="project-card mini">
-          <h3><a href="https://github.com/Karthikeshwar1/TheWitcher3HaircutPreview" target="_blank" rel="noopener">Witcher 3 Haircuts</a></h3>
-          <p class="project-desc">Preview haircuts in The Witcher 3</p>
-        </article>
-        <article class="project-card mini">
-          <h3><a href="https://github.com/Karthikeshwar1/ptzbak" target="_blank" rel="noopener">ptzbak!</a></h3>
-          <p class="project-desc">ZskholHūkpl ksfpiwth ik faoOIFJO.</p>
-        </article>
-      </div>
-    </section>
+    <div class="archive-body">
+      <section class="archive-section" aria-labelledby="main-heading">
+        <h2 class="section-heading" id="main-heading"><T t={ui.projects.main} /></h2>
+        <ul class="ledger">
+          {main.map((p) => (
+            <li class="project">
+              <div class="project-head">
+                <h3 class="project-name"><a href={p.href}>{p.name}</a></h3>
+                <span class="ledger-meta"><T t={p.meta} /></span>
+              </div>
+              <p class="project-desc"><T t={p.description} html /></p>
+              <a class="project-where label" href={p.href} tabindex="-1" aria-hidden="true">{p.where}</a>
+            </li>
+          ))}
+        </ul>
+      </section>
+
+      <section class="archive-section" aria-labelledby="mini-heading">
+        <h2 class="section-heading" id="mini-heading"><T t={ui.projects.mini} /></h2>
+        <ul class="ledger">
+          {mini.map((p) => (
+            <li>
+              <a class="mini" href={p.href}>
+                <span class="ledger-title">{p.name}</span>
+                <span class="mini-desc">
+                  <T t={p.description} />
+                  {p.meta && <span class="mini-meta label"><T t={p.meta} /></span>}
+                </span>
+              </a>
+            </li>
+          ))}
+        </ul>
+      </section>
+    </div>
   </main>
 </BaseLayout>
 
 <style>
-  .page-content {
-    flex: 1;
-    width: 100%;
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 3rem 2rem;
+  .github {
+    align-self: flex-start;
+    color: var(--ink-secondary);
+    text-decoration: underline;
+    text-decoration-color: var(--border-subtle);
+    text-underline-offset: 0.35em;
   }
 
-  .page-title {
+  .github:hover {
+    color: var(--ink);
+    text-decoration-color: currentColor;
+  }
+
+  /* ── Main projects ──────────────────────────────────── */
+
+  .project {
+    display: flex;
+    flex-direction: column;
+    gap: 0.55rem;
+    padding: 1.6rem 0 1.5rem;
+  }
+
+  .project-head {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 1.5rem;
+  }
+
+  .project-name {
     font-size: 1.6rem;
     font-weight: 400;
-    letter-spacing: 0.06em;
-    margin-bottom: 2.5rem;
+    line-height: 1.2;
+  }
+
+  .project-name a {
     color: var(--ink);
+    text-decoration: underline;
+    text-decoration-color: transparent;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 0.2em;
   }
 
-  .projects-section {
-    margin-bottom: 3rem;
-  }
-
-  .projects-section h2 {
-    font-size: 1rem;
-    font-weight: 400;
-    letter-spacing: 0.14em;
-    text-transform: uppercase;
-    color: var(--ink-secondary);
-    border-bottom: 1px solid var(--border-subtle);
-    padding-bottom: 0.5rem;
-    margin-bottom: 1.25rem;
-  }
-
-  .projects-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-    gap: 1.25rem;
-  }
-
-  .project-card {
-    background: var(--paper);
-    border: 1px solid var(--border-mat);
-    padding: 1.25rem 1.5rem;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-
-  .project-card:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
-  }
-
-  .project-card h3 {
-    font-size: 1.05rem;
-    font-weight: 400;
-    margin-bottom: 0.5rem;
-  }
-
-  .project-card h3 a {
-    color: var(--ink);
-    text-decoration: none;
-  }
-
-  .project-card h3 a:hover {
-    color: var(--ink-secondary);
+  .project-name a:hover {
+    text-decoration-color: currentColor;
   }
 
   .project-desc {
-    font-size: 0.9rem;
+    max-width: 36rem;
+    font-size: 1.05rem;
+    line-height: 1.6;
     color: var(--ink-secondary);
-    line-height: 1.5;
+    text-wrap: pretty;
   }
 
-  .project-meta {
-    font-size: 0.78rem;
+  .project-desc :global(a) {
+    color: var(--ink);
+    text-decoration: underline;
+    text-decoration-color: var(--underline);
+    text-underline-offset: 0.22em;
+  }
+
+  .project-desc :global(a:hover) {
+    text-decoration-color: currentColor;
+  }
+
+  .project-where {
+    align-self: flex-start;
+    margin-top: 0.2rem;
+    text-transform: none;
+    letter-spacing: 0.06em;
+    font-size: 0.8rem;
+  }
+
+  .project-where:hover {
+    color: var(--ink);
+  }
+
+  /* ── Mini-projects ──────────────────────────────────── */
+
+  .mini {
+    display: grid;
+    grid-template-columns: minmax(0, 15rem) minmax(0, 1fr);
+    gap: 0.25rem 2rem;
+    align-items: baseline;
+    padding: 0.85rem 0;
+  }
+
+  .mini .ledger-title {
+    font-size: var(--type-h4);
+    overflow-wrap: anywhere;
+  }
+
+  .mini:hover .ledger-title {
+    color: var(--ink);
+    text-decoration-color: currentColor;
+  }
+
+  .mini-desc {
+    font-size: 1.05rem;
+    line-height: 1.55;
     color: var(--ink-tertiary);
-    letter-spacing: 0.08em;
-    margin-top: 0.75rem;
+    text-wrap: pretty;
+  }
+
+  .mini-meta {
     display: block;
+    margin-top: 0.25rem;
+    font-size: var(--type-label);
   }
 
-  .project-card.mini {
-    padding: 1rem 1.25rem;
-  }
-
-  .project-card.mini h3 {
-    font-size: 0.95rem;
-  }
-
-  @media (prefers-reduced-motion: no-preference) {
-    .page-content {
-      animation: fadeIn 0.8s ease-out 0.1s both;
+  @media (max-width: 600px) {
+    .github {
+      align-self: center;
     }
   }
 
   @media (max-width: 768px) {
-    .page-content {
-      padding: 2rem 1.25rem;
+    .project-head {
+      flex-direction: column;
+      gap: 0.3rem;
     }
 
-    .page-title {
-      font-size: 1.35rem;
+    .project-name {
+      font-size: 1.4rem;
     }
 
-    .projects-grid {
-      grid-template-columns: 1fr;
+    .mini {
+      grid-template-columns: minmax(0, 1fr);
     }
   }
 </style>

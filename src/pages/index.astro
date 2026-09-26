@@ -1,134 +1,530 @@
 ---
+import { Image } from 'astro:assets';
 import BaseLayout from '../layouts/BaseLayout.astro';
+import alegalu from '../assets/art/alegalu.jpg';
+import T from '../components/T.astro';
+import { attr, LINKS, ui } from '../lib/i18n';
+
+const lineA = 'WAVES ROLL;';
+const lineB = 'WHILE I STROLL,';
+const less = 'LESSLY';
+const full = 'FULLY';
+
+type Mark = { kind: 'gap' } | { kind: 'ch'; ch: string; wave: 'sea' | 'punct' };
+
+/** Word spaces stay gaps; the semicolon and comma ride the sea at a lower amplitude. */
+function marks(text: string): Mark[] {
+  return [...text].map((ch) =>
+    ch === ' '
+      ? { kind: 'gap' }
+      : { kind: 'ch', ch, wave: ch === ';' || ch === ',' ? 'punct' : 'sea' },
+  );
+}
 ---
 
-<BaseLayout>
-  <!-- Central Focused Plinth — approved homepage -->
-  <main class="stage">
-    <div class="plinth-frame">
-      <img
-        src="/assets/images/hero-plate.jpg"
-        alt="Alegalu (Waves) — Acrylic on Canvas by Karthikeshwar"
-        class="artwork"
-      >
-    </div>
+<BaseLayout home>
+  <main id="main" class="stage" slot="screen">
+    <figure class="plate">
+      <div class="leaf">
+        <a class="frame" href="/musings/Alegalhu">
+          <Image
+            src={alegalu}
+            {...attr('alt', ui.common.paintingAlt)}
+            widths={[480, 760, 1100, 1500]}
+            sizes="(max-width: 900px) 76vw, min(64vh, 49rem)"
+            quality={82}
+            loading="eager"
+            fetchpriority="high"
+          />
+        </a>
+        <figcaption class="verse">
+          <span class="verse-kn" lang="kn"><span>ಹರಿಯುವ ಅಲೆಗಳು;</span><span>ಅರಿತೂ ಅರಿಯದೆ ಅಲೆಯುವ ನಾನು.</span></span>
+          <span class="verse-en">
+            <span class="visually-hidden">Waves roll; while I stroll, aimlessly and aimfully.</span>
+            <span class="line" aria-hidden="true">
+              {marks(lineA).map((m) =>
+                m.kind === 'gap' ? <span class="gap">{' '}</span> : <span class="ch" data-wave={m.wave}>{m.ch}</span>,
+              )}
+            </span>
+            <span class="line" aria-hidden="true">{marks(lineB).map((m) =>
+                m.kind === 'gap' ? <span class="gap">{' '}</span> : <span class="ch" data-wave={m.wave}>{m.ch}</span>,
+              )}<span class="gap">{' '}</span><span class="ch" data-wave="sea">A</span><span class="ch" data-wave="sea">I</span><span class="ch" data-wave="sea">M</span><span class="swash"><span class="word from">{[...less].map((ch) => <span class="glyph" data-wave="swash">{ch}</span>)}</span><span class="word to">{[...full].map((ch) => <span class="glyph">{ch}</span>)}</span></span><span class="ch" data-wave="end">.</span></span>
+          </span>
+        </figcaption>
+      </div>
+    </figure>
 
-    <div class="plinth-caption">
-      <div class="artwork-meta">Alegalu (Waves) &mdash; Acrylic on Canvas</div>
-      <div class="kannada-verse">ಅಲೆಗಳು; ನಾನಿಲ್ಲಿ ನಡಿಯುವಾಗ, ಸುಮ್ಮನೆ.</div>
-      <p class="artwork-poem">&ldquo;Waves roll; While I stroll, aimlessly.&rdquo;</p>
-      <p class="artist-bio">Living archive of essays, algorithmic experiments, and creative work.</p>
-    </div>
+    <a class="onward" href="#about" {...attr('aria-label', ui.home.about)}>
+      <svg viewBox="0 0 11 30" aria-hidden="true">
+        <path d="M5.5 0v29M1 24.5l4.5 4.5 4.5-4.5" />
+      </svg>
+    </a>
   </main>
+
+  <section class="about" id="about" {...attr('aria-label', ui.home.about)}>
+    {ui.home.bio.map((line) => <p><T t={line} html /></p>)}
+    <ul class="pipes reach">
+      <li><a href={LINKS.github} target="_blank" rel="noopener noreferrer">GitHub</a></li>
+      <li><a href={LINKS.linkedin} target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+    </ul>
+  </section>
 </BaseLayout>
 
 <style>
-  /* ── Central Stage ─────────────────────────────────────── */
+  /* ── The wall, every width: Comp 2, measured ─────────────────
+     The painting's height sets the frame. It shares the screen with the
+     nav, the verse and the arrow, and never outgrows the width. */
   .stage {
+    --art-h: min((78svh - 8rem) / 1.446, (100vw - 2.5rem) / 1.882, 34rem);
+    --s: calc(var(--art-h) / 474);
     flex: 1;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    width: 100%;
-    max-width: 980px;
-    padding: 2rem 0;
-  }
-
-  .plinth-frame {
-    background: var(--paper);
-    padding: 18px;
-    border: 1px solid var(--border-mat);
-    box-shadow: var(--shadow-plinth);
-    display: flex;
     justify-content: center;
-    align-items: center;
-    max-width: 680px;
-    width: 100%;
-    transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1),
-                box-shadow 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+    padding: clamp(1.5rem, 7.5svh, 5rem) 0 clamp(1rem, 3.5svh, 2.25rem);
   }
 
-  .plinth-frame:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 28px 56px -16px rgba(24, 23, 22, 0.16),
-                0 8px 16px -4px rgba(24, 23, 22, 0.05);
-  }
-
-  .artwork {
-    width: 100%;
-    height: auto;
-    max-height: 52vh;
-    object-fit: contain;
-    display: block;
-  }
-
-  /* ── Caption & Poetry ──────────────────────────────────── */
-  .plinth-caption {
-    margin-top: 1.75rem;
-    text-align: center;
+  .plate,
+  .leaf {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 0.5rem;
-    max-width: 620px;
+    width: 100%;
   }
 
-  .artwork-meta {
-    font-size: 0.8rem;
-    letter-spacing: 0.18em;
+  .verse {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.4rem;
+    width: 100%;
+    margin-top: max(1.5rem, calc(var(--s) * 40));
+    text-align: center;
+    color: var(--ink);
+    font-size: 1.05rem;
+    font-weight: 500;
+    line-height: 1.45;
+  }
+
+  /* One line until the width runs out, then a break after the semicolon. */
+  .verse-kn,
+  .verse-en {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 0.35em;
+    width: 100%;
+    min-width: 0;
+  }
+
+  .verse-kn > span,
+  .verse-en > span {
+    white-space: nowrap;
+  }
+
+  .verse-en {
+    --track: 0.05em;
+    font-weight: 500;
+    letter-spacing: var(--track);
     text-transform: uppercase;
+  }
+
+  /* Tracking lives on each mark. A flex line with inherited tracking would
+     add it twice: once inside the letter, once between the boxes. */
+  .line {
+    letter-spacing: 0;
+  }
+
+  .ch,
+  .glyph {
+    display: inline-block;
+    letter-spacing: var(--track);
+    line-height: 1;
+    transform-origin: 50% 100%;
+  }
+
+  .gap {
+    display: inline-block;
+    width: calc(0.25em + var(--track));
+    overflow: hidden;
+    vertical-align: baseline;
+  }
+
+  /* LESSLY and FULLY share one box the width of the longer word. */
+  .swash {
+    display: inline-grid;
+    vertical-align: baseline;
+  }
+
+  .word {
+    grid-area: 1 / 1;
+    justify-self: start;
+    align-self: baseline;
+  }
+
+  .word.to {
+    user-select: none;
+  }
+
+  .word.from .glyph {
+    opacity: 0;
+  }
+
+  .verse-en.is-waving .glyph,
+  .verse-en.is-awake.is-waving .ch {
+    will-change: transform;
+  }
+
+  .onward {
+    display: block;
+    margin-top: max(1.25rem, calc(var(--s) * 32));
+    padding: 0.25rem 0.75rem;
     color: var(--ink);
   }
 
-  .artwork-poem {
-    font-size: 1.05rem;
-    line-height: 1.6;
+  .onward svg {
+    display: block;
+    width: 11px;
+    height: 30px;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 1;
+  }
+
+  .about {
+    width: 100%;
+    max-width: 34rem;
+    padding: clamp(5rem, 22svh, 11rem) 0 clamp(3rem, 12svh, 6rem);
+    text-align: center;
+    font-size: clamp(1.25rem, 2.2vw, 1.5rem);
+    line-height: 1.5;
     color: var(--ink-secondary);
-    font-style: italic;
+    text-wrap: balance;
   }
 
-  .kannada-verse {
-    font-size: 0.95rem;
+  .about p + p {
+    margin-top: 0.9em;
+  }
+
+  .about :global(a) {
+    color: var(--ink);
+    text-decoration: underline;
+    text-decoration-color: var(--underline);
+  }
+
+  .about :global(a:hover) {
+    text-decoration-color: currentColor;
+  }
+
+  .reach {
+    --pipe-gap: 1.1em;
+    margin-top: clamp(2rem, 5vh, 3rem);
+    font-size: 1.05rem;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    font-variant-numeric: lining-nums;
     color: var(--ink-tertiary);
-    font-style: normal;
-    margin-top: -0.15rem;
-    letter-spacing: 0.02em;
   }
 
-  .artist-bio {
-    margin-top: 0.4rem;
-    font-size: 0.88rem;
-    color: var(--ink-tertiary);
-    letter-spacing: 0.04em;
+  .reach a {
+    color: inherit;
+    text-decoration: none;
   }
 
-  /* ── Homepage animations ───────────────────────────────── */
-  @media (prefers-reduced-motion: no-preference) {
-    .plinth-frame {
-      animation: plinthIn 1s cubic-bezier(0.16, 1, 0.3, 1) 0.1s both;
-    }
-    .plinth-caption {
-      animation: fadeIn 1s ease-out 0.3s both;
-    }
+  .reach a:hover {
+    color: var(--ink);
+    text-decoration: underline;
+    text-decoration-color: var(--underline);
   }
 
-  /* ── Mobile ────────────────────────────────────────────── */
-  @media (max-width: 768px) {
-    .stage {
-      padding: 1rem 0;
-    }
-
-    .plinth-frame {
-      padding: 12px;
-    }
-
-    .artwork {
-      max-height: 42vh;
-    }
-
-    .artwork-poem {
-      font-size: 0.95rem;
-    }
-  }
 </style>
+
+<script>
+  // The line opens on AIMFULLY. Until the painting is clicked, only the
+  // suffix sways, and only left–right. The click wakes the whole wave.
+  // FULLY is read first, then the tide ebbs to LESSLY and keeps alternating.
+  const verse = document.querySelector('.verse-en');
+  if (verse) shore(verse);
+
+  function shore(root) {
+    const carriers = [...root.querySelectorAll('[data-wave]')];
+    const incoming = [...root.querySelectorAll('.word.to .glyph')];
+    const fromWord = root.querySelector('.word.from');
+    const toWord = root.querySelector('.word.to');
+    const swash = root.querySelector('.swash');
+    const shoreAt = carriers.findIndex((n) => n.dataset.wave === 'swash');
+    if (shoreAt < 0 || !fromWord || !toWord || !swash) return;
+
+    const reduce = window.matchMedia('(prefers-reduced-motion: reduce)');
+
+    // WAVE — the knobs.
+    const CYCLE = 32;            // seconds for one FULLY → LESSLY → FULLY loop
+    const TRAVEL_WAVES = 1;      // how many wavelengths a crest marches per tide
+    const DRIFT_HOLD = 0.22;     // rad/s of roll while a word is held
+    const DRIFT_RUN = 0.65;      // extra rad/s while the tide is moving
+    const WAVELENGTH = 10.5;     // letters per crest
+    const RISE_Y = 0.11;         // vertical swell, in em, at the start of the line
+    const RISE_Y_SHORE = 0.05;   // extra rise toward the suffix
+    const SWAY_X = 0.045;        // horizontal sway, in em, at the start
+    const SWAY_X_SHORE = 0.08;   // extra sway toward the suffix
+    const LEAN = 3.5;            // max skew, degrees
+    const HOLD_A = 0.18;         // opening read of FULLY, as a fraction of CYCLE
+    const RISE = 0.42;           // tide finishes ebbing to LESSLY
+    const HOLD_B = 0.64;         // hold on LESSLY ends here
+    const FALL = 0.9;            // tide finishes returning to FULLY
+
+    const K = (Math.PI * 2) / WAVELENGTH;
+
+    let fontSize = 16;
+    let fromW = 0;
+    let toW = 0;
+    let gridW = 0;
+    let dir = 1;
+    let flow = 1;
+    let drift = 0;
+    let last = 0;
+    let raf = 0;
+    let running = false;
+    let cleared = false;
+    let awake = false;
+
+    const phaseOf = (j) => shoreAt + j;
+    const lastPhase = phaseOf(5) + 1.4;
+
+    function smooth(x) {
+      if (x <= 0) return 0;
+      if (x >= 1) return 1;
+      return x * x * (3 - 2 * x);
+    }
+
+    function smoothDeriv(x) {
+      if (x <= 0 || x >= 1) return 0;
+      return 6 * x * (1 - x);
+    }
+
+    function tide(u) {
+      // Raw tide is 0 at the start. Flip it so the line opens on FULLY.
+      if (u < HOLD_A || u >= FALL) return 1;
+      if (u < RISE) return 1 - smooth((u - HOLD_A) / (RISE - HOLD_A));
+      if (u < HOLD_B) return 0;
+      return smooth((u - HOLD_B) / (FALL - HOLD_B));
+    }
+
+    function tideVel(u) {
+      if (u < HOLD_A || u >= FALL) return 0;
+      if (u < RISE) return -smoothDeriv((u - HOLD_A) / (RISE - HOLD_A)) / (RISE - HOLD_A);
+      if (u < HOLD_B) return 0;
+      return smoothDeriv((u - HOLD_B) / (FALL - HOLD_B)) / (FALL - HOLD_B);
+    }
+
+    function washAt(j, level) {
+      // The front clears the final Y before the tide finishes easing in,
+      // so the hold reads FULLY, not FULLY with a leftover Y.
+      const front = -0.85 + level * 8.7;
+      return smooth((front - j) / 1.25);
+    }
+
+    function measure() {
+      fontSize = parseFloat(getComputedStyle(root).fontSize) || 16;
+      fromW = fromWord.offsetWidth;
+      toW = toWord.offsetWidth;
+      gridW = swash.offsetWidth;
+    }
+
+    function writeOp(el, value) {
+      const v = value <= 0.004 ? '0' : value >= 0.996 ? '1' : value.toFixed(3);
+      if (el._op === v) return;
+      el._op = v;
+      el.style.opacity = v;
+    }
+
+    function writeMask(el, mask) {
+      if (el._mask === mask) return;
+      el._mask = mask;
+      el.style.maskImage = mask;
+      el.style.webkitMaskImage = mask;
+    }
+
+    function writePose(el, x, y, skew) {
+      el.style.transform = `translate3d(${x.toFixed(2)}px, ${y.toFixed(2)}px, 0) skewX(${skew.toFixed(2)}deg)`;
+    }
+
+    function maskOf(wash, arrive) {
+      const edge = 36;
+      const cut = wash * (100 + edge) - edge;
+      const a = cut.toFixed(1);
+      const b = (cut + edge).toFixed(1);
+      return arrive
+        ? `linear-gradient(90deg, #000 ${a}%, transparent ${b}%)`
+        : `linear-gradient(90deg, transparent ${a}%, #000 ${b}%)`;
+    }
+
+    function paintSwap(from, to, wash, x, y, skew, flow) {
+      const mid = Math.sin(Math.PI * wash);
+      const carry = mid * flow * fontSize * 0.05;
+      const lift = -mid * fontSize * 0.035;
+      if (wash <= 0.004) {
+        writePose(from, x, y, skew);
+        writeOp(from, 1);
+        writeMask(from, 'none');
+        if (to) {
+          writePose(to, x, y, skew);
+          writeOp(to, 0);
+          writeMask(to, 'none');
+        }
+        return;
+      }
+      if (wash >= 0.996) {
+        writeOp(from, 0);
+        writeMask(from, 'none');
+        if (to) {
+          writePose(to, x, y, skew);
+          writeOp(to, 1);
+          writeMask(to, 'none');
+        }
+        return;
+      }
+      writePose(from, x + carry, y + lift, skew);
+      writeMask(from, maskOf(wash, false));
+      writeOp(from, to ? 1 : 1 - wash);
+      if (to) {
+        writePose(to, x - carry * 0.35, y, skew);
+        writeMask(to, maskOf(wash, true));
+        writeOp(to, 1);
+      }
+    }
+
+    function frame(now) {
+      if (!running) return;
+      const spatial = !reduce.matches;
+      root.classList.toggle('is-waving', spatial);
+      root.classList.toggle('is-awake', awake && spatial);
+      const u = (now / 1000 / CYCLE) % 1;
+      const level = tide(u);
+      const vel = tideVel(u);
+      if (vel > 0.02) dir = 1;
+      else if (vel < -0.02) dir = -1;
+      if (last === 0) last = now;
+      const dt = Math.min(0.05, (now - last) / 1000);
+      last = now;
+
+      if (!spatial) {
+        if (!cleared) {
+          for (const el of carriers) el.style.transform = '';
+          for (const el of incoming) {
+            el.style.transform = '';
+            writeMask(el, 'none');
+          }
+          for (const el of carriers) if (el.dataset.wave === 'swash') writeMask(el, 'none');
+          cleared = true;
+        }
+        for (const el of carriers) if (el.dataset.wave === 'swash') writeOp(el, 1 - level);
+        for (const el of incoming) writeOp(el, level);
+        const period = carriers.find((n) => n.dataset.wave === 'end');
+        if (period) {
+          const shift = fromW + (toW - fromW) * level - gridW;
+          period.style.transform = `translate3d(${shift.toFixed(2)}px, 0, 0)`;
+        }
+        raf = requestAnimationFrame(frame);
+        return;
+      }
+      cleared = false;
+
+      // Crests keep rolling while a word is held, and march faster while the
+      // tide is actually running. `flow` eases through the turn so the
+      // back-and-forth reverses without a pop.
+      const moving = Math.min(1, Math.abs(vel) * 0.34);
+      drift += dir * (DRIFT_HOLD + DRIFT_RUN * moving) * dt;
+      flow += (dir - flow) * Math.min(1, dt * 2.4);
+      const psi = level * TRAVEL_WAVES * Math.PI * 2 + drift;
+      let washY = 0;
+
+      for (let i = 0; i < carriers.length; i++) {
+        const el = carriers[i];
+        const kind = el.dataset.wave;
+        const j = i - shoreAt;
+        const phase =
+          i < shoreAt ? i : kind === 'swash' ? phaseOf(j) : phaseOf(5) + 0.85;
+        const depth = Math.min(1, phase / lastPhase);
+        const damp = kind === 'punct' ? 0.62 : kind === 'end' ? 0.38 : 1;
+        const shoal = depth * depth;
+        const Av = fontSize * damp * (RISE_Y + RISE_Y_SHORE * shoal);
+        const Ah = fontSize * damp * (SWAY_X + SWAY_X_SHORE * depth);
+        const theta = K * phase - psi;
+        const stokes =
+          (Math.cos(theta) + 0.42 * depth * Math.cos(2 * theta)) / (1 + 0.42 * depth);
+        const y = Av * stokes;
+        const x = Ah * Math.sin(theta) * flow;
+        let skew = flow * Math.sin(theta) * (LEAN * depth);
+        if (skew > LEAN) skew = LEAN;
+        else if (skew < -LEAN) skew = -LEAN;
+
+        if (kind === 'swash') {
+          const wash = washAt(j, level);
+          if (j === 5) washY = wash;
+          paintSwap(el, incoming[j], wash, x, awake ? y : 0, awake ? skew : 0, dir);
+          continue;
+        }
+
+        if (kind === 'end') {
+          const shift = fromW + (toW - fromW) * washY - gridW;
+          writePose(el, (awake ? x : 0) + shift, awake ? y : 0, awake ? skew * 0.5 : 0);
+          continue;
+        }
+
+        if (!awake) {
+          if (el.style.transform) el.style.transform = '';
+          continue;
+        }
+
+        writePose(el, x, y, skew);
+      }
+
+      raf = requestAnimationFrame(frame);
+    }
+
+    function setRunning(on) {
+      if (on === running) return;
+      running = on;
+      if (running) raf = requestAnimationFrame(frame);
+      else cancelAnimationFrame(raf);
+    }
+
+    const seen = () => {
+      const r = root.getBoundingClientRect();
+      return r.bottom > 0 && r.top < innerHeight;
+    };
+
+    const io = new IntersectionObserver(([entry]) => {
+      setRunning(entry.isIntersecting && !document.hidden);
+    }, { threshold: 0.15 });
+
+    document.addEventListener('visibilitychange', () => {
+      setRunning(!document.hidden && seen());
+    });
+
+    reduce.addEventListener('change', () => {
+      cleared = false;
+    });
+
+    const frameLink = document.querySelector('a.frame');
+    if (frameLink) {
+      frameLink.addEventListener('click', (event) => {
+        if (awake || reduce.matches) return;
+        if (event.metaKey || event.ctrlKey || event.shiftKey || event.altKey || event.button !== 0) return;
+        event.preventDefault();
+        awake = true;
+      });
+    }
+
+    const ro = new ResizeObserver(() => measure());
+    document.fonts.ready.then(() => {
+      measure();
+      ro.observe(root);
+      io.observe(root);
+    });
+  }
+</script>

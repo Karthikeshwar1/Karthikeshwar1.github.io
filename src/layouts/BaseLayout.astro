@@ -1,84 +1,148 @@
 ---
+import '@fontsource/eb-garamond/400.css';
+import '@fontsource/eb-garamond/400-italic.css';
+import '@fontsource/eb-garamond/500.css';
+import '@fontsource/eb-garamond/700.css';
+import garamond400 from '@fontsource/eb-garamond/files/eb-garamond-latin-400-normal.woff2?url';
+import garamond500 from '@fontsource/eb-garamond/files/eb-garamond-latin-500-normal.woff2?url';
+import kannada400 from '@fontsource/noto-serif-kannada/files/noto-serif-kannada-kannada-400-normal.woff2?url';
+import kannada600 from '@fontsource/noto-serif-kannada/files/noto-serif-kannada-kannada-600-normal.woff2?url';
 import '../styles/global.css';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
+import T from '../components/T.astro';
+import { ui, type Text } from '../lib/i18n';
+
+// Noto Serif Kannada, set to match the Garamond beside it. At 90% its headline
+// stands at Garamond's cap height. Its 600 is as dark as Garamond's 500, so the
+// 600 cut serves every line Garamond sets at 500 (and bold).
+const kannadaFaces = [
+  [kannada400, '400'],
+  [kannada600, '500 700'],
+]
+  .map(
+    ([src, weight]) =>
+      `@font-face{font-family:"Noto Serif Kannada";font-style:normal;font-weight:${weight};font-display:swap;size-adjust:90%;src:url(${src}) format("woff2")}`,
+  )
+  .join('');
 
 interface Props {
-  title?: string;
+  /** A string stays as is; a Text pair follows the language toggle. */
+  title?: string | Text;
+  description?: string;
   currentPage?: string;
+  lang?: string;
+  /** The homepage's first screen holds the header and the framed painting together. */
+  home?: boolean;
 }
 
 const {
-  title = 'Karthikeshwar — Living Archive',
+  title = { en: 'Karthikeshwar — Living Archive', kn: 'ಕಾರ್ತಿಕೇಶ್ವರ — ಜೀವಂತ ಸಂಗ್ರಹ' },
+  description = 'Living archive of essays, algorithmic experiments, and creative work by Karthikeshwar.',
   currentPage,
+  lang = 'en',
+  home = false,
 } = Astro.props;
+const titleEn = typeof title === 'string' ? title : title.en;
 ---
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang={lang}>
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{title}</title>
-  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  {typeof title === 'string'
+    ? <title>{title}</title>
+    : <title data-l10n="text" data-l10n-en={title.en} data-l10n-kn={title.kn}>{title.en}</title>}
+  <style is:inline set:html={kannadaFaces}></style>
+  <meta name="description" content={description}>
+  <meta name="theme-color" content="#faf9f6">
+  <script is:inline>
+    (function () {
+      try {
+        var lang = localStorage.getItem('lang');
+        if (lang === 'kn') {
+          document.documentElement.lang = 'kn';
+          var title = document.querySelector('title[data-l10n-kn]');
+          if (title) document.title = title.getAttribute('data-l10n-kn');
+        }
+        var stored = localStorage.getItem('theme');
+        var night = stored === 'night' || (stored !== 'day' && matchMedia('(prefers-color-scheme: dark)').matches);
+        if (night) {
+          document.documentElement.setAttribute('data-theme', 'night');
+          var meta = document.querySelector('meta[name="theme-color"]');
+          if (meta) meta.setAttribute('content', '#0c0b0a');
+        }
+      } catch (e) {}
+    })();
+  </script>
+  <meta property="og:title" content={titleEn}>
+  <meta property="og:description" content={description}>
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="/favicon.ico" sizes="32x32">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="preload" href={garamond400} as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href={garamond500} as="font" type="font/woff2" crossorigin>
 </head>
 <body>
-  <Header currentPage={currentPage} />
+  <a class="skip-link label" href="#main"><T t={ui.common.skip} /></a>
+  {home ? (
+    <div class="first-screen">
+      <Header currentPage="home" />
+      <slot name="screen" />
+    </div>
+  ) : (
+    <Header currentPage={currentPage} />
+  )}
   <slot />
   <Footer />
 </body>
 </html>
 
 <style is:global>
-  /* Body shell — shared flex layout for all pages */
   body {
     min-height: 100vh;
-    min-height: 100dvh;
+    min-height: 100svh;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     align-items: center;
-    padding: 2.25rem 2rem 2rem;
+    padding: 0 2rem 2rem;
   }
 
-  /* ── Entrance animations ──────────────────────────────── */
-  @media (prefers-reduced-motion: no-preference) {
-    .site-header {
-      animation: fadeIn 0.8s ease-out forwards;
-    }
-    .site-footer {
-      animation: fadeIn 0.8s ease-out 0.4s both;
-    }
-
-    @keyframes fadeIn {
-      from {
-        opacity: 0;
-        transform: translateY(6px);
-      }
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-
-    @keyframes plinthIn {
-      from {
-        opacity: 0;
-        transform: scale(0.97) translateY(12px);
-      }
-      to {
-        opacity: 1;
-        transform: scale(1) translateY(0);
-      }
-    }
+  body > main {
+    flex: 1;
   }
 
-  /* Mobile shell */
+  /* Off the page until a keyboard reaches it; then a plain slip at top left. */
+  .skip-link {
+    position: absolute;
+    top: 0.75rem;
+    left: 0.75rem;
+    z-index: 10;
+    padding: 0.6rem 0.9rem;
+    background: var(--bg);
+    color: var(--ink);
+    transform: translateY(-200%);
+  }
+
+  .skip-link:focus-visible {
+    transform: none;
+  }
+
+  #main:focus {
+    outline: none;
+  }
+
+  .first-screen {
+    width: 100%;
+    min-height: 100svh;
+    display: flex;
+    flex-direction: column;
+  }
+
   @media (max-width: 768px) {
     body {
-      padding: 1.5rem 1.25rem 1.5rem;
-      justify-content: flex-start;
-      gap: 1.5rem;
+      padding: 0 1.25rem 1.5rem;
     }
   }
 </style>

@@ -1,0 +1,151 @@
+---
+import { Image } from 'astro:assets';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import alegalu from '../../assets/art/alegalu.jpg';
+import alegaluBw from '../../assets/art/alegalu-bw.jpg';
+import T from '../../components/T.astro';
+import { attr, pageTitle, ui } from '../../lib/i18n';
+
+const imageProps = {
+  widths: [640, 1000, 1500],
+  sizes: '(max-width: 768px) 76vw, 38rem',
+  quality: 82,
+};
+---
+
+<BaseLayout
+  title={pageTitle(ui.common.painting)}
+  description="Alegalu (Waves), an acrylic painting by Karthikeshwar, with a two-line verse in Kannada and English."
+  currentPage="musings"
+>
+  <main id="main" class="work-page">
+    <figure class="work">
+      <div class="frame">
+        <Image src={alegalu} alt="Alegalu (Waves), an acrylic painting of a breaking wave by Karthikeshwar" loading="eager" fetchpriority="high" {...imageProps} />
+      </div>
+      <figcaption class="work-label">
+        <h1 class="work-title"><T t={ui.common.painting} /></h1>
+        <p class="label"><T t={ui.common.medium} /></p>
+      </figcaption>
+    </figure>
+
+    <div class="verse">
+      <p class="verse-kn" lang="kn">ಹರಿಯುವ ಅಲೆಗಳು;<br>ಅರಿಯದೆ ಅಲೆಯುವ ನಾನು.</p>
+      <p class="verse-en">Waves roll;<br>While I stroll, aimlessly.</p>
+      <p class="signature">KK.</p>
+    </div>
+
+    <figure class="work">
+      <div class="frame">
+        <Image
+          src={alegaluBw}
+          {...attr('alt', ui.musings.blackAndWhiteAlt)}
+          style="aspect-ratio: 0.675; object-fit: cover; width: auto; height: 24rem; display: block; margin-left: auto; margin-right: auto;"
+          {...imageProps}
+        />
+  
+      </div>
+      <figcaption class="work-label">
+        <p class="label"><T t={ui.musings.blackAndWhite} /></p>
+      </figcaption>
+    </figure>
+
+    <footer class="work-end label">
+      <a href="/musings/"><T t={ui.musings.all} /></a>
+    </footer>
+  </main>
+</BaseLayout>
+
+<style>
+  .work-page {
+    flex: 1;
+    width: 100%;
+    max-width: 52rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: clamp(2.5rem, 7vh, 4.5rem) 0 4rem;
+  }
+
+  /* The frame fits the viewport's height, so the label stays in view too. */
+  .work {
+    --art-h: min(52svh, (100vw - 2.5rem) / 1.882, 26rem);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .work-label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 1.75rem;
+    text-align: center;
+  }
+
+  .work-title {
+    font-size: clamp(1.75rem, 3.5vw, 2.3rem);
+    font-weight: 400;
+    line-height: 1.15;
+  }
+
+  .verse {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.6rem;
+    margin: 4.5rem 0 5.5rem;
+    text-align: center;
+  }
+
+  .verse-kn {
+    font-size: 1.3rem;
+    line-height: 1.9;
+    color: var(--ink);
+  }
+
+  .verse-en {
+    font-size: 1.3rem;
+    line-height: 1.7;
+    font-style: italic;
+    color: var(--ink-secondary);
+  }
+
+  .signature {
+    font-size: 0.95rem;
+    letter-spacing: 0.08em;
+    color: var(--ink-tertiary);
+  }
+
+  .work-end {
+    align-self: stretch;
+    margin-top: 4.5rem;
+    padding-top: 1.4rem;
+    border-top: 1px solid var(--border-subtle);
+  }
+
+  .work-end a {
+    color: var(--ink-secondary);
+  }
+
+  .work-end a:hover {
+    color: var(--ink);
+  }
+
+  @media (max-width: 768px) {
+    .work-page {
+      padding-top: 2.5rem;
+    }
+
+    .verse {
+      margin: 3.25rem 0 4rem;
+    }
+
+    .verse-kn,
+    .verse-en {
+      font-size: 1.15rem;
+    }
+  }
+</style>

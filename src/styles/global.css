@@ -1,27 +1,82 @@
-/* ═══════════════════════════════════════════════════════════
+﻿/* ═══════════════════════════════════════════════════════════
    Global Design Tokens — "The Focused Plinth"
-   Extracted from the approved index.html homepage
+   See DESIGN_BIBLE.md for the reasoning behind every value.
+   Nothing here moves: every effect has a printed or physical
+   equivalent (ink, paper, a hung frame), so no era shows.
    ═══════════════════════════════════════════════════════════ */
-
-@font-face {
-  font-family: "Calendas Plus";
-  src: url("/assets/fonts/calendas_plus-webfont.ttf") format("truetype");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
 
 :root {
   --bg: #faf9f6;
   --paper: #ffffff;
   --ink: #181716;
   --ink-secondary: #5a5753;
-  --ink-tertiary: #8c8882;
+  /* Darkened from #8c8882 so small captions and footers clear 4.5:1 on paper. */
+  --ink-tertiary: #74706a;
   --border-subtle: #e6e3dc;
-  --border-mat: #ebe8e1;
-  --accent: #2c2b29;
-  --shadow-plinth: 0 20px 48px -16px rgba(24, 23, 22, 0.12),
-                   0 4px 12px -2px rgba(24, 23, 22, 0.04);
+  --rule: rgba(230, 227, 220, 0.6);   /* ledger hairlines */
+  --rule-strong: #cfc9bd;              /* input underlines, table heads */
+  --underline: #cbc5b9;                /* resting underline under prose links */
+  --wash: #f2efe8;
+  --highlight: #ebe4d4;
+  --moulding: #0e0e0d;                 /* the black picture frame */
+  --moulding-lit: var(--moulding);     /* faces toward the light */
+  --moulding-shade: var(--moulding);   /* faces in the frame's own shadow */
+  /* Gallery light falls from above and a little to the right, so every
+     object on the wall casts one shadow down and to the left.
+     The frame's shadow is that one light at the museum angle (30° from
+     vertical): a sharp contact where the moulding stands off the wall,
+     and a longer soft fall. Day bounce keeps both open and ink-tinted. */
+  --frame-umbra: rgba(24, 23, 22, 0.38);
+  --frame-penumbra: rgba(24, 23, 22, 0.22);
+  --shadow-object: -1px 2px 3px rgba(24, 23, 22, 0.2);
+
+  /* EB Garamond: Claude Garamond's 16th-century roman, the closest free match
+     to Comp 2's lettering. 500 carries every line of capitals. */
+  --font-serif: "EB Garamond", "Noto Serif Kannada", Georgia, "Times New Roman", serif;
+  --font-mono: ui-monospace, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace;
+
+  --shell: 1120px;
+  --measure: 40rem;
+  --radius: 0;
+
+  /* Steps stay distinct. Nav and footer are set on their own elements and
+     are not driven from here. Nothing in capitals goes under the label. */
+  --type-h1: 1.875rem;
+  --type-h2: 1.625rem;
+  --type-h3: 1.4375rem;
+  --type-h4: 1.3125rem;
+  --type-meta: 0.875rem;
+  --type-label: 0.75rem;
+
+  color-scheme: light;
+  scrollbar-color: var(--rule-strong) var(--bg);
+}
+
+/* Night: the same wall with the lamps down. Lamp-black, warm ink the colour
+   of the day paper. The moulding stays stained oak — dark wood does not
+   turn bone when the lamps drop — lifted only enough to leave the wall.
+   Less bounce, so the same shadow goes blacker. Pictures stay. */
+html[data-theme="night"] {
+  --bg: #0c0b0a;
+  --paper: #161513;
+  --ink: #efece4;
+  --ink-secondary: #c8c2b8;
+  --ink-tertiary: #a39e94;
+  --border-subtle: #2c2a27;
+  --rule: rgba(239, 236, 228, 0.14);
+  --rule-strong: #3d3934;
+  --underline: #4a453f;
+  --wash: #1c1b19;
+  --highlight: #2a2724;
+  --moulding: #4a433c;
+  --moulding-lit: #645e55;
+  --moulding-shade: #2a2622;
+  --frame-umbra: rgba(0, 0, 0, 0.92);
+  --frame-penumbra: rgba(0, 0, 0, 0.7);
+  --shadow-object: -1px 2px 3px rgba(0, 0, 0, 0.55);
+
+  color-scheme: dark;
+  scrollbar-color: var(--rule-strong) var(--bg);
 }
 
 /* ── Reset ───────────────────────────────────────────────── */
@@ -36,10 +91,17 @@
 
 /* ── Base ────────────────────────────────────────────────── */
 
+html {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
 body {
   background-color: var(--bg);
   color: var(--ink);
-  font-family: "Calendas Plus", "Cormorant Garamond", Georgia, "Times New Roman", serif;
+  font-family: var(--font-serif);
+  font-variant-numeric: oldstyle-nums;
+  font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   overflow-x: hidden;
@@ -48,7 +110,8 @@ body {
 a {
   color: var(--ink-secondary);
   text-decoration: none;
-  transition: color 0.3s ease;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.24em;
 }
 
 a:hover {
@@ -58,4 +121,308 @@ a:hover {
 img {
   max-width: 100%;
   height: auto;
+}
+
+::selection {
+  background: var(--highlight);
+  color: var(--ink);
+}
+
+:focus-visible {
+  outline: 1px solid var(--ink);
+  outline-offset: 4px;
+}
+
+input,
+button {
+  font: inherit;
+  color: inherit;
+}
+
+[hidden] {
+  display: none !important;
+}
+
+/* One locale is in the DOM for both languages. The choice is `html lang`, set before paint. */
+html:not([lang="kn"]) [data-locale="kn"],
+html[lang="kn"] [data-locale="en"] {
+  display: none !important;
+}
+
+/* Kannada has no capitals and is never letterspaced. Its size and weight are
+   matched to the Garamond beside it in the @font-face (BaseLayout). */
+[lang="kn"]:not(html) {
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+/* Beside small capitals, Kannada scales up as the nav's does, to their cap height. */
+.label [lang="kn"] {
+  font-size: 1.14em;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+/* Small uppercase labels: captions, metadata. Capitals are spaced 5–10%
+   of their size, as in book typography; wider tracking reads as display. */
+.label {
+  font-size: var(--type-label);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ink-tertiary);
+}
+
+/* Lines set in capitals take the 500 weight and lining figures, as Comp 2 does;
+   running text keeps Garamond's old-style figures. */
+.label,
+.section-heading,
+.ledger-meta,
+.jump-list a {
+  font-weight: 500;
+  font-variant-numeric: lining-nums tabular-nums;
+}
+
+/* ═══════════════════════════════════════════════════════════
+   Archive pages — "The Split Canvas"
+   A sticky wall label on the left, the collection on the right.
+   ═══════════════════════════════════════════════════════════ */
+
+.archive {
+  flex: 1;
+  width: 100%;
+  max-width: var(--shell);
+  display: grid;
+  grid-template-columns: minmax(13rem, 17rem) minmax(0, 44rem);
+  justify-content: space-between;
+  column-gap: clamp(3rem, 8vw, 7rem);
+  padding: clamp(3rem, 7vh, 5rem) 0 4.5rem;
+}
+
+.archive-aside {
+  position: sticky;
+  top: 2.5rem;
+  align-self: start;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.archive-title {
+  font-size: clamp(2.25rem, 3.4vw, 2.85rem);
+  font-weight: 400;
+  line-height: 1.05;
+  letter-spacing: 0.005em;
+  color: var(--ink);
+  text-wrap: balance;
+}
+
+.archive-lede {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--ink-secondary);
+  text-wrap: pretty;
+}
+
+.archive-lede em {
+  font-style: italic;
+}
+
+.archive-count {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border-subtle);
+}
+
+/* Jump links in the wall label (years, shelves). */
+.jump-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem 1rem;
+  list-style: none;
+}
+
+.jump-list a {
+  font-size: 0.8rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.archive-body {
+  display: flex;
+  flex-direction: column;
+  gap: 3.75rem;
+  min-width: 0;
+}
+
+.archive-section {
+  scroll-margin-top: 2rem;
+}
+
+.section-heading {
+  font-size: 0.8rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--ink);
+  padding-bottom: 0.85rem;
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+/* ── Ledger: ruled rows of titles with quiet metadata ─────── */
+
+.ledger {
+  list-style: none;
+}
+
+.ledger > li {
+  border-bottom: 1px solid var(--rule);
+}
+
+.ledger-row {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1.5rem;
+  padding: 0.8rem 0;
+}
+
+a.ledger-row:hover .ledger-title,
+a.ledger-title:hover {
+  color: var(--ink);
+  text-decoration-color: currentColor;
+}
+
+.ledger-title {
+  font-size: 1.1rem;
+  line-height: 1.45;
+  color: var(--ink-secondary);
+  text-decoration: underline;
+  text-decoration-color: transparent;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.24em;
+  text-wrap: pretty;
+}
+
+.ledger-meta {
+  flex-shrink: 0;
+  font-size: var(--type-label);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ink-tertiary);
+  white-space: nowrap;
+}
+
+.favourite {
+  display: inline-block;
+  width: 0.62em;
+  height: 0.62em;
+  margin-left: 0.4em;
+  vertical-align: 0.1em;
+  color: var(--ink-tertiary);
+}
+
+@media (max-width: 960px) {
+  .archive {
+    grid-template-columns: minmax(0, 1fr);
+    max-width: 44rem;
+    row-gap: 3rem;
+    padding: 2.5rem 0 3.5rem;
+  }
+
+  .archive-aside {
+    position: static;
+  }
+}
+
+@media (max-width: 768px) {
+  .archive {
+    padding-top: 2.75rem;
+  }
+
+  .archive-body {
+    gap: 3rem;
+  }
+
+  .ledger-title {
+    font-size: 1.05rem;
+  }
+}
+
+/* On phones the wall label becomes a title page: centred on the same axis
+   as the nav, with the ledger set full width beneath it. */
+@media (max-width: 600px) {
+  .archive-aside {
+    align-items: center;
+    text-align: center;
+  }
+
+  .archive-count,
+  .archive-aside > form {
+    align-self: stretch;
+    align-items: center;
+  }
+
+  .jump-list {
+    justify-content: center;
+  }
+}
+
+/* ── Upright rules between items, as on a title page's imprint line ── */
+
+.pipes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+
+.pipes > li {
+  display: flex;
+  align-items: center;
+}
+
+.pipes > li + li::before {
+  content: "";
+  width: 1px;
+  height: 1.1em;
+  margin-inline: var(--pipe-gap, 1em);
+  background: currentColor;
+}
+
+/* ── Frame: a hung print ─────────────────────────────────────
+   Thin moulding, an even mat, one shadow down-left. The mat is 18.7% of
+   the artwork's short side and the moulding 3.6%, the proportions of
+   Comp 2 and of a conservation mat. The shadow is the museum angle,
+   30° from vertical: contact, then the soft fall (length ≈ frame depth
+   × cot 30°, nudged left because the light is right of centre).
+   Set --art-h (the painting's height) on the frame or a parent. */
+
+.frame {
+  --h: var(--art-h, 20rem);
+  --s: calc(var(--h) / 474);
+  display: block;
+  width: fit-content;
+  padding: calc(var(--h) * 0.187);
+  background: var(--paper);
+  border: max(3px, calc(var(--h) * 0.036)) solid var(--moulding);
+  border-color: var(--moulding-lit) var(--moulding-lit) var(--moulding-shade) var(--moulding-shade);
+  box-shadow:
+    calc(var(--s) * -2) calc(var(--s) * 3) calc(var(--s) * 1.5) var(--frame-umbra),
+    calc(var(--s) * -6) calc(var(--s) * 16) calc(var(--s) * 14) var(--frame-penumbra);
+}
+
+.frame img {
+  display: block;
+  width: auto;
+  max-width: none;
+  height: var(--h);
 }

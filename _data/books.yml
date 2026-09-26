@@ -1,264 +1,267 @@
-books:
-  # ── Cosmos-level ──────────────────────────────────────────────
-  - id: a-brief-history-of-time
-    title: "A Brief History of Time"
-    author: "Stephen Hawking"
-    category: "Cosmos"
-    note: ""
-  - id: classical-mechanics-the-theoretical-minimum
-    title: "Classical Mechanics: The Theoretical Minimum"
-    author: "Leonard Susskind & George Hrabovsky"
-    category: "Cosmos"
-    note: ""
-  - id: life-3-0
-    title: "Life 3.0"
-    author: "Max Tegmark"
-    filename: "life_3_0.jpg"
-    category: "Cosmos"
-    note: ""
-  - id: superintelligence
-    title: "Superintelligence"
-    author: "Nick Bostrom"
-    category: "Cosmos"
-    note: "Mostly speculatory, but concrete."
-  - id: hitchhikers-guide
-    title: "The Hitchhikers Guide to the Galaxy"
-    author: "Douglas Adams"
-    filename: "the-ultimate-hitchhikers-guide-to-the-galaxy.jpg"
-    category: "Cosmos"
-    note: "Everyone must read it, or at least the philosophy of it."
-  - id: stories-of-your-life-and-others
-    title: "Stories of Your Life and Others"
-    author: Ted Chiang
-    category: "Cosmos"
-    note: ""
-  - id: bhagavad-gita
-    title: "Bhagavad Gita"
-    author: Krishna
-    category: "Cosmos"
-    note: ""
-  - id: the-player-of-games
-    title: "The Player Of Games"
-    author: "Iain M Banks"
-    category: "Cosmos"
-    note: "Part of 'The Culture Series'"
-  
-  # ── Society-level ─────────────────────────────────────────────
-  - id: zero-to-one
-    title: "Zero to One"
-    author: "Peter Thiel"
-    category: "Society"
-    note: "Startup Bible, can also be read as a motivational or a book on philosophy."
-  - id: steve-jobs
-    title: "Steve Jobs"
-    author: Walter Isaacson
-    category: "Society"
-    note: ""
-  - id: elon-musk
-    title: "Elon Musk"
-    author: "Walter Isaacson"
-    category: "Society"
-    note: ""
-  - id: benjamin-franklin
-    title: "Benjamin Franklin"
-    author: "Walter Isaacson"
-    category: "Society"
-    note: ""
-  - id: the-code-breaker
-    title: "The Code Breaker: Jennifer Doudna, Gene Editing And The Future Of The Human Race"
-    author: Walter Isaacson
-    category: "Society"
-    note: ""
-  - id: the-technological-republic
-    title: "The Technological Republic"
-    author: "Alexander C. Karp and Nicholas W. Zamiska"
-    category: "Society"
-    note: ""
-  - id: the-art-of-war
-    title: "The Art of War"
-    author: "Sun Tzu"
-    category: "Society"
-    note: ""
-  - id: storm-of-steel
-    title: "Storm of Steel"
-    author: "Ernst Jünger"
-    category: "Society"
-    note: ""
-  - id: sapiens
-    title: "Sapiens"
-    author: "Yuval Noah Harari"
-    category: "Society"
-    note: "Good summary of humans."
-  - id: hit-refresh
-    title: "Hit Refresh"
-    author: "Satya Nadella"
-    category: "Society"
-    note: ""
-  - id: the-lessons-of-history
-    title: "The Lessons of History"
-    author: "Will and Ariel Durant"
-    category: "Society"
-    note: "A brief history of civilisations."
-  - id: the-prince
-    title: "The Prince"
-    author: "Niccolo Machiavelli"
-    category: "Society"
-    note: "Gold."
-  - id: the-structure-of-scientific-revolutions
-    title: "The structure of scientific revolutions"
-    author: "Thomas Kuhn"
-    category: "Society"
-    note: ""
-  - id: nintey-eighty-four
-    title: "1984"
-    author: "George Orwell"
-    filename: "1984.jpg"
-    category: "Society"
-    note: ""
-  - id: the-richest-man-in-babylon
-    title: "The Richest Man in Babylon"
-    author: "George S.Clason"
-    category: "Society"
-    note: ""
-  - id: the-mill-on-the-floss
-    title: "The Mill On The Floss"
-    author: "George Eliot"
-    category: "Society"
-    note: "Read it in childhood, really loved it."
-  - id: the-book-of-clarity
-    title: "The Book of Clarity"
-    author: "Paras Chopra"
-    category: "Society"
-    note: "I have a signed copy!"
-  - id: brave-new-world
-    title: "Brave New World"
-    author: "Aldous Huxley"
-    category: "Society"
-    note: "Illustrated by Fred Fordham"
-  - id: impro
-    title: "Impro: Improvisation and the Theatre"
-    author: "Keith Johnstone"
-    category: "Society"
-    note: "Learnt about story-telling and improvisation."
-  - id: harry-potter-and-the-philosophers-stone
-    title: "Harry Potter and the Sorcerer's Stone"
-    author: "J K Rowling"
-    category: "Society"
-    note: ""
-  - id: the-little-prince
-    title: "The Little Prince"
-    author: "Antoine de Saint-Exupéry"
-    category: "Society"
-    note: ""
+# ── Cosmos-level ──────────────────────────────────────────────
+- id: a-brief-history-of-time
+  title: "A Brief History of Time"
+  author: "Stephen Hawking"
+  category: "Cosmos"
+  note: ""
+- id: classical-mechanics-the-theoretical-minimum
+  title: "Classical Mechanics: The Theoretical Minimum"
+  author: "Leonard Susskind & George Hrabovsky"
+  category: "Cosmos"
+  note: ""
+- id: life-3-0
+  title: "Life 3.0"
+  author: "Max Tegmark"
+  filename: "life_3_0.jpg"
+  category: "Cosmos"
+  note: ""
+- id: superintelligence
+  title: "Superintelligence"
+  author: "Nick Bostrom"
+  category: "Cosmos"
+  note: "Mostly speculatory, but concrete."
+- id: hitchhikers-guide
+  title: "The Hitchhikers Guide to the Galaxy"
+  author: "Douglas Adams"
+  filename: "the-ultimate-hitchhikers-guide-to-the-galaxy.jpg"
+  category: "Cosmos"
+  note: "Everyone must read it, or at least the philosophy of it."
+- id: stories-of-your-life-and-others
+  title: "Stories of Your Life and Others"
+  author: Ted Chiang
+  category: "Cosmos"
+  note: ""
+- id: bhagavad-gita
+  title: "Bhagavad Gita"
+  author: Krishna
+  category: "Cosmos"
+  note: ""
+- id: the-player-of-games
+  title: "The Player Of Games"
+  author: "Iain M Banks"
+  category: "Cosmos"
+  note: "Part of 'The Culture Series'"
+
+# ── Society-level ─────────────────────────────────────────────
+- id: zero-to-one
+  title: "Zero to One"
+  author: "Peter Thiel"
+  category: "Society"
+  note: "Startup Bible, can also be read as a motivational or a book on philosophy."
+- id: steve-jobs
+  title: "Steve Jobs"
+  author: Walter Isaacson
+  category: "Society"
+  note: ""
+- id: elon-musk
+  title: "Elon Musk"
+  author: "Walter Isaacson"
+  category: "Society"
+  note: ""
+- id: benjamin-franklin
+  title: "Benjamin Franklin"
+  author: "Walter Isaacson"
+  category: "Society"
+  note: ""
+- id: the-code-breaker
+  title: "The Code Breaker: Jennifer Doudna, Gene Editing And The Future Of The Human Race"
+  author: Walter Isaacson
+  category: "Society"
+  note: ""
+- id: the-technological-republic
+  title: "The Technological Republic"
+  author: "Alexander C. Karp and Nicholas W. Zamiska"
+  category: "Society"
+  note: ""
+- id: the-art-of-war
+  title: "The Art of War"
+  author: "Sun Tzu"
+  category: "Society"
+  note: ""
+- id: storm-of-steel
+  title: "Storm of Steel"
+  author: "Ernst Jünger"
+  category: "Society"
+  note: ""
+- id: sapiens
+  title: "Sapiens"
+  author: "Yuval Noah Harari"
+  category: "Society"
+  note: "Good summary of humans."
+- id: hit-refresh
+  title: "Hit Refresh"
+  author: "Satya Nadella"
+  category: "Society"
+  note: ""
+- id: the-lessons-of-history
+  title: "The Lessons of History"
+  author: "Will and Ariel Durant"
+  category: "Society"
+  note: "A brief history of civilisations."
+- id: the-prince
+  title: "The Prince"
+  author: "Niccolo Machiavelli"
+  category: "Society"
+  note: "Gold."
+- id: the-structure-of-scientific-revolutions
+  title: "The structure of scientific revolutions"
+  author: "Thomas Kuhn"
+  category: "Society"
+  note: ""
+- id: nintey-eighty-four
+  title: "1984"
+  author: "George Orwell"
+  filename: "1984.jpg"
+  category: "Society"
+  note: ""
+- id: the-richest-man-in-babylon
+  title: "The Richest Man in Babylon"
+  author: "George S.Clason"
+  category: "Society"
+  note: ""
+- id: the-mill-on-the-floss
+  title: "The Mill On The Floss"
+  author: "George Eliot"
+  category: "Society"
+  note: "Read it in childhood, really loved it."
+- id: the-book-of-clarity
+  title: "The Book of Clarity"
+  author: "Paras Chopra"
+  category: "Society"
+  note: "I have a signed copy!"
+- id: brave-new-world
+  title: "Brave New World"
+  author: "Aldous Huxley"
+  category: "Society"
+  note: "Illustrated by Fred Fordham"
+- id: impro
+  title: "Impro: Improvisation and the Theatre"
+  author: "Keith Johnstone"
+  category: "Society"
+  note: "Learnt about story-telling and improvisation."
+- id: harry-potter-and-the-philosophers-stone
+  title: "Harry Potter and the Sorcerer's Stone"
+  author: "J K Rowling"
+  category: "Society"
+  note: ""
+- id: the-little-prince
+  title: "The Little Prince"
+  author: "Antoine de Saint-Exupéry"
+  category: "Society"
+  note: ""
 
 
 
-  # ── Human-level ───────────────────────────────────────────────
-  - id: meditations
-    title: "Meditations"
-    author: "Marcus Aurelius"
-    category: "Human"
-    note: ""
-  - id: beyond-order
-    title: "Beyond Order"
-    author: "Jordan B Peterson"
-    category: "Human"
-    note: ""
-  - id: king-warrior-magician-lover
-    title: "King, Warrior, Magician, Lover"
-    author: "Douglas Gillette and Robert L. Moore"
-    category: "Human"
-    note: ""
-  - id: how-to-create-a-mind
-    title: "How to Create A Mind"
-    author: "Ray Kurzweil"
-    category: "Human"
-    note: ""
-  - id: deep-learning
-    title: "Deep Learning"
-    author: "Ian Goodfellow, Yoshua Bengio, Aaron Courville"
-    category: "Human"
-    note: ""
-  - id: logic-a-graphic-guide
-    title: "Logic: A Graphic Guide"
-    author: "Dan Cryan, Sharon Shatil, Bill Mayblin"
-    category: "Human"
-    note: ""
-  - id: thus-spoke-zarathustra
-    title: "Thus Spoke Zarathustra"
-    author: "Friedrich Nietzsche"
-    category: "Human"
-    note: ""
-  - id: the-practicing-mind
-    title: "The Practicing Mind"
-    author: "Thomas M. Sterner"
-    category: "Human"
-    note: ""
-  - id: deep-medicine
-    title: "Deep Medicine"
-    author: "Eric Topol"
-    category: "Human"
-    note: ""
-  - id: mastery
-    title: "Mastery"
-    author: "Robert Greene"
-    category: "Human"
-    note: ""
-  - id: be-here-now
-    title: "Be Here Now"
-    author: "Ram Dass"
-    category: "Human"
-    note: "Book from the hippie culture of 60s California."
-  - id: emotional-design
-    title: "Emotional Design"
-    author: "Don Norman"
-    category: "Human"
-    note: "Lessons on designing; useful for HCI."
-  - id: the-psychology-of-money
-    title: "The Psychology of Money"
-    author: "Morgan Housel"
-    category: "Human"
-    note: ""
-  - id: take-charge-of-your-life
-    title: "Take Charge of your life"
-    author: "Dr. William Glasser, MD"
-    category: "Human"
-    note: "Concepts in this book must be incorporated into all school syllabuses."
-  - id: algorithms-to-live-by
-    title: "Algorithms to Live By"
-    author: "Brian Christian, Thomas L. Griffiths, and Tom Griffiths"
-    category: "Human"
-    note: "Explains several algorithms in a non-technical way, connecting them to everyday life."
-  - id: the-monk-who-sold-his-ferrari
-    title: "The Monk Who Sold his Ferrari"
-    author: "Robin Sharma"
-    category: "Human"
-    note: ""
-  - id: siddhartha
-    title: "Siddhartha"
-    author: "Hermann Hesse"
-    category: "Human"
-    note: ""
-  - id: daytripper
-    title: "Daytripper"
-    author: "Fábio Moon and Gabriel Bá"
-    category: "Human"
-    note: ""
-  - id: are-we-smart-enough-to-know-how-smart-animals-are
-    title: "Are We Smart Enough to Know How Smart Animals Are?"
-    author: "Frans de Waal"
-    category: "Human"
-    note: ""
-  - id: natural-general-intelligence
-    title: "Natural General Intelligence"
-    author: "Christopher Summerfield"
-    category: "Human"
-    note: ""
+# ── Human-level ───────────────────────────────────────────────
+- id: meditations
+  title: "Meditations"
+  author: "Marcus Aurelius"
+  category: "Human"
+  note: ""
+- id: beyond-order
+  title: "Beyond Order"
+  author: "Jordan B Peterson"
+  category: "Human"
+  note: ""
+- id: king-warrior-magician-lover
+  title: "King, Warrior, Magician, Lover"
+  author: "Douglas Gillette and Robert L. Moore"
+  category: "Human"
+  note: ""
+- id: how-to-create-a-mind
+  title: "How to Create A Mind"
+  author: "Ray Kurzweil"
+  category: "Human"
+  note: ""
+- id: deep-learning
+  title: "Deep Learning"
+  author: "Ian Goodfellow, Yoshua Bengio, Aaron Courville"
+  category: "Human"
+  note: ""
+- id: logic-a-graphic-guide
+  title: "Logic: A Graphic Guide"
+  author: "Dan Cryan, Sharon Shatil, Bill Mayblin"
+  category: "Human"
+  note: ""
+- id: thus-spoke-zarathustra
+  title: "Thus Spoke Zarathustra"
+  author: "Friedrich Nietzsche"
+  category: "Human"
+  note: ""
+- id: the-practicing-mind
+  title: "The Practicing Mind"
+  author: "Thomas M. Sterner"
+  category: "Human"
+  note: ""
+  notes: "/blog/2025/The_Practicing_Mind_by_Thomas_M_Sterner"
+- id: deep-medicine
+  title: "Deep Medicine"
+  author: "Eric Topol"
+  category: "Human"
+  note: ""
+  notes: "/blog/2025/Deep_Medicine"
+- id: mastery
+  title: "Mastery"
+  author: "Robert Greene"
+  category: "Human"
+  note: ""
+- id: be-here-now
+  title: "Be Here Now"
+  author: "Ram Dass"
+  category: "Human"
+  note: "Book from the hippie culture of 60s California."
+- id: emotional-design
+  title: "Emotional Design"
+  author: "Don Norman"
+  category: "Human"
+  note: "Lessons on designing; useful for HCI."
+  notes: "/blog/2023/Emotional Design - By Don Norman - Book Notes"
+- id: the-psychology-of-money
+  title: "The Psychology of Money"
+  author: "Morgan Housel"
+  category: "Human"
+  note: ""
+- id: take-charge-of-your-life
+  title: "Take Charge of your life"
+  author: "Dr. William Glasser, MD"
+  category: "Human"
+  note: "Concepts in this book must be incorporated into all school syllabuses."
+- id: algorithms-to-live-by
+  title: "Algorithms to Live By"
+  author: "Brian Christian, Thomas L. Griffiths, and Tom Griffiths"
+  category: "Human"
+  note: "Explains several algorithms in a non-technical way, connecting them to everyday life."
+- id: the-monk-who-sold-his-ferrari
+  title: "The Monk Who Sold his Ferrari"
+  author: "Robin Sharma"
+  category: "Human"
+  note: ""
+- id: siddhartha
+  title: "Siddhartha"
+  author: "Hermann Hesse"
+  category: "Human"
+  note: ""
+- id: daytripper
+  title: "Daytripper"
+  author: "Fábio Moon and Gabriel Bá"
+  category: "Human"
+  note: ""
+- id: are-we-smart-enough-to-know-how-smart-animals-are
+  title: "Are We Smart Enough to Know How Smart Animals Are?"
+  author: "Frans de Waal"
+  category: "Human"
+  note: ""
+- id: natural-general-intelligence
+  title: "Natural General Intelligence"
+  author: "Christopher Summerfield"
+  category: "Human"
+  note: ""
 
-  # ── Micro-level ───────────────────────────────────────────────
+# ── Micro-level ───────────────────────────────────────────────
 
-  - id: the-vital-question
-    title: "The Vital Question"
-    author: "Nick Lane"
-    category: "Micro"
-    note: ""
+- id: the-vital-question
+  title: "The Vital Question"
+  author: "Nick Lane"
+  category: "Micro"
+  note: ""
+  notes: "/blog/2025/The_Vital_Question_by_Nick_Lane"

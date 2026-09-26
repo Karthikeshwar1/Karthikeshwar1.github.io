@@ -1,133 +1,580 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import Favourite from '../../components/Favourite.astro';
+import T from '../../components/T.astro';
+import { BOOKS_URL, getPosts } from '../../lib/posts';
+import { attr, pageTitle, ui, type Text } from '../../lib/i18n';
+
+const posts = await getPosts();
+const byId = new Map(posts.map((p) => [p.id, p]));
+const english = posts.filter((p) => p.lang === 'en');
+const years = [...new Set(english.map((p) => p.year))];
+
+interface Item {
+  /** A post title stays in English; a Text is chrome. */
+  label: string | Text;
+  href: string;
+  meta: string | Text;
+  favourite?: boolean;
+}
+
+const post = (id: string, label: string, favourite = false): Item => {
+  const p = byId.get(id);
+  if (!p) throw new Error(`Curated link points at a missing post: blog/${id}.md`);
+  return { label, href: p.url, meta: p.year, favourite };
+};
+
+// The hand-picked lists from the old /blog page, in their original order.
+const curated: { heading: Text; items: Item[] }[] = [
+  {
+    heading: ui.blog.topClicks,
+    items: [
+      post('2026/Intelligence-should-be-invisible', 'Intelligence Should Be Invisible', true),
+      post('2026/ai-manifesto', "The Optimist's AI Manifesto", true),
+      { label: ui.blog.magazine, href: '/Magazine/', meta: ui.blog.magazineMeta, favourite: true },
+      post('2024/Words_weigh', 'Words Weigh', true),
+      post('2026/software-engineering-in-2026-observations', 'Software Engineering in 2026: Observations'),
+      post('2025/AI_in_2025', 'AI in 2025'),
+      post('2025/How_We_The_Humans_Build', 'How We The Humans Build'),
+      post('2025/Emergence_and_Meaning', 'Emergence and Meaning'),
+      post('2026/Truth_in_Myths', 'The Truth in Maths and Myths'),
+    ],
+  },
+  {
+    heading: ui.blog.books,
+    items: [
+      { label: ui.common.booksRead, href: BOOKS_URL, meta: ui.common.timeless, favourite: true },
+      post('2025/Deep_Medicine', 'Deep Medicine by Eric Topol'),
+      post('2025/The_Practicing_Mind_by_Thomas_M_Sterner', 'The Practicing Mind by Thomas M. Sterner'),
+      post('2025/The_Vital_Question_by_Nick_Lane', 'The Vital Question by Nick Lane'),
+      post("2023/What's the book GEB all about", "What's the book GEB all about"),
+      post('2022/The Healthcare and Life Sciences Industry', 'The Healthcare and Life Sciences Industry (a series of 6 articles)'),
+    ],
+  },
+  {
+    heading: ui.blog.nonBlog,
+    items: [
+      {
+        label: ui.blog.papers,
+        href: 'https://github.com/Karthikeshwar1/Karthikeshwar1/tree/main/papers',
+        meta: 'GitHub',
+      },
+    ],
+  },
+  {
+    heading: ui.blog.resources,
+    items: [
+      post('2025/Essential_Resources_in_learning_AI', 'Resources in Learning AI'),
+      post('2021/Essential_Software_For_Computers', 'Essential Software For Computers'),
+      post('2021/Essential_Software_For_Smartphones', 'Essential Software For Smartphones'),
+    ],
+  },
+  {
+    heading: ui.blog.more,
+    items: [
+      post('2026/drug-discovery-notes', 'Drug Discovery — Notes'),
+      post('2023/security-systems-the-flaw-and-the-ultimate-solution', 'Security Systems: The Flaw and The Ultimate Solution'),
+      post('2024/Fuzzy_Settings', 'Fuzzy Settings'),
+      post('2024/Is_God_Dying', 'Is God Dying?'),
+      post('2023/Emotional Design - By Don Norman - Book Notes', 'Emotional Design by Don Norman — Book Notes'),
+      post('2022/AI_in_2022', 'AI in 2022'),
+      post('2024/Software_Architecture_Foundations_1', 'Software Architecture Foundations'),
+      post('2023/Why Different Domains Require Different Approaches', 'Why Different Domains Require Different Approaches'),
+    ],
+  },
+];
+
+const span = `${years.at(-1)}–${years[0]}`;
 ---
 
-<BaseLayout title="Blog — Karthikeshwar" currentPage="blog">
-  <main class="page-content">
-    <h1 class="page-title">Blog</h1>
+<BaseLayout
+  title={pageTitle(ui.nav.blog)}
+  description="Essays, book notes and resources by Karthikeshwar, 2021 to now, in English and Kannada."
+  currentPage="blog"
+>
+  <main id="main" class="archive">
+    <aside class="archive-aside">
+      <h1 class="archive-title"><T t={ui.nav.blog} /></h1>
+      <p class="archive-lede">
+        <em><T t={ui.blog.lede} /></em>
+      </p>
 
-    <section class="blog-section">
-      <h2>Top clicks</h2>
-      <ul class="blog-list">
-        <li><a href="/blog/2026/Intelligence-should-be-invisible">Intelligence Should Be Invisible ⭐</a></li>
-        <li><a href="/blog/2026/ai-manifesto">The Optimist's AI Manifesto ⭐</a></li>
-        <li><a href="/blog/2024/Words_weigh">Words Weigh ⭐</a></li>
-        <li><a href="/blog/2026/software-engineering-in-2026-observations">Software Engineering in 2026: Observations</a></li>
-        <li><a href="/blog/2025/AI_in_2025">AI in 2025</a></li>
-        <li><a href="/blog/2025/How_We_The_Humans_Build">How We The Humans Build</a></li>
-        <li><a href="/blog/2025/Emergence_and_Meaning">Emergence and Meaning</a></li>
-        <li><a href="/blog/2026/Truth_in_Myths">The Truth in Maths and Myths</a></li>
-      </ul>
-    </section>
+      <form class="search" role="search" action="/blog/" data-search hidden>
+        <label class="visually-hidden" for="search-input"><T t={ui.common.searchArchive} /></label>
+        <input
+          id="search-input"
+          name="q"
+          type="search"
+          {...attr('placeholder', ui.common.searchArchive)}
+          autocomplete="off"
+          spellcheck="false"
+        >
+        <kbd class="search-key" aria-hidden="true">/</kbd>
+      </form>
 
-    <section class="blog-section">
-      <h2>Books</h2>
-      <ul class="blog-list">
-        <li><a href="/blog/timeless/books_read">Books read ⭐</a></li>
-        <li><a href="/blog/2025/Deep_Medicine">Deep Medicine by Eric Topol</a></li>
-        <li><a href="/blog/2025/The_Practicing_Mind_by_Thomas_M_Sterner">The Practicing Mind by Thomas M. Sterner</a></li>
-        <li><a href="/blog/2025/The_Vital_Question_by_Nick_Lane">The Vital Question by Nick Lane</a></li>
-        <li><a href="/blog/2023/What's the book GEB all about">What's the book GEB all about</a></li>
-        <li><a href="/blog/2022/The Healthcare and Life Sciences Industry">The Healthcare and Life Sciences Industry</a></li>
-      </ul>
-    </section>
+      <nav {...attr('aria-label', ui.blog.byYear)}>
+        <ul class="jump-list">
+          {years.map((year) => <li><a href={`#y${year}`}>{year}</a></li>)}
+          <li><a href="#timeless"><T t={ui.common.timeless} /></a></li>
+        </ul>
+      </nav>
+    </aside>
 
-    <section class="blog-section">
-      <h2>Non-blog stuff</h2>
-      <ul class="blog-list">
-        <li><a href="https://github.com/Karthikeshwar1/Karthikeshwar1/tree/main/papers" target="_blank" rel="noopener">Research papers written by me</a></li>
-      </ul>
-    </section>
+    <div class="archive-body">
+      <section class="archive-section results" id="results" hidden aria-labelledby="results-status">
+        <h2 class="section-heading" id="results-status" aria-live="polite"></h2>
+        <ul class="ledger" data-results></ul>
+      </section>
 
-    <section class="blog-section">
-      <h2>Resources</h2>
-      <ul class="blog-list">
-        <li><a href="/blog/2025/Essential_Resources_in_learning_AI">Resources in Learning AI</a></li>
-        <li><a href="/blog/2021/Essential_Software_For_Computers">Essential Software For Computers</a></li>
-        <li><a href="/blog/2021/Essential_Software_For_Smartphones">Essential Software For Smartphones</a></li>
-      </ul>
-    </section>
+      <div class="browse" data-browse>
+        {curated.map(({ heading, items }) => (
+          <section class="archive-section">
+            <h2 class="section-heading"><T t={heading} /></h2>
+            <ul class="ledger">
+              {items.map((item) => (
+                <li>
+                  <a class="ledger-row" href={item.href}>
+                    {typeof item.label === 'string'
+                      ? <span class="ledger-title" lang="en">{item.label}{item.favourite && <Favourite />}</span>
+                      : <span class="ledger-title"><T t={item.label} />{item.favourite && <Favourite />}</span>}
+                    <span class="ledger-meta">{typeof item.meta === 'string' ? item.meta : <T t={item.meta} />}</span>
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </section>
+        ))}
 
-    <section class="blog-section">
-      <h2>More</h2>
-      <ul class="blog-list">
-        <li><a href="/blog/2026/drug-discovery-notes">Drug Discovery - Notes</a></li>
-        <li><a href="/blog/2023/security-systems-the-flaw-and-the-ultimate-solution">Security Systems: The Flaw and The Ultimate Solution</a></li>
-        <li><a href="/blog/2024/Is_God_Dying">Is God Dying?</a></li>
-        <li><a href="/blog/2023/Emotional Design - By Don Norman - Book Notes">Emotional Design - By Don Norman - Book Notes</a></li>
-        <li><a href="/blog/2022/AI_in_2022">AI in 2022</a></li>
-        <li><a href="/blog/2024/Software_Architecture_Foundations_1">Software Architecture Foundations</a></li>
-        <li><a href="/blog/2023/Why Different Domains Require Different Approaches">Why Different Domains Require Different Approaches</a></li>
-      </ul>
-    </section>
+        <details class="archive-section all-writing">
+          <summary>
+            <h2 class="section-heading" id="all-writing">
+              <span class="fold-label"><T t={ui.common.allWriting} /></span>
+              <span class="fold" aria-hidden="true"></span>
+            </h2>
+          </summary>
+
+          {years.map((year) => (
+            <div class="year" id={`y${year}`}>
+              <h3 class="year-label">{year}</h3>
+              <ul class="ledger" data-locale="en">
+                {english.filter((p) => p.year === year).map((p) => (
+                  <li class="ledger-row">
+                    <a class="ledger-title" href={p.url}>
+                      {p.title}
+                      {p.subtitle && <span class="ledger-sub"> — {p.subtitle}</span>}
+                    </a>
+                    <span class="ledger-meta">
+                      {p.translation && (
+                        <a class="translation" href={p.translation} hreflang="kn" lang="kn">ಕನ್ನಡ</a>
+                      )}
+                      {ui.post.minutes(p.minutes).en}
+                    </span>
+                  </li>
+                ))}
+              </ul>
+              <ul class="ledger" data-locale="kn">
+                {english.filter((p) => p.year === year).map((p) => {
+                  const kn = p.translation ? byId.get(p.id + '_kn') : undefined;
+                  const shown = kn ?? p;
+                  return (
+                    <li class="ledger-row">
+                      <a class="ledger-title" href={shown.url} lang={shown.lang}>
+                        {shown.title}
+                        {shown.subtitle && <span class="ledger-sub"> — {shown.subtitle}</span>}
+                      </a>
+                      <span class="ledger-meta" lang="kn">{ui.post.minutes(shown.minutes).kn}</span>
+                    </li>
+                  );
+                })}
+              </ul>
+            </div>
+          ))}
+
+          <div class="year" id="timeless">
+            <h3 class="year-label"><T t={ui.common.timeless} /></h3>
+            <ul class="ledger">
+              <li class="ledger-row">
+                <a class="ledger-title" href={BOOKS_URL}><T t={ui.common.booksRead} /></a>
+                <span class="ledger-meta"><T t={ui.blog.shelf} /></span>
+              </li>
+            </ul>
+          </div>
+        </details>
+      </div>
+    </div>
   </main>
 </BaseLayout>
 
 <style>
-  .page-content {
-    flex: 1;
+  .browse {
+    display: flex;
+    flex-direction: column;
+    gap: 3.75rem;
+  }
+
+  /* ── Search ─────────────────────────────────────────── */
+
+  .search {
+    position: relative;
+    margin-top: 0.5rem;
+  }
+
+  .search input {
     width: 100%;
-    max-width: 780px;
-    margin: 0 auto;
-    padding: 3rem 2rem;
+    appearance: none;
+    background: transparent;
+    border: 0;
+    border-bottom: 1px solid var(--rule-strong);
+    border-radius: 0;
+    padding: 0.55rem 2rem 0.55rem 0;
+    font-size: 1.05rem;
+    caret-color: var(--ink);
   }
 
-  .page-title {
-    font-size: 1.6rem;
-    font-weight: 400;
-    letter-spacing: 0.06em;
-    margin-bottom: 2.5rem;
-    color: var(--ink);
+  .search input::placeholder {
+    color: var(--ink-tertiary);
+    font-style: italic;
   }
 
-  .blog-section {
-    margin-bottom: 2.5rem;
+  .search input:focus {
+    outline: none;
+    border-bottom-color: var(--ink);
   }
 
-  .blog-section h2 {
-    font-size: 1rem;
-    font-weight: 400;
-    letter-spacing: 0.14em;
-    text-transform: uppercase;
+  .search input::-webkit-search-cancel-button {
+    display: none;
+  }
+
+  .search-key {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    translate: 0 -50%;
+    display: grid;
+    place-items: center;
+    width: 1.35rem;
+    height: 1.35rem;
+    border: 1px solid var(--border-subtle);
+    border-radius: var(--radius);
+    font-family: var(--font-serif);
+    font-size: 0.75rem;
+    color: var(--ink-tertiary);
+  }
+
+  .search:focus-within .search-key,
+  .search:has(input:not(:placeholder-shown)) .search-key {
+    visibility: hidden;
+  }
+
+  .results .section-heading {
+    text-transform: none;
+    letter-spacing: 0.02em;
+    font-size: 0.95rem;
+    font-style: italic;
     color: var(--ink-secondary);
-    border-bottom: 1px solid var(--border-subtle);
-    padding-bottom: 0.5rem;
-    margin-bottom: 1rem;
   }
 
-  .blog-list {
+  /* Closed signature: the heading is the same rule as the others,
+     with a 1px plus in the margin. It opens in place, with no motion. */
+  .all-writing > summary {
+    display: block;
     list-style: none;
-    padding: 0;
+    cursor: pointer;
   }
 
-  .blog-list li {
-    margin-bottom: 0.65rem;
+  .all-writing > summary::-webkit-details-marker {
+    display: none;
   }
 
-  .blog-list a {
-    font-size: 1rem;
-    color: var(--ink-secondary);
-    text-decoration: none;
-    transition: color 0.3s ease;
+  .all-writing > summary::marker {
+    content: "";
   }
 
-  .blog-list a:hover {
+  .all-writing > summary .section-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5rem;
+  }
+
+  .all-writing > summary:hover .fold-label {
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 0.24em;
+  }
+
+  .fold {
+    position: relative;
+    width: 0.55rem;
+    height: 0.55rem;
+    flex: none;
     color: var(--ink);
   }
 
-  @media (prefers-reduced-motion: no-preference) {
-    .page-content {
-      animation: fadeIn 0.8s ease-out 0.1s both;
-    }
+  .fold::before,
+  .fold::after {
+    content: "";
+    position: absolute;
+    background: currentColor;
+  }
+
+  .fold::before {
+    left: 0;
+    right: 0;
+    top: 50%;
+    height: 1px;
+    margin-top: -0.5px;
+  }
+
+  .fold::after {
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 1px;
+    margin-left: -0.5px;
+  }
+
+  .all-writing[open] .fold::after {
+    content: none;
+  }
+
+  /* ── Archive by year ────────────────────────────────── */
+
+  .year {
+    display: grid;
+    grid-template-columns: 5.5rem minmax(0, 1fr);
+    align-items: start;
+    scroll-margin-top: 1.5rem;
+    border-bottom: 1px solid var(--border-subtle);
+  }
+
+  .year:last-child {
+    border-bottom: 0;
+  }
+
+  .year-label {
+    position: sticky;
+    top: 1.5rem;
+    padding-top: 0.95rem;
+    font-size: 0.8rem;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--ink-tertiary);
+    font-variant-numeric: lining-nums tabular-nums;
+  }
+
+  .year .ledger > li:last-child {
+    border-bottom: 0;
+  }
+
+  .ledger-sub {
+    color: var(--ink-tertiary);
+    font-style: italic;
+  }
+
+  .translation {
+    margin-right: 0.9rem;
+    font-size: 0.85rem;
+    letter-spacing: normal;
+    text-transform: none;
+    color: var(--ink-secondary);
+    text-decoration: underline;
+    text-decoration-color: var(--border-subtle);
+    text-underline-offset: 0.3em;
+  }
+
+  .translation:hover {
+    color: var(--ink);
+    text-decoration-color: currentColor;
+  }
+
+  /* ── Search results ─────────────────────────────────── */
+
+  .results :global(.result) {
+    display: block;
+    padding: 1rem 0 1.1rem;
+  }
+
+  .results :global(.result-head) {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 1.5rem;
+  }
+
+  .results :global(.result:hover .ledger-title) {
+    color: var(--ink);
+    text-decoration-color: currentColor;
+  }
+
+  .results :global(.result-snippet) {
+    margin-top: 0.35rem;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: var(--ink-tertiary);
+  }
+
+  .results :global(mark) {
+    background: var(--highlight);
+    color: var(--ink);
+    padding: 0 0.1em;
   }
 
   @media (max-width: 768px) {
-    .page-content {
-      padding: 2rem 1.25rem;
+    .search-key {
+      display: none;
     }
 
-    .page-title {
-      font-size: 1.35rem;
+    .year {
+      grid-template-columns: minmax(0, 1fr);
+    }
+
+    .year-label {
+      position: static;
+      padding-top: 1.4rem;
+      padding-bottom: 0.2rem;
     }
   }
 </style>
+
+<script>
+  import { searchStatus } from '../../lib/i18n';
+
+  interface Doc {
+    t: string; // title
+    u: string; // url
+    y: string; // year or shelf
+    x: string; // full text
+  }
+
+  const form = document.querySelector<HTMLFormElement>('[data-search]')!;
+  const input = form.querySelector('input')!;
+  const browse = document.querySelector<HTMLElement>('[data-browse]')!;
+  const results = document.getElementById('results')!;
+  const status = document.getElementById('results-status')!;
+  const list = results.querySelector('[data-results]')!;
+
+  form.hidden = false;
+
+  document.addEventListener('langchange', () => {
+    if (input.value.trim()) run();
+  });
+
+  let index: Promise<Doc[]> | undefined;
+  const load = () =>
+    (index ??= fetch('/search-index.json').then((r) => r.json() as Promise<Doc[]>));
+
+  const escapeHtml = (s: string) =>
+    s.replace(/[&<>"']/g, (c) => `&#${c.charCodeAt(0)};`);
+  const escapeRegExp = (s: string) => s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+
+  function snippet(text: string, terms: string[]) {
+    const lower = text.toLowerCase();
+    const at = terms.map((t) => lower.indexOf(t)).filter((i) => i >= 0).sort((a, b) => a - b)[0];
+    if (at === undefined) return escapeHtml(text.slice(0, 160)) + '…';
+    const start = Math.max(0, text.lastIndexOf(' ', Math.max(0, at - 70)) + 1);
+    const end = text.indexOf(' ', Math.min(text.length, at + 110));
+    const cut = text.slice(start, end < 0 ? undefined : end);
+    const marked = escapeHtml(cut).replace(
+      new RegExp(`(${terms.map((t) => escapeRegExp(escapeHtml(t))).join('|')})`, 'gi'),
+      '<mark>$1</mark>',
+    );
+    return (start > 0 ? '…' : '') + marked + (end > 0 ? '…' : '');
+  }
+
+  async function run() {
+    const query = input.value.trim();
+    const url = new URL(location.href);
+    query ? url.searchParams.set('q', query) : url.searchParams.delete('q');
+    history.replaceState(null, '', url);
+
+    const terms = query.toLowerCase().split(/\s+/).filter(Boolean);
+    if (!terms.length) {
+      results.hidden = true;
+      browse.hidden = false;
+      return;
+    }
+
+    const all = await load();
+    const knUrls = new Set(all.filter((doc) => doc.u.endsWith('_kn')).map((doc) => doc.u));
+    const knMode = document.documentElement.lang === 'kn';
+    const docs = all.filter((doc) => {
+      const isKn = doc.u.endsWith('_kn');
+      return knMode ? isKn || !knUrls.has(doc.u + '_kn') : !isKn;
+    });
+    if (input.value.trim() !== query) return; // a newer keystroke is on its way
+
+    const hits = docs
+      .map((doc) => {
+        const title = doc.t.toLowerCase();
+        const text = doc.x.toLowerCase();
+        if (!terms.every((t) => title.includes(t) || text.includes(t))) return null;
+        const score = terms.reduce(
+          (sum, t) => sum + (title.includes(t) ? 20 : 0) + Math.min(text.split(t).length - 1, 8),
+          0,
+        );
+        return { doc, score };
+      })
+      .filter((hit): hit is { doc: Doc; score: number } => hit !== null)
+      .sort((a, b) => b.score - a.score)
+      .slice(0, 30);
+
+    const quoted = `“${escapeHtml(query)}”`;
+    status.innerHTML = searchStatus[knMode ? 'kn' : 'en'](hits.length, quoted, hits.length === 30);
+
+    list.innerHTML = hits
+      .map(
+        ({ doc }) => `
+          <li>
+            <a class="result" href="${doc.u}">
+              <span class="result-head">
+                <span class="ledger-title" lang="${doc.u.endsWith('_kn') ? 'kn' : 'en'}">${escapeHtml(doc.t)}</span>
+                <span class="ledger-meta">${escapeHtml(doc.y)}</span>
+              </span>
+              <p class="result-snippet">${snippet(doc.x, terms)}</p>
+            </a>
+          </li>`,
+      )
+      .join('');
+
+    browse.hidden = true;
+    results.hidden = false;
+  }
+
+  input.addEventListener('focus', load, { once: true });
+  input.addEventListener('input', run);
+  input.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape' && input.value) {
+      input.value = '';
+      run();
+    }
+  });
+  form.addEventListener('submit', (event) => event.preventDefault());
+
+  document.addEventListener('keydown', (event) => {
+    const target = event.target as HTMLElement;
+    if (event.key !== '/' || event.metaKey || event.ctrlKey || event.altKey) return;
+    if (target.closest('input, textarea, select, [contenteditable]')) return;
+    event.preventDefault();
+    input.focus();
+  });
+
+  const initial = new URLSearchParams(location.search).get('q');
+  if (initial) {
+    input.value = initial;
+    run();
+  }
+
+  const writing = document.querySelector<HTMLDetailsElement>('details.all-writing');
+  const openWriting = () => {
+    if (location.hash && writing?.querySelector(location.hash)) writing.open = true;
+  };
+  document.querySelectorAll<HTMLAnchorElement>('.jump-list a').forEach((link) => {
+    link.addEventListener('click', () => {
+      if (link.hash && writing?.querySelector(link.hash)) writing.open = true;
+    });
+  });
+  openWriting();
+  window.addEventListener('hashchange', openWriting);
+</script>

@@ -1,0 +1,146 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import { postUrl } from '../../../lib/posts';
+import T from '../../../components/T.astro';
+import Contents from '../../../components/Contents.astro';
+import { attr, pageTitle, ui } from '../../../lib/i18n';
+
+const books = await getCollection('books');
+
+const shelves = (['Cosmos', 'Society', 'Human', 'Micro'] as const).map((category) => ({
+  category,
+  id: category.toLowerCase(),
+  books: books.filter((b) => b.data.category === category),
+}));
+
+const cover = (book: (typeof books)[number]) =>
+  `/assets/images/books/${book.data.filename ?? `${book.id}.jpg`}`;
+
+// `notes` in books.yml is written as a readable path; encode it like every other post link.
+const notesHref = (path: string) => postUrl(path.replace(/^\/blog\//, ''));
+---
+
+<BaseLayout
+  title={pageTitle(ui.common.booksRead)}
+  description={`${books.length} books Karthikeshwar has read, shelved from the cosmic to the microscopic.`}
+  currentPage="blog"
+>
+  <main id="main" class="archive">
+    <aside class="archive-aside">
+      <h1 class="archive-title"><T t={ui.common.booksRead} /></h1>
+      <p class="archive-lede"><T t={ui.books.lede(books.length)} /></p>
+      <Contents
+        placement="inline"
+        items={shelves.map((s) => ({ href: `#${s.id}`, text: ui.books[s.category], count: s.books.length }))}
+      />
+    </aside>
+
+    <div class="archive-body">
+      {shelves.map((shelf) => (
+        <section class="archive-section" id={shelf.id} aria-labelledby={`${shelf.id}-heading`}>
+          <h2 class="section-heading" id={`${shelf.id}-heading`}><T t={ui.books.level(ui.books[shelf.category])} /></h2>
+          <ul class="shelf">
+            {shelf.books.map((book) => (
+              <li class="book">
+                <div class="cover">
+                  <img
+                    src={cover(book)}
+                    alt={`Cover of ${book.data.title}`}
+                    loading="lazy"
+                    decoding="async"
+                  >
+                </div>
+                <p class="book-title" lang="en">{book.data.title}</p>
+                <p class="book-author">{book.data.author}</p>
+                {book.data.note && <p class="book-note">{book.data.note}</p>}
+                {book.data.notes && (
+                  <a class="book-notes label" href={notesHref(book.data.notes)}><T t={ui.books.myNotes} /></a>
+                )}
+              </li>
+            ))}
+          </ul>
+        </section>
+      ))}
+    </div>
+  </main>
+</BaseLayout>
+
+<style>
+  .shelf {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(8.5rem, 1fr));
+    gap: 2.75rem 1.75rem;
+    padding-top: 2rem;
+  }
+
+  .book {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+  }
+
+  /* Covers stand on a common baseline, like books on a shelf. */
+  .cover {
+    aspect-ratio: 2 / 3;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    margin-bottom: 0.95rem;
+  }
+
+  .cover img {
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    box-shadow: var(--shadow-object);
+    background: var(--paper);
+  }
+
+  .book-title {
+    font-size: 1.05rem;
+    line-height: 1.35;
+    color: var(--ink);
+    text-wrap: balance;
+  }
+
+  .book-author {
+    margin-top: 0.2rem;
+    font-size: var(--type-meta);
+    line-height: 1.4;
+    color: var(--ink-secondary);
+  }
+
+  .book-note {
+    margin-top: 0.5rem;
+    font-size: var(--type-meta);
+    line-height: 1.45;
+    font-style: italic;
+    color: var(--ink-tertiary);
+    text-wrap: pretty;
+  }
+
+  .book-notes {
+    align-self: flex-start;
+    margin-top: 0.6rem;
+    color: var(--ink-secondary);
+    text-decoration: underline;
+    text-decoration-color: var(--border-subtle);
+    text-underline-offset: 0.35em;
+  }
+
+  .book-notes:hover {
+    color: var(--ink);
+    text-decoration-color: currentColor;
+  }
+
+  @media (max-width: 768px) {
+    .shelf {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 2.25rem 1.25rem;
+    }
+  }
+</style>

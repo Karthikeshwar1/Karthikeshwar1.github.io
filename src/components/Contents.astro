@@ -1,0 +1,309 @@
+---
+// A page's contents, folded open by default. `margin` sets it in the left
+// margin of a post on wide screens; `inline` sets it where it is placed (a
+// wall label). Where the list is out of sight, a paper slip pinned bottom
+// right opens the same list. The section being read is underlined, as the
+// nav marks the current page.
+import T from './T.astro';
+import { attr, ui, type Text } from '../lib/i18n';
+
+export interface ContentsItem {
+  href: string;
+  text: string | Text;
+  depth?: number;
+  count?: number;
+}
+
+interface Props {
+  items: ContentsItem[];
+  placement: 'margin' | 'inline';
+  /** Language of plain-string items (a post's own headings). */
+  lang?: string;
+}
+
+const { items, placement, lang } = Astro.props;
+---
+
+{items.length > 0 && (
+  <>
+    {[false, true].map((sheet) => {
+      const list = (
+        <ol class="contents-list">
+          {items.map((item) => (
+            <li class:list={[item.depth && item.depth > 1 && 'sub']}>
+              <a href={item.href} data-spy>
+                {typeof item.text === 'string'
+                  ? <span lang={lang}>{item.text}</span>
+                  : <T t={item.text} />}
+              </a>
+              {item.count !== undefined && <span class="contents-count">{item.count}</span>}
+            </li>
+          ))}
+        </ol>
+      );
+      return sheet ? (
+        <nav class="contents contents-sheet" id="contents-sheet" popover="auto" {...attr('aria-label', ui.common.contents)}>
+          <p class="contents-head label"><T t={ui.common.contents} /></p>
+          {list}
+        </nav>
+      ) : (
+        <nav class:list={['contents', 'contents-' + placement]} {...attr('aria-label', ui.common.contents)}>
+          <details open>
+            <summary class="contents-head label">
+              <T t={ui.common.contents} />
+              <span class="fold" aria-hidden="true"></span>
+            </summary>
+            {list}
+          </details>
+        </nav>
+      );
+    })}
+    <button class:list={['contents-slip', 'label', 'slip-' + placement]} type="button" popovertarget="contents-sheet">
+      <T t={ui.common.contents} />
+    </button>
+  </>
+)}
+
+<script>
+  // Underline the section in view: the last target whose top has passed a
+  // line a third of the way down the screen.
+  const links = [...document.querySelectorAll<HTMLAnchorElement>('.contents a[data-spy]')];
+  const targets = [...new Set(links.map((a) => a.hash))]
+    .map((hash) => document.getElementById(decodeURIComponent(hash.slice(1))))
+    .filter((el): el is HTMLElement => !!el);
+
+  let queued = false;
+  const mark = () => {
+    queued = false;
+    const line = innerHeight / 3;
+    const current = targets.filter((el) => el.getBoundingClientRect().top <= line).pop();
+    for (const a of links) {
+      if (current && decodeURIComponent(a.hash.slice(1)) === current.id) a.setAttribute('aria-current', 'location');
+      else a.removeAttribute('aria-current');
+    }
+  };
+  addEventListener('scroll', () => {
+    if (!queued) (queued = true), requestAnimationFrame(mark);
+  }, { passive: true });
+  mark();
+
+  // A choice in the sheet closes it; the page jumps as any anchor does.
+  const sheet = document.getElementById('contents-sheet');
+  sheet?.addEventListener('click', (e) => {
+    if ((e.target as Element).closest('a')) sheet.hidePopover();
+  });
+</script>
+
+<style>
+  .contents {
+    font-size: var(--type-meta);
+    line-height: 1.4;
+  }
+
+  .contents-head {
+    margin-bottom: 0.9rem;
+  }
+
+  .contents-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.55rem;
+  }
+
+  .contents-list li {
+    display: flex;
+    align-items: baseline;
+    gap: 0.4rem;
+  }
+
+  .contents-list .sub {
+    padding-left: 0.9rem;
+  }
+
+  .contents a {
+    color: var(--ink-secondary);
+    text-decoration: underline 1px transparent;
+    text-underline-offset: 0.24em;
+  }
+
+  .contents a:hover,
+  .contents a[aria-current] {
+    color: var(--ink);
+    text-decoration-color: currentColor;
+  }
+
+  .contents-count {
+    font-size: var(--type-label);
+    color: var(--ink-tertiary);
+    font-variant-numeric: lining-nums tabular-nums;
+  }
+
+  summary.contents-head {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    width: fit-content;
+    list-style: none;
+    cursor: pointer;
+  }
+
+  summary.contents-head::-webkit-details-marker {
+    display: none;
+  }
+
+  summary.contents-head:hover {
+    color: var(--ink);
+    text-decoration: underline;
+    text-underline-offset: 0.24em;
+  }
+
+  details:not([open]) > .contents-head {
+    margin-bottom: 0;
+  }
+
+  /* The 1px plus of "All writing"; a minus while open. */
+  .fold {
+    position: relative;
+    width: 0.5rem;
+    height: 0.5rem;
+    flex: none;
+  }
+
+  .fold::before,
+  .fold::after {
+    content: "";
+    position: absolute;
+    background: currentColor;
+  }
+
+  .fold::before {
+    left: 0;
+    right: 0;
+    top: 50%;
+    height: 1px;
+    margin-top: -0.5px;
+  }
+
+  .fold::after {
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 1px;
+    margin-left: -0.5px;
+  }
+
+  details[open] .fold::after {
+    content: none;
+  }
+
+  .contents-inline {
+    padding-top: 1.25rem;
+    border-top: 1px solid var(--border-subtle);
+  }
+
+  /* ── In the post's left margin, level with the title ── */
+  .contents-margin {
+    position: fixed;
+    top: 7.5rem;
+    left: calc(50% - var(--measure) / 2 - 3.5rem - 13rem);
+    width: 13rem;
+    max-height: calc(100svh - 10rem);
+    /* Room inside the scroll box for the 4px focus outline. */
+    padding: 6px;
+    margin: -6px;
+    overflow-y: auto;
+    scrollbar-width: thin;
+  }
+
+  /* ── The pinned slip and the sheet it opens ── */
+  .contents-slip {
+    position: fixed;
+    right: 1rem;
+    bottom: 1rem;
+    z-index: 5;
+    padding: 0.7rem 0.95rem;
+    background: var(--bg);
+    color: var(--ink);
+    border: 1px solid var(--rule-strong);
+    box-shadow: var(--shadow-object);
+    font: inherit;
+    font-size: var(--type-label);
+    font-weight: 500;
+    cursor: pointer;
+  }
+
+  .contents-slip:hover {
+    text-decoration: underline;
+    text-underline-offset: 0.24em;
+  }
+
+  .contents-sheet {
+    position: fixed;
+    inset: auto 1rem 4.25rem auto;
+    width: min(21rem, calc(100vw - 2rem));
+    max-height: min(70svh, 36rem);
+    overflow-y: auto;
+    margin: 0;
+    padding: 1.25rem 1.35rem 1.1rem;
+    background: var(--bg);
+    color: var(--ink);
+    border: 1px solid var(--rule-strong);
+    box-shadow: var(--shadow-object);
+  }
+
+  .contents-sheet::backdrop {
+    background: transparent;
+  }
+
+  .contents-sheet a {
+    display: inline-block;
+    padding-block: 0.15rem;
+  }
+
+  /* Margin list on wide screens; the slip below that. */
+  @media (max-width: 1239px) {
+    .contents-margin {
+      display: none;
+    }
+  }
+
+  @media (min-width: 1240px) {
+    .slip-margin {
+      display: none;
+    }
+  }
+
+  /* The page ends clear of the slip, so the footer is never under it. */
+  @media (max-width: 1239px) {
+    :global(body:has(.slip-margin)) {
+      padding-bottom: 5rem;
+    }
+  }
+
+  @media (max-width: 960px) {
+    :global(body:has(.slip-inline)) {
+      padding-bottom: 5rem;
+    }
+  }
+
+  /* A wall label stays in view down to 960px; the slip takes over beneath. */
+  @media (max-width: 960px) {
+    .contents-inline {
+      display: none;
+    }
+  }
+
+  @media (min-width: 961px) {
+    .slip-inline {
+      display: none;
+    }
+  }
+
+  @media print {
+    .contents-margin,
+    .contents-slip {
+      display: none;
+    }
+  }
+</style>

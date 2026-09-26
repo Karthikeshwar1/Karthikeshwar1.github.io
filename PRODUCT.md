@@ -54,7 +54,7 @@ An individual's living archive — not a portfolio performing for recruiters, no
 - 39 blog posts with substantial long-form content spanning 2021–2026.
 - 52 book entries with cover images and categorization (Cosmos, Society, Human, Micro).
 - Profile photo: `assets/images/Karthikeshwar_shades_sky.jpg`.
-- Favicon: `favicon.ico`.
+- Favicon: `favicon.svg` (EB Garamond K on paper), with `favicon.ico` and `apple-touch-icon.png`.
 - Custom font: `assets/fonts/calendas_plus-webfont.ttf`.
 - Painting: `musings/images/Alegalhu.jpg` and `Alegalhu BW.jpg`.
 - Teaching content: 5 YouTube playlist URLs.
