@@ -10,6 +10,7 @@ import kannada600 from '@fontsource/noto-serif-kannada/files/noto-serif-kannada-
 import '../styles/global.css';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
+import RunningHead from '../components/RunningHead.astro';
 import T from '../components/T.astro';
 import { ui, type Text } from '../lib/i18n';
 
@@ -32,6 +33,12 @@ interface Props {
   description?: string;
   currentPage?: string;
   lang?: string;
+  /** The page's own title for the running head (no site name). */
+  headTitle?: string | Text;
+  /** Language of a plain-string headTitle. */
+  headLang?: string;
+  /** Where the page's contents sit, when it has them. */
+  contents?: 'margin' | 'inline';
   /** The homepage's first screen holds the header and the framed painting together. */
   home?: boolean;
 }
@@ -42,6 +49,9 @@ const {
   currentPage,
   lang = 'en',
   home = false,
+  headTitle,
+  headLang,
+  contents,
 } = Astro.props;
 const titleEn = typeof title === 'string' ? title : title.en;
 ---
@@ -94,6 +104,7 @@ const titleEn = typeof title === 'string' ? title : title.en;
   ) : (
     <Header currentPage={currentPage} />
   )}
+  <RunningHead title={headTitle} lang={headLang} currentPage={currentPage} contents={contents} />
   <slot />
   <Footer />
 </body>

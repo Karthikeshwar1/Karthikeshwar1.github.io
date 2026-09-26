@@ -1,0 +1,251 @@
+---
+// The running head: once the site nav scrolls out of view, a paper bar sits
+// at the top of every page, as a book's running head tops every leaf.
+// Phones: the name over the page's title. Wider: one line, the name left,
+// the title centred, the three rooms right. Where the page has contents out
+// of sight, its title opens them (#contents-sheet, Contents.astro).
+// It appears and leaves at once; nothing slides.
+import T from './T.astro';
+import { NAME, attr, ui, type Text } from '../lib/i18n';
+
+interface Props {
+  /** The page's own title. Omitted on the homepage, where the name is the title. */
+  title?: string | Text;
+  /** Language of a plain-string title (a post's). */
+  lang?: string;
+  currentPage?: string;
+  /** The page's contents placement, when it has contents. */
+  contents?: 'margin' | 'inline';
+}
+
+const { title, lang, currentPage, contents } = Astro.props;
+const rooms = [
+  { label: ui.nav.blog, href: '/blog/', page: 'blog' },
+  { label: ui.nav.projects, href: '/projects/', page: 'projects' },
+  { label: ui.nav.musings, href: '/musings/', page: 'musings' },
+];
+---
+
+<header class:list={['running-head', !title && 'untitled']} inert aria-hidden="true">
+  <a class="running-name" href="/"><T t={NAME} /></a>
+
+  {title && (contents ? (
+    <button
+      class="running-title"
+      type="button"
+      popovertarget="contents-sheet"
+      data-contents={contents}
+      {...attr('aria-label', ui.common.contents)}
+    >
+      <span class="running-text">{typeof title === 'string' ? <span lang={lang}>{title}</span> : <T t={title} />}</span>
+      <span class="fold" aria-hidden="true"></span>
+    </button>
+  ) : (
+    <span class="running-title">
+      <span class="running-text">{typeof title === 'string' ? <span lang={lang}>{title}</span> : <T t={title} />}</span>
+    </span>
+  ))}
+
+  <ul class="running-rooms pipes">
+    {rooms.map((room) => (
+      <li>
+        <a href={room.href} aria-current={currentPage === room.page ? 'page' : undefined}><T t={room.label} /></a>
+      </li>
+    ))}
+  </ul>
+</header>
+
+<script>
+  const head = document.querySelector<HTMLElement>('.running-head');
+  const nav = document.querySelector('.site-header');
+  const sheet = document.getElementById('contents-sheet');
+
+  if (head && nav) {
+    new IntersectionObserver(([entry]) => {
+      const shown = !entry.isIntersecting;
+      head.toggleAttribute('data-shown', shown);
+      head.toggleAttribute('inert', !shown);
+      head.setAttribute('aria-hidden', String(!shown));
+      if (!shown && sheet?.matches(':popover-open')) sheet.hidePopover();
+    }).observe(nav);
+  }
+
+  // Where the contents already show (the margin, the wall label), the title
+  // is only a title: it opens nothing and takes no focus.
+  const button = head?.querySelector<HTMLButtonElement>('button.running-title');
+  if (button) {
+    const wide = matchMedia(button.dataset.contents === 'margin' ? '(min-width: 1240px)' : '(min-width: 961px)');
+    const sync = () => {
+      button.disabled = wide.matches;
+      if (wide.matches && sheet?.matches(':popover-open')) sheet.hidePopover();
+    };
+    wide.addEventListener('change', sync);
+    sync();
+  }
+</script>
+
+<style>
+  .running-head {
+    display: none;
+    position: fixed;
+    inset: 0 0 auto;
+    z-index: 5;
+    height: var(--head-h);
+    padding: 0 1.25rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.1rem;
+    background: var(--bg);
+    border-bottom: 1px solid var(--border-subtle);
+    box-shadow: var(--shadow-head);
+  }
+
+  .running-head[data-shown] {
+    display: flex;
+  }
+
+  .running-name,
+  .running-rooms {
+    font-size: var(--type-label);
+    font-weight: 500;
+    font-variant-numeric: lining-nums;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    line-height: 1.3;
+  }
+
+  .running-name {
+    color: var(--ink);
+  }
+
+  .running-name :global([lang="kn"]),
+  .running-rooms :global([lang="kn"]) {
+    font-size: 1.14em;
+  }
+
+  .running-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.55rem;
+    min-width: 0;
+    max-width: min(100%, var(--measure));
+    padding: 0;
+    background: none;
+    border: 0;
+    font: inherit;
+    font-size: 1.05rem;
+    line-height: 1.3;
+    color: var(--ink);
+  }
+
+  .running-text {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+
+  button.running-title:enabled {
+    cursor: pointer;
+  }
+
+  button.running-title:disabled .fold {
+    display: none;
+  }
+
+  .running-rooms {
+    --pipe-gap: 0.8em;
+    display: none;
+  }
+
+  .running-rooms a {
+    color: var(--ink-secondary);
+  }
+
+  .running-name:hover,
+  .running-rooms a:hover,
+  .running-rooms a[aria-current="page"],
+  button.running-title:enabled:hover .running-text {
+    color: var(--ink);
+    text-decoration: underline 1px;
+    text-underline-offset: 0.24em;
+  }
+
+  /* Plus while shut, minus while the contents hang open. */
+  :global(body:has(#contents-sheet:popover-open)) .running-title .fold::after {
+    content: none;
+  }
+
+  /* The 1px plus of "All writing". */
+  .fold {
+    position: relative;
+    width: 0.5rem;
+    height: 0.5rem;
+    flex: none;
+  }
+
+  .fold::before,
+  .fold::after {
+    content: "";
+    position: absolute;
+    background: currentColor;
+  }
+
+  .fold::before {
+    left: 0;
+    right: 0;
+    top: 50%;
+    height: 1px;
+    margin-top: -0.5px;
+  }
+
+  .fold::after {
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 1px;
+    margin-left: -0.5px;
+  }
+
+  /* Home has no title of its own: the name over the three rooms. */
+  .untitled .running-rooms {
+    display: flex;
+  }
+
+  /* ── Wider: one line on the shell. Name, title, rooms. ── */
+  @media (min-width: 721px) {
+    .running-head {
+      display: none;
+      grid-template-columns: 1fr minmax(0, auto) 1fr;
+      align-items: center;
+      column-gap: 2rem;
+      padding: 0 max(2rem, calc((100% - var(--shell)) / 2));
+    }
+
+    .running-head[data-shown] {
+      display: grid;
+    }
+
+    .running-name {
+      justify-self: start;
+    }
+
+    .running-title {
+      max-width: var(--measure);
+    }
+
+    .running-rooms {
+      display: flex;
+      justify-self: end;
+      justify-content: flex-end;
+      grid-column: 3;
+    }
+  }
+
+  @media print {
+    .running-head {
+      display: none !important;
+    }
+  }
+</style>

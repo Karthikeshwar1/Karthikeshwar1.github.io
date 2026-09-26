@@ -29,6 +29,11 @@
   --frame-umbra: rgba(24, 23, 22, 0.38);
   --frame-penumbra: rgba(24, 23, 22, 0.22);
   --shadow-object: -1px 2px 3px rgba(24, 23, 22, 0.2);
+  /* The running head is the frame's light on a thinner object: it stands
+     barely off the page, so the same down-left contact and fall, shorter
+     and paler. */
+  --shadow-head: -1px 1px 2px rgba(24, 23, 22, 0.1), -3px 6px 12px -4px rgba(24, 23, 22, 0.14);
+  --head-h: 3.4rem;
 
   /* EB Garamond: Claude Garamond's 16th-century roman, the closest free match
      to Comp 2's lettering. 500 carries every line of capitals. */
@@ -50,6 +55,18 @@
 
   color-scheme: light;
   scrollbar-color: var(--rule-strong) var(--bg);
+}
+
+/* Wider screens set the running head on one line. */
+@media (min-width: 721px) {
+  :root {
+    --head-h: 3rem;
+  }
+}
+
+/* In-page jumps land clear of the running head. */
+html {
+  scroll-padding-top: calc(var(--head-h) + 1rem);
 }
 
 /* Night: the same wall with the lamps down. Lamp-black, warm ink the colour
@@ -74,6 +91,7 @@ html[data-theme="night"] {
   --frame-umbra: rgba(0, 0, 0, 0.92);
   --frame-penumbra: rgba(0, 0, 0, 0.7);
   --shadow-object: -1px 2px 3px rgba(0, 0, 0, 0.55);
+  --shadow-head: -1px 1px 2px rgba(0, 0, 0, 0.7), -3px 6px 14px -4px rgba(0, 0, 0, 0.6);
 
   color-scheme: dark;
   scrollbar-color: var(--rule-strong) var(--bg);
@@ -210,7 +228,8 @@ html[lang="kn"] [data-locale="en"] {
 
 .archive-aside {
   position: sticky;
-  top: 2.5rem;
+  /* Stops clear of the running head. */
+  top: calc(var(--head-h) + 2rem);
   align-self: start;
   display: flex;
   flex-direction: column;

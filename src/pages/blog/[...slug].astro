@@ -72,6 +72,9 @@ const yearHref = `/blog/#y${post.year}`;
 
 <BaseLayout
   title={`${post.title} — Karthikeshwar`}
+  headTitle={post.title}
+  headLang={post.lang}
+  contents={contents.length ? 'margin' : undefined}
   description={post.text.slice(0, 160)}
   currentPage="blog"
 >

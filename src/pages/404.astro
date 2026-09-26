@@ -4,7 +4,7 @@ import T from '../components/T.astro';
 import { attr, pageTitle, ui } from '../lib/i18n';
 ---
 
-<BaseLayout title={pageTitle(ui.missing.title)} description="This page isn't in the archive.">
+<BaseLayout title={pageTitle(ui.missing.title)} headTitle={ui.missing.title} description="This page isn't in the archive.">
   <main id="main" class="missing" tabindex="-1">
     <h1 class="missing-title"><T t={ui.missing.heading} /></h1>
     <p class="missing-text">

@@ -23,6 +23,8 @@ const notesHref = (path: string) => postUrl(path.replace(/^\/blog\//, ''));
 
 <BaseLayout
   title={pageTitle(ui.common.booksRead)}
+  headTitle={ui.common.booksRead}
+  contents="inline"
   description={`${books.length} books Karthikeshwar has read, shelved from the cosmic to the microscopic.`}
   currentPage="blog"
 >

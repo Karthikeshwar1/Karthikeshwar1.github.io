@@ -553,3 +553,11 @@ The cast shadow follows the museum angle: the beam 30° from vertical (ERCO; ste
 ## 2026-09 · Wayfinding: running foot, contents, TOP / END
 
 The nav stays a running head and is never pinned. Long pages had no quick way up or down, so every post and Books read gained a contents list with TOP and END: in the left margin of posts on wide screens, in the wall label on Books read, and otherwise behind a small pinned CONTENTS slip. This is the site's first deliberate piece of app chrome. The user accepted it for navigation, on condition that it has no motion and keeps the paper look (square corners, one object shadow). The section in view is underlined, as the nav marks the current page.
+
+## 2026-09 · The running head
+
+On narrow screens the floating CONTENTS slip felt stuck on. It was replaced by a book's running head: once the nav scrolls away, a thin paper bar shows the name in small capitals over the post title, and tapping the title hangs the contents beneath it. The user asked for this after comparing with Anthropic's blog. It stays inside the site's rules: paper, a 1px rule, Garamond at the nav's size, no motion, one shadow on the sheet it opens. Wide screens keep the margin list and have no bar.
+
+## 2026-09 · The running head everywhere
+
+The bar became site-wide: every page and every width, once the nav scrolls away. On wide screens it holds the name, the page title and the three rooms on one line. It casts the frame's shadow, shortened for something that barely stands off the page. The Apple-style blur and fade were considered and declined. A fade with no blur lets text show through the bar, and blur is glass, which the site has rejected. Gradients and shadows used to separate sections were also declined: the ruled ledger already does that, and a shadow on something that is not an object has no physical meaning.
