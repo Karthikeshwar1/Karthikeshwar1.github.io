@@ -90,7 +90,7 @@ Every effect must have a printed or physical equivalent (ink, paper, a hung fram
 
 ## Rules
 
-**Colour.** Warm paper, near-black ink. No hue except the painting and book covers. Secondary and tertiary inks meet 4.5:1 on paper. Night is the same wall with the lamps down: lamp-black `#0c0b0a`, ink `#efece4`, mat `#161513`, moulding stained oak `#3e3933`, with the top and right faces `#524c45` where the light lands and the bottom and left `#2c2824`. Bone at 17:1 outlined the painting; the wood stays dark. Pictures are not inverted. One footer word names the mode you enter: `DARK MODE` by day, `LIGHT MODE` at night. It underlines on hover and on the click, like a nav link. The first visit follows the system.
+**Colour.** Warm paper, near-black ink. No hue except the painting, book covers, and the small project marks. Secondary and tertiary inks meet 4.5:1 on paper. Night is the same wall with the lamps down: lamp-black `#0c0b0a`, ink `#efece4`, mat `#161513`, moulding stained oak `#3e3933`, with the top and right faces `#524c45` where the light lands and the bottom and left `#2c2824`. Bone at 17:1 outlined the painting; the wood stays dark. Pictures are not inverted. One footer word names the mode you enter: `DARK MODE` by day, `LIGHT MODE` at night. It underlines on hover and on the click, like a nav link. The first visit follows the system.
 
 **Type.**
 - **Faces:** EB Garamond (400, 400 italic, 500, 700) for Latin; Noto Serif Kannada for Kannada, matched to the Garamond beside it: `size-adjust: 90%` puts its headline at Garamond's cap height, and its 600 cut serves Garamond's 500 (and bold), because Noto's 600 is as dark as Garamond's 500. Kannada is never letterspaced or transformed. Beside small capitals (labels, section heads, ledger meta, year jumps) it scales 1.14em, as in the nav, to meet their cap height. `font-synthesis: none`, so no faked styles.
@@ -137,6 +137,7 @@ Every effect must have a printed or physical equivalent (ink, paper, a hung fram
 - ≤960px: stacks.
 - ≤600px: the wall label becomes a centred title page.
 - Blog: "All writing" is a closed signature. The heading matches the others, with a 1px plus that becomes a minus when open. No motion. A year in the wall label opens it.
+- Projects: each title carries a mark about the cap-height of that line — 1.25rem beside a main title, 1rem in the mini list. It is the project's own icon, in the project's colours, on the same line as the name. The page does not frame it, round it, or shadow it; any curve belongs to the icon. A project with no picture uses a hairline ink drawing in the text colour, so it follows day and night. A wordmark, such as JumpG's title plate, may run a little wider than the square and still sits on the line.
 
 **Artwork.** Never crop the painting. Never put a border in the image file (the photographed mat was cropped away; the frame supplies the mat).
 
@@ -193,6 +194,7 @@ One line per decision: date, decision, why. Newest last.
 - **2026-09 · Audit pass: B&W Alegalu uncropped; footer set in capitals; emoji-only headings become ornament lines; Kannada 1.14em reaches section heads, ledger meta and year jumps; year jumps, ಕನ್ನಡ links and the CONTENTS slip get 44px hit areas.** Each restores a written rule or fixes access without changing the look.
 - **2026-09 · The painting's first click still wakes the verse.** The audit flagged that the link swallows its first activation; user kept it as designed.
 - **2026-09 · Five clicks on the caption within three seconds wake the wave; the painting opens on the first click.** He asked to leave the image as a link and put the trigger on the text.
+- **2026-10 · Each project title carries a small mark in that project's own colours.** He asked for the real icons, kept to cap-height; hue stays inside the mark, as it does inside a book cover.
 
 ## Don'ts
 
