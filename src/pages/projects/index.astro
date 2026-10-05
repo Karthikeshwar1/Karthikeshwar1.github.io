@@ -2,16 +2,58 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import T from '../../components/T.astro';
 import { pageTitle, ui, type Text } from '../../lib/i18n';
+import type { ImageMetadata } from 'astro';
 
-const main: { name: string; href: string; where: string; meta: Text; description: Text }[] = [
+import apcdIcon from '../../assets/projects/apcd.png';
+import rxidIcon from '../../assets/projects/rxid.png';
+import araamIcon from '../../assets/projects/araam.png';
+import airpianoIcon from '../../assets/projects/airpiano.png';
+import tabfyeIcon from '../../assets/projects/tabfye.png';
+import swagaIcon from '../../assets/projects/swaga.png';
+import jumpgIcon from '../../assets/projects/jumpg.png';
+import kannadaIcon from '../../assets/projects/kannada.png';
+import wikiIcon from '../../assets/projects/wiki.png';
+import etchIcon from '../../assets/projects/etch.png';
+import algorithmsIcon from '../../assets/projects/algorithms.png';
+import witcherIcon from '../../assets/projects/witcher.png';
+
+import kathaaverseInk from '../../assets/projects/kathaaverse.svg?raw';
+import puzzleInk from '../../assets/projects/puzzle.svg?raw';
+import graInk from '../../assets/projects/gra.svg?raw';
+import medicalInk from '../../assets/projects/medical.svg?raw';
+import screenrecInk from '../../assets/projects/screenrec.svg?raw';
+import controllerInk from '../../assets/projects/controller.svg?raw';
+
+type Mark = { img?: ImageMetadata; ink?: string; wide?: boolean; plate?: boolean };
+
+const main: {
+  name: string;
+  href: string;
+  where: string;
+  meta: Text;
+  description: Text;
+  mark: Mark;
+}[] = [
   {
     name: 'KathaaVerse',
     href: 'https://kathaaverse.com/',
     where: 'kathaaverse.com',
     meta: { en: 'Solo · June 2025', kn: 'ಏಕಾಂಗಿ · ಜೂನ್ 2025' },
+    mark: { ink: kathaaverseInk },
     description: {
       en: 'Turn any famous book into interactive fiction! Reached <a href="https://github.com/Karthikeshwar1/Karthikeshwar1/blob/main/Hall%20of%20Fame/kathaaverse.md">#1 on Hacker News</a>, attracting more than 20k visitors and 500k API calls in the first week, despite no formal marketing.',
       kn: 'ಯಾವುದೇ ಪ್ರಸಿದ್ಧ ಪುಸ್ತಕವನ್ನು ಸಂವಾದಾತ್ಮಕ ಕಥೆಯಾಗಿಸಿ! ಯಾವುದೇ ಔಪಚಾರಿಕ ಪ್ರಚಾರವಿಲ್ಲದೆಯೂ <a href="https://github.com/Karthikeshwar1/Karthikeshwar1/blob/main/Hall%20of%20Fame/kathaaverse.md">Hacker News‌ನಲ್ಲಿ #1</a> ಸ್ಥಾನ ತಲುಪಿತು; ಮೊದಲ ವಾರದಲ್ಲೇ 20 ಸಾವಿರಕ್ಕೂ ಹೆಚ್ಚು ಸಂದರ್ಶಕರು ಮತ್ತು 5 ಲಕ್ಷ API ಕರೆಗಳು.',
+    },
+  },
+  {
+    name: 'APCD',
+    href: 'https://karthikeshwar1.github.io/apcd-site/',
+    where: 'karthikeshwar1.github.io/apcd-site',
+    meta: { en: 'Solo · Oct 2026', kn: 'ಏಕಾಂಗಿ · ಅಕ್ಟೋಬರ್ 2026' },
+    mark: { img: apcdIcon },
+    description: {
+      en: 'Concise project docs and a Progress list, so any new AI coding session picks up where you left off.',
+      kn: 'ಸಂಕ್ಷಿಪ್ತ ಯೋಜನಾ ದಾಖಲೆಗಳು ಮತ್ತು ಒಂದು ಪ್ರಗತಿ ಪಟ್ಟಿ; ಹೊಸ AI ಕೋಡಿಂಗ್ ಸೆಷನ್ ನೀವು ಬಿಟ್ಟಿದ್ದ ಕಡೆಯಿಂದಲೇ ಮುಂದುವರಿಯುತ್ತದೆ.',
     },
   },
   {
@@ -19,6 +61,7 @@ const main: { name: string; href: string; where: string; meta: Text; description
     href: 'https://www.rxid.in/',
     where: 'rxid.in',
     meta: { en: 'Solo · May 2026', kn: 'ಏಕಾಂಗಿ · ಮೇ 2026' },
+    mark: { img: rxidIcon },
     description: {
       en: 'A prescription verification and dispensing-audit platform, the only solution to address 10+ pharma-related problems.',
       kn: 'ಪ್ರಿಸ್ಕ್ರಿಪ್ಷನ್ ಪರಿಶೀಲನೆ ಮತ್ತು ಔಷಧ ವಿತರಣೆಯ ಲೆಕ್ಕಪರಿಶೋಧನೆಯ ವೇದಿಕೆ; ಔಷಧ ಕ್ಷೇತ್ರದ 10ಕ್ಕೂ ಹೆಚ್ಚು ಸಮಸ್ಯೆಗಳನ್ನು ಬಗೆಹರಿಸುವ ಏಕೈಕ ಪರಿಹಾರ.',
@@ -29,6 +72,7 @@ const main: { name: string; href: string; where: string; meta: Text; description
     href: 'https://github.com/Karthikeshwar1/Araam',
     where: 'GitHub',
     meta: { en: 'Solo · Aug 2021', kn: 'ಏಕಾಂಗಿ · ಆಗಸ್ಟ್ 2021' },
+    mark: { img: araamIcon },
     description: { en: 'Control your PC with just a controller!', kn: 'ಕೇವಲ ಒಂದು ಕಂಟ್ರೋಲರ್‌ನಿಂದ ನಿಮ್ಮ PC ನಿಯಂತ್ರಿಸಿ!' },
   },
   {
@@ -36,6 +80,7 @@ const main: { name: string; href: string; where: string; meta: Text; description
     href: 'https://github.com/Karthikeshwar1/airPiano',
     where: 'GitHub',
     meta: { en: 'Solo · Mar–Apr 2021', kn: 'ಏಕಾಂಗಿ · ಮಾರ್ಚ್–ಏಪ್ರಿಲ್ 2021' },
+    mark: { img: airpianoIcon },
     description: {
       en: 'A software with which you can play piano in the air, or play a bigger piano with the computer keyboard.',
       kn: 'ಗಾಳಿಯಲ್ಲೇ ಪಿಯಾನೋ ನುಡಿಸಲು, ಅಥವಾ ಕಂಪ್ಯೂಟರ್ ಕೀಬೋರ್ಡ್‌ನಲ್ಲಿ ದೊಡ್ಡ ಪಿಯಾನೋ ನುಡಿಸಲು ಒಂದು ತಂತ್ರಾಂಶ.',
@@ -46,33 +91,35 @@ const main: { name: string; href: string; where: string; meta: Text; description
     href: 'https://github.com/Karthikeshwar1/TABFYE',
     where: 'GitHub',
     meta: { en: 'Team of 4 · Jun 2020', kn: '4 ಜನರ ತಂಡ · ಜೂನ್ 2020' },
+    mark: { img: tabfyeIcon },
     description: { en: 'Take-A-Break-For-Your-Eyes!', kn: 'ಕಣ್ಣುಗಳಿಗೊಂದು ವಿರಾಮ ಕೊಡಿ!' },
   },
 ];
 
-const mini: { repo: string; name?: string; description: Text; meta?: Text }[] = [
-  { repo: 'SwaGa-AutonomousLandingSystem', description: { en: 'Autonomous Landing Module Simulator', kn: 'ಸ್ವಯಂಚಾಲಿತ ಇಳಿಯುವ ಘಟಕದ ಸಿಮ್ಯುಲೇಟರ್' } },
-  { repo: 'GRA', description: { en: 'Gesture Recognition Application (for RevaHack 2020)', kn: 'ಸನ್ನೆ ಗುರುತಿಸುವ ಅಪ್ಲಿಕೇಶನ್ (RevaHack 2020ಗಾಗಿ)' } },
-  { repo: 'Puzzle', name: 'Puzzle!', description: { en: 'An elaborate puzzle game based purely on logic and some GitHub knowledge!', kn: 'ಕೇವಲ ತರ್ಕ ಮತ್ತು ಸ್ವಲ್ಪ GitHub ಜ್ಞಾನ ಬೇಡುವ ವಿಸ್ತೃತ ಒಗಟಿನ ಆಟ!' } },
+const mini: { name: string; href: string; description: Text; meta?: Text; mark: Mark }[] = [
+  { repo: 'SwaGa-AutonomousLandingSystem', mark: { img: swagaIcon }, description: { en: 'Autonomous Landing Module Simulator', kn: 'ಸ್ವಯಂಚಾಲಿತ ಇಳಿಯುವ ಘಟಕದ ಸಿಮ್ಯುಲೇಟರ್' } },
+  { repo: 'GRA', mark: { ink: graInk }, description: { en: 'Gesture Recognition Application (for RevaHack 2020)', kn: 'ಸನ್ನೆ ಗುರುತಿಸುವ ಅಪ್ಲಿಕೇಶನ್ (RevaHack 2020ಗಾಗಿ)' } },
+  { repo: 'Puzzle', name: 'Puzzle!', mark: { ink: puzzleInk }, description: { en: 'An elaborate puzzle game based purely on logic and some GitHub knowledge!', kn: 'ಕೇವಲ ತರ್ಕ ಮತ್ತು ಸ್ವಲ್ಪ GitHub ಜ್ಞಾನ ಬೇಡುವ ವಿಸ್ತೃತ ಒಗಟಿನ ಆಟ!' } },
   {
     repo: 'JumpG',
+    mark: { img: jumpgIcon, wide: true, plate: true },
     description: { en: 'A Windows console game inspired from Google’s T-rex game!', kn: 'Googleನ T-rex ಆಟದಿಂದ ಪ್ರೇರಿತ Windows ಕನ್ಸೋಲ್ ಆಟ!' },
     meta: { en: 'Team of 2 · Apr–Jun 2019', kn: '2 ಜನರ ತಂಡ · ಏಪ್ರಿಲ್–ಜೂನ್ 2019' },
   },
-  { repo: 'How-To-Write-Kannada', name: 'Kannada Writing App', description: { en: 'An app that shows how to write in Kannada', kn: 'ಕನ್ನಡದಲ್ಲಿ ಹೇಗೆ ಬರೆಯುವುದೆಂದು ತೋರಿಸುವ ಆ್ಯಪ್' } },
-  { repo: 'Medical_texts_3D_projection', name: 'Medical Texts 3D Projection', description: { en: 'A 3D mapping/embedded projection of medical texts', kn: 'ವೈದ್ಯಕೀಯ ಪಠ್ಯಗಳ 3D ನಕ್ಷೆ / ಎಂಬೆಡಿಂಗ್ ಪ್ರಕ್ಷೇಪಣ' } },
-  { repo: 'screenRec', description: { en: 'A screen recorder to take screenshots and record video', kn: 'ಸ್ಕ್ರೀನ್‌ಶಾಟ್ ತೆಗೆಯಲು ಮತ್ತು ವಿಡಿಯೋ ರೆಕಾರ್ಡ್ ಮಾಡಲು ಸ್ಕ್ರೀನ್ ರೆಕಾರ್ಡರ್' } },
-  { repo: 'controller-vibration-tester', description: { en: 'A python script to test vibration motors of game controllers', kn: 'ಗೇಮ್ ಕಂಟ್ರೋಲರ್‌ಗಳ ಕಂಪನ ಮೋಟಾರ್‌ಗಳನ್ನು ಪರೀಕ್ಷಿಸುವ Python ಸ್ಕ್ರಿಪ್ಟ್' } },
-  { repo: 'Wiki-Wordcloud-Maker', description: { en: 'Creates a wordcloud image based on a given Wikipedia article', kn: 'ಕೊಟ್ಟ ವಿಕಿಪೀಡಿಯ ಲೇಖನದಿಂದ ವರ್ಡ್‌ಕ್ಲೌಡ್ ಚಿತ್ರ ರಚಿಸುತ್ತದೆ' } },
-  { repo: 'Etcch-A-Sketch', description: { en: 'Drawing app inspired from the popular toy Etch A Sketch', kn: 'ಜನಪ್ರಿಯ ಆಟಿಕೆ Etch A Sketchನಿಂದ ಪ್ರೇರಿತ ಚಿತ್ರ ಬಿಡಿಸುವ ಆ್ಯಪ್' } },
-  { repo: 'algorithms_visualization', description: { en: 'Visualizing algorithms using Processing 3', kn: 'Processing 3 ಬಳಸಿ ಅಲ್ಗಾರಿದಮ್‌ಗಳ ದೃಶ್ಯೀಕರಣ' } },
-  { repo: 'TheWitcher3HaircutPreview', name: 'The Witcher 3 Haircut Preview', description: { en: 'Preview haircuts in the game The Witcher 3', kn: 'The Witcher 3 ಆಟದಲ್ಲಿ ಕೇಶವಿನ್ಯಾಸಗಳ ಮುನ್ನೋಟ' } },
-  
-].map(({ repo, name, description, meta }) => ({
+  { repo: 'How-To-Write-Kannada', name: 'Kannada Writing App', mark: { img: kannadaIcon }, description: { en: 'An app that shows how to write in Kannada', kn: 'ಕನ್ನಡದಲ್ಲಿ ಹೇಗೆ ಬರೆಯುವುದೆಂದು ತೋರಿಸುವ ಆ್ಯಪ್' } },
+  { repo: 'Medical_texts_3D_projection', name: 'Medical Texts 3D Projection', mark: { ink: medicalInk }, description: { en: 'A 3D mapping/embedded projection of medical texts', kn: 'ವೈದ್ಯಕೀಯ ಪಠ್ಯಗಳ 3D ನಕ್ಷೆ / ಎಂಬೆಡಿಂಗ್ ಪ್ರಕ್ಷೇಪಣ' } },
+  { repo: 'screenRec', mark: { ink: screenrecInk }, description: { en: 'A screen recorder to take screenshots and record video', kn: 'ಸ್ಕ್ರೀನ್‌ಶಾಟ್ ತೆಗೆಯಲು ಮತ್ತು ವಿಡಿಯೋ ರೆಕಾರ್ಡ್ ಮಾಡಲು ಸ್ಕ್ರೀನ್ ರೆಕಾರ್ಡರ್' } },
+  { repo: 'controller-vibration-tester', mark: { ink: controllerInk }, description: { en: 'A python script to test vibration motors of game controllers', kn: 'ಗೇಮ್ ಕಂಟ್ರೋಲರ್‌ಗಳ ಕಂಪನ ಮೋಟಾರ್‌ಗಳನ್ನು ಪರೀಕ್ಷಿಸುವ Python ಸ್ಕ್ರಿಪ್ಟ್' } },
+  { repo: 'Wiki-Wordcloud-Maker', mark: { img: wikiIcon }, description: { en: 'Creates a wordcloud image based on a given Wikipedia article', kn: 'ಕೊಟ್ಟ ವಿಕಿಪೀಡಿಯ ಲೇಖನದಿಂದ ವರ್ಡ್‌ಕ್ಲೌಡ್ ಚಿತ್ರ ರಚಿಸುತ್ತದೆ' } },
+  { repo: 'Etcch-A-Sketch', mark: { img: etchIcon }, description: { en: 'Drawing app inspired from the popular toy Etch A Sketch', kn: 'ಜನಪ್ರಿಯ ಆಟಿಕೆ Etch A Sketchನಿಂದ ಪ್ರೇರಿತ ಚಿತ್ರ ಬಿಡಿಸುವ ಆ್ಯಪ್' } },
+  { repo: 'algorithms_visualization', mark: { img: algorithmsIcon }, description: { en: 'Visualizing algorithms using Processing 3', kn: 'Processing 3 ಬಳಸಿ ಅಲ್ಗಾರಿದಮ್‌ಗಳ ದೃಶ್ಯೀಕರಣ' } },
+  { repo: 'TheWitcher3HaircutPreview', name: 'The Witcher 3 Haircut Preview', mark: { img: witcherIcon }, description: { en: 'Preview haircuts in the game The Witcher 3', kn: 'The Witcher 3 ಆಟದಲ್ಲಿ ಕೇಶವಿನ್ಯಾಸಗಳ ಮುನ್ನೋಟ' } },
+].map(({ repo, name, description, meta, mark }) => ({
   name: name ?? repo,
   href: `https://github.com/Karthikeshwar1/${repo}`,
   description,
   meta,
+  mark,
 }));
 ---
 
@@ -97,7 +144,16 @@ const mini: { repo: string; name?: string; description: Text; meta?: Text }[] = 
           {main.map((p) => (
             <li class="project">
               <div class="project-head">
-                <h3 class="project-name"><a href={p.href}>{p.name}</a></h3>
+                <h3 class="project-name">
+                  <a href={p.href}>
+                    {p.mark.ink ? (
+                      <span class="mark ink" aria-hidden="true" set:html={p.mark.ink} />
+                    ) : (
+                      <img class="mark" src={p.mark.img!.src} width="20" height="20" alt="" />
+                    )}
+                    <span class="name">{p.name}</span>
+                  </a>
+                </h3>
                 <span class="ledger-meta"><T t={p.meta} /></span>
               </div>
               <p class="project-desc"><T t={p.description} html /></p>
@@ -113,7 +169,24 @@ const mini: { repo: string; name?: string; description: Text; meta?: Text }[] = 
           {mini.map((p) => (
             <li>
               <a class="mini" href={p.href}>
-                <span class="ledger-title">{p.name}</span>
+                <span class="mini-id">
+                  {p.mark.ink ? (
+                    <span class:list={['mark', 'ink', { wide: p.mark.wide }]} aria-hidden="true" set:html={p.mark.ink} />
+                  ) : p.mark.plate ? (
+                    <span class:list={['mark', 'plate', { wide: p.mark.wide }]}>
+                      <img src={p.mark.img!.src} width={p.mark.wide ? 40 : 16} height="16" alt="" />
+                    </span>
+                  ) : (
+                    <img
+                      class:list={['mark', { wide: p.mark.wide }]}
+                      src={p.mark.img!.src}
+                      width={p.mark.wide ? 40 : 16}
+                      height="16"
+                      alt=""
+                    />
+                  )}
+                  <span class="ledger-title">{p.name}</span>
+                </span>
                 <span class="mini-desc">
                   <T t={p.description} />
                   {p.meta && <span class="mini-meta label"><T t={p.meta} /></span>}
@@ -141,6 +214,51 @@ const mini: { repo: string; name?: string; description: Text; meta?: Text }[] = 
     text-decoration-color: currentColor;
   }
 
+  /* The project's own mark, about the cap-height of the title.
+     Same shadow as a book cover. Colour stays inside a real logo.
+     A hairline drawing is day ink; night inverts that stroke so it stays light. */
+  .mark {
+    display: inline-block;
+    width: 1.25rem;
+    height: 1.25rem;
+    margin-right: 0.42rem;
+    vertical-align: -0.18em;
+    object-fit: contain;
+    object-position: center;
+    box-shadow: var(--shadow-object);
+  }
+
+  .mark :global(svg) {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+
+  .mark.ink {
+    color: inherit;
+  }
+
+  /* Day ink, then flipped. Invert of an already-light stroke would hide it. */
+  html[data-theme="night"] .mark.ink {
+    color: #181716;
+  }
+
+  html[data-theme="night"] .mark.ink :global(svg) {
+    filter: invert(1);
+  }
+
+  /* A black plate vanishes on the night wall. Invert the picture, not the shadow. */
+  .mark.plate img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  html[data-theme="night"] .mark.plate img {
+    filter: invert(1);
+  }
+
   /* ── Main projects ──────────────────────────────────── */
 
   .project {
@@ -165,13 +283,17 @@ const mini: { repo: string; name?: string; description: Text; meta?: Text }[] = 
 
   .project-name a {
     color: var(--ink);
+    text-decoration: none;
+  }
+
+  .project-name .name {
     text-decoration: underline;
     text-decoration-color: transparent;
     text-decoration-thickness: 1px;
     text-underline-offset: 0.2em;
   }
 
-  .project-name a:hover {
+  .project-name a:hover .name {
     text-decoration-color: currentColor;
   }
 
@@ -216,13 +338,42 @@ const mini: { repo: string; name?: string; description: Text; meta?: Text }[] = 
     padding: 0.85rem 0;
   }
 
+  .mini-id {
+    min-width: 0;
+    color: var(--ink-secondary);
+  }
+
+  .mini .mark {
+    width: 1rem;
+    height: 1rem;
+    margin-right: 0.38rem;
+    vertical-align: -0.14em;
+  }
+
+  .mini .mark.wide {
+    width: auto;
+    max-width: 2.6rem;
+    height: 0.9rem;
+    vertical-align: -0.08em;
+  }
+
+  .mini .mark.wide.plate img {
+    width: auto;
+    height: 100%;
+    max-width: 2.6rem;
+  }
+
   .mini .ledger-title {
     font-size: var(--type-h4);
     overflow-wrap: anywhere;
   }
 
+  .mini:hover .mini-id,
   .mini:hover .ledger-title {
     color: var(--ink);
+  }
+
+  .mini:hover .ledger-title {
     text-decoration-color: currentColor;
   }
 
@@ -253,6 +404,11 @@ const mini: { repo: string; name?: string; description: Text; meta?: Text }[] = 
 
     .project-name {
       font-size: 1.4rem;
+    }
+
+    .mark {
+      width: 1.15rem;
+      height: 1.15rem;
     }
 
     .mini {
