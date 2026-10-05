@@ -146,11 +146,13 @@ const mini: { name: string; href: string; description: Text; meta?: Text; mark: 
               <div class="project-head">
                 <h3 class="project-name">
                   <a href={p.href}>
+                    {/*
                     {p.mark.ink ? (
                       <span class="mark ink" aria-hidden="true" set:html={p.mark.ink} />
                     ) : (
                       <img class="mark" src={p.mark.img!.src} width="20" height="20" alt="" />
                     )}
+                    */}
                     <span class="name">{p.name}</span>
                   </a>
                 </h3>
@@ -170,6 +172,7 @@ const mini: { name: string; href: string; description: Text; meta?: Text; mark: 
             <li>
               <a class="mini" href={p.href}>
                 <span class="mini-id">
+                  {/*
                   {p.mark.ink ? (
                     <span class:list={['mark', 'ink', { wide: p.mark.wide }]} aria-hidden="true" set:html={p.mark.ink} />
                   ) : p.mark.plate ? (
@@ -185,6 +188,7 @@ const mini: { name: string; href: string; description: Text; meta?: Text; mark: 
                       alt=""
                     />
                   )}
+                  */}
                   <span class="ledger-title">{p.name}</span>
                 </span>
                 <span class="mini-desc">
@@ -214,9 +218,11 @@ const mini: { name: string; href: string; description: Text; meta?: Text; mark: 
     text-decoration-color: currentColor;
   }
 
-  /* The project's own mark, about the cap-height of the title.
-     Same shadow as a book cover. Colour stays inside a real logo.
-     A hairline drawing is day ink; night inverts that stroke so it stays light. */
+  /* Project marks are parked. Uncomment this block to restore them.
+     The mark is about the cap-height of the title, with the book-cover shadow.
+     Colour stays inside a real logo. A hairline drawing is day ink; night
+     inverts that stroke so it stays light. A black plate is inverted on the
+     image only, because it vanishes on the night wall.
   .mark {
     display: inline-block;
     width: 1.25rem;
@@ -238,7 +244,6 @@ const mini: { name: string; href: string; description: Text; meta?: Text; mark: 
     color: inherit;
   }
 
-  /* Day ink, then flipped. Invert of an already-light stroke would hide it. */
   html[data-theme="night"] .mark.ink {
     color: #181716;
   }
@@ -247,7 +252,6 @@ const mini: { name: string; href: string; description: Text; meta?: Text; mark: 
     filter: invert(1);
   }
 
-  /* A black plate vanishes on the night wall. Invert the picture, not the shadow. */
   .mark.plate img {
     display: block;
     width: 100%;
@@ -258,6 +262,7 @@ const mini: { name: string; href: string; description: Text; meta?: Text; mark: 
   html[data-theme="night"] .mark.plate img {
     filter: invert(1);
   }
+  */
 
   /* ── Main projects ──────────────────────────────────── */
 
@@ -343,6 +348,7 @@ const mini: { name: string; href: string; description: Text; meta?: Text; mark: 
     color: var(--ink-secondary);
   }
 
+  /* Mini marks, parked with the block above.
   .mini .mark {
     width: 1rem;
     height: 1rem;
@@ -362,6 +368,7 @@ const mini: { name: string; href: string; description: Text; meta?: Text; mark: 
     height: 100%;
     max-width: 2.6rem;
   }
+  */
 
   .mini .ledger-title {
     font-size: var(--type-h4);
@@ -406,10 +413,10 @@ const mini: { name: string; href: string; description: Text; meta?: Text; mark: 
       font-size: 1.4rem;
     }
 
-    .mark {
+    /* .mark {
       width: 1.15rem;
       height: 1.15rem;
-    }
+    } */
 
     .mini {
       grid-template-columns: minmax(0, 1fr);
