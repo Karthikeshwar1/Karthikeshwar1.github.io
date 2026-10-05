@@ -24,7 +24,7 @@ import medicalInk from '../../assets/projects/medical.svg?raw';
 import screenrecInk from '../../assets/projects/screenrec.svg?raw';
 import controllerInk from '../../assets/projects/controller.svg?raw';
 
-type Mark = { img?: ImageMetadata; ink?: string; wide?: boolean };
+type Mark = { img?: ImageMetadata; ink?: string; wide?: boolean; plate?: boolean };
 
 const main: {
   name: string;
@@ -102,7 +102,7 @@ const mini: { name: string; href: string; description: Text; meta?: Text; mark: 
   { repo: 'Puzzle', name: 'Puzzle!', mark: { ink: puzzleInk }, description: { en: 'An elaborate puzzle game based purely on logic and some GitHub knowledge!', kn: 'ಕೇವಲ ತರ್ಕ ಮತ್ತು ಸ್ವಲ್ಪ GitHub ಜ್ಞಾನ ಬೇಡುವ ವಿಸ್ತೃತ ಒಗಟಿನ ಆಟ!' } },
   {
     repo: 'JumpG',
-    mark: { img: jumpgIcon, wide: true },
+    mark: { img: jumpgIcon, wide: true, plate: true },
     description: { en: 'A Windows console game inspired from Google’s T-rex game!', kn: 'Googleನ T-rex ಆಟದಿಂದ ಪ್ರೇರಿತ Windows ಕನ್ಸೋಲ್ ಆಟ!' },
     meta: { en: 'Team of 2 · Apr–Jun 2019', kn: '2 ಜನರ ತಂಡ · ಏಪ್ರಿಲ್–ಜೂನ್ 2019' },
   },
@@ -147,7 +147,7 @@ const mini: { name: string; href: string; description: Text; meta?: Text; mark: 
                 <h3 class="project-name">
                   <a href={p.href}>
                     {p.mark.ink ? (
-                      <span class="mark" aria-hidden="true" set:html={p.mark.ink} />
+                      <span class="mark ink" aria-hidden="true" set:html={p.mark.ink} />
                     ) : (
                       <img class="mark" src={p.mark.img!.src} width="20" height="20" alt="" />
                     )}
@@ -171,7 +171,11 @@ const mini: { name: string; href: string; description: Text; meta?: Text; mark: 
               <a class="mini" href={p.href}>
                 <span class="mini-id">
                   {p.mark.ink ? (
-                    <span class:list={['mark', { wide: p.mark.wide }]} aria-hidden="true" set:html={p.mark.ink} />
+                    <span class:list={['mark', 'ink', { wide: p.mark.wide }]} aria-hidden="true" set:html={p.mark.ink} />
+                  ) : p.mark.plate ? (
+                    <span class:list={['mark', 'plate', { wide: p.mark.wide }]}>
+                      <img src={p.mark.img!.src} width={p.mark.wide ? 40 : 16} height="16" alt="" />
+                    </span>
                   ) : (
                     <img
                       class:list={['mark', { wide: p.mark.wide }]}
@@ -211,7 +215,8 @@ const mini: { name: string; href: string; description: Text; meta?: Text; mark: 
   }
 
   /* The project's own mark, about the cap-height of the title.
-     Colour stays inside the picture. Ink drawings follow the type. */
+     Same shadow as a book cover. Colour stays inside a real logo.
+     A hairline drawing is day ink; night inverts that stroke so it stays light. */
   .mark {
     display: inline-block;
     width: 1.25rem;
@@ -220,12 +225,38 @@ const mini: { name: string; href: string; description: Text; meta?: Text; mark: 
     vertical-align: -0.18em;
     object-fit: contain;
     object-position: center;
+    box-shadow: var(--shadow-object);
   }
 
   .mark :global(svg) {
     display: block;
     width: 100%;
     height: 100%;
+  }
+
+  .mark.ink {
+    color: inherit;
+  }
+
+  /* Day ink, then flipped. Invert of an already-light stroke would hide it. */
+  html[data-theme="night"] .mark.ink {
+    color: #181716;
+  }
+
+  html[data-theme="night"] .mark.ink :global(svg) {
+    filter: invert(1);
+  }
+
+  /* A black plate vanishes on the night wall. Invert the picture, not the shadow. */
+  .mark.plate img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  html[data-theme="night"] .mark.plate img {
+    filter: invert(1);
   }
 
   /* ── Main projects ──────────────────────────────────── */
@@ -324,6 +355,12 @@ const mini: { name: string; href: string; description: Text; meta?: Text; mark: 
     max-width: 2.6rem;
     height: 0.9rem;
     vertical-align: -0.08em;
+  }
+
+  .mini .mark.wide.plate img {
+    width: auto;
+    height: 100%;
+    max-width: 2.6rem;
   }
 
   .mini .ledger-title {
